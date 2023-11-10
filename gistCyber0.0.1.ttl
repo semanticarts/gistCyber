@@ -1,0 +1,25 @@
+# imports: https://ontologies.semanticarts.com/o/gist/resource0.1.0
+# imports: https://ontologies.semanticarts.com/o/gistCore11.1.0
+
+@prefix : <https://ontologies.semanticarts.com/o/gistCyber#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ontologies.semanticarts.com/o/gistCyber>
+	a owl:Ontology ;
+	owl:imports
+		<https://ontologies.semanticarts.com/o/gist/resource0.1.0> ,
+		<https://ontologies.semanticarts.com/o/gistCore11.1.0>
+		;
+	owl:versionIRI <https://ontologies.semanticarts.com/o/gistCyber0.0.1> ;
+	skos:definition "Sub-gist for cybersecurity."^^xsd:string ;
+	skos:historyNote "Initial commit of 'gistCyber' for 0.0.1 release."^^xsd:string ;
+	skos:prefLabel "gistCyber"^^xsd:string ;
+	.
+
+
