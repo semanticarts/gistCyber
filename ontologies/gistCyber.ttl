@@ -1,0 +1,78 @@
+# imports: https://ontologies.semanticarts.com/o/gistComputing
+# imports: https://ontologies.semanticarts.com/o/gistCore11.1.0
+
+@prefix : <https://ontologies.semanticarts.com/o/gistCyber#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix gistcyber: <https://ontologies.semanticarts.com/o/gistCyber#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ontologies.semanticarts.com/gistCyber>
+	a owl:Ontology ;
+	owl:imports
+		<https://ontologies.semanticarts.com/o/gistComputing> ,
+		<https://ontologies.semanticarts.com/o/gistCore11.1.0>
+		;
+	owl:versionIRI <https://ontologies.semanticarts.com/o/gistCyberX.x.x> ;
+	skos:definition "Sub-gist for cybersecurity."^^xsd:string ;
+	skos:historyNote "Initial commit of 'gistCyber' for 0.0.1 release."^^xsd:string ;
+	skos:prefLabel "gistCyber"^^xsd:string ;
+	.
+
+gist:ClientSoftware
+	rdfs:subClassOf gist:Software ;
+	.
+
+gist:Compiler
+	rdfs:subClassOf gist:Software ;
+	.
+
+gist:OperatingSystem
+	rdfs:subClassOf gist:Software ;
+	.
+
+gist:SaaS
+	rdfs:subClassOf gist:Software ;
+	.
+
+gist:ServerSoftware
+	rdfs:subClassOf gist:Software ;
+	.
+
+gist:Software
+	a owl:Class ;
+	skos:prefLabel "Software"^^xsd:string ;
+	.
+
+gist:SoftwareDefect
+	a owl:Class ;
+	rdfs:subClassOf gist:Defect ;
+	skos:prefLabel "Software Defect"^^xsd:string ;
+	.
+
+gist:SoftwareUpdate
+	rdfs:subClassOf gist:Software ;
+	.
+
+gist:ThreatActor
+	a owl:Class ;
+	rdfs:subClassOf gist:Agent ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:unionOf (
+			gist:Organization
+			gist:Person
+		) ;
+	] ;
+	skos:definition "A ThreatActor can be, or consist of, multiple persons and/or organizations"^^xsd:string ;
+	skos:prefLabel "Threat Actor"^^xsd:string ;
+	.
+
+gist:VirtualMachine
+	rdfs:subClassOf gist:Software ;
+	.
+
