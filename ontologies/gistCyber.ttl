@@ -1,5 +1,5 @@
 # imports: https://ontologies.semanticarts.com/o/gistComputing
-# imports: https://ontologies.semanticarts.com/o/gistCore11.1.0
+# imports: https://ontologies.semanticarts.com/o/gistCore
 
 @prefix : <https://ontologies.semanticarts.com/o/gistCyber#> .
 @prefix gist: <https://ontologies.semanticarts.com/gist/> .
@@ -11,11 +11,11 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ontologies.semanticarts.com/gistCyber>
+<https://ontologies.semanticarts.com/o/gistCyber>
 	a owl:Ontology ;
 	owl:imports
 		<https://ontologies.semanticarts.com/o/gistComputing> ,
-		<https://ontologies.semanticarts.com/o/gistCore11.1.0>
+		<https://ontologies.semanticarts.com/o/gistCore>
 		;
 	owl:versionIRI <https://ontologies.semanticarts.com/o/gistCyberX.x.x> ;
 	skos:definition "Sub-gist for cybersecurity."^^xsd:string ;
