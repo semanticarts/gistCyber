@@ -1,0 +1,123 @@
+bundle: gistCyber
+variables:
+  name: "gistCyber"
+  version: "X.x.x"
+  input: "."
+  rdf-toolkit: "{input}/tools/serializer/rdf-toolkit.jar"
+  output: "{name}{version}"
+tools:
+  - name: "serializer"
+    type: "Java"
+    jar: "{rdf-toolkit}"
+    arguments:
+      - "-sfmt"
+      - "turtle"
+      - "-tfmt"
+      - "turtle"
+      - "-sdt"
+      - "explicit"
+      - "-dtd"
+      - "-sni"
+      - "-ibn"
+      - "-s"
+      - "{inputFile}"
+      - "-t"
+      - "{outputFile}"
+actions:
+  # # Validate ontology
+  # - action: "verify"
+  #   message: "Validating ontology via SHACL."
+  #   type: "shacl"
+  #   inference: "none"
+  #   source: "{input}"
+  #   includes:
+  #     - "*.ttl"
+  #   shapes:
+  #     source: "{input}/validation/shapes/ontologyShapes.ttl"
+  # - action: "verify"
+  #   message: "Verify ontology via queries."
+  #   type: "construct"
+  #   inference: "none"
+  #   source: "{input}"
+  #   includes:
+  #     - gistCore.ttl
+  #   stopOnFail: false
+  #   target: '{input}/validation'
+  #   queries:
+  #     source: '{input}/validation/queries'
+  #     includes:
+  #       - '*_construct.rq'
+  - action: "mkdir"
+    directory: "{output}"
+  - action: "copy"
+    message: "Substituting version numbers."
+    source: "{input}/ontologies/"
+    target: "{output}/ontologies/"
+    replace:
+      from: "X.x.x"
+      to: "{version}"
+    rename:
+      from: "(.*)\\.ttl"
+      to: "\\g<1>{version}.ttl"
+    includes:
+      - "*.ttl"
+  - action: "definedBy"
+    message: "Adding rdfs:isDefinedBy."
+    source: "{output}"
+    target: "{output}"
+    includes:
+      - "*.ttl"
+  - action: "transform"
+    message: "Turtle serialization."
+    tool: "serializer"
+    source: "{output}"
+    target: "{output}"
+    includes:
+      - "*.ttl"
+    rename:
+      from: "(.*)\\.ttl"
+      to: "formatted_\\g<1>.ttl"
+  - action: "move"
+    source: "{output}"
+    target: "{output}"
+    includes:
+      - "formatted_*.ttl"
+    rename:
+      from: "formatted_(.*)\\.ttl"
+      to: "\\g<1>.ttl"
+  - action: "copy"
+    message: "Copying license text."
+    source: "{input}/LICENSE.txt"
+    target: "{output}"
+  # - action: "copy"
+  #   message: "Copying migration queries and scripts."
+  #   source: "{input}/migration"
+  #   target: "{output}/migration"
+  - action: "copy"
+    message: "Copying documentation and patching local links."
+    source: "{input}/docs"
+    target: "{output}/Documentation"
+    replace:
+      from: "\\(./(\\w+)\\.md\\)"
+      to: "(./\\g<1>.html)"
+    includes:
+      - "ReleaseNotes.md"
+  - action: "copy"
+    message: "Copying readme to Documentation directory and patching local links."
+    source: "README.md"
+    target: "{output}/Documentation/README.md"
+    replace:
+      from: "\\(./(\\w+)\\.md\\)"
+      to: "(./\\g<1>.html)"
+  - action: "copy"
+    message: "Copying gist logo to Documentation directory."
+    source: "gist-logo.png"
+    target: "{output}/Documentation/gist-logo.png"
+  - action: "markdown"
+    message: "Formatting readme."
+    source: "{output}/Documentation/README.md"
+    target: "{output}/Documentation/README.html"
+  - action: "markdown"
+    message: "Formatting release notes."
+    source: "{output}/Documentation/ReleaseNotes.md"
+    target: "{output}/Documentation/ReleaseNotes.html"
