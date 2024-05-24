@@ -21,23 +21,60 @@
 	skos:prefLabel "gistCyber"^^xsd:string ;
 	.
 
+gist:Agent
+	a owl:Class ;
+	.
+
 gist:ClientSoftware
+	a owl:Class ;
 	rdfs:subClassOf gist:Software ;
 	.
 
 gist:Compiler
+	a owl:Class ;
 	rdfs:subClassOf gist:Software ;
+	.
+
+gist:ConfigurationDefect
+	a owl:Class ;
+	rdfs:subClassOf gist:Defect ;
+	.
+
+gist:CyberThreat
+	a owl:Class ;
+	rdfs:subClassOf gist:Threat ;
+	.
+
+gist:Defect
+	a owl:Class ;
+	.
+
+gist:HardwareDefect
+	a owl:Class ;
+	rdfs:subClassOf gist:Defect ;
+	.
+
+gist:NonadversarialThreat
+	a owl:Class ;
+	rdfs:subClassOf gist:Threat ;
 	.
 
 gist:OperatingSystem
+	a owl:Class ;
 	rdfs:subClassOf gist:Software ;
 	.
 
+gist:Risk
+	a owl:Class ;
+	.
+
 gist:SaaS
+	a owl:Class ;
 	rdfs:subClassOf gist:Software ;
 	.
 
 gist:ServerSoftware
+	a owl:Class ;
 	rdfs:subClassOf gist:Software ;
 	.
 
@@ -53,7 +90,12 @@ gist:SoftwareDefect
 	.
 
 gist:SoftwareUpdate
+	a owl:Class ;
 	rdfs:subClassOf gist:Software ;
+	.
+
+gist:Threat
+	a owl:Class ;
 	.
 
 gist:ThreatActor
@@ -70,7 +112,13 @@ gist:ThreatActor
 	skos:prefLabel "Threat Actor"^^xsd:string ;
 	.
 
+gist:ThreatLifecycle
+	a owl:Class ;
+	rdfs:subClassOf gist:OrderedCollection ;
+	.
+
 gist:VirtualMachine
+	a owl:Class ;
 	rdfs:subClassOf gist:Software ;
 	.
 
