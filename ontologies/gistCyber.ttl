@@ -40,9 +40,16 @@ gist:ConfigurationDefect
 	rdfs:subClassOf gist:Defect ;
 	.
 
+gist:CyberLifecycle
+	a owl:Class ;
+	rdfs:subClassOf gist:OrderedCollection ;
+	skos:definition "The sequence of actions of a cyberattack that describe the nature and order of events from initial to final stages."^^xsd:string ;
+	.
+
 gist:CyberThreat
 	a owl:Class ;
 	rdfs:subClassOf gist:Threat ;
+	skos:definition "A circumstance with the potential to adversely impact organizational operations, individuals, or the nation through a system via unauthorized access, destruction, disclosure, or modification of information."^^xsd:string ;
 	.
 
 gist:Defect
@@ -54,6 +61,16 @@ gist:HardwareDefect
 	rdfs:subClassOf gist:Defect ;
 	.
 
+gist:KillchainPhase
+	a owl:Class ;
+	rdfs:subClassOf gist:LifeCyclePhase ;
+	.
+
+gist:LifeCyclePhase
+	a owl:Class ;
+	rdfs:subClassOf gist:OrderedMember ;
+	.
+
 gist:NonadversarialThreat
 	a owl:Class ;
 	rdfs:subClassOf gist:Threat ;
@@ -62,6 +79,10 @@ gist:NonadversarialThreat
 gist:OperatingSystem
 	a owl:Class ;
 	rdfs:subClassOf gist:Software ;
+	.
+
+gist:Procedure
+	a owl:Class ;
 	.
 
 gist:Risk
@@ -94,8 +115,17 @@ gist:SoftwareUpdate
 	rdfs:subClassOf gist:Software ;
 	.
 
+gist:Tactic
+	a owl:Class ;
+	.
+
+gist:Technique
+	a owl:Class ;
+	.
+
 gist:Threat
 	a owl:Class ;
+	skos:definition "A circumstance with the potential to adversely impact organizational operations, individuals, or the nation"^^xsd:string ;
 	.
 
 gist:ThreatActor
@@ -108,17 +138,22 @@ gist:ThreatActor
 			gist:Person
 		) ;
 	] ;
-	skos:definition "A ThreatActor can be, or consist of, multiple persons and/or organizations"^^xsd:string ;
+	skos:definition "Threat Actors are individuals, groups, or organizations believed to be operating with malicious intent."^^xsd:string ;
 	skos:prefLabel "Threat Actor"^^xsd:string ;
 	.
 
 gist:ThreatLifecycle
 	a owl:Class ;
-	rdfs:subClassOf gist:OrderedCollection ;
+	rdfs:subClassOf gist:CyberLifecycle ;
 	.
 
 gist:VirtualMachine
 	a owl:Class ;
 	rdfs:subClassOf gist:Software ;
+	.
+
+gist:Vulnerability
+	a owl:Class ;
+	rdfs:subClassOf gist:SoftwareDefect ;
 	.
 
