@@ -1,200 +1,201 @@
+# imports: https://w3id.org/semanticarts/ontology/gistBFO
+# imports: https://w3id.org/semanticarts/ontology/gistComputing
+
 @prefix : <https://ontologies.semanticarts.com/o/gistCyber#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix gist: <https://ontologies.semanticarts.com/gist/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@base <https://ontologies.semanticarts.com/o/gistCyber#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/semanticarts/ontology/gistCyber>
+	a owl:Ontology ;
+	owl:imports
+		<https://w3id.org/semanticarts/ontology/gistBFO> ,
+		<https://w3id.org/semanticarts/ontology/gistComputing>
+		;
+	owl:versionIRI <https://ontologies.semanticarts.com/o/gistCyberX.x.x> ;
+	skos:definition "Sub-gist for cybersecurity."^^xsd:string ;
+	skos:prefLabel "gistCyber"^^xsd:string ;
+	.
+
+:Artifact
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:AttackPattern
+	a owl:Class ;
+	rdfs:label "Attack Pattern"^^xsd:string ;
+	rdfs:comment 'Attack Patterns are a type of TTP that describe ways that adversaries attempt to compromise targets. Attack Patterns are used to help categorize attacks, generalize specific attacks to the patterns that they follow, and provide detailed information about how attacks are performed. An example of an attack pattern is "spear phishing": a common type of attack where an attacker sends a carefully crafted e-mail message to a party with the intent of getting them to click a link or open an attachment to deliver malware. Attack Patterns can also be more specific; spear phishing as practiced by a particular threat actor (e.g., they might generally say that the target won a contest) can also be an Attack Pattern. The Attack Pattern SDO contains textual descriptions of the pattern along with references to externally-defined taxonomies of attacks such as CAPEC [CAPEC].'^^xsd:string ;
+	.
+
+:AutonomousSystem
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:Campaign
+	a owl:Class ;
+	.
+
+:CourseOfAction
+	a owl:Class ;
+	.
+
+:CyberObservable
+	a owl:Class ;
+	.
+
+:Directory
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:DomainName
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:EmailAddress
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:EmailMessage
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:File
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:Grouping
+	a owl:Class ;
+	.
+
+:IP4Address
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:IP6Address
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:Identity
+	a owl:Class ;
+	.
+
+:Incident
+	a owl:Class ;
+	.
+
+:Indicator
+	a owl:Class ;
+	.
+
+:Infrastructure
+	a owl:Class ;
+	.
+
+:IntrusionSet
+	a owl:Class ;
+	rdfs:label "Intrusion Set"^^xsd:string ;
+	rdfs:comment "An Intrusion Set is a grouped set of adversarial behaviors and resources with common properties that is believed to be orchestrated by a single organization. An Intrusion Set may capture multiple Campaigns or other activities that are all tied together by shared attributes indicating a commonly known or unknown Threat Actor. New activity can be attributed to an Intrusion Set even if the Threat Actors behind the attack are not known. Threat Actors can move from supporting one Intrusion Set to supporting another, or they may support multiple Intrusion Sets. Where a Campaign is a set of attacks over a period of time against a specific set of targets to achieve some objective, an Intrusion Set is the entire attack package and may be used over a very long period of time in multiple Campaigns to achieve potentially multiple purposes. While sometimes an Intrusion Set is not active, or changes focus, it is usually difficult to know if it has truly disappeared or ended. Analysts may have varying level of fidelity on attributing an Intrusion Set back to Threat Actors and may be able to only attribute it back to a nation state or perhaps back to an organization within that nation state."^^xsd:string ;
+	.
+
+:Location
+	a owl:Class ;
+	.
+
+:MACAddress
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:Malware
+	a owl:Class ;
+	.
+
+:MalwareAnalysis
+	a owl:Class ;
+	.
+
+:Mutex
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:NetworkTraffic
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:Note
+	a owl:Class ;
+	.
+
+:ObseveredData
+	a owl:Class ;
+	.
+
+:Opinion
+	a owl:Class ;
+	.
+
+:Process
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:Report
+	a owl:Class ;
+	.
+
+:Software
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:ThreatActor
+	a owl:Class ;
+	rdfs:label "Threat Actor"^^xsd:string ;
+	rdfs:comment "Threat Actors are actual individuals, groups, or organizations believed to be operating with malicious intent. A Threat Actor is not an Intrusion Set but may support or be affiliated with various Intrusion Sets, groups, or organizations over time. \\n\\nThreat Actors leverage their resources, and possibly the resources of an Intrusion Set, to conduct attacks and run Campaigns against targets. \\n\\nThreat Actors can be characterized by their motives, capabilities, goals, sophistication level, past activities, resources they have access to, and their role in the organization."^^xsd:string ;
+	.
+
+:Tool
+	a owl:Class ;
+	.
+
+:URL
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:UserAccount
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:Vulnerabity
+	a owl:Class ;
+	rdfs:label "Vulnerability"^^xsd:string ;
+	rdfs:comment "A Vulnerability is a weakness or defect in the requirements, designs, or implementations of the computational logic (e.g., code) found in software and some hardware components (e.g., firmware) that can be directly exploited to negatively impact the confidentiality, integrity, or availability of that system. \\n\\nCVE is a list of information security vulnerabilities and exposures that provides common names for publicly known problems [CVE]. For example, if a piece of malware exploits CVE-2015-12345, a Malware object could be linked to a Vulnerability object that references CVE-2015-12345. \\n\\nThe Vulnerability SDO is primarily used to link to external definitions of vulnerabilities or to describe 0-day vulnerabilities that do not yet have an external definition. Typically, other SDOs assert relationships to Vulnerability objects when a specific vulnerability is targeted and exploited as part of malicious cyber activity. As such, Vulnerability objects can be used as a linkage to the asset management and compliance process."^^xsd:string ;
+	.
+
+:WindowsRegistryKey
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
+
+:X509Certificate
+	a owl:Class ;
+	rdfs:subClassOf :CyberObservable ;
+	.
 
-<https://w3id.org/semanticarts/ontology/gistCyber> rdf:type owl:Ontology ;
-                                                    owl:versionIRI <https://ontologies.semanticarts.com/o/gistCyberX.x.x> ;
-                                                    owl:imports <https://w3id.org/semanticarts/ontology/gistBFO> ,
-                                                                <https://w3id.org/semanticarts/ontology/gistComputing> ;
-                                                    skos:definition "Sub-gist for cybersecurity." ;
-                                                    skos:prefLabel "gistCyber" .
-
-#################################################################
-#    Classes
-#################################################################
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Artifact
-:Artifact rdf:type owl:Class ;
-          rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#AttackPattern
-:AttackPattern rdf:type owl:Class ;
-               rdfs:comment "Attack Patterns are a type of TTP that describe ways that adversaries attempt to compromise targets. Attack Patterns are used to help categorize attacks, generalize specific attacks to the patterns that they follow, and provide detailed information about how attacks are performed. An example of an attack pattern is \"spear phishing\": a common type of attack where an attacker sends a carefully crafted e-mail message to a party with the intent of getting them to click a link or open an attachment to deliver malware. Attack Patterns can also be more specific; spear phishing as practiced by a particular threat actor (e.g., they might generally say that the target won a contest) can also be an Attack Pattern. The Attack Pattern SDO contains textual descriptions of the pattern along with references to externally-defined taxonomies of attacks such as CAPEC [CAPEC]." ;
-               rdfs:label "Attack Pattern" .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#AutonomousSystem
-:AutonomousSystem rdf:type owl:Class ;
-                  rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Campaign
-:Campaign rdf:type owl:Class .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#CourseOfAction
-:CourseOfAction rdf:type owl:Class .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#CyberObservable
-:CyberObservable rdf:type owl:Class .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Directory
-:Directory rdf:type owl:Class ;
-           rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#DomainName
-:DomainName rdf:type owl:Class ;
-            rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#EmailAddress
-:EmailAddress rdf:type owl:Class ;
-              rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#EmailMessage
-:EmailMessage rdf:type owl:Class ;
-              rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#File
-:File rdf:type owl:Class ;
-      rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Grouping
-:Grouping rdf:type owl:Class .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#IP4Address
-:IP4Address rdf:type owl:Class ;
-            rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#IP6Address
-:IP6Address rdf:type owl:Class ;
-            rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Identity
-:Identity rdf:type owl:Class .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Incident
-:Incident rdf:type owl:Class .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Indicator
-:Indicator rdf:type owl:Class .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Infrastructure
-:Infrastructure rdf:type owl:Class .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#IntrusionSet
-:IntrusionSet rdf:type owl:Class ;
-              rdfs:comment "An Intrusion Set is a grouped set of adversarial behaviors and resources with common properties that is believed to be orchestrated by a single organization. An Intrusion Set may capture multiple Campaigns or other activities that are all tied together by shared attributes indicating a commonly known or unknown Threat Actor. New activity can be attributed to an Intrusion Set even if the Threat Actors behind the attack are not known. Threat Actors can move from supporting one Intrusion Set to supporting another, or they may support multiple Intrusion Sets. Where a Campaign is a set of attacks over a period of time against a specific set of targets to achieve some objective, an Intrusion Set is the entire attack package and may be used over a very long period of time in multiple Campaigns to achieve potentially multiple purposes. While sometimes an Intrusion Set is not active, or changes focus, it is usually difficult to know if it has truly disappeared or ended. Analysts may have varying level of fidelity on attributing an Intrusion Set back to Threat Actors and may be able to only attribute it back to a nation state or perhaps back to an organization within that nation state." ;
-              rdfs:label "Intrusion Set" .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Location
-:Location rdf:type owl:Class .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#MACAddress
-:MACAddress rdf:type owl:Class ;
-            rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Malware
-:Malware rdf:type owl:Class .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#MalwareAnalysis
-:MalwareAnalysis rdf:type owl:Class .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Mutex
-:Mutex rdf:type owl:Class ;
-       rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#NetworkTraffic
-:NetworkTraffic rdf:type owl:Class ;
-                rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Note
-:Note rdf:type owl:Class .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#ObseveredData
-:ObseveredData rdf:type owl:Class .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Opinion
-:Opinion rdf:type owl:Class .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Process
-:Process rdf:type owl:Class ;
-         rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Report
-:Report rdf:type owl:Class .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Software
-:Software rdf:type owl:Class ;
-          rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#ThreatActor
-:ThreatActor rdf:type owl:Class ;
-             rdfs:comment "Threat Actors are actual individuals, groups, or organizations believed to be operating with malicious intent. A Threat Actor is not an Intrusion Set but may support or be affiliated with various Intrusion Sets, groups, or organizations over time. \\n\\nThreat Actors leverage their resources, and possibly the resources of an Intrusion Set, to conduct attacks and run Campaigns against targets. \\n\\nThreat Actors can be characterized by their motives, capabilities, goals, sophistication level, past activities, resources they have access to, and their role in the organization." ;
-             rdfs:label "Threat Actor" .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Tool
-:Tool rdf:type owl:Class .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#URL
-:URL rdf:type owl:Class ;
-     rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#UserAccount
-:UserAccount rdf:type owl:Class ;
-             rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#Vulnerabity
-:Vulnerabity rdf:type owl:Class ;
-             rdfs:comment "A Vulnerability is a weakness or defect in the requirements, designs, or implementations of the computational logic (e.g., code) found in software and some hardware components (e.g., firmware) that can be directly exploited to negatively impact the confidentiality, integrity, or availability of that system. \\n\\nCVE is a list of information security vulnerabilities and exposures that provides common names for publicly known problems [CVE]. For example, if a piece of malware exploits CVE-2015-12345, a Malware object could be linked to a Vulnerability object that references CVE-2015-12345. \\n\\nThe Vulnerability SDO is primarily used to link to external definitions of vulnerabilities or to describe 0-day vulnerabilities that do not yet have an external definition. Typically, other SDOs assert relationships to Vulnerability objects when a specific vulnerability is targeted and exploited as part of malicious cyber activity. As such, Vulnerability objects can be used as a linkage to the asset management and compliance process." ;
-             rdfs:label "Vulnerability" .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#WindowsRegistryKey
-:WindowsRegistryKey rdf:type owl:Class ;
-                    rdfs:subClassOf :CyberObservable .
-
-
-###  https://w3id.org/semanticarts/ontology/gistCyber#X509Certificate
-:X509Certificate rdf:type owl:Class ;
-                 rdfs:subClassOf :CyberObservable .
-
-
-###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
