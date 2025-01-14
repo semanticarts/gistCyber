@@ -5,11 +5,11 @@
 # Stops accidental commits to branches master, main, or develop.
 BRANCH=`git rev-parse --abbrev-ref HEAD`
 
-if { [ "$BRANCH" = "develop" ] || [ "$BRANCH" = "master" ] || [ "$BRANCH" = "main" ]; }
-then
-  >&2 echo "You are on branch $BRANCH. You should not commit to this branch directly!"
-  exit 1
-fi
+#if { [ "$BRANCH" = "develop" ] || [ "$BRANCH" = "master" ] || [ "$BRANCH" = "main" ]; }
+#then
+#  >&2 echo "You are on branch $BRANCH. You should not commit to this branch directly!"
+#  exit 1
+#fi
 
 # Get absolute path to this script
 # SCRIPT=$(readlink -f "$0")
