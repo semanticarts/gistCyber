@@ -28,6 +28,7 @@
 
 :AttackPattern
 	a owl:Class ;
+	rdfs:subClassOf <https://w3id.org/semanticarts/ns/ontology/gist/TaskTemplate> ;
 	rdfs:label "Attack Pattern"^^xsd:string ;
 	rdfs:comment 'Attack Patterns are a type of TTP that describe ways that adversaries attempt to compromise targets. Attack Patterns are used to help categorize attacks, generalize specific attacks to the patterns that they follow, and provide detailed information about how attacks are performed. An example of an attack pattern is "spear phishing": a common type of attack where an attacker sends a carefully crafted e-mail message to a party with the intent of getting them to click a link or open an attachment to deliver malware. Attack Patterns can also be more specific; spear phishing as practiced by a particular threat actor (e.g., they might generally say that the target won a contest) can also be an Attack Pattern. The Attack Pattern SDO contains textual descriptions of the pattern along with references to externally-defined taxonomies of attacks such as CAPEC [CAPEC].'^^xsd:string ;
 	.
@@ -43,6 +44,9 @@
 
 :CourseOfAction
 	a owl:Class ;
+	rdfs:subClassOf <https://w3id.org/semanticarts/ns/ontology/gist/TaskTemplate> ;
+	rdfs:label "Course Of Action"^^xsd:string ;
+	rdfs:comment "Note: The Course of Action object in STIX 2.1 is a stub. It is included to support basic use cases (such as sharing prose courses of action) but does not support the ability to represent automated courses of action or contain properties to represent metadata about courses of action. Future STIX 2 releases will expand it to include these capabilities. A Course of Action is an action taken either to prevent an attack or to respond to an attack that is in progress. It may describe technical, automatable responses (applying patches, reconfiguring firewalls) but can also describe higher level actions like employee training or policy changes. For example, a course of action to mitigate a vulnerability could describe applying the patch that fixes it. The Course of Action SDO contains a textual description of the action; a reserved action property also serves as a placeholder for future inclusion of machine automatable courses of action."^^xsd:string ;
 	.
 
 :CyberObservable
@@ -165,6 +169,7 @@
 
 :ThreatActor
 	a owl:Class ;
+	rdfs:subClassOf <https://w3id.org/semanticarts/ns/ontology/gist/Organization> ;
 	rdfs:label "Threat Actor"^^xsd:string ;
 	rdfs:comment "Threat Actors are actual individuals, groups, or organizations believed to be operating with malicious intent. A Threat Actor is not an Intrusion Set but may support or be affiliated with various Intrusion Sets, groups, or organizations over time. \\n\\nThreat Actors leverage their resources, and possibly the resources of an Intrusion Set, to conduct attacks and run Campaigns against targets. \\n\\nThreat Actors can be characterized by their motives, capabilities, goals, sophistication level, past activities, resources they have access to, and their role in the organization."^^xsd:string ;
 	.
