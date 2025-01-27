@@ -3,6 +3,7 @@
 
 @prefix : <https://ontologies.semanticarts.com/o/gistCyber#> .
 @prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -40,6 +41,14 @@
 
 :Campaign
 	a owl:Class ;
+	rdfs:subClassOf <https://w3id.org/semanticarts/ns/ontology/gist/TaskTemplate> ;
+	rdfs:label "Campaign"^^xsd:string ;
+	rdfs:comment "A Campaign is a grouping of adversarial behaviors that describes a set of malicious activities or attacks (sometimes called waves) that occur over a period of time against a specific set of targets. Campaigns usually have well defined objectives and may be part of an Intrusion Set. Campaigns are often attributed to an intrusion set and threat actors. The threat actors may reuse known infrastructure from the intrusion set or may set up new infrastructure specific for conducting that campaign. Campaigns can be characterized by their objectives and the incidents they cause, people or resources they target, and the resources (infrastructure, intelligence, Malware, Tools, etc.) they use. For example, a Campaign could be used to describe a crime syndicate's attack using a specific variant of malware and new C2 servers against the executives of ACME Bank during the summer of 2016 in order to gain secret information about an upcoming merger with another bank.ey target, and the resources (infrastructure, intelligence, Malware, Tools, etc.) they use."^^xsd:string ;
+	.
+
+:ConfigurationVulnerability
+	a owl:Class ;
+	rdfs:subClassOf :Vulnerabity ;
 	.
 
 :CourseOfAction
@@ -80,6 +89,9 @@
 
 :Grouping
 	a owl:Class ;
+	rdfs:subClassOf <https://w3id.org/semanticarts/ns/ontology/gist/Collection> ;
+	rdfs:label "Grouping"^^xsd:string ;
+	rdfs:comment "STIX Definition: A Grouping object explicitly asserts that the referenced STIX Objects have a shared context, unlike a STIX Bundle (which explicitly conveys no context). A Grouping object should not be confused with an intelligence product, which should be conveyed via a STIX Report. A STIX Grouping object might represent a set of data that, in time, given sufficient analysis, would mature to convey an incident or threat report as a STIX Report object. For example, a Grouping could be used to characterize an ongoing investigation into a security event or incident. A Grouping object could also be used to assert that the referenced STIX Objects are related to an ongoing analysis process, such as when a threat analyst is collaborating with others in their trust community to examine a series of Campaigns and Indicators. The Grouping SDO contains a list of references to SDOs, SCOs, SROs, and SMOs, along with an explicit statement of the context shared by the content, a textual description, and the name of the grouping."^^xsd:string ;
 	.
 
 :IP4Address
@@ -94,14 +106,35 @@
 
 :Identity
 	a owl:Class ;
+	rdfs:label "Identity"^^xsd:string ;
+	rdfs:comment "Identities can represent actual individuals, organizations, or groups (e.g., ACME, Inc.) as well as classes of individuals, organizations, systems or groups (e.g., the finance sector). The Identity SDO can capture basic identifying information, contact information, and the sectors that the Identity belongs to. Identity is used in STIX to represent, among other things, targets of attacks, information sources, object creators, and threat actor identities."^^xsd:string ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			obo:BFO_0000004
+			[
+				a owl:Class ;
+				owl:unionOf (
+					<https://w3id.org/semanticarts/ns/ontology/gist/Organization>
+					<https://w3id.org/semanticarts/ns/ontology/gist/Person>
+				) ;
+			]
+		) ;
+	] ;
 	.
 
 :Incident
 	a owl:Class ;
+	rdfs:subClassOf <https://w3id.org/semanticarts/ns/ontology/gist/Event> ;
+	rdfs:label "Incident"^^xsd:string ;
+	rdfs:comment "STIX Definition: Note: The Incident object in STIX 2.1 is a stub. It is included to support basic use cases but does not contain properties to represent metadata about incidents. Future STIX 2 releases will expand it to include these capabilities.  It is suggested that it is used as an extension point for an Incident object defined using the extension facility described in section 7.3."^^xsd:string ;
 	.
 
 :Indicator
 	a owl:Class ;
+	rdfs:subClassOf <https://w3id.org/semanticarts/ns/ontology/gist/ContentExpression> ;
+	rdfs:label "Indicator"^^xsd:string ;
+	rdfs:comment "STIX Definition: Indicators contain a pattern that can be used to detect suspicious or malicious cyber activity. For example, an Indicator may be used to represent a set of malicious domains and use the STIX Patterning Language (see section 9) to specify these domains. The Indicator SDO contains a simple textual description, the Kill Chain Phases that it detects behavior in, a time window for when the Indicator is valid or useful, and a required pattern property to capture a structured detection pattern. Conforming STIX implementations MUST support the STIX Patterning Language as defined in section 9. Relationships from the Indicator can describe the malicious or suspicious behavior that it directly detects (Malware, Tool, and Attack Pattern). In addition, it may also imply the presence of a Campaigns, Intrusion Sets, and Threat Actors, etc."^^xsd:string ;
 	.
 
 :Infrastructure
@@ -110,12 +143,16 @@
 
 :IntrusionSet
 	a owl:Class ;
+	rdfs:subClassOf <https://w3id.org/semanticarts/ns/ontology/gist/TaskTemplate> ;
 	rdfs:label "Intrusion Set"^^xsd:string ;
 	rdfs:comment "An Intrusion Set is a grouped set of adversarial behaviors and resources with common properties that is believed to be orchestrated by a single organization. An Intrusion Set may capture multiple Campaigns or other activities that are all tied together by shared attributes indicating a commonly known or unknown Threat Actor. New activity can be attributed to an Intrusion Set even if the Threat Actors behind the attack are not known. Threat Actors can move from supporting one Intrusion Set to supporting another, or they may support multiple Intrusion Sets. Where a Campaign is a set of attacks over a period of time against a specific set of targets to achieve some objective, an Intrusion Set is the entire attack package and may be used over a very long period of time in multiple Campaigns to achieve potentially multiple purposes. While sometimes an Intrusion Set is not active, or changes focus, it is usually difficult to know if it has truly disappeared or ended. Analysts may have varying level of fidelity on attributing an Intrusion Set back to Threat Actors and may be able to only attribute it back to a nation state or perhaps back to an organization within that nation state."^^xsd:string ;
 	.
 
 :Location
 	a owl:Class ;
+	rdfs:subClassOf <https://w3id.org/semanticarts/ns/ontology/gist/Place> ;
+	rdfs:label "Location"^^xsd:string ;
+	rdfs:comment "STIX Definition: A Location represents a geographic location. The location may be described as any, some or all of the following: region (e.g., North America), civic address (e.g. New York, US), latitude and longitude. \\n\\n Locations are primarily used to give context to other SDOs. For example, a Location could be used in a relationship to describe that the Bourgeois Swallow intrusion set originates from Eastern Europe. \\n\\n The Location SDO can be related to an Identity or Intrusion Set to indicate that the identity or intrusion set is located in that location. It can also be related from a malware or attack pattern to indicate that they target victims in that location. The Location object describes geographic areas, not governments, even in cases where that area might have a government. For example, a Location representing the United States describes the United States as a geographic area, not the federal government of the United States. \\n\\n At least one of the following properties/sets of properties MUST be provided: region, country, latitude and longitude. \\n\\n When a combination of properties is provided (e.g. a region and a latitude and longitude) the more precise properties are what the location describes. In other words, if a location contains both a region of northern-america and a country of us, then the location describes the United States, not all of North America. In cases where a latitude and longitude are specified without a precision, the location describes the most precise other value. \\n\\n If precision is specified, then the datum for latitude and longitude MUST be WGS 84 [WGS84]. Organizations specifying a designated location using latitude and longitude SHOULD specify the precision which is appropriate for the scope of the location being identified. The scope is defined by the boundary as outlined by the precision around the coordinates."^^xsd:string ;
 	.
 
 :MACAddress
@@ -125,6 +162,9 @@
 
 :Malware
 	a owl:Class ;
+	rdfs:subClassOf <https://w3id.org/semanticarts/ns/ontology/gist/Software> ;
+	rdfs:label "Malware"^^xsd:string ;
+	rdfs:comment "STIX Definition: Malware is a type of TTP that represents malicious code. It generally refers to a program that is inserted into a system, usually covertly. The intent is to compromise the confidentiality, integrity, or availability of the victim's data, applications, or operating system (OS) or otherwise annoy or disrupt the victim. The Malware SDO characterizes, identifies, and categorizes malware instances and families from data that may be derived from analysis. This SDO captures detailed information about how the malware works and what it does. This SDO captures contextual data relevant to sharing Malware data without requiring the full analysis provided by the Malware Analysis SDO. The Indicator SDO provides intelligence producers with the ability to define, using the STIX Pattern Grammar in a standard way to identify and detect behaviors associated with malicious activities. Although the Malware SDO provides vital intelligence on a specific instance or malware family, it does not provide a standard grammar that the Indicator SDO provides to identify those properties in security detection systems designed to process the STIX Pattern grammar. We strongly encourage the use of STIX Indicators for the detection of actual malware, due to its use of the STIX Patterning language and the clear semantics that it provides. To minimize the risk of a consumer compromising their system in parsing malware samples, producers SHOULD consider sharing defanged content (archive and password-protected samples) instead of raw, base64-encoded malware samples."^^xsd:string ;
 	.
 
 :MalwareAnalysis
@@ -158,6 +198,11 @@
 	rdfs:subClassOf :CyberObservable ;
 	.
 
+:ProtocolVulnerability
+	a owl:Class ;
+	rdfs:subClassOf :Vulnerabity ;
+	.
+
 :Report
 	a owl:Class ;
 	.
@@ -165,6 +210,13 @@
 :Software
 	a owl:Class ;
 	rdfs:subClassOf :CyberObservable ;
+	.
+
+:SoftwareVulnerability
+	a owl:Class ;
+	rdfs:subClassOf <https://w3id.org/semanticarts/ns/ontology/gist/Defect> ;
+	rdfs:label "Software Vulnerability"^^xsd:string ;
+	rdfs:comment "A Vulnerability is a weakness or defect in the requirements, designs, or implementations of the computational logic (e.g., code) found in software and some hardware components (e.g., firmware) that can be directly exploited to negatively impact the confidentiality, integrity, or availability of that system. \\n\\nCVE is a list of information security vulnerabilities and exposures that provides common names for publicly known problems [CVE]. For example, if a piece of malware exploits CVE-2015-12345, a Malware object could be linked to a Vulnerability object that references CVE-2015-12345. \\n\\nThe Vulnerability SDO is primarily used to link to external definitions of vulnerabilities or to describe 0-day vulnerabilities that do not yet have an external definition. Typically, other SDOs assert relationships to Vulnerability objects when a specific vulnerability is targeted and exploited as part of malicious cyber activity. As such, Vulnerability objects can be used as a linkage to the asset management and compliance process."^^xsd:string ;
 	.
 
 :ThreatActor
@@ -176,6 +228,9 @@
 
 :Tool
 	a owl:Class ;
+	rdfs:subClassOf <https://w3id.org/semanticarts/ns/ontology/gist/Software> ;
+	rdfs:label "Tool"^^xsd:string ;
+	rdfs:comment "STIX Definition:Tools are legitimate software that can be used by threat actors to perform attacks. Knowing how and when threat actors use such tools can be important for understanding how campaigns are executed. Unlike malware, these tools or software packages are often found on a system and have legitimate purposes for power users, system administrators, network administrators, or even normal users. Remote access tools (e.g., RDP) and network scanning tools (e.g., Nmap) are examples of Tools that may be used by a Threat Actor during an attack. \\n\\nThe Tool SDO characterizes the properties of these software tools and can be used as a basis for making an assertion about how a Threat Actor uses them during an attack. It contains properties to name and describe the tool, a list of Kill Chain Phases the tool can be used to carry out, and the version of the tool. \\n\\nThis SDO MUST NOT be used to characterize malware. Further, Tool MUST NOT be used to characterize tools used as part of a course of action in response to an attack."^^xsd:string ;
 	.
 
 :URL
@@ -191,7 +246,6 @@
 :Vulnerabity
 	a owl:Class ;
 	rdfs:label "Vulnerability"^^xsd:string ;
-	rdfs:comment "A Vulnerability is a weakness or defect in the requirements, designs, or implementations of the computational logic (e.g., code) found in software and some hardware components (e.g., firmware) that can be directly exploited to negatively impact the confidentiality, integrity, or availability of that system. \\n\\nCVE is a list of information security vulnerabilities and exposures that provides common names for publicly known problems [CVE]. For example, if a piece of malware exploits CVE-2015-12345, a Malware object could be linked to a Vulnerability object that references CVE-2015-12345. \\n\\nThe Vulnerability SDO is primarily used to link to external definitions of vulnerabilities or to describe 0-day vulnerabilities that do not yet have an external definition. Typically, other SDOs assert relationships to Vulnerability objects when a specific vulnerability is targeted and exploited as part of malicious cyber activity. As such, Vulnerability objects can be used as a linkage to the asset management and compliance process."^^xsd:string ;
 	.
 
 :WindowsRegistryKey
@@ -202,5 +256,9 @@
 :X509Certificate
 	a owl:Class ;
 	rdfs:subClassOf :CyberObservable ;
+	.
+
+<https://w3id.org/semanticarts/ns/ontology/gist/SoftwareUpdate>
+	rdfs:subClassOf <https://w3id.org/semanticarts/ns/ontology/gist/Software> ;
 	.
 
