@@ -1,0 +1,112 @@
+@prefix : <https://ontologies.semanticarts.com/o/gistCyber#> .
+@prefix gist: <https://w3id.org/semanticarts/ns/ontology/gist/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/semanticarts/ontology/vocabulary>
+	a owl:Ontology ;
+	rdfs:label "Category Instances for STIX Vocabularies and Enumerations"^^xsd:string ;
+	rdfs:comment 'Some STIX properties are defined using open vocabularies or enumerations. Enumerations and open vocabularies are defined in STIX in order to enhance interoperability by increasing the likelihood that different entities use the same exact string to represent the same concept. If used consistently, open vocabularies make it less likely that one entity refers to the energy sector as "Energy" and another as "Energy Sector", thereby making comparison and correlation easier. \\n\\n While using predefined values from STIX vocabularies is strongly encouraged, in some cases this may not be feasible. To address this, producers are permitted to use values outside of the open vocabulary. In the case of enumerations, producers are required to use only the values defined within the STIX specification. \\n\\n STIX open vocabularies and enumerations are defined in section 10. Properties that are defined as open vocabularies identify a suggested vocabulary from that section. For example, the Threat Actor sophistication property, as defined in section 4.17, uses the Threat Actor Sophistication vocabulary as defined in section 10.25.'@en-US ;
+	owl:versionInfo "2.1.0"^^xsd:string ;
+	.
+
+gist:_ThreatActorRole-Agent
+	a gist:ThreatActorRoleVocabulary ;
+	gist:containedText "agent"^^xsd:string ;
+	.
+
+gist:_ThreatActorRole-Director
+	a gist:ThreatActorRoleVocabulary ;
+	gist:containedText "director"^^xsd:string ;
+	.
+
+gist:_ThreatActorRole-Independent
+	a gist:ThreatActorRoleVocabulary ;
+	gist:containedText "independent"^^xsd:string ;
+	.
+
+gist:_ThreatActorRole-Infrastructure-Architect
+	a gist:ThreatActorRoleVocabulary ;
+	gist:containedText "infrastructure-architect"^^xsd:string ;
+	.
+
+gist:_ThreatActorRole-Infrastructure-Operator
+	a gist:ThreatActorRoleVocabulary ;
+	gist:containedText "infrastructure-operator"^^xsd:string ;
+	.
+
+gist:_ThreatActorRole-Malware-Author
+	a gist:ThreatActorRoleVocabulary ;
+	gist:containedText "malware-author"^^xsd:string ;
+	.
+
+gist:_ThreatActorRole-Sponsor
+	a gist:ThreatActorRoleVocabulary ;
+	gist:containedText "sponsor"^^xsd:string ;
+	.
+
+gist:_ThreatActorType-Activist
+	a gist:ThreatActorTypeVocabulary ;
+	gist:containedText "activist"^^xsd:string ;
+	.
+
+gist:_ThreatActorType-Competitor
+	a gist:ThreatActorTypeVocabulary ;
+	gist:containedText "competitor"^^xsd:string ;
+	.
+
+gist:_ThreatActorType-CrimeSyndicate
+	a gist:ThreatActorTypeVocabulary ;
+	gist:containedText "crime-syndicate"^^xsd:string ;
+	.
+
+gist:_ThreatActorType-Criminal
+	a gist:ThreatActorTypeVocabulary ;
+	gist:containedText "criminal"^^xsd:string ;
+	.
+
+gist:_ThreatActorType-Hacker
+	a gist:ThreatActorTypeVocabulary ;
+	gist:containedText "hacker"^^xsd:string ;
+	.
+
+gist:_ThreatActorType-Insider-Accidental
+	a gist:ThreatActorTypeVocabulary ;
+	gist:containedText "insider-accidental"^^xsd:string ;
+	.
+
+gist:_ThreatActorType-Insider-Disgruntaled
+	a gist:ThreatActorTypeVocabulary ;
+	gist:containedText "insider-disgruntaled"^^xsd:string ;
+	.
+
+gist:_ThreatActorType-Nation-State
+	a gist:ThreatActorTypeVocabulary ;
+	gist:containedText "nation-state"^^xsd:string ;
+	.
+
+gist:_ThreatActorType-Sensationalist
+	a gist:ThreatActorTypeVocabulary ;
+	gist:containedText "sensationalist"^^xsd:string ;
+	.
+
+gist:_ThreatActorType-Spy
+	a gist:ThreatActorTypeVocabulary ;
+	gist:containedText "spy"^^xsd:string ;
+	.
+
+gist:_ThreatActorType-Terrorist
+	a gist:ThreatActorTypeVocabulary ;
+	gist:containedText "terrorist"^^xsd:string ;
+	.
+
+gist:_ThreatActorType-Unknown
+	a gist:ThreatActorTypeVocabulary ;
+	gist:containedText "unknown"^^xsd:string ;
+	.
+
