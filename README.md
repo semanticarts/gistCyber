@@ -36,15 +36,16 @@ To determine the line of demarcation between a general mid-level ontology for cy
 1. Controls
 1. Resilience
 
-The above list is by no means all inclusive. The gistCyber ontology was created to enable 
-semantic interoperability between these many sub-domains of cybersecurity.
+The above list is by no means all inclusive. The gistCyber ontology was created to enable semantic interoperability between these many sub-domains of cybersecurity.
 
 ## The Relationship between gistCyber and other Ontologies
 
 ### The gistCyber ontology has dependencies
-1. Basic Formal Ontology
-1. gist
-1. gistComputing
+1. Basic Formal Ontology (BFO)
+2. gist
+3. gistComputing
+
+gistCyber imports both gist and BFO through [gistBFO](https://github.com/semanticarts/gistBFO), a BFO-compatible version of gist. This has allowed for gistCyber to be easily extended from gist, all the while maintaining alignment with BFO.
 
 ### Cyber Threat Intelligence Ontology (CTIO) - As an Extension of gistCyber
 The CTIO is an extension based upon the gistCyber ontology. Most of the concepts needed to represent Cyber Threat Intelligence concepts should already be defined in gistCyber. Concepts that are specialized to the domain of threat intelligence should be asserted in the CTIO.
@@ -55,21 +56,21 @@ Cyber Threat Intelligence: Information about potential or existing threats in th
 
 This definition of CTI considers it as a noun that indicates that CTI is a type of information. CTI is Information. It is useful to consider severl different types of CTI:
 1. Operational Cyber Threat Intelligence
-1. Stratefic Cyber Threat Intelligence
-1. Tactical Cyber Threat Intelligence
-1. Technical Cyber Threat Intelligence (not considered by some as a significant type of CTI)
+2. Stratefic Cyber Threat Intelligence
+3. Tactical Cyber Threat Intelligence
+4. Technical Cyber Threat Intelligence (not considered by some as a significant type of CTI)
 
 
 There are actions performed on or with CTI:
 1. gathering
-1. analyzing
-1. interpreting
-1. sharing
-1. hunting
+2. analyzing
+3. interpreting
+4. sharing
+5. hunting
 
 #### The Importance of the Structured Threat Information eXchange (STIX) language
 An important concept of protecting an enterprise from threat and loss is the concept of information sharing.
-In order to facilitate sharing between government angencies and the private sector the Department of Homeland 
+In order to facilitate sharing between government angencies and the private sector the Department of Homeland
 Security sponsored the development of the STIX language. The language is an exchange format not an ontology.
 
 The STIX 2.1 specification defines many terms and concepts specific to cyber threat intelligence. Because of the extensive
