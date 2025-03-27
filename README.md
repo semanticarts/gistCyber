@@ -43,8 +43,8 @@ semantic interoperability between these many sub-domains of cybersecurity.
 
 ### The gistCyber ontology has dependencies
 1. Basic Formal Ontology (BFO)
-2. gist
-3. gistComputing
+1. gist
+1. gistComputing
 
 gistCyber imports both gist and BFO through [gistBFO](https://github.com/semanticarts/gistBFO), a BFO-compatible version of gist. This has allowed for gistCyber to be easily extended from gist, all the while maintaining alignment with BFO.
 
@@ -57,17 +57,17 @@ Cyber Threat Intelligence: Information about potential or existing threats in th
 
 This definition of CTI considers it as a noun that indicates that CTI is a type of information. CTI is Information. It is useful to consider severl different types of CTI:
 1. Operational Cyber Threat Intelligence
-2. Strategic Cyber Threat Intelligence
-3. Tactical Cyber Threat Intelligence
-4. Technical Cyber Threat Intelligence (not considered by some as a significant type of CTI)
+1. Strategic Cyber Threat Intelligence
+1. Tactical Cyber Threat Intelligence
+1. Technical Cyber Threat Intelligence (not considered by some as a significant type of CTI)
 
 
 There are actions performed on or with CTI:
 1. gathering
-2. analyzing
-3. interpreting
-4. sharing
-5. hunting
+1. analyzing
+1. interpreting
+1. sharing
+1. hunting
 
 #### The Importance of the Structured Threat Information eXchange (STIX) language
 An important concept of protecting an enterprise from threat and loss is the concept of information sharing.
