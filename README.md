@@ -57,7 +57,7 @@ Cyber Threat Intelligence: Information about potential or existing threats in th
 
 This definition of CTI considers it as a noun that indicates that CTI is a type of information. CTI is Information. It is useful to consider severl different types of CTI:
 1. Operational Cyber Threat Intelligence
-2. Stratefic Cyber Threat Intelligence
+2. Strategic Cyber Threat Intelligence
 3. Tactical Cyber Threat Intelligence
 4. Technical Cyber Threat Intelligence (not considered by some as a significant type of CTI)
 
