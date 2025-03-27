@@ -36,7 +36,8 @@ To determine the line of demarcation between a general mid-level ontology for cy
 1. Controls
 1. Resilience
 
-The above list is by no means all inclusive. The gistCyber ontology was created to enable semantic interoperability between these many sub-domains of cybersecurity.
+The above list is by no means all inclusive. The gistCyber ontology was created to enable
+semantic interoperability between these many sub-domains of cybersecurity.
 
 ## The Relationship between gistCyber and other Ontologies
 
