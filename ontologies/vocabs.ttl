@@ -15,98 +15,345 @@
 	owl:versionInfo "2.1.0"^^xsd:string ;
 	.
 
-gist:_ThreatActorRole-Agent
-	a gist:ThreatActorRoleVocabulary ;
-	gist:containedText "agent"^^xsd:string ;
+skos:definition
+	a owl:AnnotationProperty ;
 	.
 
-gist:_ThreatActorRole-Director
-	a gist:ThreatActorRoleVocabulary ;
-	gist:containedText "director"^^xsd:string ;
+skos:prefLabel
+	a owl:AnnotationProperty ;
 	.
 
-gist:_ThreatActorRole-Independent
-	a gist:ThreatActorRoleVocabulary ;
-	gist:containedText "independent"^^xsd:string ;
+gist:ThreatActorRole
+	a owl:Class ;
 	.
 
-gist:_ThreatActorRole-Infrastructure-Architect
-	a gist:ThreatActorRoleVocabulary ;
-	gist:containedText "infrastructure-architect"^^xsd:string ;
+gist:ThreatActorSophistication
+	a owl:Class ;
 	.
 
-gist:_ThreatActorRole-Infrastructure-Operator
-	a gist:ThreatActorRoleVocabulary ;
-	gist:containedText "infrastructure-operator"^^xsd:string ;
+gist:ThreatActorType
+	a owl:Class ;
 	.
 
-gist:_ThreatActorRole-Malware-Author
-	a gist:ThreatActorRoleVocabulary ;
-	gist:containedText "malware-author"^^xsd:string ;
+gist:_ThreatActorRole_Agent
+	a gist:ThreatActorRole ;
+	skos:definition """STIX 2.1 description:
+Threat actor executes attacks either on behalf of themselves or at the direction of someone else."""^^xsd:string ;
+	skos:prefLabel "agent"^^xsd:string ;
 	.
 
-gist:_ThreatActorRole-Sponsor
-	a gist:ThreatActorRoleVocabulary ;
-	gist:containedText "sponsor"^^xsd:string ;
+gist:_ThreatActorRole_Director
+	a gist:ThreatActorRole ;
+	skos:definition """STIX 2.1 description:
+The threat actor who directs the activities, goals, and objectives of the malicious activities."""^^xsd:string ;
+	skos:prefLabel "director"^^xsd:string ;
 	.
 
-gist:_ThreatActorType-Activist
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "activist"^^xsd:string ;
+gist:_ThreatActorRole_Independent
+	a gist:ThreatActorRole ;
+	skos:definition """STIX 2.1 description:
+A threat actor acting by themselves."""^^xsd:string ;
+	skos:prefLabel "independent"^^xsd:string ;
 	.
 
-gist:_ThreatActorType-Competitor
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "competitor"^^xsd:string ;
+gist:_ThreatActorRole_Infrastructure-Architect
+	a gist:ThreatActorRole ;
+	skos:definition """STIX 2.1 description:
+Someone who designs the battle space."""^^xsd:string ;
+	skos:prefLabel "infrastructure-architect"^^xsd:string ;
 	.
 
-gist:_ThreatActorType-CrimeSyndicate
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "crime-syndicate"^^xsd:string ;
+gist:_ThreatActorRole_Infrastructure-Operator
+	a gist:ThreatActorRole ;
+	skos:definition """STIX 2.1 description:
+The threat actor who provides and supports the attack infrastructure that is used to deliver the attack (botnet providers, cloud services, etc.)."""^^xsd:string ;
+	skos:prefLabel "infrastructure-operator"^^xsd:string ;
 	.
 
-gist:_ThreatActorType-Criminal
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "criminal"^^xsd:string ;
+gist:_ThreatActorRole_Malware-Author
+	a gist:ThreatActorRole ;
+	skos:definition """STIX 2.1 description:
+The threat actor who authors malware or other malicious tools."""^^xsd:string ;
+	skos:prefLabel "malware-author"^^xsd:string ;
 	.
 
-gist:_ThreatActorType-Hacker
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "hacker"^^xsd:string ;
+gist:_ThreatActorRole_Sponsor
+	a gist:ThreatActorRole ;
+	skos:definition """STIX 2.1 description:
+The threat actor who funds the malicious activities."""^^xsd:string ;
+	skos:prefLabel "sponsor"^^xsd:string ;
 	.
 
-gist:_ThreatActorType-Insider-Accidental
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "insider-accidental"^^xsd:string ;
+gist:_ThreatActorSophistication_Advanced
+	a gist:ThreatActorSophistication ;
+	skos:definition """STIX 2.1 description:
+ Can develop their own tools or scripts from publicly known vulnerabilities to target systems and users. Actors in this category are very adept at IT systems and have a background in software development along with a solid understanding of defensive techniques and operational security.
+
+ 
+
+These actors rely on others to find and identify weaknesses and vulnerabilities in systems, but are able to create their own tools, delivery mechanisms, and execution strategies.
+
+ 
+
+Example Roles: Toolkit Developer
+
+ 
+
+These actors:
+
+●      attack known vulnerabilities;
+
+●      can create their own tools; and
+
+●      have proficient knowledge of the tools."""^^xsd:string ;
 	.
 
-gist:_ThreatActorType-Insider-Disgruntaled
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "insider-disgruntaled"^^xsd:string ;
+gist:_ThreatActorSophistication_Expert
+	a gist:ThreatActorSophistication ;
+	skos:definition """STIX 2.1 description:
+Can focus on the discovery and use of unknown malicious code, are is adept at installing user and kernel mode rootkits, frequently use data mining tools, target corporate executives and key users (government and industry) for the purpose of stealing personal and corporate data. Actors in this category are very adept at IT systems and software development and are experts with security systems, defensive techniques, attack methods, and operational security.
+
+ 
+
+Example Roles: Vulnerability Researcher, Reverse Engineer, Threat Researcher, Malware Creator
+
+ 
+
+These actors:
+
+●      attack unknown and known vulnerabilities;
+
+●      can create their own tools from scratch; and
+
+●      have proficient knowledge of the tools. """^^xsd:string ;
 	.
 
-gist:_ThreatActorType-Nation-State
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "nation-state"^^xsd:string ;
+gist:_ThreatActorSophistication_Innovator
+	a gist:ThreatActorSophistication ;
+	skos:definition """STIX 2.1 description:
+ypically, criminal or state actors who are organized, highly technical, proficient, well-funded professionals working in teams to discover new vulnerabilities and develop exploits.
+
+ 
+
+Demonstrates sophisticated capability. An innovator has the ability to create and script unique programs and codes targeting virtually any form of technology. At this level, this actor has a deep knowledge of networks, operating systems, programming languages, firmware, and infrastructure topologies and will demonstrate operational security when conducting his activities. Innovators are largely responsible for the discovery of 0-day vulnerabilities and the development of new attack techniques.
+
+ 
+
+Example Roles: Toolkit Innovator, 0-Day Exploit Author
+
+ 
+
+These actors:
+
+●      attack unknown and known vulnerabilities;
+
+●      create attacks against 0-Day exploits from scratch; and
+
+●      create new and innovative attacks and toolkits. """^^xsd:string ;
 	.
 
-gist:_ThreatActorType-Sensationalist
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "sensationalist"^^xsd:string ;
+gist:_ThreatActorSophistication_Intermediate
+	a gist:ThreatActorSophistication ;
+	skos:definition """STIX 2.1 description:
+Can proficiently use existing attack frameworks and toolkits to search for and exploit vulnerabilities in computers or systems. Actors in this category have computer skills equivalent to an IT professional and typically have a working knowledge of networks, operating systems, and possibly even defensive techniques and will typically exhibit some operational security.
+
+ 
+
+These actors rely others to develop the malicious tools and delivery mechanisms but are able to plan their own execution strategy. They are proficient in the tools they are using and how they work and can even make minimal modifications as needed.
+
+ 
+
+Example Roles: Toolkit User
+
+ 
+
+These actors:
+
+●      attack known vulnerabilities;
+
+●      use attack frameworks and toolkits; and
+
+●      have proficient knowledge of the tools."""^^xsd:string ;
 	.
 
-gist:_ThreatActorType-Spy
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "spy"^^xsd:string ;
+gist:_ThreatActorSophistication_Minimal
+	a gist:ThreatActorSophistication ;
+	skos:definition """STIX 2.1 description:
+Can minimally use existing and frequently well known and easy-to-find techniques and programs or scripts to search for and exploit weaknesses in other computers. Commonly referred to as a script-kiddie.
+
+ 
+
+These actors rely on others to develop the malicious tools, delivery mechanisms, and execution strategy and often do not fully understand the tool they are using or how they work. They also lack the ability to conduct their own reconnaissance and targeting research.
+
+ 
+
+Example Roles: Script-Kiddie
+
+ 
+
+These actors:
+
+●      attack known weaknesses;
+
+●      use well known scripts and tools; and
+
+●      have minimal knowledge of the tools."""^^xsd:string ;
+	skos:prefLabel "minimal"^^xsd:string ;
 	.
 
-gist:_ThreatActorType-Terrorist
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "terrorist"^^xsd:string ;
+gist:_ThreatActorSophistication_None
+	a gist:ThreatActorSophistication ;
+	skos:definition """STIX 2.1 description:
+Can carry out random acts of disruption or destruction by running tools they do not understand. Actors in this category have average computer skills.
+
+ 
+
+Example Roles: Average User
+
+ 
+
+These actors:
+
+●      can not launch targeted attacks"""^^xsd:string ;
+	skos:prefLabel "none"^^xsd:string ;
 	.
 
-gist:_ThreatActorType-Unknown
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "unknown"^^xsd:string ;
+gist:_ThreatActorSophistication_Stategic
+	a gist:ThreatActorSophistication ;
+	skos:definition """STIX 2.1 description:
+ypically, criminal or state actors who are organized, highly technical, proficient, well-funded professionals working in teams to discover new vulnerabilities and develop exploits.
+
+ 
+
+Demonstrates sophisticated capability. An innovator has the ability to create and script unique programs and codes targeting virtually any form of technology. At this level, this actor has a deep knowledge of networks, operating systems, programming languages, firmware, and infrastructure topologies and will demonstrate operational security when conducting his activities. Innovators are largely responsible for the discovery of 0-day vulnerabilities and the development of new attack techniques.
+
+ 
+
+Example Roles: Toolkit Innovator, 0-Day Exploit Author
+
+ 
+
+These actors:
+
+●      attack unknown and known vulnerabilities;
+
+●      create attacks against 0-Day exploits from scratch; and
+
+●      create new and innovative attacks and toolkits. """^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Activist
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 Description:
+
+Highly motivated, potentially destructive supporter of a social or political cause (e.g., trade, labor, environment, etc.) that attempts to disrupt an organization's business model or damage their image.
+
+This category includes actors sometimes referred to as anarchists, cyber vandals, extremists, and hacktivists."""^^xsd:string ;
+	skos:prefLabel "activist"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Competitor
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 Description:
+
+An organization that competes in the same economic marketplace.
+
+The goal of a competitor is to gain an advantage in business with respect to the rival organization it targets. It usually does this by copying intellectual property, trade secrets, acquisition strategies, or other technical or business data from a rival organization with the intention of using the data to bolster its own assets and market position."""^^xsd:string ;
+	skos:prefLabel "competitor"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Crime-Syndicate
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 description:
+	
+An enterprise organized to conduct significant, large-scale criminal activity for profit.
+
+Crime syndicates, also known as organized crime, are generally large, well-resourced groups that operate to create profit from all types of crime."""^^xsd:string ;
+	skos:prefLabel "crime-syndicate"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Criminal
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 description:
+
+Individual who commits computer crimes, often for personal financial gain and often involves the theft of something valuable.
+
+Intellectual property theft, extortion via ransomware, and physical destruction are common examples. A criminal as defined here refers to those acting individually or in very small or informal groups. For sophisticated organized criminal activity, see the crime syndicate descriptor."""^^xsd:string ;
+	skos:prefLabel "criminal"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Hacker
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 dedscription:
+
+An individual that tends to break into networks for the thrill or the challenge of doing so.
+
+Hackers may use advanced skills or simple attack scripts they have downloaded."""^^xsd:string ;
+	skos:prefLabel "hacker"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Insider-Accidental
+	a gist:ThreatActorType ;
+	skos:definition '''STIX 2.1 description:
+A non-hostile insider who unintentionally exposes the organization to harm.
+
+"Insider" in this context includes any person extended internal trust, such as regular employees, contractors, consultants, and temporary workers.'''^^xsd:string ;
+	skos:prefLabel "insider-accidental"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Insider-Disgruntaled
+	a gist:ThreatActorType ;
+	skos:definition '''STIX 2.1 description:
+Current or former insiders who seek revengeful and harmful retaliation for perceived wrongs.
+
+"Insider" in this context includes any person extended internal trust, such as regular employees, contractors, consultants, and temporary workers.
+
+Disgruntled threat actors may have extensive knowledge that can be leveraged when conducting attacks and can take any number of actions including sabotage, violence, theft, fraud, espionage, or embarrassing individuals or the organization.'''^^xsd:string ;
+	skos:prefLabel "insider-disgruntaled"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Nation-State
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 description:
+Entities who work for the government or military of a nation state or who work at their direction.
+
+These actors typically have access to significant support, resources, training, and tools and are capable of designing and executing very sophisticated and effective Intrusion Sets and Campaigns."""^^xsd:string ;
+	skos:prefLabel "nation-state"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Sensationalist
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 description:
+Seeks to cause embarrassment and brand damage by exposing sensitive information in a manner designed to cause a public relations crisis.
+
+A sensationalist may be an individual or small group of people motivated primarily by a need for notoriety. Unlike the activist, the sensationalist generally has no political goal, and is not using bad PR to influence the target to change its behavior or business practices."""^^xsd:string ;
+	skos:prefLabel "sensationalist"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Spy
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 description:
+Secretly collects sensitive information for use, dissemination, or sale.
+
+Traditional spies (governmental and industrial) are part of a well-resourced intelligence organization and are capable of very sophisticated clandestine operations. However, insiders such as employees or consultants acting as spies can be just as effective and damaging, even when their activities are largely opportunistic and not part of an overall campaign."""^^xsd:string ;
+	skos:prefLabel "spy"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Terrorist
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 description:
+Uses extreme violence to advance a social or political agenda as well as monetary crimes to support its activities.
+
+In this context a terrorist refers to individuals who target noncombatants with violence to send a message of fear far beyond the actual events. They may act independently or as part of a terrorist organization.
+
+Terrorist organizations must typically raise much of their operating budget through criminal activity, which often occurs online. Terrorists are also often adept at using and covertly manipulating social media for both recruitment and impact."""^^xsd:string ;
+	skos:prefLabel "terrorist"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Unknown
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 description:
+There is not enough information available to determine the type of threat actor."""^^xsd:string ;
+	skos:prefLabel "unknown"^^xsd:string ;
 	.
 

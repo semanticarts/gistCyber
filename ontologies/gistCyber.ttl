@@ -24,12 +24,12 @@
 	skos:prefLabel "gistCyber"^^xsd:string ;
 	.
 
-gist:AccountTypeVocabulary
+gist:AccountType
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
 
-gist:AttackMotivationVocabulary
+gist:AttackMotivation
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
@@ -41,7 +41,7 @@ gist:AttackPattern
 	rdfs:comment 'Attack Patterns are a type of TTP that describe ways that adversaries attempt to compromise targets. Attack Patterns are used to help categorize attacks, generalize specific attacks to the patterns that they follow, and provide detailed information about how attacks are performed. An example of an attack pattern is "spear phishing": a common type of attack where an attacker sends a carefully crafted e-mail message to a party with the intent of getting them to click a link or open an attachment to deliver malware. Attack Patterns can also be more specific; spear phishing as practiced by a particular threat actor (e.g., they might generally say that the target won a contest) can also be an Attack Pattern. The Attack Pattern SDO contains textual descriptions of the pattern along with references to externally-defined taxonomies of attacks such as CAPEC [CAPEC].'^^xsd:string ;
 	.
 
-gist:AttackResourceLevelVocabulary
+gist:AttackResourceLevel
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
@@ -65,12 +65,12 @@ gist:CourseOfAction
 	rdfs:comment "Note: The Course of Action object in STIX 2.1 is a stub. It is included to support basic use cases (such as sharing prose courses of action) but does not support the ability to represent automated courses of action or contain properties to represent metadata about courses of action. Future STIX 2 releases will expand it to include these capabilities. A Course of Action is an action taken either to prevent an attack or to respond to an attack that is in progress. It may describe technical, automatable responses (applying patches, reconfiguring firewalls) but can also describe higher level actions like employee training or policy changes. For example, a course of action to mitigate a vulnerability could describe applying the patch that fixes it. The Course of Action SDO contains a textual description of the action; a reserved action property also serves as a placeholder for future inclusion of machine automatable courses of action."^^xsd:string ;
 	.
 
-gist:EncryptionAlgorithmEnum
+gist:EncryptionAlgorithm
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
 
-gist:ExtensionTypesEnum
+gist:ExtensionTypes
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
@@ -82,12 +82,12 @@ gist:Grouping
 	rdfs:comment "STIX Definition: A Grouping object explicitly asserts that the referenced STIX Objects have a shared context, unlike a STIX Bundle (which explicitly conveys no context). A Grouping object should not be confused with an intelligence product, which should be conveyed via a STIX Report. A STIX Grouping object might represent a set of data that, in time, given sufficient analysis, would mature to convey an incident or threat report as a STIX Report object. For example, a Grouping could be used to characterize an ongoing investigation into a security event or incident. A Grouping object could also be used to assert that the referenced STIX Objects are related to an ongoing analysis process, such as when a threat analyst is collaborating with others in their trust community to examine a series of Campaigns and Indicators. The Grouping SDO contains a list of references to SDOs, SCOs, SROs, and SMOs, along with an explicit statement of the context shared by the content, a textual description, and the name of the grouping."^^xsd:string ;
 	.
 
-gist:GroupingContextVocabulary
+gist:GroupingContext
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
 
-gist:HashingAlgorithmVocabulary
+gist:HashingAlgorithm
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
@@ -111,12 +111,12 @@ gist:Identity
 	] ;
 	.
 
-gist:IdentityClassVocabulary
+gist:IdentityClass
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
 
-gist:ImplementationLanguageVocabulary
+gist:ImplementationLanguage
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
@@ -135,12 +135,12 @@ gist:Indicator
 	rdfs:comment "STIX Definition: Indicators contain a pattern that can be used to detect suspicious or malicious cyber activity. For example, an Indicator may be used to represent a set of malicious domains and use the STIX Patterning Language (see section 9) to specify these domains. The Indicator SDO contains a simple textual description, the Kill Chain Phases that it detects behavior in, a time window for when the Indicator is valid or useful, and a required pattern property to capture a structured detection pattern. Conforming STIX implementations MUST support the STIX Patterning Language as defined in section 9. Relationships from the Indicator can describe the malicious or suspicious behavior that it directly detects (Malware, Tool, and Attack Pattern). In addition, it may also imply the presence of a Campaigns, Intrusion Sets, and Threat Actors, etc."^^xsd:string ;
 	.
 
-gist:IndicatorTypeVocabulary
+gist:IndicatorType
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
 
-gist:IndustrySectorVocabulary
+gist:IndustrySector
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
@@ -149,7 +149,7 @@ gist:Infrastructure
 	a owl:Class ;
 	.
 
-gist:InfrastructureTypeVocabulary
+gist:InfrastructureType
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
@@ -179,27 +179,27 @@ gist:MalwareAnalysis
 	a owl:Class ;
 	.
 
-gist:MalwareCapabilitiesVocabulary
+gist:MalwareCapabilities
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
 
-gist:MalwareResultVocabulary
+gist:MalwareResult
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
 
-gist:MalwareTypeVocabulary
+gist:MalwareType
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
 
-gist:NetworkSocketAddressFamilyEnum
+gist:NetworkSocketAddressFamily
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
 
-gist:NetworkSocketTypeEnum
+gist:NetworkSocketType
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
@@ -221,12 +221,12 @@ gist:OpinionEnum
 	rdfs:subClassOf gist:Category ;
 	.
 
-gist:PatternTypeVocabulary
+gist:PatternType
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
 
-gist:ProcessorArchitectureVocabulary
+gist:ProcessorArchitecture
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
@@ -236,7 +236,7 @@ gist:ProtocolVulnerability
 	rdfs:subClassOf gist:Vulnerabity ;
 	.
 
-gist:RegionVocabulary
+gist:Region
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
@@ -245,7 +245,7 @@ gist:Report
 	a owl:Class ;
 	.
 
-gist:ReportTypeVocabulary
+gist:ReportType
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
@@ -264,17 +264,17 @@ gist:ThreatActor
 	rdfs:comment "Threat Actors are actual individuals, groups, or organizations believed to be operating with malicious intent. A Threat Actor is not an Intrusion Set but may support or be affiliated with various Intrusion Sets, groups, or organizations over time. \\n\\nThreat Actors leverage their resources, and possibly the resources of an Intrusion Set, to conduct attacks and run Campaigns against targets. \\n\\nThreat Actors can be characterized by their motives, capabilities, goals, sophistication level, past activities, resources they have access to, and their role in the organization."^^xsd:string ;
 	.
 
-gist:ThreatActorRoleVocabulary
+gist:ThreatActorRole
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
 
-gist:ThreatActorSophisticationVocabulary
+gist:ThreatActorSophistication
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
 
-gist:ThreatActorTypeVocabulary
+gist:ThreatActorType
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
@@ -286,7 +286,7 @@ gist:Tool
 	rdfs:comment "STIX Definition:Tools are legitimate software that can be used by threat actors to perform attacks. Knowing how and when threat actors use such tools can be important for understanding how campaigns are executed. Unlike malware, these tools or software packages are often found on a system and have legitimate purposes for power users, system administrators, network administrators, or even normal users. Remote access tools (e.g., RDP) and network scanning tools (e.g., Nmap) are examples of Tools that may be used by a Threat Actor during an attack. \\n\\nThe Tool SDO characterizes the properties of these software tools and can be used as a basis for making an assertion about how a Threat Actor uses them during an attack. It contains properties to name and describe the tool, a list of Kill Chain Phases the tool can be used to carry out, and the version of the tool. \\n\\nThis SDO MUST NOT be used to characterize malware. Further, Tool MUST NOT be used to characterize tools used as part of a course of action in response to an attack."^^xsd:string ;
 	.
 
-gist:ToolTypeVocabulary
+gist:ToolType
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
 	.
