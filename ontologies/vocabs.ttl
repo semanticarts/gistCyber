@@ -23,6 +23,10 @@ skos:prefLabel
 	a owl:AnnotationProperty ;
 	.
 
+gist:AccountType
+	a owl:Class ;
+	.
+
 gist:ThreatActorRole
 	a owl:Class ;
 	.
@@ -33,6 +37,264 @@ gist:ThreatActorSophistication
 
 gist:ThreatActorType
 	a owl:Class ;
+	.
+
+gist:_AccountType_Facebook
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies a Facebook account"""^^xsd:string ;
+	skos:prefLabel "facebook"^^xsd:string ;
+	.
+
+gist:_AccountType_LDAP
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies an LDAP account"""^^xsd:string ;
+	skos:prefLabel "ldap"^^xsd:string ;
+	.
+
+gist:_AccountType_NIS
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies an NIS account"""^^xsd:string ;
+	skos:prefLabel "nis"^^xsd:string ;
+	.
+
+gist:_AccountType_OpenID
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies an OpenID account"""^^xsd:string ;
+	skos:prefLabel "openid"^^xsd:string ;
+	.
+
+gist:_AccountType_Radius
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies a RADIUS account"""^^xsd:string ;
+	skos:prefLabel "radius"^^xsd:string ;
+	.
+
+gist:_AccountType_Skype
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies a Skype account"""^^xsd:string ;
+	skos:prefLabel "skype"^^xsd:string ;
+	.
+
+gist:_AccountType_Tacacs
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies a TACACS account"""^^xsd:string ;
+	skos:prefLabel "tacacs"^^xsd:string ;
+	.
+
+gist:_AccountType_Twitter
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies a Twitter account"""^^xsd:string ;
+	skos:prefLabel "twitter"^^xsd:string ;
+	.
+
+gist:_AccountType_Unix
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies a POSIX account"""^^xsd:string ;
+	skos:prefLabel "unix"^^xsd:string ;
+	.
+
+gist:_AccountType_Windows_Domain
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies a Windows Domain account"""^^xsd:string ;
+	skos:prefLabel "windows-domain"^^xsd:string ;
+	.
+
+gist:_AccountType_Windows_Local
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies a Windows Local account"""^^xsd:string ;
+	skos:prefLabel "windows-local"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Accidental
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+A non-hostile actor whose benevolent or harmless intent inadvertently causes harm.
+
+ 
+
+For example, a well-meaning and dedicated employee who through distraction or poor training unintentionally causes harm to his or her organization."""^^xsd:string ;
+	skos:prefLabel "accidental"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Coercion
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+Being forced to act on someone else's behalf.
+
+ 
+
+Adversaries who are motivated by coercion are often forced through intimidation or blackmail to act illegally for someone else’s benefit. Unlike the other motivations, a coerced person does not act for personal gain, but out of fear of incurring a loss."""^^xsd:string ;
+	skos:prefLabel "coercion"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Dominance
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+A desire to assert superiority over someone or something else.
+
+ 
+
+Adversaries who are seeking dominance over a target are focused on using their power to force their target into submission or irrelevance. Dominance may be found with ideology in some state-sponsored attacks and with notoriety in some cyber vandalism-based attacks."""^^xsd:string ;
+	skos:prefLabel "dominance"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Ideology
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+A passion to express a set of ideas, beliefs, and values that may shape and drive harmful and illegal acts.
+
+ 
+
+Adversaries who act for ideological reasons (e.g., political, religious, human rights, environmental, desire to cause chaos/anarchy, etc.) are not usually motivated primarily by the desire for profit; they are acting on their own sense of morality, justice, or political loyalty.
+
+ 
+
+For example, an activist group may sabotage a company’s equipment because they believe the company is harming the environment."""^^xsd:string ;
+	skos:prefLabel "ideology"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Notoriety
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+Seeking prestige or to become well known through some activity.
+
+ 
+
+Adversaries motivated by notoriety are often seeking either personal validation or respect within a community and staying covert is not a priority. In fact, one of the main goals is to garner the respect of their target audience."""^^xsd:string ;
+	skos:prefLabel "notoriety"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Organizational_Gain
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+Seeking advantage over a competing organization, including a military organization.
+
+ 
+
+Adversaries motivated by increased profit or other gains through an unfairly obtained competitive advantage are often seeking theft of intellectual property, business processes, or supply chain agreements and thus accelerating their position in a market or capability."""^^xsd:string ;
+	skos:prefLabel "oranizational-gain"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Personal_Gain
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+The desire to improve one’s own financial status.
+
+ 
+
+Adversaries motivated by a selfish desire for personal gain are often out for gains that come from financial fraud, hacking for hire, or intellectual property theft.
+
+ 
+
+While a Threat Actor or Intrusion Set may be seeking personal gain, this does not mean they are acting alone. Individuals can band together solely to maximize their own personal profits."""^^xsd:string ;
+	skos:prefLabel "personal-gain"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Personal_Satisfaction
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+A desire to satisfy a strictly personal goal, including curiosity, thrill-seeking, amusement, etc.
+
+ 
+
+Threat Actors or Intrusion Set driven by personal satisfaction may incidentally receive some other gain from their actions, such as a profit, but their primary motivation is to gratify a personal, emotional need. Individuals can band together with others toward a mutual, but not necessarily organizational, objective."""^^xsd:string ;
+	skos:prefLabel "personal-satisfaction"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Revenge
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+A desire to avenge perceived wrongs through harmful actions such as sabotage, violence, theft, fraud, or embarrassing certain individuals or the organization.
+
+ 
+
+A disgruntled Threat Actor or Intrusion Set seeking revenge can include current or former employees, who may have extensive knowledge to leverage when conducting attacks. Individuals can band together with others if the individual believes that doing so will enable them to cause more harm."""^^xsd:string ;
+	skos:prefLabel "revenge"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Unpredictable
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+Acting without identifiable reason or purpose and creating unpredictable events.
+
+ 
+
+Unpredictable is not a miscellaneous or default category. Unpredictable means a truly random and likely bizarre event, which seems to have no logical purpose to the victims."""^^xsd:string ;
+	skos:prefLabel "unpredictable"^^xsd:string ;
+	.
+
+gist:_AttackResourceLevel_Club
+	a gist:AttackResourceLevel ;
+	skos:definition """STIX 2.1 description:
+Members interact on a social and volunteer basis, often with little personal interest in the specific target. An example might be a core group of unrelated activists who regularly exchange tips on a particular blog. Group persists long term."""^^xsd:string ;
+	skos:prefLabel "club"^^xsd:string ;
+	.
+
+gist:_AttackResourceLevel_Contest
+	a gist:AttackResourceLevel ;
+	skos:definition """STIX 2.1 description:
+A short-lived and perhaps anonymous interaction that concludes when the participants have achieved a single goal. For example, people who break into systems just for thrills or prestige may hold a contest to see who can break into a specific target first. It also includes announced \"operations\" to achieve a specific goal, such as the original \"OpIsrael\" call for volunteers to disrupt all of Israel's Internet functions for a day."""^^xsd:string ;
+	skos:prefLabel "contest"^^xsd:string ;
+	.
+
+gist:_AttackResourceLevel_Government
+	a gist:AttackResourceLevel ;
+	skos:definition """STIX 2.1 description:
+Controls public assets and functions within a jurisdiction; very well resourced and persists long term."""^^xsd:string ;
+	skos:prefLabel "government"^^xsd:string ;
+	.
+
+gist:_AttackResourceLevel_Individual
+	a gist:AttackResourceLevel ;
+	skos:definition """STIX 2.1 description:
+Resources limited to the average individual; Threat Actor acts independently."""^^xsd:string ;
+	skos:prefLabel "individual"^^xsd:string ;
+	.
+
+gist:_AttackResourceLevel_Organization
+	a gist:AttackResourceLevel ;
+	skos:definition """STIX 2.1 description:
+Larger and better resourced than a team; typically, a company or crime syndicate. Usually operates in multiple geographic areas and persists long term."""^^xsd:string ;
+	skos:prefLabel "organization"^^xsd:string ;
+	.
+
+gist:_AttackResourceLevel_Team
+	a gist:AttackResourceLevel ;
+	skos:definition """STIX 2.1 description:
+A formally organized group with a leader, typically motivated by a specific goal and organized around that goal. Group persists long term and typically operates within a single geography."""^^xsd:string ;
+	skos:prefLabel "team"^^xsd:string ;
+	.
+
+gist:_EncryptionAlgorithm_AES_256_GCM
+	a gist:EncryptionAlgorithm ;
+	skos:definition """STIX 2.1 description:
+Specifies the AES-256-GCM cipher, as defined in [NIST SP800-38D]"""^^xsd:string ;
+	skos:prefLabel "AES-256-GCM"^^xsd:string ;
+	.
+
+gist:_EncryptionAlgorithm_ChaCha20_Poly1305
+	a gist:EncryptionAlgorithm ;
+	skos:definition """STIX 2.1 description:
+Specifies the ChaCha20-Poly1305 stream cipher, as defined in [RFC7539]."""^^xsd:string ;
+	skos:prefLabel "ChaCha20-Poly1305"^^xsd:string ;
+	.
+
+gist:_EncryptionAlgorithm_Mime_Type_Indicated
+	a gist:EncryptionAlgorithm ;
+	skos:definition """STIX 2.1 description:
+The encryption algorithm is self-defined by the artifact's data. The specified mime-type tells you which format it is, e.g., Word Doc or GPG. This is intended for formats like Zip files and Word files which take a simple password, or GPG armored files that contain the key blob along with the file."""^^xsd:string ;
+	skos:prefLabel "mime-type-indicated"^^xsd:string ;
 	.
 
 gist:_ThreatActorRole_Agent
@@ -56,13 +318,6 @@ A threat actor acting by themselves."""^^xsd:string ;
 	skos:prefLabel "independent"^^xsd:string ;
 	.
 
-gist:_ThreatActorRole_Infrastructure-Architect
-	a gist:ThreatActorRole ;
-	skos:definition """STIX 2.1 description:
-Someone who designs the battle space."""^^xsd:string ;
-	skos:prefLabel "infrastructure-architect"^^xsd:string ;
-	.
-
 gist:_ThreatActorRole_Infrastructure-Operator
 	a gist:ThreatActorRole ;
 	skos:definition """STIX 2.1 description:
@@ -70,7 +325,14 @@ The threat actor who provides and supports the attack infrastructure that is use
 	skos:prefLabel "infrastructure-operator"^^xsd:string ;
 	.
 
-gist:_ThreatActorRole_Malware-Author
+gist:_ThreatActorRole_Infrastructure_Architect
+	a gist:ThreatActorRole ;
+	skos:definition """STIX 2.1 description:
+Someone who designs the battle space."""^^xsd:string ;
+	skos:prefLabel "infrastructure-architect"^^xsd:string ;
+	.
+
+gist:_ThreatActorRole_Malware_Author
 	a gist:ThreatActorRole ;
 	skos:definition """STIX 2.1 description:
 The threat actor who authors malware or other malicious tools."""^^xsd:string ;
@@ -262,7 +524,7 @@ The goal of a competitor is to gain an advantage in business with respect to the
 	skos:prefLabel "competitor"^^xsd:string ;
 	.
 
-gist:_ThreatActorType_Crime-Syndicate
+gist:_ThreatActorType_Crime_Syndicate
 	a gist:ThreatActorType ;
 	skos:definition """STIX 2.1 description:
 	
@@ -292,15 +554,6 @@ Hackers may use advanced skills or simple attack scripts they have downloaded.""
 	skos:prefLabel "hacker"^^xsd:string ;
 	.
 
-gist:_ThreatActorType_Insider-Accidental
-	a gist:ThreatActorType ;
-	skos:definition '''STIX 2.1 description:
-A non-hostile insider who unintentionally exposes the organization to harm.
-
-"Insider" in this context includes any person extended internal trust, such as regular employees, contractors, consultants, and temporary workers.'''^^xsd:string ;
-	skos:prefLabel "insider-accidental"^^xsd:string ;
-	.
-
 gist:_ThreatActorType_Insider-Disgruntaled
 	a gist:ThreatActorType ;
 	skos:definition '''STIX 2.1 description:
@@ -312,7 +565,16 @@ Disgruntled threat actors may have extensive knowledge that can be leveraged whe
 	skos:prefLabel "insider-disgruntaled"^^xsd:string ;
 	.
 
-gist:_ThreatActorType_Nation-State
+gist:_ThreatActorType_Insider_Accidental
+	a gist:ThreatActorType ;
+	skos:definition '''STIX 2.1 description:
+A non-hostile insider who unintentionally exposes the organization to harm.
+
+"Insider" in this context includes any person extended internal trust, such as regular employees, contractors, consultants, and temporary workers.'''^^xsd:string ;
+	skos:prefLabel "insider-accidental"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Nation_State
 	a gist:ThreatActorType ;
 	skos:definition """STIX 2.1 description:
 Entities who work for the government or military of a nation state or who work at their direction.
