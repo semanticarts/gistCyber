@@ -409,6 +409,244 @@ Specifies the TLSH fuzzy hashing algorithm. The corresponding hash string for th
 	skos:prefLabel "TLSH"^^xsd:string ;
 	.
 
+gist:_IdentityClass_Class
+	a gist:IdentityClass ;
+	skos:definition """STIX 2.1 description:
+A class of entities, such as all hospitals, all Europeans, or the Domain Administrators in a system."""^^xsd:string ;
+	skos:prefLabel "class"^^xsd:string ;
+	.
+
+gist:_IdentityClass_Group
+	a gist:IdentityClass ;
+	skos:definition """STIX 2.1 description:
+An informal collection of people, without formal governance, such as a distributed hacker group."""^^xsd:string ;
+	skos:prefLabel "group"^^xsd:string ;
+	.
+
+gist:_IdentityClass_Individual
+	a gist:IdentityClass ;
+	skos:definition """STIX 2.1 description
+A single person."""^^xsd:string ;
+	skos:prefLabel "individual"^^xsd:string ;
+	.
+
+gist:_IdentityClass_Organization
+	a gist:IdentityClass ;
+	skos:definition """STIX 2.1 description:
+A formal organization of people, with governance, such as a company or country."""^^xsd:string ;
+	skos:prefLabel "organization"^^xsd:string ;
+	.
+
+gist:_IdentityClass_System
+	a gist:IdentityClass ;
+	skos:definition """STIX 2.1 description:
+A computer system, such as a SIEM"""^^xsd:string ;
+	skos:prefLabel "system"^^xsd:string ;
+	.
+
+gist:_IdentityClass_Unknown
+	a gist:IdentityClass ;
+	skos:definition """STIX 2.1 description:
+It is unknown whether the classification is an individual, group, system, organization, or class."""^^xsd:string ;
+	skos:prefLabel "unknown"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Applescript
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the AppleScript programming language."""^^xsd:string ;
+	skos:prefLabel "applescript"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Bash
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Bash programming language."""^^xsd:string ;
+	skos:prefLabel "bash"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_C
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the C programming language."""^^xsd:string ;
+	skos:prefLabel "c"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_C-PlusPlus
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the C++ programming language."""^^xsd:string ;
+	skos:prefLabel "c++"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_C-sharp
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the C# programming language."""^^xsd:string ;
+	skos:prefLabel "c#"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Go
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Go (sometimes referred to as golang) programming language."""^^xsd:string ;
+	skos:prefLabel "go"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Java
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the JAVA programming language."""^^xsd:string ;
+	skos:prefLabel "java"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Javascript
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the JavaScript programming language."""^^xsd:string ;
+	skos:prefLabel "javascript"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Lua
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Lua programming language."""^^xsd:string ;
+	skos:prefLabel "lua"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Objective-C
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Objective-C programming language."""^^xsd:string ;
+	skos:prefLabel "objective-c"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Perl
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Perl programming language."""^^xsd:string ;
+	skos:prefLabel "perl"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Php
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the PHP programming language."""^^xsd:string ;
+	skos:prefLabel "php"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Powershell
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Windows Powershell programming language."""^^xsd:string ;
+	skos:prefLabel "powershell"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Python
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Python programming language."""^^xsd:string ;
+	skos:prefLabel "python"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Ruby
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Ruby programming language."""^^xsd:string ;
+	skos:prefLabel "ruby"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Scala
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Scala programming language."""^^xsd:string ;
+	skos:prefLabel "scala"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Swift
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Swift programming language."""^^xsd:string ;
+	skos:prefLabel "swift"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Typescript
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the TypeScript programming language."""^^xsd:string ;
+	skos:prefLabel "typescript"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Visual-Basic
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Visual Basic programming language."""^^xsd:string ;
+	skos:prefLabel "visual-basic"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_x86-32
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the x86 32-bit Assembly programming language."""^^xsd:string ;
+	skos:prefLabel "x86-32"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_x86-64
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the x86 64-bit Assembly programming language."""^^xsd:string ;
+	skos:prefLabel "x86-64"^^xsd:string ;
+	.
+
+gist:_IndicatorType_Anomalous-activity
+	a gist:IndicatorType ;
+	skos:definition """STIX 2.1 description:
+Unexpected, or unusual activity that may not necessarily be malicious or indicate compromise. This type of activity may include reconnaissance-like behavior such as port scans or version identification, network behavior anomalies, and asset and/or user behavioral anomalies."""^^xsd:string ;
+	skos:prefLabel "anomalous-activity"^^xsd:string ;
+	.
+
+gist:_IndicatorType_Anonymization
+	a gist:IndicatorType ;
+	skos:definition """STIX 2.1 description:
+Suspected anonymization tools or infrastructure (proxy, TOR, VPN, etc.)."""^^xsd:string ;
+	skos:prefLabel "anonymization"^^xsd:string ;
+	.
+
+gist:_IndicatorType_Attribution
+	a gist:IndicatorType ;
+	skos:definition """STIX 2.1 description:
+Patterns of behavior that indicate attribution to a particular Threat Actor or Campaign."""^^xsd:string ;
+	skos:prefLabel "attribution"^^xsd:string ;
+	.
+
+gist:_IndicatorType_Benign
+	a gist:IndicatorType ;
+	skos:definition """STIX 2.1 description:
+Activity that is not suspicious or malicious in and of itself, but when combined with other activity may indicate suspicious or malicious behavior."""^^xsd:string ;
+	skos:prefLabel "benign"^^xsd:string ;
+	.
+
+gist:_IndicatorType_Compromised
+	a gist:IndicatorType ;
+	skos:definition """STIX 2.1 description:
+Assets that are suspected to be compromised."""^^xsd:string ;
+	skos:prefLabel "compromised"^^xsd:string ;
+	.
+
+gist:_IndicatorType_Malicious-activity
+	a gist:IndicatorType ;
+	skos:definition """STIX 2.1 description:
+Patterns of suspected malicious objects and/or activity."""^^xsd:string ;
+	skos:prefLabel "malicious-activity"^^xsd:string ;
+	.
+
+gist:_IndicatorType_Unknown
+	a gist:IndicatorType ;
+	skos:definition """STIX 2.1 description:
+There is not enough information available to determine the type of indicator."""^^xsd:string ;
+	skos:prefLabel "unknown"^^xsd:string ;
+	.
+
 gist:_ThreatActorRole_Agent
 	a gist:ThreatActorRole ;
 	skos:definition """STIX 2.1 description:
