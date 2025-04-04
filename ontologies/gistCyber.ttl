@@ -26,12 +26,21 @@
 
 gist:AccountType
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	.
+
+gist:ActivistThreatActor
+	a owl:Class ;
+	rdfs:subClassOf gist:ThreatActor ;
+	skos:definition """Highly motivated, potentially destructive supporter of a social or political cause (e.g., trade, labor, environment, etc.) that attempts to disrupt an organization's business model or damage their image.
+
+ActivistThreatActor  includes actors sometimes referred to as anarchists, cyber vandals, extremists, and hacktivists."""^^xsd:string ;
+	skos:prefLabel "Activist Threat Actor"^^xsd:string ;
 	.
 
 gist:AttackMotivation
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:AttackPattern
@@ -43,7 +52,7 @@ gist:AttackPattern
 
 gist:AttackResourceLevel
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:Campaign
@@ -51,6 +60,15 @@ gist:Campaign
 	rdfs:subClassOf gist:TaskTemplate ;
 	rdfs:label "Campaign"^^xsd:string ;
 	rdfs:comment "A Campaign is a grouping of adversarial behaviors that describes a set of malicious activities or attacks (sometimes called waves) that occur over a period of time against a specific set of targets. Campaigns usually have well defined objectives and may be part of an Intrusion Set. Campaigns are often attributed to an intrusion set and threat actors. The threat actors may reuse known infrastructure from the intrusion set or may set up new infrastructure specific for conducting that campaign. Campaigns can be characterized by their objectives and the incidents they cause, people or resources they target, and the resources (infrastructure, intelligence, Malware, Tools, etc.) they use. For example, a Campaign could be used to describe a crime syndicate's attack using a specific variant of malware and new C2 servers against the executives of ACME Bank during the summer of 2016 in order to gain secret information about an upcoming merger with another bank.ey target, and the resources (infrastructure, intelligence, Malware, Tools, etc.) they use."^^xsd:string ;
+	.
+
+gist:CompetitorThreatActor
+	a owl:Class ;
+	rdfs:subClassOf gist:ThreatActor ;
+	skos:definition """An organization that competes in the same economic marketplace.
+
+The goal of a competitor is to gain an advantage in business with respect to the rival organization it targets. It usually does this by copying intellectual property, trade secrets, acquisition strategies, or other technical or business data from a rival organization with the intention of using the data to bolster its own assets and market position."""^^xsd:string ;
+	skos:prefLabel "Competitor Threat Actor"^^xsd:string ;
 	.
 
 gist:ConfigurationVulnerability
@@ -65,14 +83,32 @@ gist:CourseOfAction
 	rdfs:comment "Note: The Course of Action object in STIX 2.1 is a stub. It is included to support basic use cases (such as sharing prose courses of action) but does not support the ability to represent automated courses of action or contain properties to represent metadata about courses of action. Future STIX 2 releases will expand it to include these capabilities. A Course of Action is an action taken either to prevent an attack or to respond to an attack that is in progress. It may describe technical, automatable responses (applying patches, reconfiguring firewalls) but can also describe higher level actions like employee training or policy changes. For example, a course of action to mitigate a vulnerability could describe applying the patch that fixes it. The Course of Action SDO contains a textual description of the action; a reserved action property also serves as a placeholder for future inclusion of machine automatable courses of action."^^xsd:string ;
 	.
 
+gist:CrimeSyndicateThreatActor
+	a owl:Class ;
+	rdfs:subClassOf gist:ThreatActor ;
+	skos:definition """An enterprise organized to conduct significant, large-scale criminal activity for profit.
+
+Crime syndicates, also known as organized crime, are generally large, well-resourced groups that operate to create profit from all types of crime."""^^xsd:string ;
+	skos:prefLabel "Crime Syndicate Threat Actor"^^xsd:string ;
+	.
+
+gist:CriminalThreatActor
+	a owl:Class ;
+	rdfs:subClassOf gist:ThreatActor ;
+	skos:definition """Individual who commits computer crimes, often for personal financial gain and often involves the theft of something valuable.
+
+Intellectual property theft, extortion via ransomware, and physical destruction are common examples. A criminal as defined here refers to those acting individually or in very small or informal groups. For sophisticated organized criminal activity, see the crime syndicate descriptor."""^^xsd:string ;
+	skos:prefLabel "Criminal Threat Actor"^^xsd:string ;
+	.
+
 gist:EncryptionAlgorithm
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:ExtensionTypes
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:Grouping
@@ -84,12 +120,21 @@ gist:Grouping
 
 gist:GroupingContext
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	.
+
+gist:HackerThreatActor
+	a owl:Class ;
+	rdfs:subClassOf gist:ThreatActor ;
+	skos:definition """An individual that tends to break into networks for the thrill or the challenge of doing so.
+
+Hackers may use advanced skills or simple attack scripts they have downloaded."""^^xsd:string ;
+	skos:prefLabel "Hacker Threat Actor"^^xsd:string ;
 	.
 
 gist:HashingAlgorithm
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:Identity
@@ -113,12 +158,12 @@ gist:Identity
 
 gist:IdentityClass
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:ImplementationLanguage
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:Incident
@@ -137,12 +182,12 @@ gist:Indicator
 
 gist:IndicatorType
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:IndustrySector
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:Infrastructure
@@ -151,7 +196,27 @@ gist:Infrastructure
 
 gist:InfrastructureType
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	.
+
+gist:InsiderAccidentalThreatActor
+	a owl:Class ;
+	rdfs:subClassOf gist:ThreatActor ;
+	skos:definition '''A non-hostile insider who unintentionally exposes the organization to harm.
+
+"Insider" in this context includes any person extended internal trust, such as regular employees, contractors, consultants, and temporary workers.'''^^xsd:string ;
+	skos:prefLabel "Inseder Accidental Threat Actor"^^xsd:string ;
+	.
+
+gist:InsiderDisgruntledThreatActor
+	a owl:Class ;
+	rdfs:subClassOf gist:ThreatActor ;
+	skos:definition '''Current or former insiders who seek revengeful and harmful retaliation for perceived wrongs.
+
+"Insider" in this context includes any person extended internal trust, such as regular employees, contractors, consultants, and temporary workers.
+
+Disgruntled threat actors may have extensive knowledge that can be leveraged when conducting attacks and can take any number of actions including sabotage, violence, theft, fraud, espionage, or embarrassing individuals or the organization.'''^^xsd:string ;
+	skos:prefLabel "Insider Disgruntled Threat Actor"^^xsd:string ;
 	.
 
 gist:IntrusionSet
@@ -181,27 +246,36 @@ gist:MalwareAnalysis
 
 gist:MalwareCapabilities
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:MalwareResult
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:MalwareType
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	.
+
+gist:NationStateThreatActor
+	a owl:Class ;
+	rdfs:subClassOf gist:ThreatActor ;
+	skos:definition """Entities who work for the government or military of a nation state or who work at their direction.
+
+These actors typically have access to significant support, resources, training, and tools and are capable of designing and executing very sophisticated and effective Intrusion Sets and Campaigns."""^^xsd:string ;
+	skos:prefLabel "Nation State Threat Actor"^^xsd:string ;
 	.
 
 gist:NetworkSocketAddressFamily
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:NetworkSocketType
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:Note
@@ -218,17 +292,17 @@ gist:Opinion
 
 gist:OpinionEnum
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:PatternType
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:ProcessorArchitecture
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:ProtocolVulnerability
@@ -238,7 +312,7 @@ gist:ProtocolVulnerability
 
 gist:Region
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:Report
@@ -247,7 +321,16 @@ gist:Report
 
 gist:ReportType
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	.
+
+gist:SensationalistThreatActor
+	a owl:Class ;
+	rdfs:subClassOf gist:ThreatActor ;
+	skos:definition """Seeks to cause embarrassment and brand damage by exposing sensitive information in a manner designed to cause a public relations crisis.
+
+A sensationalist may be an individual or small group of people motivated primarily by a need for notoriety. Unlike the activist, the sensationalist generally has no political goal, and is not using bad PR to influence the target to change its behavior or business practices."""^^xsd:string ;
+	skos:prefLabel "Sensationalist Threat Actor"^^xsd:string ;
 	.
 
 gist:SoftwareVulnerability
@@ -257,26 +340,70 @@ gist:SoftwareVulnerability
 	rdfs:comment "A Vulnerability is a weakness or defect in the requirements, designs, or implementations of the computational logic (e.g., code) found in software and some hardware components (e.g., firmware) that can be directly exploited to negatively impact the confidentiality, integrity, or availability of that system. \\n\\nCVE is a list of information security vulnerabilities and exposures that provides common names for publicly known problems [CVE]. For example, if a piece of malware exploits CVE-2015-12345, a Malware object could be linked to a Vulnerability object that references CVE-2015-12345. \\n\\nThe Vulnerability SDO is primarily used to link to external definitions of vulnerabilities or to describe 0-day vulnerabilities that do not yet have an external definition. Typically, other SDOs assert relationships to Vulnerability objects when a specific vulnerability is targeted and exploited as part of malicious cyber activity. As such, Vulnerability objects can be used as a linkage to the asset management and compliance process."^^xsd:string ;
 	.
 
+gist:SpyThreatActor
+	a owl:Class ;
+	rdfs:subClassOf gist:ThreatActor ;
+	skos:definition """Secretly collects sensitive information for use, dissemination, or sale.
+
+Traditional spies (governmental and industrial) are part of a well-resourced intelligence organization and are capable of very sophisticated clandestine operations. However, insiders such as employees or consultants acting as spies can be just as effective and damaging, even when their activities are largely opportunistic and not part of an overall campaign."""^^xsd:string ;
+	skos:prefLabel "Spy Threat Actor"^^xsd:string ;
+	.
+
+gist:StixBundle
+	a owl:Class ;
+	.
+
+gist:StixCategoryObject
+	a owl:Class ;
+	rdfs:subClassOf gist:Category ;
+	.
+
+gist:StixDomainObject
+	a owl:Class ;
+	rdfs:subClassOf gist:StixObject ;
+	.
+
+gist:StixObject
+	a owl:Class ;
+	.
+
+gist:TerroristThreatActor
+	a owl:Class ;
+	rdfs:subClassOf gist:ThreatActor ;
+	skos:definition """Uses extreme violence to advance a social or political agenda as well as monetary crimes to support its activities.
+
+In this context a terrorist refers to individuals who target noncombatants with violence to send a message of fear far beyond the actual events. They may act independently or as part of a terrorist organization.
+
+Terrorist organizations must typically raise much of their operating budget through criminal activity, which often occurs online. Terrorists are also often adept at using and covertly manipulating social media for both recruitment and impact."""^^xsd:string ;
+	skos:prefLabel "Terrorist Threat Actor"^^xsd:string ;
+	.
+
 gist:ThreatActor
 	a owl:Class ;
-	rdfs:subClassOf gist:Organization ;
+	rdfs:subClassOf
+		gist:Organization ,
+		gist:StixDomainObject
+		;
 	rdfs:label "Threat Actor"^^xsd:string ;
 	rdfs:comment "Threat Actors are actual individuals, groups, or organizations believed to be operating with malicious intent. A Threat Actor is not an Intrusion Set but may support or be affiliated with various Intrusion Sets, groups, or organizations over time. \\n\\nThreat Actors leverage their resources, and possibly the resources of an Intrusion Set, to conduct attacks and run Campaigns against targets. \\n\\nThreat Actors can be characterized by their motives, capabilities, goals, sophistication level, past activities, resources they have access to, and their role in the organization."^^xsd:string ;
 	.
 
 gist:ThreatActorRole
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:ThreatActorSophistication
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:ThreatActorType
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition """STIX 2.1 description
+  Threat actor type is an open vocabulary used to describe what type of threat actor the individual or group is. For example, some threat actors are competitors who try to steal information, while others are activists who act in support of a social or political cause. Actor types are not mutually exclusive: a threat actor can be both a disgruntled insider and a spy. [Casey 2007])"""^^xsd:string ;
+	skos:prefLabel "Threat Actor Type"^^xsd:string ;
 	.
 
 gist:Tool
@@ -288,7 +415,14 @@ gist:Tool
 
 gist:ToolType
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	.
+
+gist:UnknownThreatActor
+	a owl:Class ;
+	rdfs:subClassOf gist:ThreatActor ;
+	skos:definition "There is not enough information available to determine the type of threat actor."^^xsd:string ;
+	skos:prefLabel "Unknown Threat Actor"^^xsd:string ;
 	.
 
 gist:Vulnerabity
@@ -298,36 +432,36 @@ gist:Vulnerabity
 
 gist:WindowsIntegrityLevelEnum
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:WindowsPEBinaryEnum
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:WindowsPEBinaryVocabulary
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:WindowsRegistryDatatypeEnum
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:WindowsServiceStartTypeEnum
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:WindowsServiceStatusEnum
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:WindowsServiceTypeEnum
 	a owl:Class ;
-	rdfs:subClassOf gist:Category ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 

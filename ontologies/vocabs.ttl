@@ -27,6 +27,50 @@ gist:AccountType
 	a owl:Class ;
 	.
 
+gist:AttackMotivation
+	a owl:Class ;
+	.
+
+gist:AttackResourceLevel
+	a owl:Class ;
+	.
+
+gist:EncryptionAlgorithm
+	a owl:Class ;
+	.
+
+gist:ExtensionTypes
+	a owl:Class ;
+	.
+
+gist:GroupingContext
+	a owl:Class ;
+	.
+
+gist:HashingAlgorithm
+	a owl:Class ;
+	.
+
+gist:IdentityClass
+	a owl:Class ;
+	.
+
+gist:ImplementationLanguage
+	a owl:Class ;
+	.
+
+gist:IndicatorType
+	a owl:Class ;
+	.
+
+gist:InfrastructureType
+	a owl:Class ;
+	.
+
+gist:MalwareResult
+	a owl:Class ;
+	.
+
 gist:ThreatActorRole
 	a owl:Class ;
 	.
@@ -649,105 +693,105 @@ There is not enough information available to determine the type of indicator."""
 
 gist:_InfrastructureType_amplification
 	a gist:InfrastructureType ;
-	skos:defintion """STIX 2.1 description:
+	skos:definition """STIX 2.1 description:
 Specifies infrastructure used for conducting amplification attacks."""^^xsd:string ;
 	skos:prefLabel "amplification"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_anonymization
 	a gist:InfrastructureType ;
-	skos:defintion """STIX 2.1 description:
+	skos:definition """STIX 2.1 description:
 Specific infrastructure used for anonymization, such as a proxy."""^^xsd:string ;
 	skos:prefLabel "anonymization"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_botnet
 	a gist:InfrastructureType ;
-	skos:defintion """STIX 2.1 description:
+	skos:definition """STIX 2.1 description:
 Specifies the membership/makeup of a botnet, in terms of the network addresses of the hosts that comprise the botnet."""^^xsd:string ;
 	skos:prefLabel "botnet"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_command-and-control
 	a gist:InfrastructureType ;
-	skos:defintion """STIX 2.1 description:
+	skos:definition """STIX 2.1 description:
 Specifies infrastructure used for command and control (C2). This is typically a domain name or IP address."""^^xsd:string ;
 	skos:prefLabel "command-and-control"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_control-system
 	a gist:InfrastructureType ;
-	skos:defintion """STIX 2.1 description:
+	skos:definition """STIX 2.1 description:
 Specifies equipment such as IoT, HMI, RTU, PLC or other ICS devices."""^^xsd:string ;
 	skos:prefLabel "control-system"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_exfiltration
 	a gist:InfrastructureType ;
-	skos:defintion """STIX 2.1 description:
+	skos:definition """STIX 2.1 description:
 Specifies infrastructure used as an endpoint for data exfiltration."""^^xsd:string ;
 	skos:prefLabel "exfiltration"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_firewall
 	a gist:InfrastructureType ;
-	skos:defintion """STIX 2.1 description:
+	skos:definition """STIX 2.1 description:
 Specifies a device that inspects network traffic and restricts it based upon defined policies."""^^xsd:string ;
 	skos:prefLabel "firewall"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_hosting-malware
 	a gist:InfrastructureType ;
-	skos:defintion """STIX 2.1 description:
+	skos:definition """STIX 2.1 description:
 Specifies infrastructure used for hosting malware."""^^xsd:string ;
 	skos:prefLabel "hosting-malware"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_hosting-target-lists
 	a gist:InfrastructureType ;
-	skos:defintion """STIX 2.1 description:
+	skos:definition """STIX 2.1 description:
 Specifies infrastructure used for hosting a list of targets for DDOS attacks, phishing, and other malicious activities. This is typically a domain name or IP address."""^^xsd:string ;
 	skos:prefLabel "hosting-target-lists"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_phishing
 	a gist:InfrastructureType ;
-	skos:defintion """STIX 2.1 description:
+	skos:definition """STIX 2.1 description:
 Specifies infrastructure used for conducting phishing attacks."""^^xsd:string ;
 	skos:prefLabel "phishing"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_reconnaissance
 	a gist:InfrastructureType ;
-	skos:defintion """STIX 2.1 description:
+	skos:definition """STIX 2.1 description:
 Specifies infrastructure used for conducting reconnaissance activities."""^^xsd:string ;
 	skos:prefLabel "reconnaissance"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_routers-switches
 	a gist:InfrastructureType ;
-	skos:defintion """STIX 2.1 description:
+	skos:definition """STIX 2.1 description:
 Specifies IT infrastructure used to connect devices to the network."""^^xsd:string ;
 	skos:prefLabel "routers-switches"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_staging
 	a gist:InfrastructureType ;
-	skos:defintion """STIX 2.1 description:
+	skos:definition """STIX 2.1 description:
 Specifies infrastructure used for staging."""^^xsd:string ;
 	skos:prefLabel "staging"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_unknown
 	a gist:InfrastructureType ;
-	skos:defintion """STIX 2.1 description:
+	skos:definition """STIX 2.1 description:
 Specifies an infrastructure of some unknown type."""^^xsd:string ;
 	skos:prefLabel "unknown"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_workstation
 	a gist:InfrastructureType ;
-	skos:defintion """STIX 2.1 description:
+	skos:definition """STIX 2.1 description:
 Specifies an endpoint machine used for work by an organization that needs protection."""^^xsd:string ;
 	skos:prefLabel "workstation"^^xsd:string ;
 	.
