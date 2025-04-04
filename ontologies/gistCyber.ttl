@@ -36,6 +36,17 @@ gist:AccountType
 gist:ActivistThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:ThreatActor
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_threat_actor_types ;
+				owl:hasValue "activist"^^xsd:string ;
+			]
+		) ;
+	] ;
 	skos:definition """Highly motivated, potentially destructive supporter of a social or political cause (e.g., trade, labor, environment, etc.) that attempts to disrupt an organization's business model or damage their image.
 
 ActivistThreatActor  includes actors sometimes referred to as anarchists, cyber vandals, extremists, and hacktivists."""^^xsd:string ;
@@ -49,9 +60,23 @@ gist:AttackMotivation
 
 gist:AttackPattern
 	a owl:Class ;
-	rdfs:subClassOf gist:TaskTemplate ;
+	rdfs:subClassOf
+		gist:StixDomainObject ,
+		gist:TaskTemplate
+		;
 	rdfs:label "Attack Pattern"^^xsd:string ;
 	rdfs:comment 'Attack Patterns are a type of TTP that describe ways that adversaries attempt to compromise targets. Attack Patterns are used to help categorize attacks, generalize specific attacks to the patterns that they follow, and provide detailed information about how attacks are performed. An example of an attack pattern is "spear phishing": a common type of attack where an attacker sends a carefully crafted e-mail message to a party with the intent of getting them to click a link or open an attachment to deliver malware. Attack Patterns can also be more specific; spear phishing as practiced by a particular threat actor (e.g., they might generally say that the target won a contest) can also be an Attack Pattern. The Attack Pattern SDO contains textual descriptions of the pattern along with references to externally-defined taxonomies of attacks such as CAPEC [CAPEC].'^^xsd:string ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:StixObject
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_type ;
+				owl:hasValue "attack-pattern"^^xsd:string ;
+			]
+		) ;
+	] ;
 	.
 
 gist:AttackResourceLevel
@@ -61,14 +86,39 @@ gist:AttackResourceLevel
 
 gist:Campaign
 	a owl:Class ;
-	rdfs:subClassOf gist:TaskTemplate ;
+	rdfs:subClassOf
+		gist:StixDomainObject ,
+		gist:TaskTemplate
+		;
 	rdfs:label "Campaign"^^xsd:string ;
 	rdfs:comment "A Campaign is a grouping of adversarial behaviors that describes a set of malicious activities or attacks (sometimes called waves) that occur over a period of time against a specific set of targets. Campaigns usually have well defined objectives and may be part of an Intrusion Set. Campaigns are often attributed to an intrusion set and threat actors. The threat actors may reuse known infrastructure from the intrusion set or may set up new infrastructure specific for conducting that campaign. Campaigns can be characterized by their objectives and the incidents they cause, people or resources they target, and the resources (infrastructure, intelligence, Malware, Tools, etc.) they use. For example, a Campaign could be used to describe a crime syndicate's attack using a specific variant of malware and new C2 servers against the executives of ACME Bank during the summer of 2016 in order to gain secret information about an upcoming merger with another bank.ey target, and the resources (infrastructure, intelligence, Malware, Tools, etc.) they use."^^xsd:string ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:StixObject
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_type ;
+				owl:hasValue "campaign"^^xsd:string ;
+			]
+		) ;
+	] ;
 	.
 
 gist:CompetitorThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:ThreatActor
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_threat_actor_types ;
+				owl:hasValue "competitor"^^xsd:string ;
+			]
+		) ;
+	] ;
 	skos:definition """An organization that competes in the same economic marketplace.
 
 The goal of a competitor is to gain an advantage in business with respect to the rival organization it targets. It usually does this by copying intellectual property, trade secrets, acquisition strategies, or other technical or business data from a rival organization with the intention of using the data to bolster its own assets and market position."""^^xsd:string ;
@@ -82,14 +132,39 @@ gist:ConfigurationVulnerability
 
 gist:CourseOfAction
 	a owl:Class ;
-	rdfs:subClassOf gist:TaskTemplate ;
+	rdfs:subClassOf
+		gist:StixDomainObject ,
+		gist:TaskTemplate
+		;
 	rdfs:label "Course Of Action"^^xsd:string ;
 	rdfs:comment "Note: The Course of Action object in STIX 2.1 is a stub. It is included to support basic use cases (such as sharing prose courses of action) but does not support the ability to represent automated courses of action or contain properties to represent metadata about courses of action. Future STIX 2 releases will expand it to include these capabilities. A Course of Action is an action taken either to prevent an attack or to respond to an attack that is in progress. It may describe technical, automatable responses (applying patches, reconfiguring firewalls) but can also describe higher level actions like employee training or policy changes. For example, a course of action to mitigate a vulnerability could describe applying the patch that fixes it. The Course of Action SDO contains a textual description of the action; a reserved action property also serves as a placeholder for future inclusion of machine automatable courses of action."^^xsd:string ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:StixObject
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_type ;
+				owl:hasValue "course-of-action"^^xsd:string ;
+			]
+		) ;
+	] ;
 	.
 
 gist:CrimeSyndicateThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:ThreatActor
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_threat_actor_types ;
+				owl:hasValue "crime-syndicate"^^xsd:string ;
+			]
+		) ;
+	] ;
 	skos:definition """An enterprise organized to conduct significant, large-scale criminal activity for profit.
 
 Crime syndicates, also known as organized crime, are generally large, well-resourced groups that operate to create profit from all types of crime."""^^xsd:string ;
@@ -99,6 +174,17 @@ Crime syndicates, also known as organized crime, are generally large, well-resou
 gist:CriminalThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:ThreatActor
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_threat_actor_types ;
+				owl:hasValue "criminal"^^xsd:string ;
+			]
+		) ;
+	] ;
 	skos:definition """Individual who commits computer crimes, often for personal financial gain and often involves the theft of something valuable.
 
 Intellectual property theft, extortion via ransomware, and physical destruction are common examples. A criminal as defined here refers to those acting individually or in very small or informal groups. For sophisticated organized criminal activity, see the crime syndicate descriptor."""^^xsd:string ;
@@ -130,6 +216,17 @@ gist:GroupingContext
 gist:HackerThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:ThreatActor
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_threat_actor_types ;
+				owl:hasValue "hacker"^^xsd:string ;
+			]
+		) ;
+	] ;
 	skos:definition """An individual that tends to break into networks for the thrill or the challenge of doing so.
 
 Hackers may use advanced skills or simple attack scripts they have downloaded."""^^xsd:string ;
@@ -143,21 +240,35 @@ gist:HashingAlgorithm
 
 gist:Identity
 	a owl:Class ;
+	rdfs:subClassOf gist:StixDomainObject ;
 	rdfs:label "Identity"^^xsd:string ;
 	rdfs:comment "Identities can represent actual individuals, organizations, or groups (e.g., ACME, Inc.) as well as classes of individuals, organizations, systems or groups (e.g., the finance sector). The Identity SDO can capture basic identifying information, contact information, and the sectors that the Identity belongs to. Identity is used in STIX to represent, among other things, targets of attacks, information sources, object creators, and threat actor identities."^^xsd:string ;
-	owl:equivalentClass [
-		a owl:Class ;
-		owl:intersectionOf (
-			obo:BFO_0000004
-			[
-				a owl:Class ;
-				owl:unionOf (
-					gist:Organization
-					gist:Person
-				) ;
-			]
-		) ;
-	] ;
+	owl:equivalentClass
+		[
+			a owl:Class ;
+			owl:intersectionOf (
+				obo:BFO_0000004
+				[
+					a owl:Class ;
+					owl:unionOf (
+						gist:Organization
+						gist:Person
+					) ;
+				]
+			) ;
+		] ,
+		[
+			a owl:Class ;
+			owl:intersectionOf (
+				gist:StixObject
+				[
+					a owl:Restriction ;
+					owl:onProperty gist:stix_type ;
+					owl:hasValue "identity"^^xsd:string ;
+				]
+			) ;
+		]
+		;
 	.
 
 gist:IdentityClass
@@ -206,15 +317,37 @@ gist:InfrastructureType
 gist:InsiderAccidentalThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:ThreatActor
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_threat_actor_types ;
+				owl:hasValue "insider-accidental"^^xsd:string ;
+			]
+		) ;
+	] ;
 	skos:definition '''A non-hostile insider who unintentionally exposes the organization to harm.
 
 "Insider" in this context includes any person extended internal trust, such as regular employees, contractors, consultants, and temporary workers.'''^^xsd:string ;
-	skos:prefLabel "Inseder Accidental Threat Actor"^^xsd:string ;
+	skos:prefLabel "Insider Accidental Threat Actor"^^xsd:string ;
 	.
 
 gist:InsiderDisgruntledThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:ThreatActor
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_threat_actor_types ;
+				owl:hasValue "insider-disgruntled"^^xsd:string ;
+			]
+		) ;
+	] ;
 	skos:definition '''Current or former insiders who seek revengeful and harmful retaliation for perceived wrongs.
 
 "Insider" in this context includes any person extended internal trust, such as regular employees, contractors, consultants, and temporary workers.
@@ -225,9 +358,23 @@ Disgruntled threat actors may have extensive knowledge that can be leveraged whe
 
 gist:IntrusionSet
 	a owl:Class ;
-	rdfs:subClassOf gist:TaskTemplate ;
+	rdfs:subClassOf
+		gist:StixDomainObject ,
+		gist:TaskTemplate
+		;
 	rdfs:label "Intrusion Set"^^xsd:string ;
 	rdfs:comment "An Intrusion Set is a grouped set of adversarial behaviors and resources with common properties that is believed to be orchestrated by a single organization. An Intrusion Set may capture multiple Campaigns or other activities that are all tied together by shared attributes indicating a commonly known or unknown Threat Actor. New activity can be attributed to an Intrusion Set even if the Threat Actors behind the attack are not known. Threat Actors can move from supporting one Intrusion Set to supporting another, or they may support multiple Intrusion Sets. Where a Campaign is a set of attacks over a period of time against a specific set of targets to achieve some objective, an Intrusion Set is the entire attack package and may be used over a very long period of time in multiple Campaigns to achieve potentially multiple purposes. While sometimes an Intrusion Set is not active, or changes focus, it is usually difficult to know if it has truly disappeared or ended. Analysts may have varying level of fidelity on attributing an Intrusion Set back to Threat Actors and may be able to only attribute it back to a nation state or perhaps back to an organization within that nation state."^^xsd:string ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:StixObject
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_type ;
+				owl:hasValue "intrusion-set"^^xsd:string ;
+			]
+		) ;
+	] ;
 	.
 
 gist:Location
@@ -239,9 +386,23 @@ gist:Location
 
 gist:Malware
 	a owl:Class ;
-	rdfs:subClassOf gist:Software ;
+	rdfs:subClassOf
+		gist:Software ,
+		gist:StixDomainObject
+		;
 	rdfs:label "Malware"^^xsd:string ;
 	rdfs:comment "STIX Definition: Malware is a type of TTP that represents malicious code. It generally refers to a program that is inserted into a system, usually covertly. The intent is to compromise the confidentiality, integrity, or availability of the victim's data, applications, or operating system (OS) or otherwise annoy or disrupt the victim. The Malware SDO characterizes, identifies, and categorizes malware instances and families from data that may be derived from analysis. This SDO captures detailed information about how the malware works and what it does. This SDO captures contextual data relevant to sharing Malware data without requiring the full analysis provided by the Malware Analysis SDO. The Indicator SDO provides intelligence producers with the ability to define, using the STIX Pattern Grammar in a standard way to identify and detect behaviors associated with malicious activities. Although the Malware SDO provides vital intelligence on a specific instance or malware family, it does not provide a standard grammar that the Indicator SDO provides to identify those properties in security detection systems designed to process the STIX Pattern grammar. We strongly encourage the use of STIX Indicators for the detection of actual malware, due to its use of the STIX Patterning language and the clear semantics that it provides. To minimize the risk of a consumer compromising their system in parsing malware samples, producers SHOULD consider sharing defanged content (archive and password-protected samples) instead of raw, base64-encoded malware samples."^^xsd:string ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:StixObject
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_type ;
+				owl:hasValue "malware"^^xsd:string ;
+			]
+		) ;
+	] ;
 	.
 
 gist:MalwareAnalysis
@@ -266,6 +427,17 @@ gist:MalwareType
 gist:NationStateThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:ThreatActor
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_threat_actor_types ;
+				owl:hasValue "nation-state"^^xsd:string ;
+			]
+		) ;
+	] ;
 	skos:definition """Entities who work for the government or military of a nation state or who work at their direction.
 
 These actors typically have access to significant support, resources, training, and tools and are capable of designing and executing very sophisticated and effective Intrusion Sets and Campaigns."""^^xsd:string ;
@@ -331,6 +503,17 @@ gist:ReportType
 gist:SensationalistThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:ThreatActor
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_threat_actor_types ;
+				owl:hasValue "sensationalist"^^xsd:string ;
+			]
+		) ;
+	] ;
 	skos:definition """Seeks to cause embarrassment and brand damage by exposing sensitive information in a manner designed to cause a public relations crisis.
 
 A sensationalist may be an individual or small group of people motivated primarily by a need for notoriety. Unlike the activist, the sensationalist generally has no political goal, and is not using bad PR to influence the target to change its behavior or business practices."""^^xsd:string ;
@@ -347,6 +530,17 @@ gist:SoftwareVulnerability
 gist:SpyThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:ThreatActor
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_threat_actor_types ;
+				owl:hasValue "spy"^^xsd:string ;
+			]
+		) ;
+	] ;
 	skos:definition """Secretly collects sensitive information for use, dissemination, or sale.
 
 Traditional spies (governmental and industrial) are part of a well-resourced intelligence organization and are capable of very sophisticated clandestine operations. However, insiders such as employees or consultants acting as spies can be just as effective and damaging, even when their activities are largely opportunistic and not part of an overall campaign."""^^xsd:string ;
@@ -371,9 +565,34 @@ gist:StixObject
 	a owl:Class ;
 	.
 
+gist:StixRelationshipObject
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:StixObject
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_type ;
+				owl:hasValue "relationship"^^xsd:string ;
+			]
+		) ;
+	] ;
+	.
+
 gist:TerroristThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:ThreatActor
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_threat_actor_types ;
+				owl:hasValue "terrorist"^^xsd:string ;
+			]
+		) ;
+	] ;
 	skos:definition """Uses extreme violence to advance a social or political agenda as well as monetary crimes to support its activities.
 
 In this context a terrorist refers to individuals who target noncombatants with violence to send a message of fear far beyond the actual events. They may act independently or as part of a terrorist organization.
@@ -390,6 +609,17 @@ gist:ThreatActor
 		;
 	rdfs:label "Threat Actor"^^xsd:string ;
 	rdfs:comment "Threat Actors are actual individuals, groups, or organizations believed to be operating with malicious intent. A Threat Actor is not an Intrusion Set but may support or be affiliated with various Intrusion Sets, groups, or organizations over time. \\n\\nThreat Actors leverage their resources, and possibly the resources of an Intrusion Set, to conduct attacks and run Campaigns against targets. \\n\\nThreat Actors can be characterized by their motives, capabilities, goals, sophistication level, past activities, resources they have access to, and their role in the organization."^^xsd:string ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:StixObject
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_type ;
+				owl:hasValue "threat-actor"^^xsd:string ;
+			]
+		) ;
+	] ;
 	.
 
 gist:ThreatActorRole
@@ -412,9 +642,23 @@ gist:ThreatActorType
 
 gist:Tool
 	a owl:Class ;
-	rdfs:subClassOf gist:Software ;
+	rdfs:subClassOf
+		gist:Software ,
+		gist:StixDomainObject
+		;
 	rdfs:label "Tool"^^xsd:string ;
 	rdfs:comment "STIX Definition:Tools are legitimate software that can be used by threat actors to perform attacks. Knowing how and when threat actors use such tools can be important for understanding how campaigns are executed. Unlike malware, these tools or software packages are often found on a system and have legitimate purposes for power users, system administrators, network administrators, or even normal users. Remote access tools (e.g., RDP) and network scanning tools (e.g., Nmap) are examples of Tools that may be used by a Threat Actor during an attack. \\n\\nThe Tool SDO characterizes the properties of these software tools and can be used as a basis for making an assertion about how a Threat Actor uses them during an attack. It contains properties to name and describe the tool, a list of Kill Chain Phases the tool can be used to carry out, and the version of the tool. \\n\\nThis SDO MUST NOT be used to characterize malware. Further, Tool MUST NOT be used to characterize tools used as part of a course of action in response to an attack."^^xsd:string ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:StixObject
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_type ;
+				owl:hasValue "tool"^^xsd:string ;
+			]
+		) ;
+	] ;
 	.
 
 gist:ToolType
@@ -425,6 +669,17 @@ gist:ToolType
 gist:UnknownThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:ThreatActor
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:stix_threat_actor_types ;
+				owl:hasValue "unknown"^^xsd:string ;
+			]
+		) ;
+	] ;
 	skos:definition "There is not enough information available to determine the type of threat actor."^^xsd:string ;
 	skos:prefLabel "Unknown Threat Actor"^^xsd:string ;
 	.
@@ -436,7 +691,7 @@ gist:Vulnerabity
 
 gist:WindowsIntegrityLevelEnum
 	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
+	rdfs:subClassOf gist:CategoryObject ;
 	.
 
 gist:WindowsPEBinaryEnum
