@@ -1,0 +1,661 @@
+@prefix gist: <https://w3id.org/semanticarts/ns/ontology/gist/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/semanticarts/ontology/sdo-properties>
+	a owl:Ontology ;
+	owl:versionInfo "2.1.0"^^xsd:string ;
+	.
+
+swrla:isRuleEnabled
+	a owl:AnnotationProperty ;
+	.
+
+gist:stix_abstract
+	a owl:DatatypeProperty ;
+	rdfs:label "abstract"@en-US ;
+	rdfs:comment "A brief summary of the note content."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_administrative_area
+	a owl:DatatypeProperty ;
+	rdfs:label "administrative_area"^^xsd:string ;
+	rdfs:comment "The state, province, or other sub-national administrative area that this Location describes. This property SHOULD contain a valid ISO 3166-2 Code [ISO3166-2]."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_aliases
+	a owl:DatatypeProperty ;
+	rdfs:label "aliases"@en-US ;
+	rdfs:comment
+		"A list of other names that this Threat Actor is believed to use."@en-US ,
+		"Alternative names used to identify this Attack Pattern."@en-US ,
+		"Alternative names used to identify this Campaign."@en-US ,
+		"Alternative names used to identify this Infrastructure."@en-US ,
+		"Alternative names used to identify this Intrusion Set."@en-US ,
+		"Alternative names used to identify this Tool."@en-US ,
+		"Alternative names used to identify this malware or malware family."@en-US
+		;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_analysis_definition_version
+	a owl:DatatypeProperty ;
+	rdfs:label
+		"analysis_definition_version"^^xsd:string ,
+		"analysis_defintion_version"@en-US
+		;
+	rdfs:comment
+		"Specifies the version of the analysis definitions used by the analysis tool (including AV tools)."@en-US ,
+		"The version of the analysis definitions used by the analysis tool (including AV tools)."@en-US
+		;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_analysis_ended
+	a owl:DatatypeProperty ;
+	rdfs:label "analysis_ended"^^xsd:string ;
+	rdfs:comment "The date and time that the malware analysis ended."@en-US ;
+	rdfs:range xsd:dateTime ;
+	.
+
+gist:stix_analysis_engine_version
+	a owl:DatatypeProperty ;
+	rdfs:label
+		"analysis_engine_version"@en-US ,
+		"analysis_engine_version"^^xsd:string
+		;
+	rdfs:comment
+		"Specifies the version of the analysis engine or product (including AV engines) that was used to perform the analysis."@en-US ,
+		"The version of the analysis engine or product (including AV engines) that was used to perform the analysis."@en-US
+		;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_analysis_sco_refs
+	a owl:ObjectProperty ;
+	rdfs:label "analysis_sco_refs"@en-US ;
+	rdfs:comment "This property contains the references to the STIX Cyber-observable Objects that were captured during the analysis process."@en-US ;
+	rdfs:range gist:StixCyberObservable ;
+	.
+
+gist:stix_analysis_sco_refs_string
+	a owl:DatatypeProperty ;
+	rdfs:label "analysis_sco_refs_string"@en-US ;
+	rdfs:comment "This property contains the references to the STIX Cyber-observable Objects that were captured during the analysis process."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_analysis_started
+	a owl:DatatypeProperty ;
+	rdfs:label "analysis_started"^^xsd:string ;
+	rdfs:comment "The date and time that the malware analysis was initiated."@en-US ;
+	rdfs:range xsd:dateTime ;
+	.
+
+gist:stix_architecture_execution_envs
+	a owl:DatatypeProperty ;
+	rdfs:label "architecture_execution_envs"@en-US ;
+	rdfs:comment "The processor architectures (e.g., x86, ARM, etc.) that the malware instance or family is executable on. The values for this property SHOULD come from the processor-architecture-ov open vocabulary."@en-US ;
+	.
+
+gist:stix_authors
+	a owl:DatatypeProperty ;
+	rdfs:label "authors"@en-US ;
+	rdfs:comment
+		"The name of the author(s) of this Opinion (e.g., the analyst(s) that created it)."@en-US ,
+		"The name of the author(s) of this note (e.g., the analyst(s) that created it)."@en-US
+		;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_building_details
+	a owl:DatatypeProperty ;
+	rdfs:label "building details"@en-US ;
+	rdfs:comment "Specifies additional details about the location within a building including things like floor, room, etc."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_capabilities
+	a owl:DatatypeProperty ;
+	rdfs:label "capabilities"@en-US ;
+	rdfs:comment "Any of the capabilities identified for the malware instance or family. The values for this property SHOULD come from the malware-capabilities-ov open vocabulary."@en-US ;
+	.
+
+gist:stix_categorizedBy
+	a owl:ObjectProperty ;
+	.
+
+gist:stix_city
+	a owl:DatatypeProperty ;
+	rdfs:label "city"@en-US ;
+	rdfs:comment "The city that this Location describes."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_configuration_version
+	a owl:DatatypeProperty ;
+	rdfs:label "configuration_version"@en-US ;
+	rdfs:comment "The named configuration of additional product configuration parameters for this analysis run. For example, when a product is configured to do full depth analysis of Window™ PE files. This configuration may have a named version and that named version can be captured in this property. This will ensure additional runs can be configured in the same way."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_contact_information
+	a owl:DatatypeProperty ;
+	rdfs:label "contact_information"@en-US ;
+	rdfs:comment "The contact information (e-mail, phone number, etc.) for this Identity. No format for this information is currently defined by this specification."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_content
+	a owl:DatatypeProperty ;
+	rdfs:label "content"@en-US ;
+	rdfs:comment "The content of the note."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_context
+	a owl:DatatypeProperty ;
+	rdfs:label "context"@en-US ;
+	rdfs:comment "A short descriptor of the particular context shared by the content referenced by the Grouping. The value for this property SHOULD come from the grouping-context-ov open vocabulary."@en-US ;
+	.
+
+gist:stix_country
+	a owl:DatatypeProperty ;
+	rdfs:label "country"@en-US ;
+	rdfs:comment "The country that this Location describes. This property SHOULD contain a valid ISO 3166-1 ALPHA-2 Code [ISO3166-1]."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_description
+	a owl:DatatypeProperty ;
+	rdfs:label
+		"description"@en-US ,
+		"description"^^xsd:string
+		;
+	rdfs:comment
+		"A description that provides more details and context about the Attack Pattern, potentially including its purpose and its key characteristics."@en-US ,
+		"A description that provides more details and context about the Campaign, potentially including its purpose and its key characteristics."@en-US ,
+		"A description that provides more details and context about the Course of Action, potentially including its purpose and its key characteristics."@en-US ,
+		"A description that provides more details and context about the Grouping, potentially including its purpose and its key characteristics."@en-US ,
+		"A description that provides more details and context about the Identity, potentially including its purpose and its key characteristics."@en-US ,
+		"A description that provides more details and context about the Incident, potentially including its purpose and its key characteristics."@en-US ,
+		"A description that provides more details and context about the Indicator, potentially including its purpose and its key characteristics. Producers SHOULD provide this property to help products and analysts understand what this Indicator actually does."@en-US ,
+		"A description that provides more details and context about the Infrastructure, potentially including its purpose, how it is being used, how it relates to other intelligence activities captured in related objects, and its key characteristics."@en-US ,
+		"A description that provides more details and context about the Intrusion Set, potentially including its purpose and its key characteristics."@en-US ,
+		"A description that provides more details and context about the Report, potentially including its purpose and its key characteristics."@en-US ,
+		"A description that provides more details and context about the Threat Actor, potentially including its purpose and its key characteristics."@en-US ,
+		"A description that provides more details and context about the Tool, potentially including its purpose and its key characteristics."@en-US ,
+		"A description that provides more details and context about the Vulnerability, potentially including its purpose and its key characteristics."@en-US ,
+		"A description that provides more details and context about the malware instance or family, potentially including its purpose and its key characteristics."@en-US ,
+		"A textual description of the Location."@en-US
+		;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_explanation
+	a owl:DatatypeProperty ;
+	rdfs:label "explanation"@en-US ;
+	rdfs:comment "An explanation of why the producer has this Opinion. For example, if an Opinion of strongly-disagree is given, the explanation can contain an explanation of why the Opinion producer disagrees and what evidence they have for their disagreement."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_first_observed
+	a owl:DatatypeProperty ;
+	rdfs:label "first_observed"@en-US ;
+	rdfs:comment "The beginning of the time window during which the data was seen."@en-US ;
+	rdfs:range xsd:dateTime ;
+	.
+
+gist:stix_first_seen
+	a owl:DatatypeProperty ;
+	rdfs:range xsd:dateTime ;
+	.
+
+gist:stix_goals
+	a owl:DatatypeProperty ;
+	rdfs:label "goals"@en-US ;
+	rdfs:comment
+		"The high-level goals of this Intrusion Set, namely, what are they trying to do. For example, they may be motivated by personal gain, but their goal is to steal credit card numbers. To do this, they may execute specific Campaigns that have detailed objectives like compromising point of sale systems at a large retailer. Another example: to gain information about latest merger and IPO information from ACME Bank."@en-US ,
+		"The high-level goals of this Threat Actor, namely, what are they trying to do. For example, they may be motivated by personal gain, but their goal is to steal credit card numbers. To do this, they may execute specific Campaigns that have detailed objectives like compromising point of sale systems at a large retailer."@en-US
+		;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_host_vm_ref
+	a owl:ObjectProperty ;
+	rdfs:label "host_vm_ref"@en-US ;
+	rdfs:comment "A description of the virtual machine environment used to host the guest operating system (if applicable) that was used for the dynamic analysis of the malware instance or family. If this value is not included in conjunction with the operating_system_ref property, this means that the dynamic analysis may have been performed on bare metal (i.e. without virtualization) or the information was redacted. The value of this property MUST be the identifier for a SCO software object."@en-US ;
+	rdfs:range gist:Software ;
+	.
+
+gist:stix_host_vm_ref_string
+	a owl:DatatypeProperty ;
+	rdfs:label "host_vm_ref_string"@en-US ;
+	rdfs:comment "A description of the virtual machine environment used to host the guest operating system (if applicable) that was used for the dynamic analysis of the malware instance or family. If this value is not included in conjunction with the operating_system_ref property, this means that the dynamic analysis may have been performed on bare metal (i.e. without virtualization) or the information was redacted. The value of this property MUST be the identifier for a SCO software object."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_identity_class
+	a owl:DatatypeProperty ;
+	rdfs:label "identity_class"@en-US ;
+	rdfs:comment "The type of entity that this Identity describes, e.g., an individual or organization. The value for this property SHOULD come from the identity-class-ov open vocabulary."@en-US ;
+	.
+
+gist:stix_implementation_languages
+	a owl:DatatypeProperty ;
+	rdfs:label "implementation_languages"@en-US ;
+	rdfs:comment "The programming language(s) used to implement the malware instance or family. The values for this property SHOULD come from the implementation-language-ov open vocabulary."@en-US ;
+	.
+
+gist:stix_indicator_types
+	a owl:DatatypeProperty ;
+	rdfs:label "indicator types"@en-US ;
+	rdfs:comment "A set of categorizations for this indicator. The values for this property SHOULD come from the indicator-type-ov open vocabulary."@en-US ;
+	.
+
+gist:stix_infrastructure_types
+	a owl:DatatypeProperty ;
+	rdfs:label "infrastructure_types"@en-US ;
+	rdfs:comment "The type of infrastructure being described. The values for this property SHOULD come from the infrastructure-type-ov open vocabulary."@en-US ;
+	.
+
+gist:stix_installed_software_refs
+	a owl:ObjectProperty ;
+	rdfs:label "installed_software_refs"@en-US ;
+	rdfs:comment "Any non-standard software installed on the operating system (specified through the operating-system value) used for the dynamic analysis of the malware instance or family. The value of this property MUST be the identifier for a SCO software object."@en-US ;
+	rdfs:range gist:Software ;
+	.
+
+gist:stix_installed_software_refs_string
+	a owl:DatatypeProperty ;
+	rdfs:label "installed_software_refs_string"@en-US ;
+	rdfs:comment "Any non-standard software installed on the operating system (specified through the operating-system value) used for the dynamic analysis of the malware instance or family. The value of this property MUST be the identifier for a SCO software object."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_is_family
+	a owl:DatatypeProperty ;
+	rdfs:label "is_family"@en-US ;
+	rdfs:comment "Specifies whether the object represents a malware family (if true) or a malware instance (if false)."@en-US ;
+	rdfs:range xsd:boolean ;
+	.
+
+gist:stix_kill_chain_phases
+	a owl:DatatypeProperty ;
+	.
+
+gist:stix_last_observed
+	a owl:DatatypeProperty ;
+	rdfs:label "last_observed"@en-US ;
+	rdfs:comment "The end of the time window during which the data was seen. This MUST be greater than or equal to the timestamp in the first_observed property."@en-US ;
+	rdfs:range xsd:dateTime ;
+	.
+
+gist:stix_last_seen
+	a owl:DatatypeProperty ;
+	rdfs:range xsd:dateTime ;
+	.
+
+gist:stix_latitude
+	a owl:DatatypeProperty ;
+	rdfs:label "latitude"@en-US ;
+	rdfs:comment "The latitude of the Location in decimal degrees. Positive numbers describe latitudes north of the equator, and negative numbers describe latitudes south of the equator. The value of this property MUST be between -90.0 and 90.0, inclusive. If the longitude property is present, this property MUST be present."@en-US ;
+	rdfs:range xsd:float ;
+	.
+
+gist:stix_longitude
+	a owl:DatatypeProperty ;
+	rdfs:label "longitude"@en-US ;
+	rdfs:comment "The longitude of the Location in decimal degrees. Positive numbers describe longitudes east of the prime meridian and negative numbers describe longitudes west of the prime meridian. The value of this property MUST be between -180.0 and 180.0, inclusive. If the latitude property is present, this property MUST be present."@en-US ;
+	rdfs:range xsd:float ;
+	.
+
+gist:stix_malware_types
+	a owl:DatatypeProperty ;
+	rdfs:label "malware_types"@en-US ;
+	rdfs:comment "A set of categorizations for the malware being described. The values for this property SHOULD come from the malware-type-ov open vocabulary."@en-US ;
+	.
+
+gist:stix_modules
+	a owl:DatatypeProperty ;
+	rdfs:label "modules"@en-US ;
+	rdfs:comment "The specific analysis modules that were used and configured in the product during this analysis run. For example, configuring a product to support analysis of Dridex."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_name
+	a owl:DatatypeProperty ;
+	rdfs:label
+		"name"@en-US ,
+		"name"^^xsd:string
+		;
+	rdfs:comment
+		"A name or characterizing text used to identify the Infrastructure."@en-US ,
+		"A name used to identify the Attack Pattern."@en-US ,
+		"A name used to identify the Campaign."@en-US ,
+		"A name used to identify the Course of Action."@en-US ,
+		"A name used to identify the Grouping."@en-US ,
+		"A name used to identify the Incident."@en-US ,
+		"A name used to identify the Indicator. Producers SHOULD provide this property to help products and analysts understand what this Indicator actually does."@en-US ,
+		"A name used to identify the Location."@en-US ,
+		"A name used to identify the Report."@en-US ,
+		"A name used to identify the Vulnerability."@en-US ,
+		"A name used to identify the malware instance or family, as specified by the producer of the SDO. For a malware family the name MUST be defined. If a name for a malware instance is not available, the SHA-256 hash value or sample's filename MAY be used instead."@en-US ,
+		"A name used to identify this Intrusion Set."@en-US ,
+		"A name used to identify this Threat Actor or Threat Actor group."@en-US ,
+		"The name of this Identity. When referring to a specific entity (e.g., an individual or organization), this property SHOULD contain the canonical name of the specific entity."@en-US ,
+		"The name used to identify the Tool."@en-US
+		;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_network_details
+	a owl:DatatypeProperty ;
+	rdfs:label "network details"@en-US ;
+	rdfs:comment "Specifies additional details about this network location including things like wiring closet, rack number, rack location, and VLANs."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_number_observed
+	a owl:DatatypeProperty ;
+	rdfs:label "number_observed"@en-US ;
+	rdfs:comment "The number of times that each Cyber-observable object represented in the objects or object_ref property was seen. If present, this MUST be an integer between 1 and 999,999,999 inclusive. If the number_observed property is greater than 1, the data contained in the objects or object_refs property was seen multiple times. In these cases, object creators MAY omit properties of the SCO (such as timestamps) that are specific to a single instance of that observed data."@en-US ;
+	rdfs:range xsd:positiveInteger ;
+	.
+
+gist:stix_object_refs
+	a owl:ObjectProperty ;
+	rdfs:range
+		gist:StixCyberObservable ,
+		gist:StixObject ,
+		gist:StixRelationshipObject
+		;
+	.
+
+gist:stix_object_refs_string
+	a owl:DatatypeProperty ;
+	rdfs:label "object_refs_string"@en-US ;
+	rdfs:comment
+		"A list of SCOs and SROs representing the observation. The object_refs MUST contain at least one SCO reference if defined. The object_refs MAY include multiple SCOs and their corresponding SROs, if those SCOs are related as part of a single observation. For example, a Network Traffic object and two IPv4 Address objects related via the src_ref and dst_ref properties can be contained in the same Observed Data because they are all related and used to characterize that single entity. This property MUST NOT be present if objects is provided."@en-US ,
+		"Specifies the STIX Objects that are referred to by this Grouping."@en-US ,
+		"Specifies the STIX Objects that are referred to by this Report."@en-US ,
+		"The STIX Objects that the Opinion is being applied to."@en-US ,
+		"The STIX Objects that the note is being applied to."@en-US
+		;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_objective
+	a owl:DatatypeProperty ;
+	rdfs:label "objective"@en-US ;
+	rdfs:comment "Specifies the Campaign's primary goal, objective, desired outcome, or intended effect — what the Threat Actor or Intrusion Set hopes to accomplish with this Campaign."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_objects
+	a owl:ObjectProperty ;
+	.
+
+gist:stix_operating_system_ref
+	a owl:ObjectProperty ;
+	rdfs:label "operating_system_ref"@en-US ;
+	rdfs:comment "The operating system used for the dynamic analysis of the malware instance or family. This applies to virtualized operating systems as well as those running on bare metal. The value of this property MUST be the identifier for a SCO software object."@en-US ;
+	rdfs:range gist:Software ;
+	.
+
+gist:stix_operating_system_ref_string
+	a owl:DatatypeProperty ;
+	rdfs:label "operating_system_ref_string"@en-US ;
+	rdfs:comment
+		"The operating system used for the dynamic analysis of the malware instance or family. This applies to virtualized operating systems as well as those running on bare metal. The value of this property MUST be the identifier for a SCO software object."@en-US ,
+		"The operating systems that the malware family or malware instance is executable on. This applies to virtualized operating systems as well as those running on bare metal. The value of this property MUST be the identifier for a SCO software object."@en-US
+		;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_operating_system_refs
+	a owl:ObjectProperty ;
+	rdfs:label "operating_system_ref"@en-US ;
+	rdfs:comment "The operating systems that the malware family or malware instance is executable on. This applies to virtualized operating systems as well as those running on bare metal. The value of this property MUST be the identifier for a SCO software object."@en-US ;
+	rdfs:range gist:Software ;
+	.
+
+gist:stix_operating_system_refs_string
+	a owl:DatatypeProperty ;
+	.
+
+gist:stix_opinion
+	a owl:DatatypeProperty ;
+	rdfs:label "opinion"@en-US ;
+	rdfs:comment "The opinion that the producer has about all of the STIX Object(s) listed in the object_refs property. The values of this property MUST come from the opinion-enum enumeration."@en-US ;
+	.
+
+gist:stix_pattern
+	a owl:DatatypeProperty ;
+	rdfs:label "pattern"@en-US ;
+	rdfs:comment "The detection pattern for this Indicator MAY be expressed as a STIX Pattern as specified in section 9 or another appropriate language such as SNORT, YARA, etc."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_pattern_type
+	a owl:DatatypeProperty ;
+	rdfs:label "pattern_type"@en-US ;
+	rdfs:comment "The pattern language used in this indicator. The value for this property SHOULD come from the pattern-type-ov open vocabulary. The value of this property MUST match the type of pattern data included in the pattern property."@en-US ;
+	.
+
+gist:stix_pattern_version
+	a owl:DatatypeProperty ;
+	rdfs:label "pattern_version"@en-US ;
+	rdfs:comment "The version of the pattern language that is used for the data in the pattern property which MUST match the type of pattern data included in the pattern property. For patterns that do not have a formal specification, the build or code version that the pattern is known to work with SHOULD be used. For the STIX Pattern language, the default value is determined by the specification version of the object. For other languages, the default value SHOULD be the latest version of the patterning language at the time of this object's creation."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_personal_motivations
+	a owl:DatatypeProperty ;
+	rdfs:label "personal_motivations"@en-US ;
+	rdfs:comment "The personal reasons, motivations, or purposes of the Threat Actor regardless of organizational goals. Personal motivation, which is independent of the organization's goals, describes what impels an individual to carry out an attack. Personal motivation may align with the organization's motivation—as is common with activists—but more often it supports personal goals. For example, an individual analyst may join a Data Miner corporation because his or her skills may align with the corporation's objectives. But the analyst most likely performs his or her daily work toward those objectives for personal reward in the form of a paycheck. The motivation of personal reward may be even stronger for Threat Actors who commit illegal acts, as it is more difficult for someone to cross that line purely for altruistic reasons. The position in the list has no significance. The values for this property SHOULD come from the attack-motivation-ov open vocabulary."@en-US ;
+	.
+
+gist:stix_postal_code
+	a owl:DatatypeProperty ;
+	rdfs:label "postal_code"^^xsd:string ;
+	rdfs:comment "The postal code for this Location."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_precision
+	a owl:DatatypeProperty ;
+	rdfs:label "precision"@en-US ;
+	rdfs:comment "Defines the precision of the coordinates specified by the latitude and longitude properties. This is measured in meters. The actual Location may be anywhere up to precision meters from the defined point. If this property is not present, then the precision is unspecified. If this property is present, the latitude and longitude properties MUST be present."@en-US ;
+	rdfs:range xsd:float ;
+	.
+
+gist:stix_primary_motivation
+	a owl:DatatypeProperty ;
+	rdfs:label "primary_motivation"@en-US ;
+	rdfs:comment
+		"The primary reason, motivation, or purpose behind this Threat Actor. The motivation is why the Threat Actor wishes to achieve the goal (what they are trying to achieve). For example, a Threat Actor with a goal to disrupt the finance sector in a country might be motivated by ideological hatred of capitalism. The value for this property SHOULD come from the attack-motivation-ov open vocabulary."@en-US ,
+		"The time that this Intrusion Set was first seen. A summary property of data from sightings and other data that may or may not be available in STIX. If new sightings are received that are earlier than the first seen timestamp, the object may be updated to account for the new data."@en-US
+		;
+	.
+
+gist:stix_product
+	a owl:DatatypeProperty ;
+	rdfs:label "product"@en-US ;
+	rdfs:comment 'The name of the analysis engine or product that was used. Product names SHOULD be all lowercase with words separated by a dash "-". For cases where the name of a product cannot be specified, a value of "anonymized" MUST be used.'@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_published
+	a owl:DatatypeProperty ;
+	rdfs:label "published"@en-US ;
+	rdfs:comment "The date that this Report object was officially published by the creator of this report. The publication date (public release, legal release, etc.) may be different than the date the report was created or shared internally (the date in the created property)."@en-US ;
+	rdfs:range xsd:dateTime ;
+	.
+
+gist:stix_region
+	a owl:DatatypeProperty ;
+	rdfs:label "region"@en-US ;
+	rdfs:comment "The region that this Location describes. The value for this property SHOULD come from the region-ov open vocabulary."@en-US ;
+	.
+
+gist:stix_report_types
+	a owl:DatatypeProperty ;
+	rdfs:label "report_types"@en-US ;
+	rdfs:comment "The primary type(s) of content found in this report. The values for this property SHOULD come from the report-type-ov open vocabulary."@en-US ;
+	.
+
+gist:stix_resource_level
+	a owl:DatatypeProperty ;
+	rdfs:label "resource_level"@en-US ;
+	rdfs:comment
+		"The organizational level at which this Threat Actor typically works, which in turn determines the resources available to this Threat Actor for use in an attack. This attribute is linked to the sophistication property — a specific resource level implies that the Threat Actor has access to at least a specific sophistication level. The value for this property SHOULD come from the attack-resource-level-ov open vocabulary."@en-US ,
+		"This property specifies the organizational level at which this Intrusion Set typically works, which in turn determines the resources available to this Intrusion Set for use in an attack. The value for this property SHOULD come from the attack-resource-level-ov  open vocabulary."@en-US
+		;
+	.
+
+gist:stix_result
+	a owl:DatatypeProperty ;
+	rdfs:label "result"@en-US ;
+	rdfs:comment "The classification result as determined by the scanner or tool analysis process. The value for this property SHOULD come from the malware-result-ov open vocabulary."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_result_name
+	a owl:DatatypeProperty ;
+	rdfs:label "result_name"@en-US ;
+	rdfs:comment "The classification result or name assigned to the malware instance by the scanner tool."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_roles
+	a owl:DatatypeProperty ;
+	rdfs:label "roles"@en-US ;
+	rdfs:comment
+		"A list of roles the Threat Actor plays. The values for this property SHOULD come from the threat-actor-role-ov open vocabulary."@en-US ,
+		"The list of roles that this Identity performs (e.g., CEO, Domain Administrators, Doctors, Hospital, or Retailer). No open vocabulary is yet defined for this property."@en-US
+		;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_sample_ref
+	a owl:ObjectProperty ;
+	rdfs:label "sample_ref"@en-US ;
+	rdfs:comment "This property contains the reference to the SCO file, network traffic or artifact object that this malware analysis was performed against. Caution should be observed when creating an SRO between Malware and Malware Analysis objects when the Malware sample_refs property does not contain the SCO that is included in the Malware Analysis sample_ref property. Note, this property can also contain a reference to an SCO which is not associated with Malware (i.e., some SCO which was scanned and found to be benign.)"@en-US ;
+	rdfs:range gist:StixCyberObservable ;
+	.
+
+gist:stix_sample_ref_string
+	a owl:DatatypeProperty ;
+	rdfs:label "sample_ref_string"@en-US ;
+	rdfs:comment "This property contains the reference to the SCO file, network traffic or artifact object that this malware analysis was performed against. Caution should be observed when creating an SRO between Malware and Malware Analysis objects when the Malware sample_refs property does not contain the SCO that is included in the Malware Analysis sample_ref property. Note, this property can also contain a reference to an SCO which is not associated with Malware (i.e., some SCO which was scanned and found to be benign.)"@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_sample_refs
+	a owl:ObjectProperty ;
+	rdfs:label "sample_refs"@en-US ;
+	rdfs:comment "The sample_refs property specifies a list of identifiers of the SCO file or artifact objects associated with this malware instance(s) or family. If is_family is false, then all samples listed in sample_refs MUST refer to the same binary data."@en-US ;
+	rdfs:range [
+		a owl:Class ;
+		owl:unionOf (
+			gist:Artifact
+			gist:File
+		) ;
+	] ;
+	.
+
+gist:stix_sample_refs_string
+	a owl:DatatypeProperty ;
+	rdfs:label "sample_refs_string"@en-US ;
+	rdfs:comment "The sample_refs property specifies a list of identifiers of the SCO file or artifact objects associated with this malware instance(s) or family. If is_family is false, then all samples listed in sample_refs MUST refer to the same binary data."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_secondary_motivations
+	a owl:DatatypeProperty ;
+	rdfs:label "secondary_motivations"@en-US ;
+	rdfs:comment
+		"The time that this Intrusion Set was first seen. A summary property of data from sightings and other data that may or may not be available in STIX. If new sightings are received that are earlier than the first seen timestamp, the object may be updated to account for the new data."@en-US ,
+		"This property specifies the secondary reasons, motivations, or purposes behind this Threat Actor. These motivations can exist as an equal or near-equal cause to the primary motivation. However, it does not replace or necessarily magnify the primary motivation, but it might indicate additional context. The position in the list has no significance. The value for this property SHOULD come from the attack-motivation-ov open vocabulary."@en-US
+		;
+	.
+
+gist:stix_sectors
+	a owl:DatatypeProperty ;
+	rdfs:label "sectors"@en-US ;
+	rdfs:comment "The list of industry sectors that this Identity belongs to. The values for this property SHOULD come from the industry-sector-ov open vocabulary."@en-US ;
+	.
+
+gist:stix_sophistication
+	a owl:DatatypeProperty ;
+	rdfs:label "sophistication"@en-US ;
+	rdfs:comment "The skill, specific knowledge, special training, or expertise a Threat Actor must have to perform the attack. The value for this property SHOULD come from the threat-actor-sophistication-ov open vocabulary."@en-US ;
+	.
+
+gist:stix_street_address
+	a owl:DatatypeProperty ;
+	rdfs:label "street_address"@en-US ;
+	rdfs:comment "The street address that this Location describes. This property includes all aspects or parts of the street address. For example, some addresses may have multiple lines including a mailstop or apartment number."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_submitted
+	a owl:DatatypeProperty ;
+	rdfs:label "submitted"^^xsd:string ;
+	rdfs:comment "The date and time that the malware was first submitted for scanning or analysis. This value will stay constant while the scanned date can change. For example, when Malware was submitted to a virus analysis tool."@en-US ;
+	rdfs:range xsd:dateTime ;
+	.
+
+gist:stix_threat_actor_types
+	a owl:DatatypeProperty ;
+	rdfs:label "threat_actor_types"@en-US ;
+	rdfs:comment "The type(s) of this threat actor. The values for this property SHOULD come from the threat-actor-type-ov open vocabulary."@en-US ;
+	.
+
+gist:stix_tool_types
+	a owl:DatatypeProperty ;
+	rdfs:label "tool_types"@en-US ;
+	rdfs:comment "The kind(s) of tool(s) being described. The values for this property SHOULD come from the tool-type-ov open vocabulary."@en-US ;
+	.
+
+gist:stix_tool_version
+	a owl:DatatypeProperty ;
+	rdfs:label "tool_version"@en-US ;
+	rdfs:comment "The version identifier associated with the Tool."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_type
+	a owl:DatatypeProperty ;
+	.
+
+gist:stix_valid_from
+	a owl:DatatypeProperty ;
+	rdfs:label "valid_from"@en-US ;
+	rdfs:comment "The time from which this Indicator is considered a valid indicator of the behaviors it is related or represents."@en-US ;
+	rdfs:range xsd:dateTime ;
+	.
+
+gist:stix_valid_until
+	a owl:DatatypeProperty ;
+	rdfs:label "valid_until"@en-US ;
+	rdfs:comment "The time at which this Indicator should no longer be considered a valid indicator of the behaviors it is related to or represents. If the valid_until property is omitted, then there is no constraint on the latest time for which the Indicator is valid. This MUST be greater than the timestamp in the valid_from property."@en-US ;
+	rdfs:range xsd:dateTime ;
+	.
+
+gist:stix_version
+	a owl:DatatypeProperty ;
+	rdfs:label "version"@en-US ;
+	rdfs:comment "The version of the analysis product that was used to perform the analysis."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
