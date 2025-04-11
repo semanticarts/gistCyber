@@ -15,98 +15,1134 @@
 	owl:versionInfo "2.1.0"^^xsd:string ;
 	.
 
-gist:_ThreatActorRole-Agent
-	a gist:ThreatActorRoleVocabulary ;
-	gist:containedText "agent"^^xsd:string ;
+skos:definition
+	a owl:AnnotationProperty ;
 	.
 
-gist:_ThreatActorRole-Director
-	a gist:ThreatActorRoleVocabulary ;
-	gist:containedText "director"^^xsd:string ;
+skos:prefLabel
+	a owl:AnnotationProperty ;
 	.
 
-gist:_ThreatActorRole-Independent
-	a gist:ThreatActorRoleVocabulary ;
-	gist:containedText "independent"^^xsd:string ;
+gist:AccountType
+	a owl:Class ;
 	.
 
-gist:_ThreatActorRole-Infrastructure-Architect
-	a gist:ThreatActorRoleVocabulary ;
-	gist:containedText "infrastructure-architect"^^xsd:string ;
+gist:AttackMotivation
+	a owl:Class ;
 	.
 
-gist:_ThreatActorRole-Infrastructure-Operator
-	a gist:ThreatActorRoleVocabulary ;
-	gist:containedText "infrastructure-operator"^^xsd:string ;
+gist:AttackResourceLevel
+	a owl:Class ;
 	.
 
-gist:_ThreatActorRole-Malware-Author
-	a gist:ThreatActorRoleVocabulary ;
-	gist:containedText "malware-author"^^xsd:string ;
+gist:EncryptionAlgorithm
+	a owl:Class ;
 	.
 
-gist:_ThreatActorRole-Sponsor
-	a gist:ThreatActorRoleVocabulary ;
-	gist:containedText "sponsor"^^xsd:string ;
+gist:ExtensionTypes
+	a owl:Class ;
 	.
 
-gist:_ThreatActorType-Activist
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "activist"^^xsd:string ;
+gist:GroupingContext
+	a owl:Class ;
 	.
 
-gist:_ThreatActorType-Competitor
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "competitor"^^xsd:string ;
+gist:HashingAlgorithm
+	a owl:Class ;
 	.
 
-gist:_ThreatActorType-CrimeSyndicate
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "crime-syndicate"^^xsd:string ;
+gist:IdentityClass
+	a owl:Class ;
 	.
 
-gist:_ThreatActorType-Criminal
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "criminal"^^xsd:string ;
+gist:ImplementationLanguage
+	a owl:Class ;
 	.
 
-gist:_ThreatActorType-Hacker
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "hacker"^^xsd:string ;
+gist:IndicatorType
+	a owl:Class ;
 	.
 
-gist:_ThreatActorType-Insider-Accidental
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "insider-accidental"^^xsd:string ;
+gist:InfrastructureType
+	a owl:Class ;
 	.
 
-gist:_ThreatActorType-Insider-Disgruntaled
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "insider-disgruntaled"^^xsd:string ;
+gist:MalwareResult
+	a owl:Class ;
 	.
 
-gist:_ThreatActorType-Nation-State
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "nation-state"^^xsd:string ;
+gist:ThreatActorRole
+	a owl:Class ;
 	.
 
-gist:_ThreatActorType-Sensationalist
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "sensationalist"^^xsd:string ;
+gist:ThreatActorSophistication
+	a owl:Class ;
 	.
 
-gist:_ThreatActorType-Spy
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "spy"^^xsd:string ;
+gist:ThreatActorType
+	a owl:Class ;
 	.
 
-gist:_ThreatActorType-Terrorist
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "terrorist"^^xsd:string ;
+gist:_AccountType_Facebook
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies a Facebook account"""^^xsd:string ;
+	skos:prefLabel "facebook"^^xsd:string ;
 	.
 
-gist:_ThreatActorType-Unknown
-	a gist:ThreatActorTypeVocabulary ;
-	gist:containedText "unknown"^^xsd:string ;
+gist:_AccountType_LDAP
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies an LDAP account"""^^xsd:string ;
+	skos:prefLabel "ldap"^^xsd:string ;
+	.
+
+gist:_AccountType_NIS
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies an NIS account"""^^xsd:string ;
+	skos:prefLabel "nis"^^xsd:string ;
+	.
+
+gist:_AccountType_OpenID
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies an OpenID account"""^^xsd:string ;
+	skos:prefLabel "openid"^^xsd:string ;
+	.
+
+gist:_AccountType_Radius
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies a RADIUS account"""^^xsd:string ;
+	skos:prefLabel "radius"^^xsd:string ;
+	.
+
+gist:_AccountType_Skype
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies a Skype account"""^^xsd:string ;
+	skos:prefLabel "skype"^^xsd:string ;
+	.
+
+gist:_AccountType_Tacacs
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies a TACACS account"""^^xsd:string ;
+	skos:prefLabel "tacacs"^^xsd:string ;
+	.
+
+gist:_AccountType_Twitter
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies a Twitter account"""^^xsd:string ;
+	skos:prefLabel "twitter"^^xsd:string ;
+	.
+
+gist:_AccountType_Unix
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies a POSIX account"""^^xsd:string ;
+	skos:prefLabel "unix"^^xsd:string ;
+	.
+
+gist:_AccountType_Windows-Domain
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies a Windows Domain account"""^^xsd:string ;
+	skos:prefLabel "windows-domain"^^xsd:string ;
+	.
+
+gist:_AccountType_Windows_Local
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies a Windows Local account"""^^xsd:string ;
+	skos:prefLabel "windows-local"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Accidental
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+A non-hostile actor whose benevolent or harmless intent inadvertently causes harm.
+
+ 
+
+For example, a well-meaning and dedicated employee who through distraction or poor training unintentionally causes harm to his or her organization."""^^xsd:string ;
+	skos:prefLabel "accidental"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Coercion
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+Being forced to act on someone else's behalf.
+
+ 
+
+Adversaries who are motivated by coercion are often forced through intimidation or blackmail to act illegally for someone else’s benefit. Unlike the other motivations, a coerced person does not act for personal gain, but out of fear of incurring a loss."""^^xsd:string ;
+	skos:prefLabel "coercion"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Dominance
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+A desire to assert superiority over someone or something else.
+
+ 
+
+Adversaries who are seeking dominance over a target are focused on using their power to force their target into submission or irrelevance. Dominance may be found with ideology in some state-sponsored attacks and with notoriety in some cyber vandalism-based attacks."""^^xsd:string ;
+	skos:prefLabel "dominance"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Ideology
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+A passion to express a set of ideas, beliefs, and values that may shape and drive harmful and illegal acts.
+
+ 
+
+Adversaries who act for ideological reasons (e.g., political, religious, human rights, environmental, desire to cause chaos/anarchy, etc.) are not usually motivated primarily by the desire for profit; they are acting on their own sense of morality, justice, or political loyalty.
+
+ 
+
+For example, an activist group may sabotage a company’s equipment because they believe the company is harming the environment."""^^xsd:string ;
+	skos:prefLabel "ideology"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Notoriety
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+Seeking prestige or to become well known through some activity.
+
+ 
+
+Adversaries motivated by notoriety are often seeking either personal validation or respect within a community and staying covert is not a priority. In fact, one of the main goals is to garner the respect of their target audience."""^^xsd:string ;
+	skos:prefLabel "notoriety"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Organizational-Gain
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+Seeking advantage over a competing organization, including a military organization.
+
+ 
+
+Adversaries motivated by increased profit or other gains through an unfairly obtained competitive advantage are often seeking theft of intellectual property, business processes, or supply chain agreements and thus accelerating their position in a market or capability."""^^xsd:string ;
+	skos:prefLabel "oranizational-gain"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Personal-Gain
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+The desire to improve one’s own financial status.
+
+ 
+
+Adversaries motivated by a selfish desire for personal gain are often out for gains that come from financial fraud, hacking for hire, or intellectual property theft.
+
+ 
+
+While a Threat Actor or Intrusion Set may be seeking personal gain, this does not mean they are acting alone. Individuals can band together solely to maximize their own personal profits."""^^xsd:string ;
+	skos:prefLabel "personal-gain"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Personal-Satisfaction
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+A desire to satisfy a strictly personal goal, including curiosity, thrill-seeking, amusement, etc.
+
+ 
+
+Threat Actors or Intrusion Set driven by personal satisfaction may incidentally receive some other gain from their actions, such as a profit, but their primary motivation is to gratify a personal, emotional need. Individuals can band together with others toward a mutual, but not necessarily organizational, objective."""^^xsd:string ;
+	skos:prefLabel "personal-satisfaction"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Revenge
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+A desire to avenge perceived wrongs through harmful actions such as sabotage, violence, theft, fraud, or embarrassing certain individuals or the organization.
+
+ 
+
+A disgruntled Threat Actor or Intrusion Set seeking revenge can include current or former employees, who may have extensive knowledge to leverage when conducting attacks. Individuals can band together with others if the individual believes that doing so will enable them to cause more harm."""^^xsd:string ;
+	skos:prefLabel "revenge"^^xsd:string ;
+	.
+
+gist:_AttackMotivation_Unpredictable
+	a gist:AttackMotivation ;
+	skos:definition """STIX 2.1 description:
+Acting without identifiable reason or purpose and creating unpredictable events.
+
+ 
+
+Unpredictable is not a miscellaneous or default category. Unpredictable means a truly random and likely bizarre event, which seems to have no logical purpose to the victims."""^^xsd:string ;
+	skos:prefLabel "unpredictable"^^xsd:string ;
+	.
+
+gist:_AttackResourceLevel_Club
+	a gist:AttackResourceLevel ;
+	skos:definition """STIX 2.1 description:
+Members interact on a social and volunteer basis, often with little personal interest in the specific target. An example might be a core group of unrelated activists who regularly exchange tips on a particular blog. Group persists long term."""^^xsd:string ;
+	skos:prefLabel "club"^^xsd:string ;
+	.
+
+gist:_AttackResourceLevel_Contest
+	a gist:AttackResourceLevel ;
+	skos:definition """STIX 2.1 description:
+A short-lived and perhaps anonymous interaction that concludes when the participants have achieved a single goal. For example, people who break into systems just for thrills or prestige may hold a contest to see who can break into a specific target first. It also includes announced \"operations\" to achieve a specific goal, such as the original \"OpIsrael\" call for volunteers to disrupt all of Israel's Internet functions for a day."""^^xsd:string ;
+	skos:prefLabel "contest"^^xsd:string ;
+	.
+
+gist:_AttackResourceLevel_Government
+	a gist:AttackResourceLevel ;
+	skos:definition """STIX 2.1 description:
+Controls public assets and functions within a jurisdiction; very well resourced and persists long term."""^^xsd:string ;
+	skos:prefLabel "government"^^xsd:string ;
+	.
+
+gist:_AttackResourceLevel_Individual
+	a gist:AttackResourceLevel ;
+	skos:definition """STIX 2.1 description:
+Resources limited to the average individual; Threat Actor acts independently."""^^xsd:string ;
+	skos:prefLabel "individual"^^xsd:string ;
+	.
+
+gist:_AttackResourceLevel_Organization
+	a gist:AttackResourceLevel ;
+	skos:definition """STIX 2.1 description:
+Larger and better resourced than a team; typically, a company or crime syndicate. Usually operates in multiple geographic areas and persists long term."""^^xsd:string ;
+	skos:prefLabel "organization"^^xsd:string ;
+	.
+
+gist:_AttackResourceLevel_Team
+	a gist:AttackResourceLevel ;
+	skos:definition """STIX 2.1 description:
+A formally organized group with a leader, typically motivated by a specific goal and organized around that goal. Group persists long term and typically operates within a single geography."""^^xsd:string ;
+	skos:prefLabel "team"^^xsd:string ;
+	.
+
+gist:_EncryptionAlgorithm_AES_256_GCM
+	a gist:EncryptionAlgorithm ;
+	skos:definition """STIX 2.1 description:
+Specifies the AES-256-GCM cipher, as defined in [NIST SP800-38D]"""^^xsd:string ;
+	skos:prefLabel "AES-256-GCM"^^xsd:string ;
+	.
+
+gist:_EncryptionAlgorithm_ChaCha20-Poly1305
+	a gist:EncryptionAlgorithm ;
+	skos:definition """STIX 2.1 description:
+Specifies the ChaCha20-Poly1305 stream cipher, as defined in [RFC7539]."""^^xsd:string ;
+	skos:prefLabel "ChaCha20-Poly1305"^^xsd:string ;
+	.
+
+gist:_EncryptionAlgorithm_Mime-Type-Indicated
+	a gist:EncryptionAlgorithm ;
+	skos:definition """STIX 2.1 description:
+The encryption algorithm is self-defined by the artifact's data. The specified mime-type tells you which format it is, e.g., Word Doc or GPG. This is intended for formats like Zip files and Word files which take a simple password, or GPG armored files that contain the key blob along with the file."""^^xsd:string ;
+	skos:prefLabel "mime-type-indicated"^^xsd:string ;
+	.
+
+gist:_ExtensionTypes_New-SCO
+	a gist:ExtensionTypes ;
+	skos:definition """STIX 2.1 description:
+Specifies that the Extension includes a new SCO"""^^xsd:string ;
+	skos:prefLabel "new-sco"^^xsd:string ;
+	.
+
+gist:_ExtensionTypes_New-SDO
+	a gist:ExtensionTypes ;
+	skos:definition """STIX 2.1 description:
+Specifies that the Extension includes a new SDO"""^^xsd:string ;
+	skos:prefLabel "new-sdo"^^xsd:string ;
+	.
+
+gist:_ExtensionTypes_New-SRO
+	a gist:ExtensionTypes ;
+	skos:definition """STIX 2.1 description:
+Specifies that the Extension includes a new SRO"""^^xsd:string ;
+	skos:prefLabel "new-sro"^^xsd:string ;
+	.
+
+gist:_ExtensionTypes_Property-Extension
+	a gist:ExtensionTypes ;
+	skos:definition """STIX 2.1 description:
+Specifies that the Extension includes additional properties for a given STIX Object."""^^xsd:string ;
+	skos:prefLabel "property-extension"^^xsd:string ;
+	.
+
+gist:_ExtensionTypes_Toplevel-Property-Extension
+	a gist:ExtensionTypes ;
+	skos:definition """STIX 2.1 description:
+Specifies that the Extension includes additional properties for a given STIX Object at the top-level. Organizations are encouraged to use the property-extension instead of this extension type."""^^xsd:string ;
+	skos:prefLabel "toplevel-property-extension"^^xsd:string ;
+	.
+
+gist:_GroupingContext_Malware-Analysis
+	a gist:GroupingContext ;
+	skos:definition """STIX 2.1 description:
+A set of STIX content related to a particular malware instance or family."""^^xsd:string ;
+	skos:prefLabel "malware-analysis"^^xsd:string ;
+	.
+
+gist:_GroupingContext_Suspicious-Activity
+	a gist:GroupingContext ;
+	skos:definition """STIX 2.1 description:
+A set of STIX content related to a particular suspicious activity event."""^^xsd:string ;
+	skos:prefLabel "suspicious-activity"^^xsd:string ;
+	.
+
+gist:_GroupingContext_Unspecified
+	a gist:GroupingContext ;
+	skos:definition """STIX 2.1 description:
+A set of STIX content contextually related but without any precise characterization of the contextual relationship between the objects."""^^xsd:string ;
+	skos:prefLabel "unspecified"^^xsd:string ;
+	.
+
+gist:_HashingAlgorithm_MD5
+	a gist:HashingAlgorithm ;
+	skos:definition """STIX 2.1 description:
+Specifies the MD5 message digest algorithm. The corresponding hash string for this value MUST be a valid MD5 message digest as defined in [RFC1321]."""^^xsd:string ;
+	skos:prefLabel "MD5"^^xsd:string ;
+	.
+
+gist:_HashingAlgorithm_SHA-1
+	a gist:HashingAlgorithm ;
+	skos:definition """STIX 2.1 description:
+Specifies the SHA­-1 (secure-­hash algorithm 1) cryptographic hash function. The corresponding hash string for this value MUST be a valid SHA-1 message digest as defined in [RFC3174]."""^^xsd:string ;
+	skos:prefLabel "SHA-1"^^xsd:string ;
+	.
+
+gist:_HashingAlgorithm_SHA-256
+	a gist:HashingAlgorithm ;
+	skos:definition """STIX 2.1 description:
+Specifies the SHA-­256 cryptographic hash function (part of the SHA­2 family). The corresponding hash string for this value MUST be a valid SHA-256 message digest as defined in [RFC6234]."""^^xsd:string ;
+	skos:prefLabel "SHA-256"^^xsd:string ;
+	.
+
+gist:_HashingAlgorithm_SHA-512
+	a gist:HashingAlgorithm ;
+	skos:definition """STIX 2.1 description:
+Specifies the SHA-­512 cryptographic hash function (part of the SHA­2 family). The corresponding hash string for this value MUST be a valid SHA-512 message digest as defined in [RFC6234]."""^^xsd:string ;
+	skos:prefLabel "SHA-512"^^xsd:string ;
+	.
+
+gist:_HashingAlgorithm_SHA3-256
+	a gist:HashingAlgorithm ;
+	skos:definition """STIX 2.1 description:
+Specifies the SHA3-256 cryptographic hash function. The corresponding hash string for this value MUST be a valid SHA3-256 message digest as defined in [FIPS202]."""^^xsd:string ;
+	skos:prefLabel "SHA3-256"^^xsd:string ;
+	.
+
+gist:_HashingAlgorithm_SHA3-512
+	a gist:HashingAlgorithm ;
+	skos:definition """STIX 2.1 description:
+Specifies the SHA3-512 cryptographic hash function. The corresponding hash string for this value MUST be a valid SHA3-512 message digest as defined in [FIPS202]."""^^xsd:string ;
+	skos:prefLabel "SHA3-512"^^xsd:string ;
+	.
+
+gist:_HashingAlgorithm_SSDEEP
+	a gist:HashingAlgorithm ;
+	skos:definition """STIX 2.1 description:
+Specifies the ssdeep fuzzy hashing algorithm. The corresponding hash string for this value MUST be a valid piecewise hash as defined in the [SSDEEP] specification."""^^xsd:string ;
+	skos:prefLabel "SSDEEP"^^xsd:string ;
+	.
+
+gist:_HashingAlgorithm_TLSH
+	a gist:HashingAlgorithm ;
+	skos:definition """STIX 2.1 description:
+Specifies the TLSH fuzzy hashing algorithm. The corresponding hash string for this value MUST be a valid 35 byte long hash as defined in the [TLSH] specification."""^^xsd:string ;
+	skos:prefLabel "TLSH"^^xsd:string ;
+	.
+
+gist:_IdentityClass_Class
+	a gist:IdentityClass ;
+	skos:definition """STIX 2.1 description:
+A class of entities, such as all hospitals, all Europeans, or the Domain Administrators in a system."""^^xsd:string ;
+	skos:prefLabel "class"^^xsd:string ;
+	.
+
+gist:_IdentityClass_Group
+	a gist:IdentityClass ;
+	skos:definition """STIX 2.1 description:
+An informal collection of people, without formal governance, such as a distributed hacker group."""^^xsd:string ;
+	skos:prefLabel "group"^^xsd:string ;
+	.
+
+gist:_IdentityClass_Individual
+	a gist:IdentityClass ;
+	skos:definition """STIX 2.1 description
+A single person."""^^xsd:string ;
+	skos:prefLabel "individual"^^xsd:string ;
+	.
+
+gist:_IdentityClass_Organization
+	a gist:IdentityClass ;
+	skos:definition """STIX 2.1 description:
+A formal organization of people, with governance, such as a company or country."""^^xsd:string ;
+	skos:prefLabel "organization"^^xsd:string ;
+	.
+
+gist:_IdentityClass_System
+	a gist:IdentityClass ;
+	skos:definition """STIX 2.1 description:
+A computer system, such as a SIEM"""^^xsd:string ;
+	skos:prefLabel "system"^^xsd:string ;
+	.
+
+gist:_IdentityClass_Unknown
+	a gist:IdentityClass ;
+	skos:definition """STIX 2.1 description:
+It is unknown whether the classification is an individual, group, system, organization, or class."""^^xsd:string ;
+	skos:prefLabel "unknown"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Applescript
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the AppleScript programming language."""^^xsd:string ;
+	skos:prefLabel "applescript"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Bash
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Bash programming language."""^^xsd:string ;
+	skos:prefLabel "bash"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_C
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the C programming language."""^^xsd:string ;
+	skos:prefLabel "c"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_C-PlusPlus
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the C++ programming language."""^^xsd:string ;
+	skos:prefLabel "c++"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_C-sharp
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the C# programming language."""^^xsd:string ;
+	skos:prefLabel "c#"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Go
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Go (sometimes referred to as golang) programming language."""^^xsd:string ;
+	skos:prefLabel "go"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Java
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the JAVA programming language."""^^xsd:string ;
+	skos:prefLabel "java"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Javascript
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the JavaScript programming language."""^^xsd:string ;
+	skos:prefLabel "javascript"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Lua
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Lua programming language."""^^xsd:string ;
+	skos:prefLabel "lua"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Objective-C
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Objective-C programming language."""^^xsd:string ;
+	skos:prefLabel "objective-c"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Perl
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Perl programming language."""^^xsd:string ;
+	skos:prefLabel "perl"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Php
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the PHP programming language."""^^xsd:string ;
+	skos:prefLabel "php"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Powershell
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Windows Powershell programming language."""^^xsd:string ;
+	skos:prefLabel "powershell"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Python
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Python programming language."""^^xsd:string ;
+	skos:prefLabel "python"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Ruby
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Ruby programming language."""^^xsd:string ;
+	skos:prefLabel "ruby"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Scala
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Scala programming language."""^^xsd:string ;
+	skos:prefLabel "scala"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Swift
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Swift programming language."""^^xsd:string ;
+	skos:prefLabel "swift"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Typescript
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the TypeScript programming language."""^^xsd:string ;
+	skos:prefLabel "typescript"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_Visual-Basic
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the Visual Basic programming language."""^^xsd:string ;
+	skos:prefLabel "visual-basic"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_x86-32
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the x86 32-bit Assembly programming language."""^^xsd:string ;
+	skos:prefLabel "x86-32"^^xsd:string ;
+	.
+
+gist:_ImplementationLanguage_x86-64
+	a gist:ImplementationLanguage ;
+	skos:definition """STIX 2.1 description:
+Specifies the x86 64-bit Assembly programming language."""^^xsd:string ;
+	skos:prefLabel "x86-64"^^xsd:string ;
+	.
+
+gist:_IndicatorType_Anomalous-activity
+	a gist:IndicatorType ;
+	skos:definition """STIX 2.1 description:
+Unexpected, or unusual activity that may not necessarily be malicious or indicate compromise. This type of activity may include reconnaissance-like behavior such as port scans or version identification, network behavior anomalies, and asset and/or user behavioral anomalies."""^^xsd:string ;
+	skos:prefLabel "anomalous-activity"^^xsd:string ;
+	.
+
+gist:_IndicatorType_Anonymization
+	a gist:IndicatorType ;
+	skos:definition """STIX 2.1 description:
+Suspected anonymization tools or infrastructure (proxy, TOR, VPN, etc.)."""^^xsd:string ;
+	skos:prefLabel "anonymization"^^xsd:string ;
+	.
+
+gist:_IndicatorType_Attribution
+	a gist:IndicatorType ;
+	skos:definition """STIX 2.1 description:
+Patterns of behavior that indicate attribution to a particular Threat Actor or Campaign."""^^xsd:string ;
+	skos:prefLabel "attribution"^^xsd:string ;
+	.
+
+gist:_IndicatorType_Benign
+	a gist:IndicatorType ;
+	skos:definition """STIX 2.1 description:
+Activity that is not suspicious or malicious in and of itself, but when combined with other activity may indicate suspicious or malicious behavior."""^^xsd:string ;
+	skos:prefLabel "benign"^^xsd:string ;
+	.
+
+gist:_IndicatorType_Compromised
+	a gist:IndicatorType ;
+	skos:definition """STIX 2.1 description:
+Assets that are suspected to be compromised."""^^xsd:string ;
+	skos:prefLabel "compromised"^^xsd:string ;
+	.
+
+gist:_IndicatorType_Malicious-activity
+	a gist:IndicatorType ;
+	skos:definition """STIX 2.1 description:
+Patterns of suspected malicious objects and/or activity."""^^xsd:string ;
+	skos:prefLabel "malicious-activity"^^xsd:string ;
+	.
+
+gist:_IndicatorType_Unknown
+	a gist:IndicatorType ;
+	skos:definition """STIX 2.1 description:
+There is not enough information available to determine the type of indicator."""^^xsd:string ;
+	skos:prefLabel "unknown"^^xsd:string ;
+	.
+
+gist:_InfrastructureType_amplification
+	a gist:InfrastructureType ;
+	skos:definition """STIX 2.1 description:
+Specifies infrastructure used for conducting amplification attacks."""^^xsd:string ;
+	skos:prefLabel "amplification"^^xsd:string ;
+	.
+
+gist:_InfrastructureType_anonymization
+	a gist:InfrastructureType ;
+	skos:definition """STIX 2.1 description:
+Specific infrastructure used for anonymization, such as a proxy."""^^xsd:string ;
+	skos:prefLabel "anonymization"^^xsd:string ;
+	.
+
+gist:_InfrastructureType_botnet
+	a gist:InfrastructureType ;
+	skos:definition """STIX 2.1 description:
+Specifies the membership/makeup of a botnet, in terms of the network addresses of the hosts that comprise the botnet."""^^xsd:string ;
+	skos:prefLabel "botnet"^^xsd:string ;
+	.
+
+gist:_InfrastructureType_command-and-control
+	a gist:InfrastructureType ;
+	skos:definition """STIX 2.1 description:
+Specifies infrastructure used for command and control (C2). This is typically a domain name or IP address."""^^xsd:string ;
+	skos:prefLabel "command-and-control"^^xsd:string ;
+	.
+
+gist:_InfrastructureType_control-system
+	a gist:InfrastructureType ;
+	skos:definition """STIX 2.1 description:
+Specifies equipment such as IoT, HMI, RTU, PLC or other ICS devices."""^^xsd:string ;
+	skos:prefLabel "control-system"^^xsd:string ;
+	.
+
+gist:_InfrastructureType_exfiltration
+	a gist:InfrastructureType ;
+	skos:definition """STIX 2.1 description:
+Specifies infrastructure used as an endpoint for data exfiltration."""^^xsd:string ;
+	skos:prefLabel "exfiltration"^^xsd:string ;
+	.
+
+gist:_InfrastructureType_firewall
+	a gist:InfrastructureType ;
+	skos:definition """STIX 2.1 description:
+Specifies a device that inspects network traffic and restricts it based upon defined policies."""^^xsd:string ;
+	skos:prefLabel "firewall"^^xsd:string ;
+	.
+
+gist:_InfrastructureType_hosting-malware
+	a gist:InfrastructureType ;
+	skos:definition """STIX 2.1 description:
+Specifies infrastructure used for hosting malware."""^^xsd:string ;
+	skos:prefLabel "hosting-malware"^^xsd:string ;
+	.
+
+gist:_InfrastructureType_hosting-target-lists
+	a gist:InfrastructureType ;
+	skos:definition """STIX 2.1 description:
+Specifies infrastructure used for hosting a list of targets for DDOS attacks, phishing, and other malicious activities. This is typically a domain name or IP address."""^^xsd:string ;
+	skos:prefLabel "hosting-target-lists"^^xsd:string ;
+	.
+
+gist:_InfrastructureType_phishing
+	a gist:InfrastructureType ;
+	skos:definition """STIX 2.1 description:
+Specifies infrastructure used for conducting phishing attacks."""^^xsd:string ;
+	skos:prefLabel "phishing"^^xsd:string ;
+	.
+
+gist:_InfrastructureType_reconnaissance
+	a gist:InfrastructureType ;
+	skos:definition """STIX 2.1 description:
+Specifies infrastructure used for conducting reconnaissance activities."""^^xsd:string ;
+	skos:prefLabel "reconnaissance"^^xsd:string ;
+	.
+
+gist:_InfrastructureType_routers-switches
+	a gist:InfrastructureType ;
+	skos:definition """STIX 2.1 description:
+Specifies IT infrastructure used to connect devices to the network."""^^xsd:string ;
+	skos:prefLabel "routers-switches"^^xsd:string ;
+	.
+
+gist:_InfrastructureType_staging
+	a gist:InfrastructureType ;
+	skos:definition """STIX 2.1 description:
+Specifies infrastructure used for staging."""^^xsd:string ;
+	skos:prefLabel "staging"^^xsd:string ;
+	.
+
+gist:_InfrastructureType_unknown
+	a gist:InfrastructureType ;
+	skos:definition """STIX 2.1 description:
+Specifies an infrastructure of some unknown type."""^^xsd:string ;
+	skos:prefLabel "unknown"^^xsd:string ;
+	.
+
+gist:_InfrastructureType_workstation
+	a gist:InfrastructureType ;
+	skos:definition """STIX 2.1 description:
+Specifies an endpoint machine used for work by an organization that needs protection."""^^xsd:string ;
+	skos:prefLabel "workstation"^^xsd:string ;
+	.
+
+gist:_MalwareResult_benign
+	a gist:MalwareResult ;
+	skos:definition """STIX 2.1 description:
+The tool reported the malware binary as benign."""^^xsd:string ;
+	skos:prefLabel "benign"^^xsd:string ;
+	.
+
+gist:_MalwareResult_malicious
+	a gist:MalwareResult ;
+	skos:definition """STIX 2.1 description:
+The tool reported the malware binary as malicious."""^^xsd:string ;
+	skos:prefLabel "malicious"^^xsd:string ;
+	.
+
+gist:_MalwareResult_suspicious
+	a gist:MalwareResult ;
+	skos:definition """STIX 2.1 description:
+The tool reported the malware binary as suspicious but not definitively malicious."""^^xsd:string ;
+	skos:prefLabel "suspicious"^^xsd:string ;
+	.
+
+gist:_MalwareResult_unknown
+	a gist:MalwareResult ;
+	skos:definition """STIX 2.1 description:
+The tool was unable to determine whether the malware binary is malicious."""^^xsd:string ;
+	skos:prefLabel "unknown"^^xsd:string ;
+	.
+
+gist:_ThreatActorRole_Agent
+	a gist:ThreatActorRole ;
+	skos:definition """STIX 2.1 description:
+Threat actor executes attacks either on behalf of themselves or at the direction of someone else."""^^xsd:string ;
+	skos:prefLabel "agent"^^xsd:string ;
+	.
+
+gist:_ThreatActorRole_Director
+	a gist:ThreatActorRole ;
+	skos:definition """STIX 2.1 description:
+The threat actor who directs the activities, goals, and objectives of the malicious activities."""^^xsd:string ;
+	skos:prefLabel "director"^^xsd:string ;
+	.
+
+gist:_ThreatActorRole_Independent
+	a gist:ThreatActorRole ;
+	skos:definition """STIX 2.1 description:
+A threat actor acting by themselves."""^^xsd:string ;
+	skos:prefLabel "independent"^^xsd:string ;
+	.
+
+gist:_ThreatActorRole_Infrastructure-Architect
+	a gist:ThreatActorRole ;
+	skos:definition """STIX 2.1 description:
+Someone who designs the battle space."""^^xsd:string ;
+	skos:prefLabel "infrastructure-architect"^^xsd:string ;
+	.
+
+gist:_ThreatActorRole_Infrastructure-Operator
+	a gist:ThreatActorRole ;
+	skos:definition """STIX 2.1 description:
+The threat actor who provides and supports the attack infrastructure that is used to deliver the attack (botnet providers, cloud services, etc.)."""^^xsd:string ;
+	skos:prefLabel "infrastructure-operator"^^xsd:string ;
+	.
+
+gist:_ThreatActorRole_Malware_Author
+	a gist:ThreatActorRole ;
+	skos:definition """STIX 2.1 description:
+The threat actor who authors malware or other malicious tools."""^^xsd:string ;
+	skos:prefLabel "malware-author"^^xsd:string ;
+	.
+
+gist:_ThreatActorRole_Sponsor
+	a gist:ThreatActorRole ;
+	skos:definition """STIX 2.1 description:
+The threat actor who funds the malicious activities."""^^xsd:string ;
+	skos:prefLabel "sponsor"^^xsd:string ;
+	.
+
+gist:_ThreatActorSophistication_Advanced
+	a gist:ThreatActorSophistication ;
+	skos:definition """STIX 2.1 description:
+ Can develop their own tools or scripts from publicly known vulnerabilities to target systems and users. Actors in this category are very adept at IT systems and have a background in software development along with a solid understanding of defensive techniques and operational security.
+
+ 
+
+These actors rely on others to find and identify weaknesses and vulnerabilities in systems, but are able to create their own tools, delivery mechanisms, and execution strategies.
+
+ 
+
+Example Roles: Toolkit Developer
+
+ 
+
+These actors:
+
+●      attack known vulnerabilities;
+
+●      can create their own tools; and
+
+●      have proficient knowledge of the tools."""^^xsd:string ;
+	.
+
+gist:_ThreatActorSophistication_Expert
+	a gist:ThreatActorSophistication ;
+	skos:definition """STIX 2.1 description:
+Can focus on the discovery and use of unknown malicious code, are is adept at installing user and kernel mode rootkits, frequently use data mining tools, target corporate executives and key users (government and industry) for the purpose of stealing personal and corporate data. Actors in this category are very adept at IT systems and software development and are experts with security systems, defensive techniques, attack methods, and operational security.
+
+ 
+
+Example Roles: Vulnerability Researcher, Reverse Engineer, Threat Researcher, Malware Creator
+
+ 
+
+These actors:
+
+●      attack unknown and known vulnerabilities;
+
+●      can create their own tools from scratch; and
+
+●      have proficient knowledge of the tools. """^^xsd:string ;
+	.
+
+gist:_ThreatActorSophistication_Innovator
+	a gist:ThreatActorSophistication ;
+	skos:definition """STIX 2.1 description:
+ypically, criminal or state actors who are organized, highly technical, proficient, well-funded professionals working in teams to discover new vulnerabilities and develop exploits.
+
+ 
+
+Demonstrates sophisticated capability. An innovator has the ability to create and script unique programs and codes targeting virtually any form of technology. At this level, this actor has a deep knowledge of networks, operating systems, programming languages, firmware, and infrastructure topologies and will demonstrate operational security when conducting his activities. Innovators are largely responsible for the discovery of 0-day vulnerabilities and the development of new attack techniques.
+
+ 
+
+Example Roles: Toolkit Innovator, 0-Day Exploit Author
+
+ 
+
+These actors:
+
+●      attack unknown and known vulnerabilities;
+
+●      create attacks against 0-Day exploits from scratch; and
+
+●      create new and innovative attacks and toolkits. """^^xsd:string ;
+	.
+
+gist:_ThreatActorSophistication_Intermediate
+	a gist:ThreatActorSophistication ;
+	skos:definition """STIX 2.1 description:
+Can proficiently use existing attack frameworks and toolkits to search for and exploit vulnerabilities in computers or systems. Actors in this category have computer skills equivalent to an IT professional and typically have a working knowledge of networks, operating systems, and possibly even defensive techniques and will typically exhibit some operational security.
+
+ 
+
+These actors rely others to develop the malicious tools and delivery mechanisms but are able to plan their own execution strategy. They are proficient in the tools they are using and how they work and can even make minimal modifications as needed.
+
+ 
+
+Example Roles: Toolkit User
+
+ 
+
+These actors:
+
+●      attack known vulnerabilities;
+
+●      use attack frameworks and toolkits; and
+
+●      have proficient knowledge of the tools."""^^xsd:string ;
+	.
+
+gist:_ThreatActorSophistication_Minimal
+	a gist:ThreatActorSophistication ;
+	skos:definition """STIX 2.1 description:
+Can minimally use existing and frequently well known and easy-to-find techniques and programs or scripts to search for and exploit weaknesses in other computers. Commonly referred to as a script-kiddie.
+
+ 
+
+These actors rely on others to develop the malicious tools, delivery mechanisms, and execution strategy and often do not fully understand the tool they are using or how they work. They also lack the ability to conduct their own reconnaissance and targeting research.
+
+ 
+
+Example Roles: Script-Kiddie
+
+ 
+
+These actors:
+
+●      attack known weaknesses;
+
+●      use well known scripts and tools; and
+
+●      have minimal knowledge of the tools."""^^xsd:string ;
+	skos:prefLabel "minimal"^^xsd:string ;
+	.
+
+gist:_ThreatActorSophistication_None
+	a gist:ThreatActorSophistication ;
+	skos:definition """STIX 2.1 description:
+Can carry out random acts of disruption or destruction by running tools they do not understand. Actors in this category have average computer skills.
+
+ 
+
+Example Roles: Average User
+
+ 
+
+These actors:
+
+●      can not launch targeted attacks"""^^xsd:string ;
+	skos:prefLabel "none"^^xsd:string ;
+	.
+
+gist:_ThreatActorSophistication_Stategic
+	a gist:ThreatActorSophistication ;
+	skos:definition """STIX 2.1 description:
+ypically, criminal or state actors who are organized, highly technical, proficient, well-funded professionals working in teams to discover new vulnerabilities and develop exploits.
+
+ 
+
+Demonstrates sophisticated capability. An innovator has the ability to create and script unique programs and codes targeting virtually any form of technology. At this level, this actor has a deep knowledge of networks, operating systems, programming languages, firmware, and infrastructure topologies and will demonstrate operational security when conducting his activities. Innovators are largely responsible for the discovery of 0-day vulnerabilities and the development of new attack techniques.
+
+ 
+
+Example Roles: Toolkit Innovator, 0-Day Exploit Author
+
+ 
+
+These actors:
+
+●      attack unknown and known vulnerabilities;
+
+●      create attacks against 0-Day exploits from scratch; and
+
+●      create new and innovative attacks and toolkits. """^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Activist
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 Description:
+
+Highly motivated, potentially destructive supporter of a social or political cause (e.g., trade, labor, environment, etc.) that attempts to disrupt an organization's business model or damage their image.
+
+This category includes actors sometimes referred to as anarchists, cyber vandals, extremists, and hacktivists."""^^xsd:string ;
+	skos:prefLabel "activist"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Competitor
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 Description:
+
+An organization that competes in the same economic marketplace.
+
+The goal of a competitor is to gain an advantage in business with respect to the rival organization it targets. It usually does this by copying intellectual property, trade secrets, acquisition strategies, or other technical or business data from a rival organization with the intention of using the data to bolster its own assets and market position."""^^xsd:string ;
+	skos:prefLabel "competitor"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Crime-Syndicate
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 description:
+	
+An enterprise organized to conduct significant, large-scale criminal activity for profit.
+
+Crime syndicates, also known as organized crime, are generally large, well-resourced groups that operate to create profit from all types of crime."""^^xsd:string ;
+	skos:prefLabel "crime-syndicate"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Criminal
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 description:
+
+Individual who commits computer crimes, often for personal financial gain and often involves the theft of something valuable.
+
+Intellectual property theft, extortion via ransomware, and physical destruction are common examples. A criminal as defined here refers to those acting individually or in very small or informal groups. For sophisticated organized criminal activity, see the crime syndicate descriptor."""^^xsd:string ;
+	skos:prefLabel "criminal"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Hacker
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 dedscription:
+
+An individual that tends to break into networks for the thrill or the challenge of doing so.
+
+Hackers may use advanced skills or simple attack scripts they have downloaded."""^^xsd:string ;
+	skos:prefLabel "hacker"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Insider-Accidental
+	a gist:ThreatActorType ;
+	skos:definition '''STIX 2.1 description:
+A non-hostile insider who unintentionally exposes the organization to harm.
+
+"Insider" in this context includes any person extended internal trust, such as regular employees, contractors, consultants, and temporary workers.'''^^xsd:string ;
+	skos:prefLabel "insider-accidental"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Insider-Disgruntaled
+	a gist:ThreatActorType ;
+	skos:definition '''STIX 2.1 description:
+Current or former insiders who seek revengeful and harmful retaliation for perceived wrongs.
+
+"Insider" in this context includes any person extended internal trust, such as regular employees, contractors, consultants, and temporary workers.
+
+Disgruntled threat actors may have extensive knowledge that can be leveraged when conducting attacks and can take any number of actions including sabotage, violence, theft, fraud, espionage, or embarrassing individuals or the organization.'''^^xsd:string ;
+	skos:prefLabel "insider-disgruntaled"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Nation-State
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 description:
+Entities who work for the government or military of a nation state or who work at their direction.
+
+These actors typically have access to significant support, resources, training, and tools and are capable of designing and executing very sophisticated and effective Intrusion Sets and Campaigns."""^^xsd:string ;
+	skos:prefLabel "nation-state"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Sensationalist
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 description:
+Seeks to cause embarrassment and brand damage by exposing sensitive information in a manner designed to cause a public relations crisis.
+
+A sensationalist may be an individual or small group of people motivated primarily by a need for notoriety. Unlike the activist, the sensationalist generally has no political goal, and is not using bad PR to influence the target to change its behavior or business practices."""^^xsd:string ;
+	skos:prefLabel "sensationalist"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Spy
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 description:
+Secretly collects sensitive information for use, dissemination, or sale.
+
+Traditional spies (governmental and industrial) are part of a well-resourced intelligence organization and are capable of very sophisticated clandestine operations. However, insiders such as employees or consultants acting as spies can be just as effective and damaging, even when their activities are largely opportunistic and not part of an overall campaign."""^^xsd:string ;
+	skos:prefLabel "spy"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Terrorist
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 description:
+Uses extreme violence to advance a social or political agenda as well as monetary crimes to support its activities.
+
+In this context a terrorist refers to individuals who target noncombatants with violence to send a message of fear far beyond the actual events. They may act independently or as part of a terrorist organization.
+
+Terrorist organizations must typically raise much of their operating budget through criminal activity, which often occurs online. Terrorists are also often adept at using and covertly manipulating social media for both recruitment and impact."""^^xsd:string ;
+	skos:prefLabel "terrorist"^^xsd:string ;
+	.
+
+gist:_ThreatActorType_Unknown
+	a gist:ThreatActorType ;
+	skos:definition """STIX 2.1 description:
+There is not enough information available to determine the type of threat actor."""^^xsd:string ;
+	skos:prefLabel "unknown"^^xsd:string ;
 	.
 

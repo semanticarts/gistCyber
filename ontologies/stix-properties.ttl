@@ -1,0 +1,152 @@
+@prefix gist: <https://w3id.org/semanticarts/ns/ontology/gist/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/semanticarts/ontology/common-properties>
+	a owl:Ontology ;
+	owl:versionInfo "2.1.0"^^xsd:string ;
+	.
+
+gist:stix_categorizedBy
+	a owl:ObjectProperty ;
+	rdfs:label "categorizedBy"@en-US ;
+	rdfs:comment "the categorized by property specifies the instance of a category"@en-US ;
+	rdfs:range gist:StixCategoryObject ;
+	.
+
+gist:stix_confidence
+	a owl:DatatypeProperty ;
+	rdfs:label "confidence"@en-US ;
+	rdfs:comment "The confidence property identifies the confidence that the creator has in the correctness of their data. The confidence value MUST be a number in the range of 0-100. \\n\\n Appendix A contains a table of normative mappings to other confidence scales that MUST be used when presenting the confidence value in one of those scales. \\n\\n If the confidence property is not present, then the confidence of the content is unspecified."@en-US ;
+	rdfs:range xsd:nonNegativeInteger ;
+	.
+
+gist:stix_created
+	a owl:DatatypeProperty ;
+	rdfs:label "created"@en-US ;
+	rdfs:comment "The created property represents the time at which the object was originally created. The object creator can use the time it deems most appropriate as the time the object was created. The minimum precision MUST be milliseconds (three digits after the decimal place in seconds), but MAY be more precise. The created property MUST NOT be changed when creating a new version of the object. See section 3.6 for further definition of versioning."@en-US ;
+	rdfs:range xsd:dateTime ;
+	.
+
+gist:stix_created_by_ref
+	a owl:ObjectProperty ;
+	rdfs:label "created_by_ref"@en-US ;
+	rdfs:comment "The created_by_ref property specifies the id property of the identity object that describes the entity that created this object. \\n\\n If this attribute is omitted, the source of this information is undefined. This may be used by object creators who wish to remain anonymous."@en-US ;
+	rdfs:range gist:Identity ;
+	.
+
+gist:stix_created_by_ref_string
+	a owl:DatatypeProperty ;
+	rdfs:label "created_by_ref_string"@en ;
+	rdfs:comment "The created_by_ref property specifies the id property of the identity object that describes the entity that created this object. \\n\\n If this attribute is omitted, the source of this information is undefined. This may be used by object creators who wish to remain anonymous."@en ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_defanged
+	a owl:DatatypeProperty ;
+	rdfs:label "defanged"@en-US ;
+	rdfs:comment "This property defines whether or not the data contained within the object has been defanged. The default value for this property is false. This property MUST NOT be used on any STIX Objects other than SCOs."@en-US ;
+	rdfs:range xsd:boolean ;
+	.
+
+gist:stix_extensions
+	a owl:ObjectProperty ;
+	rdfs:label "extensions"@en-US ;
+	rdfs:comment "Specifies any extensions of the object, as a dictionary. \\n\\n Dictionary keys SHOULD be the id of a STIX Extension object or the name of a predefined object extension found in this specification, depending on the type of extension being used. \\n\\n The corresponding dictionary values MUST contain the contents of the extension instance. \\n\\n Each extension dictionary MAY contain the property extension_type. The value of this property MUST come from the extension-type-enum enumeration. If the extension_type property is not present, then this is a predefined extension which does not use the extension facility described in section 7.3. When this extension facility is used the extension_type property MUST be present."@en-US ;
+	rdfs:range gist:Dictionary ;
+	.
+
+gist:stix_external_references
+	a owl:ObjectProperty ;
+	rdfs:label "external_references"@en-US ;
+	rdfs:comment "The external_references property specifies a list of external references which refers to non-STIX information. This property is used to provide one or more URLs, descriptions, or IDs to records in other systems."@en-US ;
+	rdfs:range gist:ExternalReference ;
+	.
+
+gist:stix_granular_markings
+	a owl:ObjectProperty ;
+	rdfs:label "granular_markings"@en-US ;
+	rdfs:comment "The granular_markings property specifies a list of granular markings applied to this object. \\n\\n In some cases, though uncommon, marking definitions themselves may be marked with sharing or handling guidance. In this case, this property MUST NOT contain any references to the same Marking Definition object (i.e., it cannot contain any circular references). \\n\\n See section 7.2 for further definition of data markings."@en-US ;
+	rdfs:range gist:GranularMarking ;
+	.
+
+gist:stix_id
+	a owl:DatatypeProperty ;
+	rdfs:label "id"@en-US ;
+	rdfs:comment "The id property uniquely identifies this object. For objects that support versioning, all objects with the same id are considered different versions of the same object and the version of the object is identified by its modified property."@en-US ;
+	.
+
+gist:stix_id_string
+	a owl:DatatypeProperty ;
+	.
+
+gist:stix_labels
+	a owl:DatatypeProperty ;
+	rdfs:label "labels"@en-US ;
+	rdfs:comment "The labels property specifies a set of terms used to describe this object. The terms are user-defined or trust-group defined and their meaning is outside the scope of this specification and MAY be ignored. \\n\\n Where an object has a specific property defined in the specification for characterizing subtypes of that object, the labels property MUST NOT be used for that purpose. \\n\\n For example, the Malware SDO has a property malware_types that contains a list of Malware subtypes (dropper, RAT, etc.). In this example, the labels property cannot be used to describe these Malware subtypes."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_lang
+	a owl:DatatypeProperty ;
+	rdfs:label "lang"@en-US ;
+	rdfs:comment "The lang property identifies the language of the text content in this object. When present, it MUST be a language code conformant to [RFC5646]. If the property is not present, then the language of the content is en (English). \\n\\n This property SHOULD be present if the object type contains translatable text properties (e.g. name, description). \\n\\n The language of individual fields in this object MAY be overridden by the lang property in granular markings (see section 7.2.3)."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_modified
+	a owl:DatatypeProperty ;
+	rdfs:label "modified"@en-US ;
+	rdfs:comment "The modified property is only used by STIX Objects that support versioning and represents the time that this particular version of the object was last modified. \\n\\n The object creator can use the time it deems most appropriate as the time this version of the object was modified. The minimum precision MUST be milliseconds (three digits after the decimal place in seconds), but MAY be more precise. \\n\\n If the created property is defined, then the value of the modified property for a given object version MUST be later than or equal to the value of the created property. \\n\\n Object creators MUST set the modified property when creating a new version of an object if the created property was set. \\n\\n See section 3.6 for further definition of versioning."@en-US ;
+	rdfs:range xsd:dateTime ;
+	.
+
+gist:stix_name
+	a owl:DatatypeProperty ;
+	rdfs:label "name"@en-US ;
+	rdfs:comment "Specifies the name used to identity the entity."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_object_marking_refs
+	a owl:ObjectProperty ;
+	rdfs:label "object_marking_refs"@en-US ;
+	rdfs:comment "The object_marking_refs property specifies a list of id properties of marking-definition objects that apply to this object. \\n\\n In some cases, though uncommon, marking definitions themselves may be marked with sharing or handling guidance. In this case, this property MUST NOT contain any references to the same Marking Definition object (i.e., it cannot contain any circular references). \\n\\n See section 7.2 for further definition of data markings."@en-US ;
+	rdfs:range gist:MarkingDefinition ;
+	.
+
+gist:stix_object_marking_refs_string
+	a owl:DatatypeProperty ;
+	rdfs:label "object_marking_refs_string"@en-US ;
+	rdfs:comment "The object_marking_refs_string property specifies a list of id properties of marking-definition objects that apply to this object. \\n\\n In some cases, though uncommon, marking definitions themselves may be marked with sharing or handling guidance. In this case, this property MUST NOT contain any references to the same Marking Definition object (i.e., it cannot contain any circular references). \\n\\n See section 7.2 for further definition of data markings."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_object_type
+	a owl:DatatypeProperty ;
+	.
+
+gist:stix_revoked
+	a owl:DatatypeProperty ;
+	rdfs:label "revoked"@en-US ;
+	rdfs:comment "The revoked property is only used by STIX Objects that support versioning and indicates whether the object has been revoked. \\n\\n Revoked objects are no longer considered valid by the object creator. Revoking an object is permanent; future versions of the object with this id MUST NOT be created. \\n\\n The default value of this property is false. \\n\\n See section 3.6 for further definition of versioning."@en-US ;
+	rdfs:range xsd:boolean ;
+	.
+
+gist:stix_spec_version
+	a owl:DatatypeProperty ;
+	rdfs:label "spec_version"@en-US ;
+	rdfs:comment "The version of the STIX specification used to represent this object. \\n\\n The value of this property MUST be 2.1 for STIX Objects defined according to this specification. \\n\\n If objects are found where this property is not present, the implicit value for all STIX Objects other than SCOs is 2.0. Since SCOs are now top-level objects in STIX 2.1, the default value for SCOs is 2.1."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
+gist:stix_type
+	a owl:DatatypeProperty ;
+	rdfs:label "type"@en-US ;
+	rdfs:comment "The type property identifies the type of STIX Object. The value of the type property MUST be the name of one of the types of STIX Objects defined in sections 4, 5, 6, and 7 (e.g., indicator) or the name of a Custom Object as defined by section 11.2."@en-US ;
+	rdfs:range xsd:string ;
+	.
+
