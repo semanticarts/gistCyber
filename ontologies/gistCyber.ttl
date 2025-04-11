@@ -105,6 +105,10 @@ gist:Campaign
 	] ;
 	.
 
+gist:CategoryObject
+	a owl:Class ;
+	.
+
 gist:CompetitorThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
@@ -476,6 +480,10 @@ gist:PatternType
 	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
+gist:Procedure
+	a owl:Class ;
+	.
+
 gist:ProcessorArchitecture
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
@@ -577,6 +585,21 @@ gist:StixRelationshipObject
 			]
 		) ;
 	] ;
+	.
+
+gist:SubTechnique
+	a owl:Class ;
+	skos:prefLabel "Sub-Technique"^^xsd:string ;
+	.
+
+gist:Tactic
+	a owl:Class ;
+	.
+
+gist:Technique
+	a owl:Class ;
+	skos:definition "A Technique is an action or set of actions to accomplish a goal. The MITRE definition of Technique makes and equivalency to an AttackPattern."^^xsd:string ;
+	skos:prefLabel "Technique"^^xsd:string ;
 	.
 
 gist:TerroristThreatActor
@@ -687,6 +710,10 @@ gist:UnknownThreatActor
 gist:Vulnerabity
 	a owl:Class ;
 	rdfs:label "Vulnerability"^^xsd:string ;
+	.
+
+gist:Weakness
+	a owl:Class ;
 	.
 
 gist:WindowsIntegrityLevelEnum
