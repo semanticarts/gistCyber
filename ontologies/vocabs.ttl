@@ -63,6 +63,10 @@ gist:IndicatorType
 	a owl:Class ;
 	.
 
+gist:IndustrySector
+	a owl:Class ;
+	.
+
 gist:InfrastructureType
 	a owl:Class ;
 	.
@@ -689,6 +693,251 @@ gist:_IndicatorType_Unknown
 	skos:definition """STIX 2.1 description:
 There is not enough information available to determine the type of indicator."""^^xsd:string ;
 	skos:prefLabel "unknown"^^xsd:string ;
+	.
+
+gist:_IndustrySector_
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the  industry sector"""^^xsd:string ;
+	skos:prefLabel "mining"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Aerospace
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Aerospace industry sector"""^^xsd:string ;
+	skos:prefLabel "aerospace"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Agriculture
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Agriculture industry sector"""^^xsd:string ;
+	skos:prefLabel "agriculture"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Automotive
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Automotive industry sector"""^^xsd:string ;
+	skos:prefLabel "automotive"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Chemical
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Chemical industry sector"""^^xsd:string ;
+	skos:prefLabel "chemical"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Commercial
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Commercial industry sector"""^^xsd:string ;
+	skos:prefLabel "commercial"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Communications
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Communications industry sector"""^^xsd:string ;
+	skos:prefLabel "Communications"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Construction
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Construction industry sector"""^^xsd:string ;
+	skos:prefLabel "construction"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Defense
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Defense industry sector"""^^xsd:string ;
+	skos:prefLabel "defense"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Education
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Education industry sector"""^^xsd:string ;
+	skos:prefLabel "education"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Emergency-Services
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the emergency services industry sector"""^^xsd:string ;
+	skos:prefLabel "emergency-services"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Energy
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Energy industry sector"""^^xsd:string ;
+	skos:prefLabel "energy"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Entertainment
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Entertainment industry sector"""^^xsd:string ;
+	skos:prefLabel "entertainment"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Financial-Services
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Financial-Services industry sector"""^^xsd:string ;
+	skos:prefLabel "financial-services"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Government
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Government industry sector"""^^xsd:string ;
+	skos:prefLabel "government"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Government-Local
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the government local industry sector"""^^xsd:string ;
+	skos:prefLabel "government-local"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Government-National
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the government-national industry sector"""^^xsd:string ;
+	skos:prefLabel "government-national"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Government-Public-Services
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the government public services industry sector"""^^xsd:string ;
+	skos:prefLabel "government-public-services"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Government-Regional
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the government regional industry sector"""^^xsd:string ;
+	skos:prefLabel "government-regional"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Healthcare
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the healthcare industry sector"""^^xsd:string ;
+	skos:prefLabel "healthcare"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Hospitality-Leisure
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the hospitality leisure industry sector"""^^xsd:string ;
+	skos:prefLabel "hospitality-leisure"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Infrastructure
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the infrastructure industry sector"""^^xsd:string ;
+	skos:prefLabel "infrastructure"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Infrastructure-Dams
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Infrastructure-Dams industry sector"""^^xsd:string ;
+	skos:prefLabel "dams"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Infrastructure-Nuclear
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Nuclear industry sector"""^^xsd:string ;
+	skos:prefLabel "nuclear"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Infrastructure-Water
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Water industry sector"""^^xsd:string ;
+	skos:prefLabel "water"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Insurance
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Insurance industry sector"""^^xsd:string ;
+	skos:prefLabel "insurance"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Manufacturing
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Manufacturing industry sector"""^^xsd:string ;
+	skos:prefLabel "manufacturing"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Mining
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Mining industry sector"""^^xsd:string ;
+	skos:prefLabel ""^^xsd:string ;
+	.
+
+gist:_IndustrySector_Non-Profit
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Non-Profit industry sector"""^^xsd:string ;
+	skos:prefLabel "non-profit"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Pharmaceuticals
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Pharmaceuticals industry sector"""^^xsd:string ;
+	skos:prefLabel "pharmaceuticals"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Retail
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Retail industry sector"""^^xsd:string ;
+	skos:prefLabel "retail"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Technology
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Technology industry sector"""^^xsd:string ;
+	skos:prefLabel "technology"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Telecommunications
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Telecommunications industry sector"""^^xsd:string ;
+	skos:prefLabel "telecommunications"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Transportation
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Transportation industry sector"""^^xsd:string ;
+	skos:prefLabel "transportation"^^xsd:string ;
+	.
+
+gist:_IndustrySector_Utilities
+	a gist:IndustrySector ;
+	skos:definition """STIX 2.1 description:
+Tag for the Utilities industry sector"""^^xsd:string ;
+	skos:prefLabel "utilities"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_amplification
