@@ -695,13 +695,6 @@ There is not enough information available to determine the type of indicator."""
 	skos:prefLabel "unknown"^^xsd:string ;
 	.
 
-gist:_IndustrySector_
-	a gist:IndustrySector ;
-	skos:definition """STIX 2.1 description:
-Tag for the  industry sector"""^^xsd:string ;
-	skos:prefLabel "mining"^^xsd:string ;
-	.
-
 gist:_IndustrySector_Aerospace
 	a gist:IndustrySector ;
 	skos:definition """STIX 2.1 description:
@@ -888,7 +881,7 @@ gist:_IndustrySector_Mining
 	a gist:IndustrySector ;
 	skos:definition """STIX 2.1 description:
 Tag for the Mining industry sector"""^^xsd:string ;
-	skos:prefLabel ""^^xsd:string ;
+	skos:prefLabel "mining"^^xsd:string ;
 	.
 
 gist:_IndustrySector_Non-Profit
