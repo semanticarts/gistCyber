@@ -25,66 +25,83 @@ skos:prefLabel
 
 gist:AccountType
 	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:AttackMotivation
 	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:AttackResourceLevel
 	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:EncryptionAlgorithm
 	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:ExtensionTypes
 	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:GroupingContext
 	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:HashingAlgorithm
 	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:IdentityClass
 	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:ImplementationLanguage
 	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:IndicatorType
 	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:IndustrySector
 	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A Category Class for the Industry Sector"^^xsd:string ;
 	.
 
 gist:InfrastructureType
 	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:MalwareResult
 	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:ThreatActorRole
 	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:ThreatActorSophistication
 	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:ThreatActorType
 	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:_AccountType_Facebook
