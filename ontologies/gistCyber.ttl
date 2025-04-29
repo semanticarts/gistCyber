@@ -413,17 +413,7 @@ gist:MalwareAnalysis
 	a owl:Class ;
 	.
 
-gist:MalwareCapabilities
-	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
-	.
-
 gist:MalwareResult
-	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
-	.
-
-gist:MalwareType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
 	.
@@ -448,16 +438,6 @@ These actors typically have access to significant support, resources, training, 
 	skos:prefLabel "Nation State Threat Actor"^^xsd:string ;
 	.
 
-gist:NetworkSocketAddressFamily
-	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
-	.
-
-gist:NetworkSocketType
-	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
-	.
-
 gist:Note
 	a owl:Class ;
 	.
@@ -470,23 +450,8 @@ gist:Opinion
 	a owl:Class ;
 	.
 
-gist:OpinionEnum
-	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
-	.
-
-gist:PatternType
-	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
-	.
-
 gist:Procedure
 	a owl:Class ;
-	.
-
-gist:ProcessorArchitecture
-	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:ProtocolVulnerability
@@ -494,18 +459,8 @@ gist:ProtocolVulnerability
 	rdfs:subClassOf gist:Vulnerabity ;
 	.
 
-gist:Region
-	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
-	.
-
 gist:Report
 	a owl:Class ;
-	.
-
-gist:ReportType
-	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
 gist:SensationalistThreatActor
@@ -684,11 +639,6 @@ gist:Tool
 	] ;
 	.
 
-gist:ToolType
-	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
-	.
-
 gist:UnknownThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
@@ -714,40 +664,5 @@ gist:Vulnerabity
 
 gist:Weakness
 	a owl:Class ;
-	.
-
-gist:WindowsIntegrityLevelEnum
-	a owl:Class ;
-	rdfs:subClassOf gist:CategoryObject ;
-	.
-
-gist:WindowsPEBinaryEnum
-	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
-	.
-
-gist:WindowsPEBinaryVocabulary
-	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
-	.
-
-gist:WindowsRegistryDatatypeEnum
-	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
-	.
-
-gist:WindowsServiceStartTypeEnum
-	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
-	.
-
-gist:WindowsServiceStatusEnum
-	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
-	.
-
-gist:WindowsServiceTypeEnum
-	a owl:Class ;
-	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
