@@ -89,6 +89,14 @@ gist:MalwareResult
 	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
+gist:OpinionEnumeration
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition """STIX 2.1 description:
+This enumeration captures a degree of agreement with the information in a STIX Object. It is an ordered enumeration, with the earlier terms representing disagreement, the middle term neutral, and the later terms representing agreement."""^^xsd:string ;
+	skos:prefLabel "Opinion Enumeration"^^xsd:string ;
+	.
+
 gist:ThreatActorRole
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
@@ -1081,6 +1089,61 @@ gist:_MalwareResult_unknown
 	skos:definition """STIX 2.1 description:
 The tool was unable to determine whether the malware binary is malicious."""^^xsd:string ;
 	skos:prefLabel "unknown"^^xsd:string ;
+	.
+
+gist:_OpinionEnumeration_Agree
+	a gist:OpinionEnumeration ;
+	skos:definition """STIX 2.1 description:
+The creator agrees with the information and believes that it is accurate and correct.
+
+ 
+
+This MAY be considered equivalent to a 4 in a numeric scale."""^^xsd:string ;
+	skos:prefLabel "agree"^^xsd:string ;
+	.
+
+gist:_OpinionEnumeration_Disagree
+	a gist:OpinionEnumeration ;
+	skos:definition """STIX 2.1 description:
+The creator disagrees with the information and believes it is inaccurate or incorrect.
+
+ 
+
+This MAY be considered equivalent to a 2 in a numeric scale."""^^xsd:string ;
+	skos:prefLabel "disagree"^^xsd:string ;
+	.
+
+gist:_OpinionEnumeration_Neutral
+	a gist:OpinionEnumeration ;
+	skos:definition """STIX 2.1 description:
+The creator is neutral about the accuracy or correctness of the information.
+
+ 
+
+This MAY be considered equivalent to a 3 in a numeric scale."""^^xsd:string ;
+	skos:prefLabel "neutral"^^xsd:string ;
+	.
+
+gist:_OpinionEnumeration_Strongly-Agree
+	a gist:OpinionEnumeration ;
+	skos:definition """STIX 2.1 description:
+The creator strongly agrees with the information and believes that it is accurate and correct.
+
+ 
+
+This MAY be considered equivalent to a 5 in a numeric scale."""^^xsd:string ;
+	skos:prefLabel "strongly-agree"^^xsd:string ;
+	.
+
+gist:_OpinionEnumeration_Strongly-Disagree
+	a gist:OpinionEnumeration ;
+	skos:definition """STIX 2.1 description:
+The creator strongly disagrees with the information and believes it is inaccurate or incorrect.
+
+ 
+
+This MAY be considered equivalent to a 1 in a numeric scale."""^^xsd:string ;
+	skos:prefLabel "strongly-disagree"^^xsd:string ;
 	.
 
 gist:_ThreatActorRole_Agent
