@@ -89,6 +89,13 @@ gist:MalwareResult
 	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
+gist:PatternType
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "PatternType is a non-exhaustive, open vocabulary that covers common pattern languages and is intended to characterize the pattern language that an indicator pattern is expressed in."^^xsd:string ;
+	skos:prefLabel "Pattern Type"^^xsd:string ;
+	.
+
 gist:ThreatActorRole
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
@@ -1081,6 +1088,48 @@ gist:_MalwareResult_unknown
 	skos:definition """STIX 2.1 description:
 The tool was unable to determine whether the malware binary is malicious."""^^xsd:string ;
 	skos:prefLabel "unknown"^^xsd:string ;
+	.
+
+gist:_PatternType_Pcre
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies the Perl Compatible Regular Expressions language [PCRE]."""^^xsd:string ;
+	skos:prefLabel "pcre"^^xsd:string ;
+	.
+
+gist:_PatternType_Sigma
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies the SIGMA language."""^^xsd:string ;
+	skos:prefLabel "sigma"^^xsd:string ;
+	.
+
+gist:_PatternType_Snort
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies the SNORT language [SNORT]."""^^xsd:string ;
+	skos:prefLabel "snort"^^xsd:string ;
+	.
+
+gist:_PatternType_Stix
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies the STIX pattern language defined in section 9 of the specification."""^^xsd:string ;
+	skos:prefLabel "stix"^^xsd:string ;
+	.
+
+gist:_PatternType_Suricata
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies the SURICATA language [Suricata]."""^^xsd:string ;
+	skos:prefLabel "suricata"^^xsd:string ;
+	.
+
+gist:_PatternType_Yara
+	a gist:AccountType ;
+	skos:definition """STIX 2.1 description:
+Specifies the YARA language [YARA]."""^^xsd:string ;
+	skos:prefLabel "yara"^^xsd:string ;
 	.
 
 gist:_ThreatActorRole_Agent
