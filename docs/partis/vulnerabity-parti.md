@@ -18,7 +18,7 @@ graph BT
     Malware -- targets --> SoftwareVulnerability
     ThreatActor["gist:ThreatActor"] -- executes --> AttackPattern
     Campaign["gist:Campaign"] -- uses --> AttackPattern
-    Campaign -- attributtedTo --> ThreatActor
+    Campaign -- attributedTo --> ThreatActor
 
 
 ```
