@@ -89,6 +89,13 @@ gist:MalwareResult
 	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
+gist:MalwareType
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+skos:definition "A category indicating a particular kind of maleware (according to STIX)^^xsd:string ;
+	skos:prefLabel "Malware Type"^^xsd:string ;
+	.
+
 gist:ThreatActorRole
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
@@ -1081,6 +1088,160 @@ gist:_MalwareResult_unknown
 	skos:definition """STIX 2.1 description:
 The tool was unable to determine whether the malware binary is malicious."""^^xsd:string ;
 	skos:prefLabel "unknown"^^xsd:string ;
+	.
+
+gist:_MalwareType_adware
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+Any software that is funded by advertising. Adware may also gather sensitive user information from a system."""^^xsd:string ;
+	skos:prefLabel "adware"^^xsd:string ;
+	.
+
+gist:_MalwareType_backdoor
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A malicious program that allows an attacker to perform actions on a remote system, such as transferring files, acquiring passwords, or executing arbitrary commands [NIST800-83]."""^^xsd:string ;
+	skos:prefLabel "backdoor"^^xsd:string ;
+	.
+
+gist:_MalwareType_bootkit
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A malicious program which targets the Master Boot Record of the target computer."""^^xsd:string ;
+	skos:prefLabel "bootkit"^^xsd:string ;
+	.
+
+gist:_MalwareType_bot
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A program that resides on an infected system, communicating with and forming part of a botnet. The bot may be implanted by a worm or Trojan, which opens a backdoor. The bot then monitors the backdoor for further instructions."""^^xsd:string ;
+	skos:prefLabel "bot"^^xsd:string ;
+	.
+
+gist:_MalwareType_ddos
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A program that is used to perform a distributed denial of service attack."""^^xsd:string ;
+	skos:prefLabel "ddos"^^xsd:string ;
+	.
+
+gist:_MalwareType_downloader
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A small trojan file programmed to download and execute other files, usually more complex malware."""^^xsd:string ;
+	skos:prefLabel "downloader"^^xsd:string ;
+	.
+
+gist:_MalwareType_dropper
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A type of trojan that deposits an enclosed payload (generally, other malware) onto the target computer."""^^xsd:string ;
+	skos:prefLabel "dropper"^^xsd:string ;
+	.
+
+gist:_MalwareType_exploit-kit
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A software toolkit to target common vulnerabilities."""^^xsd:string ;
+	skos:prefLabel "exploit-kit"^^xsd:string ;
+	.
+
+gist:_MalwareType_keylogger
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A type of malware that surreptitiously monitors keystrokes and either records them for later retrieval or sends them back to a central collection point."""^^xsd:string ;
+	skos:prefLabel "keylogger"^^xsd:string ;
+	.
+
+gist:_MalwareType_ransomware
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A type of malware that encrypts files on a victim's system, demanding payment of ransom in return for the access codes required to unlock files."""^^xsd:string ;
+	skos:prefLabel "ransomware"^^xsd:string ;
+	.
+
+gist:_MalwareType_remote-access-trojan
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A remote access trojan program (or RAT), is a trojan horse capable of controlling a machine through commands issued by a remote attacker."""^^xsd:string ;
+	skos:prefLabel "remote-access-trojan"^^xsd:string ;
+	.
+
+gist:_MalwareType_resource-exploitation
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A type of malware that steals a system's resources (e.g., CPU cycles), such as a malicious bitcoin miner."""^^xsd:string ;
+	skos:prefLabel "resource-exploitation"^^xsd:string ;
+	.
+
+gist:_MalwareType_rogue-security-software
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A fake security product that demands money to clean phony infections."""^^xsd:string ;
+	skos:prefLabel "rogue-security-software"^^xsd:string ;
+	.
+
+gist:_MalwareType_rootkit
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A type of malware that hides its files or processes from normal methods of monitoring in order to conceal its presence and activities. Rootkits can operate at a number of levels, from the application level — simply replacing or adjusting the settings of system software to prevent the display of certain information — through hooking certain functions or inserting modules or drivers into the operating system kernel, to the deeper level of firmware or virtualization rootkits, which are activated before the operating system and thus even harder to detect while the system is running."""^^xsd:string ;
+	skos:prefLabel "rootkit"^^xsd:string ;
+	.
+
+gist:_MalwareType_screen-capture
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A type of malware used to capture images from the target systems screen, used for exfiltration and command and control."""^^xsd:string ;
+	skos:prefLabel "screen-capture"^^xsd:string ;
+	.
+
+gist:_MalwareType_spyware
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+Software that gathers information on a user's system without their knowledge and sends it to another party. Spyware is generally used to track activities for the purpose of delivering advertising."""^^xsd:string ;
+	skos:prefLabel "spyware"^^xsd:string ;
+	.
+
+gist:_MalwareType_trojan
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+Any malicious computer program which is used to hack into a computer by misleading users of its true intent."""^^xsd:string ;
+	skos:prefLabel "trojan"^^xsd:string ;
+	.
+
+gist:_MalwareType_unknown
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+There is not enough information available to determine the type of malware."""^^xsd:string ;
+	skos:prefLabel "unknown"^^xsd:string ;
+	.
+
+gist:_MalwareType_virus
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A malicious computer program that replicates by reproducing itself or infecting other programs by modifying them."""^^xsd:string ;
+	skos:prefLabel "virus"^^xsd:string ;
+	.
+
+gist:_MalwareType_webshell
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A malicious script used by an attacker with the intent to escalate and maintain persistent access on an already compromised web application."""^^xsd:string ;
+	skos:prefLabel "webshell"^^xsd:string ;
+	.
+
+gist:_MalwareType_wiper
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A piece of malware whose primary aim is to delete files or entire disks on a machine."""^^xsd:string ;
+	skos:prefLabel "wiper"^^xsd:string ;
+	.
+
+gist:_MalwareType_worm
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A self-replicating, self-contained program that usually executes itself without user intervention."""^^xsd:string ;
+	skos:prefLabel "worm"^^xsd:string ;
 	.
 
 gist:_ThreatActorRole_Agent
