@@ -111,6 +111,13 @@ gist:NetworkSocketAddressFamily
 	skos:prefLabel "Network Socket Address Family"^^xsd:string ;
 	.
 
+gist:NetworkSocketType
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "Categories of socket types of network traffic"^^xsd:string ;
+	skos:prefLabel "Network Socket Type"^^xsd:string ;
+	.
+
 gist:ThreatActorRole
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
@@ -1572,6 +1579,41 @@ gist:_NetworkSocketAddressFamily_AF_UNSPEC
 	skos:definition """STIX 2.1 description:
 Specifies an unspecified address family."""^^xsd:string ;
 	skos:prefLabel "AF_UNSPEC"^^xsd:string ;
+	.
+
+gist:_NetworkSocketType_SOCK_DGRAM
+	a gist:NetworkSocketType ;
+	skos:definition """STIX 2.1 description:
+Specifies a socket in which individually-addressed packets are sent (datagram)."""^^xsd:string ;
+	skos:prefLabel "SOCK_DGRAM"^^xsd:string ;
+	.
+
+gist:_NetworkSocketType_SOCK_RAW
+	a gist:NetworkSocketType ;
+	skos:definition """STIX 2.1 description:
+Specifies raw sockets which allow new IP protocols to be implemented in user space. A raw socket receives or sends the raw datagram not including link level headers."""^^xsd:string ;
+	skos:prefLabel "SOCK_RAW"^^xsd:string ;
+	.
+
+gist:_NetworkSocketType_SOCK_RDM
+	a gist:NetworkSocketType ;
+	skos:definition """STIX 2.1 description:
+Specifies a socket indicating a reliably-delivered message."""^^xsd:string ;
+	skos:prefLabel "SOCK_RDM"^^xsd:string ;
+	.
+
+gist:_NetworkSocketType_SOCK_SEQPACKET
+	a gist:NetworkSocketType ;
+	skos:definition """STIX 2.1 description:
+Specifies a datagram congestion control protocol socket."""^^xsd:string ;
+	skos:prefLabel "SOCK_SEQPACKET"^^xsd:string ;
+	.
+
+gist:_NetworkSocketType_SOCK_STREAM
+	a gist:NetworkSocketType ;
+	skos:definition """STIX 2.1 description:
+Specifies a pipe-like socket which operates over a connection with a particular remote socket and transmits data reliably as a stream of bytes."""^^xsd:string ;
+	skos:prefLabel "SOCK_STREAM"^^xsd:string ;
 	.
 
 gist:_ThreatActorRole_Agent
