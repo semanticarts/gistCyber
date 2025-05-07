@@ -92,7 +92,7 @@ gist:MalwareResult
 gist:MalwareType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-	skos:definition "A Category Class for STIX Malware Type"^^xsd:string ;
+skos:definition "A category indicating a particular kind of maleware (according to STIX)^^xsd:string ;
 	skos:prefLabel "Malware Type"^^xsd:string ;
 	.
 
