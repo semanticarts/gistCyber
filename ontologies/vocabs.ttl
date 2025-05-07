@@ -99,8 +99,16 @@ gist:MalwareResult
 gist:MalwareType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-skos:definition "A category indicating a particular kind of maleware (according to STIX)^^xsd:string ;
+	skos:definition "A category indicating a particular kind of maleware (according to STIX)"^^xsd:string ;
 	skos:prefLabel "Malware Type"^^xsd:string ;
+	.
+
+gist:NetworkSocketAddressFamily
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating a particular family of network socket types."^^xsd:string ;
+	skos:example "IPv4, IPv6"^^xsd:string ;
+	skos:prefLabel "Network Socket Address Family"^^xsd:string ;
 	.
 
 gist:ThreatActorRole
@@ -1508,6 +1516,62 @@ gist:_MalwareType_worm
 	skos:definition """STIX 2.1 description:
 A self-replicating, self-contained program that usually executes itself without user intervention."""^^xsd:string ;
 	skos:prefLabel "worm"^^xsd:string ;
+	.
+
+gist:_NetworkSocketAddressFamily_AF_APPLETALK
+	a gist:NetworkSocketAddressFamily ;
+	skos:definition """STIX 2.1 description:
+Specifies the APPLETALK DDP address family."""^^xsd:string ;
+	skos:prefLabel "AF_APPLETALK"^^xsd:string ;
+	.
+
+gist:_NetworkSocketAddressFamily_AF_BTH
+	a gist:NetworkSocketAddressFamily ;
+	skos:definition """STIX 2.1 description:
+Specifies BTH sockets."""^^xsd:string ;
+	skos:prefLabel "AF_BTH"^^xsd:string ;
+	.
+
+gist:_NetworkSocketAddressFamily_AF_INET
+	a gist:NetworkSocketAddressFamily ;
+	skos:definition """STIX 2.1 description:
+Specifies the IPv4 address family."""^^xsd:string ;
+	skos:prefLabel "AF_INET"^^xsd:string ;
+	.
+
+gist:_NetworkSocketAddressFamily_AF_INET6
+	a gist:NetworkSocketAddressFamily ;
+	skos:definition """STIX 2.1 description:
+Specifies the IPv6 address family."""^^xsd:string ;
+	skos:prefLabel "AF_INET6"^^xsd:string ;
+	.
+
+gist:_NetworkSocketAddressFamily_AF_IPX
+	a gist:NetworkSocketAddressFamily ;
+	skos:definition """STIX 2.1 description:
+Specifies the IPX (Novell Internet Protocol) address family."""^^xsd:string ;
+	skos:prefLabel "AF_IPX"^^xsd:string ;
+	.
+
+gist:_NetworkSocketAddressFamily_AF_IRDA
+	a gist:NetworkSocketAddressFamily ;
+	skos:definition """STIX 2.1 description:
+Specifies IRDA sockets."""^^xsd:string ;
+	skos:prefLabel "AF_IRDA"^^xsd:string ;
+	.
+
+gist:_NetworkSocketAddressFamily_AF_NETBIOS
+	a gist:NetworkSocketAddressFamily ;
+	skos:definition """STIX 2.1 description:
+Specifies the NETBIOS address family."""^^xsd:string ;
+	skos:prefLabel "AF_NETBIOS"^^xsd:string ;
+	.
+
+gist:_NetworkSocketAddressFamily_AF_UNSPEC
+	a gist:NetworkSocketAddressFamily ;
+	skos:definition """STIX 2.1 description:
+Specifies an unspecified address family."""^^xsd:string ;
+	skos:prefLabel "AF_UNSPEC"^^xsd:string ;
 	.
 
 gist:_ThreatActorRole_Agent
