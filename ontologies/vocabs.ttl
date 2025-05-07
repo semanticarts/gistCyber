@@ -127,6 +127,14 @@ This enumeration captures a degree of agreement with the information in a STIX O
 	skos:prefLabel "Opinion Enumeration"^^xsd:string ;
 	.
 
+gist:PatternType
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A language used to express and indicator pattern"^^xsd:string ;
+	skos:prefLabel "Pattern Type"^^xsd:string ;
+	skos:scopeNote "PatternType is a non-exhaustive, open vocabulary that covers common pattern languages and is intended to characterize the pattern language that an indicator pattern is expressed in."^^xsd:string ;
+	.
+
 gist:ThreatActorRole
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
@@ -1678,6 +1686,48 @@ The creator strongly disagrees with the information and believes it is inaccurat
 
 This MAY be considered equivalent to a 1 in a numeric scale."""^^xsd:string ;
 	skos:prefLabel "strongly-disagree"^^xsd:string ;
+	.
+
+gist:_PatternType_Sigma
+	a gist:PatternType ;
+	skos:definition """STIX 2.1 description:
+Specifies the SIGMA language."""^^xsd:string ;
+	skos:prefLabel "sigma"^^xsd:string ;
+	.
+
+gist:_PatternType_Snort
+	a gist:PatternType ;
+	skos:definition """STIX 2.1 description:
+Specifies the SNORT language [SNORT]."""^^xsd:string ;
+	skos:prefLabel "snort"^^xsd:string ;
+	.
+
+gist:_PatternType_Stix
+	a gist:PatternType ;
+	skos:definition """STIX 2.1 description:
+Specifies the STIX pattern language defined in section 9 of the specification."""^^xsd:string ;
+	skos:prefLabel "stix"^^xsd:string ;
+	.
+
+gist:_PatternType_Suricata
+	a gist:PatternType ;
+	skos:definition """STIX 2.1 description:
+Specifies the SURICATA language [Suricata]."""^^xsd:string ;
+	skos:prefLabel "suricata"^^xsd:string ;
+	.
+
+gist:_PatternType_Yara
+	a gist:PatternType ;
+	skos:definition """STIX 2.1 description:
+Specifies the YARA language [YARA]."""^^xsd:string ;
+	skos:prefLabel "yara"^^xsd:string ;
+	.
+
+gist:_PatternType_pcre
+	a gist:PatternType ;
+	skos:definition """STIX 2.1 description:
+Specifies the Perl Compatible Regular Expressions language [PCRE]."""^^xsd:string ;
+	skos:prefLabel "pcre"^^xsd:string ;
 	.
 
 gist:_ThreatActorRole_Agent
