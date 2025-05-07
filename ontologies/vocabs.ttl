@@ -92,8 +92,8 @@ gist:MalwareResult
 gist:NetworkSocketAddressFamily
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-skos:definition "A category indicating a particular family of network socket types."^^xsd:string ;
-skos:example "IPv4, IPv6"^^xsd:string ;  
+	skos:definition "A category indicating a particular family of network socket types."^^xsd:string ;
+	skos:example "IPv4, IPv6"^^xsd:string ;
 	skos:prefLabel "Network Socket Address Family"^^xsd:string ;
 	.
 
