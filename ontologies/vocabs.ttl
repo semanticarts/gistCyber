@@ -84,9 +84,23 @@ gist:InfrastructureType
 	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
+gist:MalwareCapability
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A Category class who's instances provide categorization by capability of malware. Describes categories of what a malware can do."^^xsd:string ;
+	skos:prefLabel "Malware Capability"^^xsd:string ;
+	.
+
 gist:MalwareResult
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	.
+
+gist:MalwareType
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating a particular kind of maleware (according to STIX)"^^xsd:string ;
+	skos:prefLabel "Malware Type"^^xsd:string ;
 	.
 
 gist:NetworkSocketAddressFamily
@@ -1063,6 +1077,265 @@ Specifies an endpoint machine used for work by an organization that needs protec
 	skos:prefLabel "workstation"^^xsd:string ;
 	.
 
+gist:_MalwareCapability_Anti-Sandbox
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to prevent sandbox-based behavioral analysis or make it more difficult."""^^xsd:string ;
+	skos:prefLabel "anti-sandbox"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_accesses-remote-machines
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to access one or more remote machines."""^^xsd:string ;
+	skos:prefLabel "accesses-remote-machines"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_anti-debugging
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to prevent itself from being debugged and/or from being run in a debugger or is able to make debugging more difficult."""^^xsd:string ;
+	skos:prefLabel "anti-debugging"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_anti-disassembly
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to prevent itself from being disassembled or make disassembly more difficult."""^^xsd:string ;
+	skos:prefLabel "anti-disassembly"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_anti-emulation
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to prevent its execution inside of an emulator or is able to make emulation more difficult."""^^xsd:string ;
+	skos:prefLabel "anti-emulation"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_anti-memory-forensics
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to prevent or make memory forensics more difficult."""^^xsd:string ;
+	skos:prefLabel "anti-memory-forensics"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_anti-vm
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to prevent virtual machine (VM) based behavioral analysis or make it more difficult."""^^xsd:string ;
+	skos:prefLabel "anti-vm"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_captures-input-peripherals
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to capture data from a system's input peripheral devices, such as a keyboard or mouse. This includes things like keylogging."""^^xsd:string ;
+	skos:prefLabel "captures-input-peripherals"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_captures-output-peripherals
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family captures data sent to a system's output peripherals, such as a display. Examples include things like screen scraping."""^^xsd:string ;
+	skos:prefLabel "captures-output-peripherals"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_captures-system-state-data
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to capture information about a system's state (e.g., data currently in its RAM)."""^^xsd:string ;
+	skos:prefLabel "captures-system-state-data"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_cleans-traces-of-infection
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to clean traces of its infection (e.g., file system artifacts) from a system."""^^xsd:string ;
+	skos:prefLabel "cleans-traces-of-infection"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_commits-fraud
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family commits fraud, such as click fraud (for example)."""^^xsd:string ;
+	skos:prefLabel "commits-fraud"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_communicates-with-c2
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to communicate (i.e., send or receive data) with a command and control (C2) server."""^^xsd:string ;
+	skos:prefLabel "communicates-with-c2"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_compromises-data-availability
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to compromise the availability of data on the local system on which it is executing and/or one or more remote systems. For example, encrypting data on disk, as done by ransomware."""^^xsd:string ;
+	skos:prefLabel "compromises-data-availability"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_compromises-data-integrity
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to compromise the integrity of some data that resides on (e.g., in the case of files) or is received/transmitted (e.g., in the case of network traffic) by the system on which it is executing."""^^xsd:string ;
+	skos:prefLabel "compromises-data-integrity"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_compromises-system-availability
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to consume system resources for its malicious purposes, such as password cracking or participating in a DDoS botnet, thereby compromising the availability of the local system and/or one or more remote systems."""^^xsd:string ;
+	skos:prefLabel "compromises-system-availability"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_controls-local-machine
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to control the machine on which it is executing (e.g., RATs)."""^^xsd:string ;
+	skos:prefLabel "controls-local-machine"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_degrades-security-software
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to bypass or disable security programs or operating system security features on a system (including mobile devices), either by stopping them from executing or by making changes to their code or configuration parameters. For example, malware that blocks the local machine from accessing the websites of security vendors."""^^xsd:string ;
+	skos:prefLabel "degrades-security-software"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_degrades-system-updates
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to disable the downloading and installation of system updates and patches."""^^xsd:string ;
+	skos:prefLabel "degrades-system-updates"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_determines-c2-server
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to identify one or more command and control (C2) servers with which to communicate (e.g., DGA)."""^^xsd:string ;
+	skos:prefLabel "determines-c2-server"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_emails-spam
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to send spam email messages."""^^xsd:string ;
+	skos:prefLabel "emails-spam"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_escalates-privileges
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to escalate the privileges under which it is executing."""^^xsd:string ;
+	skos:prefLabel "escalates-privileges"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_evades-av
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to evade detection by antivirus tools."""^^xsd:string ;
+	skos:prefLabel "evades-av"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_exfiltrates-data
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to gather, prepare, (possibly obfuscate) data and transmit it to exfiltration points."""^^xsd:string ;
+	skos:prefLabel "exfiltrates-data"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_fingerprints-host
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to fingerprint or probe the configuration of the host system on which it is executing for the purpose of altering its behavior based on this environment."""^^xsd:string ;
+	skos:prefLabel "fingerprints-host"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_hides-artifacts
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to hide its artifacts, such as files and open ports."""^^xsd:string ;
+	skos:prefLabel "hides-artifacts"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_hides-executing-code
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to hide its code by compromising the bootloader, kernel modules, hypervisor, etc."""^^xsd:string ;
+	skos:prefLabel "hides-executing-code"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_infects-files
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to infect one or more files on the system on which it executes. For example, malware which injects a malicious payload into all PDFs on a host as a means of propagation."""^^xsd:string ;
+	skos:prefLabel "infects-files"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_infects-remote-machines
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to self-propagate to a remote machine or infect a remote machine with malware that is different than itself."""^^xsd:string ;
+	skos:prefLabel "infects-remote-machines"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_installs-other-components
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to install additional components. This encompasses the dropping/downloading of other malicious components such as libraries, other malware, and tools."""^^xsd:string ;
+	skos:prefLabel "installs-other-components"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_persists-after-system-reboot
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to continue executing after the reboot of the system on which it is resident."""^^xsd:string ;
+	skos:prefLabel "persists-after-system-reboot"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_prevents-artifact-access
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to prevent its artifacts (e.g., files, registry keys, etc.) from being accessed."""^^xsd:string ;
+	skos:prefLabel "prevents-artifact-access"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_prevents-artifact-deletion
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to prevent its artifacts (e.g., files, registry keys, etc.) from being deleted."""^^xsd:string ;
+	skos:prefLabel "prevents-artifact-deletion"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_probes-network-environment
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to probe the properties of its network environment, e.g. to determine whether it funnels traffic through a proxy."""^^xsd:string ;
+	skos:prefLabel "probes-network-environment"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_self-modifies
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to modify itself."""^^xsd:string ;
+	skos:prefLabel "self-modifies"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_steals-authentication-credentials
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance is able to steal authentication credentials."""^^xsd:string ;
+	skos:prefLabel "steals-authentication-credentials"^^xsd:string ;
+	.
+
+gist:_MalwareCapability_violates-system-operational-integrity
+	a gist:MalwareCapability ;
+	skos:definition """STIX 2.1 description:
+Indicates that the malware instance or family is able to compromise the operational integrity of the system on which it is executing and/or one or more remote systems, e.g., by causing them to operate beyond their set of specified operational parameters. For example, malware that causes the CPU fan on the machine that it is executing to spin at a higher than normal speed."""^^xsd:string ;
+	skos:prefLabel "violates-system-operational-integrity"^^xsd:string ;
+	.
+
 gist:_MalwareResult_benign
 	a gist:MalwareResult ;
 	skos:definition """STIX 2.1 description:
@@ -1089,6 +1362,160 @@ gist:_MalwareResult_unknown
 	skos:definition """STIX 2.1 description:
 The tool was unable to determine whether the malware binary is malicious."""^^xsd:string ;
 	skos:prefLabel "unknown"^^xsd:string ;
+	.
+
+gist:_MalwareType_adware
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+Any software that is funded by advertising. Adware may also gather sensitive user information from a system."""^^xsd:string ;
+	skos:prefLabel "adware"^^xsd:string ;
+	.
+
+gist:_MalwareType_backdoor
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A malicious program that allows an attacker to perform actions on a remote system, such as transferring files, acquiring passwords, or executing arbitrary commands [NIST800-83]."""^^xsd:string ;
+	skos:prefLabel "backdoor"^^xsd:string ;
+	.
+
+gist:_MalwareType_bootkit
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A malicious program which targets the Master Boot Record of the target computer."""^^xsd:string ;
+	skos:prefLabel "bootkit"^^xsd:string ;
+	.
+
+gist:_MalwareType_bot
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A program that resides on an infected system, communicating with and forming part of a botnet. The bot may be implanted by a worm or Trojan, which opens a backdoor. The bot then monitors the backdoor for further instructions."""^^xsd:string ;
+	skos:prefLabel "bot"^^xsd:string ;
+	.
+
+gist:_MalwareType_ddos
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A program that is used to perform a distributed denial of service attack."""^^xsd:string ;
+	skos:prefLabel "ddos"^^xsd:string ;
+	.
+
+gist:_MalwareType_downloader
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A small trojan file programmed to download and execute other files, usually more complex malware."""^^xsd:string ;
+	skos:prefLabel "downloader"^^xsd:string ;
+	.
+
+gist:_MalwareType_dropper
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A type of trojan that deposits an enclosed payload (generally, other malware) onto the target computer."""^^xsd:string ;
+	skos:prefLabel "dropper"^^xsd:string ;
+	.
+
+gist:_MalwareType_exploit-kit
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A software toolkit to target common vulnerabilities."""^^xsd:string ;
+	skos:prefLabel "exploit-kit"^^xsd:string ;
+	.
+
+gist:_MalwareType_keylogger
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A type of malware that surreptitiously monitors keystrokes and either records them for later retrieval or sends them back to a central collection point."""^^xsd:string ;
+	skos:prefLabel "keylogger"^^xsd:string ;
+	.
+
+gist:_MalwareType_ransomware
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A type of malware that encrypts files on a victim's system, demanding payment of ransom in return for the access codes required to unlock files."""^^xsd:string ;
+	skos:prefLabel "ransomware"^^xsd:string ;
+	.
+
+gist:_MalwareType_remote-access-trojan
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A remote access trojan program (or RAT), is a trojan horse capable of controlling a machine through commands issued by a remote attacker."""^^xsd:string ;
+	skos:prefLabel "remote-access-trojan"^^xsd:string ;
+	.
+
+gist:_MalwareType_resource-exploitation
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A type of malware that steals a system's resources (e.g., CPU cycles), such as a malicious bitcoin miner."""^^xsd:string ;
+	skos:prefLabel "resource-exploitation"^^xsd:string ;
+	.
+
+gist:_MalwareType_rogue-security-software
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A fake security product that demands money to clean phony infections."""^^xsd:string ;
+	skos:prefLabel "rogue-security-software"^^xsd:string ;
+	.
+
+gist:_MalwareType_rootkit
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A type of malware that hides its files or processes from normal methods of monitoring in order to conceal its presence and activities. Rootkits can operate at a number of levels, from the application level — simply replacing or adjusting the settings of system software to prevent the display of certain information — through hooking certain functions or inserting modules or drivers into the operating system kernel, to the deeper level of firmware or virtualization rootkits, which are activated before the operating system and thus even harder to detect while the system is running."""^^xsd:string ;
+	skos:prefLabel "rootkit"^^xsd:string ;
+	.
+
+gist:_MalwareType_screen-capture
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A type of malware used to capture images from the target systems screen, used for exfiltration and command and control."""^^xsd:string ;
+	skos:prefLabel "screen-capture"^^xsd:string ;
+	.
+
+gist:_MalwareType_spyware
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+Software that gathers information on a user's system without their knowledge and sends it to another party. Spyware is generally used to track activities for the purpose of delivering advertising."""^^xsd:string ;
+	skos:prefLabel "spyware"^^xsd:string ;
+	.
+
+gist:_MalwareType_trojan
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+Any malicious computer program which is used to hack into a computer by misleading users of its true intent."""^^xsd:string ;
+	skos:prefLabel "trojan"^^xsd:string ;
+	.
+
+gist:_MalwareType_unknown
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+There is not enough information available to determine the type of malware."""^^xsd:string ;
+	skos:prefLabel "unknown"^^xsd:string ;
+	.
+
+gist:_MalwareType_virus
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A malicious computer program that replicates by reproducing itself or infecting other programs by modifying them."""^^xsd:string ;
+	skos:prefLabel "virus"^^xsd:string ;
+	.
+
+gist:_MalwareType_webshell
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A malicious script used by an attacker with the intent to escalate and maintain persistent access on an already compromised web application."""^^xsd:string ;
+	skos:prefLabel "webshell"^^xsd:string ;
+	.
+
+gist:_MalwareType_wiper
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A piece of malware whose primary aim is to delete files or entire disks on a machine."""^^xsd:string ;
+	skos:prefLabel "wiper"^^xsd:string ;
+	.
+
+gist:_MalwareType_worm
+	a gist:MalwareType ;
+	skos:definition """STIX 2.1 description:
+A self-replicating, self-contained program that usually executes itself without user intervention."""^^xsd:string ;
+	skos:prefLabel "worm"^^xsd:string ;
 	.
 
 gist:_NetworkSocketAddressFamily_AF_APPLETALK
