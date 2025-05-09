@@ -151,85 +151,109 @@ gist:ThreatActorType
 	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
-gist:_AccountType_Facebook
+gist:_AccountType_facebook
 	a gist:AccountType ;
+	rdfs:label "Facebook"^^xsd:string ;
+	skos:altLabel "Facebook"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies a Facebook account"""^^xsd:string ;
 	skos:prefLabel "facebook"^^xsd:string ;
 	.
 
-gist:_AccountType_LDAP
+gist:_AccountType_ldap
 	a gist:AccountType ;
+	rdfs:label "LDAP"^^xsd:string ;
+	skos:altLabel "LDAP"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies an LDAP account"""^^xsd:string ;
 	skos:prefLabel "ldap"^^xsd:string ;
 	.
 
-gist:_AccountType_NIS
+gist:_AccountType_nis
 	a gist:AccountType ;
+	rdfs:label "NIS"^^xsd:string ;
+	skos:altLabel "NIS"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies an NIS account"""^^xsd:string ;
 	skos:prefLabel "nis"^^xsd:string ;
 	.
 
-gist:_AccountType_OpenID
+gist:_AccountType_openid
 	a gist:AccountType ;
+	rdfs:label "OpenID"^^xsd:string ;
+	skos:altLabel "OpenID"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies an OpenID account"""^^xsd:string ;
 	skos:prefLabel "openid"^^xsd:string ;
 	.
 
-gist:_AccountType_Radius
+gist:_AccountType_radius
 	a gist:AccountType ;
+	rdfs:label "Radius"^^xsd:string ;
+	skos:altLabel "Radius"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies a RADIUS account"""^^xsd:string ;
 	skos:prefLabel "radius"^^xsd:string ;
 	.
 
-gist:_AccountType_Skype
+gist:_AccountType_skype
 	a gist:AccountType ;
+	rdfs:label "Skype"^^xsd:string ;
+	skos:altLabel "Skype"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies a Skype account"""^^xsd:string ;
 	skos:prefLabel "skype"^^xsd:string ;
 	.
 
-gist:_AccountType_Tacacs
+gist:_AccountType_tacacs
 	a gist:AccountType ;
+	rdfs:label "TACACS"^^xsd:string ;
+	skos:altLabel "TACACS"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies a TACACS account"""^^xsd:string ;
 	skos:prefLabel "tacacs"^^xsd:string ;
 	.
 
-gist:_AccountType_Twitter
+gist:_AccountType_twitter
 	a gist:AccountType ;
+	rdfs:label "Twitter"^^xsd:string ;
+	skos:altLabel "Twitter"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies a Twitter account"""^^xsd:string ;
 	skos:prefLabel "twitter"^^xsd:string ;
 	.
 
-gist:_AccountType_Unix
+gist:_AccountType_unix
 	a gist:AccountType ;
+	rdfs:label "UNIX"^^xsd:string ;
+	skos:altLabel "Unix"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies a POSIX account"""^^xsd:string ;
 	skos:prefLabel "unix"^^xsd:string ;
 	.
 
-gist:_AccountType_Windows-Domain
+gist:_AccountType_windows-domain
 	a gist:AccountType ;
+	rdfs:label "Windows Domain"^^xsd:string ;
+	skos:altLabel "Windows-Domain"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies a Windows Domain account"""^^xsd:string ;
 	skos:prefLabel "windows-domain"^^xsd:string ;
 	.
 
-gist:_AccountType_Windows_Local
+gist:_AccountType_windows_local
 	a gist:AccountType ;
+	rdfs:label "Windows Local"^^xsd:string ;
+	skos:altLabel "Windows-Local"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies a Windows Local account"""^^xsd:string ;
 	skos:prefLabel "windows-local"^^xsd:string ;
 	.
 
-gist:_AttackMotivation_Accidental
+gist:_AttackMotivation_accidental
 	a gist:AttackMotivation ;
+	rdfs:label "Accidental"^^xsd:string ;
+	skos:altLabel "Accidental"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 A non-hostile actor whose benevolent or harmless intent inadvertently causes harm.
 
@@ -239,8 +263,10 @@ For example, a well-meaning and dedicated employee who through distraction or po
 	skos:prefLabel "accidental"^^xsd:string ;
 	.
 
-gist:_AttackMotivation_Coercion
+gist:_AttackMotivation_coercion
 	a gist:AttackMotivation ;
+	rdfs:label "Coercion"^^xsd:string ;
+	skos:altLabel "Coercion"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Being forced to act on someone else's behalf.
 
@@ -250,8 +276,10 @@ Adversaries who are motivated by coercion are often forced through intimidation 
 	skos:prefLabel "coercion"^^xsd:string ;
 	.
 
-gist:_AttackMotivation_Dominance
+gist:_AttackMotivation_dominance
 	a gist:AttackMotivation ;
+	rdfs:label "Dominance"^^xsd:string ;
+	skos:altLabel "Dominance"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 A desire to assert superiority over someone or something else.
 
@@ -261,8 +289,10 @@ Adversaries who are seeking dominance over a target are focused on using their p
 	skos:prefLabel "dominance"^^xsd:string ;
 	.
 
-gist:_AttackMotivation_Ideology
+gist:_AttackMotivation_ideology
 	a gist:AttackMotivation ;
+	rdfs:label "Ideology"^^xsd:string ;
+	skos:altLabel "Ideology"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 A passion to express a set of ideas, beliefs, and values that may shape and drive harmful and illegal acts.
 
@@ -276,8 +306,10 @@ For example, an activist group may sabotage a company’s equipment because they
 	skos:prefLabel "ideology"^^xsd:string ;
 	.
 
-gist:_AttackMotivation_Notoriety
+gist:_AttackMotivation_notoriety
 	a gist:AttackMotivation ;
+	rdfs:label "Notoriety"^^xsd:string ;
+	skos:altLabel "Notoriety"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Seeking prestige or to become well known through some activity.
 
@@ -287,8 +319,10 @@ Adversaries motivated by notoriety are often seeking either personal validation 
 	skos:prefLabel "notoriety"^^xsd:string ;
 	.
 
-gist:_AttackMotivation_Organizational-Gain
+gist:_AttackMotivation_organizational-gain
 	a gist:AttackMotivation ;
+	rdfs:label "Oranizational Gain"^^xsd:string ;
+	skos:altLabel "Oranizational-Gain"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Seeking advantage over a competing organization, including a military organization.
 
@@ -298,8 +332,10 @@ Adversaries motivated by increased profit or other gains through an unfairly obt
 	skos:prefLabel "oranizational-gain"^^xsd:string ;
 	.
 
-gist:_AttackMotivation_Personal-Gain
+gist:_AttackMotivation_personal-gain
 	a gist:AttackMotivation ;
+	rdfs:label "Personal Gain"^^xsd:string ;
+	skos:altLabel "Personal-Gain"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 The desire to improve one’s own financial status.
 
@@ -313,8 +349,10 @@ While a Threat Actor or Intrusion Set may be seeking personal gain, this does no
 	skos:prefLabel "personal-gain"^^xsd:string ;
 	.
 
-gist:_AttackMotivation_Personal-Satisfaction
+gist:_AttackMotivation_personal-satisfaction
 	a gist:AttackMotivation ;
+	rdfs:label "Personal Satisfaction"^^xsd:string ;
+	skos:altLabel "Personal-Satisfaction"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 A desire to satisfy a strictly personal goal, including curiosity, thrill-seeking, amusement, etc.
 
@@ -324,8 +362,10 @@ Threat Actors or Intrusion Set driven by personal satisfaction may incidentally 
 	skos:prefLabel "personal-satisfaction"^^xsd:string ;
 	.
 
-gist:_AttackMotivation_Revenge
+gist:_AttackMotivation_revenge
 	a gist:AttackMotivation ;
+	rdfs:label "Revenge"^^xsd:string ;
+	skos:altLabel "Revenge"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 A desire to avenge perceived wrongs through harmful actions such as sabotage, violence, theft, fraud, or embarrassing certain individuals or the organization.
 
@@ -335,8 +375,10 @@ A disgruntled Threat Actor or Intrusion Set seeking revenge can include current 
 	skos:prefLabel "revenge"^^xsd:string ;
 	.
 
-gist:_AttackMotivation_Unpredictable
+gist:_AttackMotivation_unpredictable
 	a gist:AttackMotivation ;
+	rdfs:label "Unpredictable"^^xsd:string ;
+	skos:altLabel "Unpredictable"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Acting without identifiable reason or purpose and creating unpredictable events.
 
@@ -346,43 +388,55 @@ Unpredictable is not a miscellaneous or default category. Unpredictable means a 
 	skos:prefLabel "unpredictable"^^xsd:string ;
 	.
 
-gist:_AttackResourceLevel_Club
+gist:_AttackResourceLevel_club
 	a gist:AttackResourceLevel ;
+	rdfs:label "Club"^^xsd:string ;
+	skos:altLabel "Club"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Members interact on a social and volunteer basis, often with little personal interest in the specific target. An example might be a core group of unrelated activists who regularly exchange tips on a particular blog. Group persists long term."""^^xsd:string ;
 	skos:prefLabel "club"^^xsd:string ;
 	.
 
-gist:_AttackResourceLevel_Contest
+gist:_AttackResourceLevel_contest
 	a gist:AttackResourceLevel ;
+	rdfs:label "Contest"^^xsd:string ;
+	skos:altLabel "Contest"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 A short-lived and perhaps anonymous interaction that concludes when the participants have achieved a single goal. For example, people who break into systems just for thrills or prestige may hold a contest to see who can break into a specific target first. It also includes announced \"operations\" to achieve a specific goal, such as the original \"OpIsrael\" call for volunteers to disrupt all of Israel's Internet functions for a day."""^^xsd:string ;
 	skos:prefLabel "contest"^^xsd:string ;
 	.
 
-gist:_AttackResourceLevel_Government
+gist:_AttackResourceLevel_government
 	a gist:AttackResourceLevel ;
+	rdfs:label "Government"^^xsd:string ;
+	skos:altLabel "Government"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Controls public assets and functions within a jurisdiction; very well resourced and persists long term."""^^xsd:string ;
 	skos:prefLabel "government"^^xsd:string ;
 	.
 
-gist:_AttackResourceLevel_Individual
+gist:_AttackResourceLevel_individual
 	a gist:AttackResourceLevel ;
+	rdfs:label "Individual"^^xsd:string ;
+	skos:altLabel "Individual"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Resources limited to the average individual; Threat Actor acts independently."""^^xsd:string ;
 	skos:prefLabel "individual"^^xsd:string ;
 	.
 
-gist:_AttackResourceLevel_Organization
+gist:_AttackResourceLevel_organization
 	a gist:AttackResourceLevel ;
+	rdfs:label "Organization"^^xsd:string ;
+	skos:altLabel "Organization"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Larger and better resourced than a team; typically, a company or crime syndicate. Usually operates in multiple geographic areas and persists long term."""^^xsd:string ;
 	skos:prefLabel "organization"^^xsd:string ;
 	.
 
-gist:_AttackResourceLevel_Team
+gist:_AttackResourceLevel_team
 	a gist:AttackResourceLevel ;
+	rdfs:label "Team"^^xsd:string ;
+	skos:altLabel "Team"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 A formally organized group with a leader, typically motivated by a specific goal and organized around that goal. Group persists long term and typically operates within a single geography."""^^xsd:string ;
 	skos:prefLabel "team"^^xsd:string ;
@@ -390,6 +444,8 @@ A formally organized group with a leader, typically motivated by a specific goal
 
 gist:_EncryptionAlgorithm_AES_256_GCM
 	a gist:EncryptionAlgorithm ;
+	rdfs:label "AES-256-GCM"^^xsd:string ;
+	skos:altLabel "AES-256-GCM"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies the AES-256-GCM cipher, as defined in [NIST SP800-38D]"""^^xsd:string ;
 	skos:prefLabel "AES-256-GCM"^^xsd:string ;
@@ -397,68 +453,72 @@ Specifies the AES-256-GCM cipher, as defined in [NIST SP800-38D]"""^^xsd:string 
 
 gist:_EncryptionAlgorithm_ChaCha20-Poly1305
 	a gist:EncryptionAlgorithm ;
+	rdfs:label "ChaCha20-Poly1305"^^xsd:string ;
+	skos:altLabel "ChaCha20-Poly1305"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies the ChaCha20-Poly1305 stream cipher, as defined in [RFC7539]."""^^xsd:string ;
 	skos:prefLabel "ChaCha20-Poly1305"^^xsd:string ;
 	.
 
-gist:_EncryptionAlgorithm_Mime-Type-Indicated
+gist:_EncryptionAlgorithm_mime-type-indicated
 	a gist:EncryptionAlgorithm ;
+	rdfs:label "Mime Type Indicated"^^xsd:string ;
+	skos:altLabel "Mime-Type-Indicated"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 The encryption algorithm is self-defined by the artifact's data. The specified mime-type tells you which format it is, e.g., Word Doc or GPG. This is intended for formats like Zip files and Word files which take a simple password, or GPG armored files that contain the key blob along with the file."""^^xsd:string ;
 	skos:prefLabel "mime-type-indicated"^^xsd:string ;
 	.
 
-gist:_ExtensionTypes_New-SCO
+gist:_ExtensionTypes_new-sco
 	a gist:ExtensionTypes ;
 	skos:definition """STIX 2.1 description:
 Specifies that the Extension includes a new SCO"""^^xsd:string ;
 	skos:prefLabel "new-sco"^^xsd:string ;
 	.
 
-gist:_ExtensionTypes_New-SDO
+gist:_ExtensionTypes_new-sdo
 	a gist:ExtensionTypes ;
 	skos:definition """STIX 2.1 description:
 Specifies that the Extension includes a new SDO"""^^xsd:string ;
 	skos:prefLabel "new-sdo"^^xsd:string ;
 	.
 
-gist:_ExtensionTypes_New-SRO
+gist:_ExtensionTypes_new-sro
 	a gist:ExtensionTypes ;
 	skos:definition """STIX 2.1 description:
 Specifies that the Extension includes a new SRO"""^^xsd:string ;
 	skos:prefLabel "new-sro"^^xsd:string ;
 	.
 
-gist:_ExtensionTypes_Property-Extension
+gist:_ExtensionTypes_property-extension
 	a gist:ExtensionTypes ;
 	skos:definition """STIX 2.1 description:
 Specifies that the Extension includes additional properties for a given STIX Object."""^^xsd:string ;
 	skos:prefLabel "property-extension"^^xsd:string ;
 	.
 
-gist:_ExtensionTypes_Toplevel-Property-Extension
+gist:_ExtensionTypes_toplevel-property-extension
 	a gist:ExtensionTypes ;
 	skos:definition """STIX 2.1 description:
 Specifies that the Extension includes additional properties for a given STIX Object at the top-level. Organizations are encouraged to use the property-extension instead of this extension type."""^^xsd:string ;
 	skos:prefLabel "toplevel-property-extension"^^xsd:string ;
 	.
 
-gist:_GroupingContext_Malware-Analysis
+gist:_GroupingContext_malware-analysis
 	a gist:GroupingContext ;
 	skos:definition """STIX 2.1 description:
 A set of STIX content related to a particular malware instance or family."""^^xsd:string ;
 	skos:prefLabel "malware-analysis"^^xsd:string ;
 	.
 
-gist:_GroupingContext_Suspicious-Activity
+gist:_GroupingContext_suspicious-activity
 	a gist:GroupingContext ;
 	skos:definition """STIX 2.1 description:
 A set of STIX content related to a particular suspicious activity event."""^^xsd:string ;
 	skos:prefLabel "suspicious-activity"^^xsd:string ;
 	.
 
-gist:_GroupingContext_Unspecified
+gist:_GroupingContext_unspecified
 	a gist:GroupingContext ;
 	skos:definition """STIX 2.1 description:
 A set of STIX content contextually related but without any precise characterization of the contextual relationship between the objects."""^^xsd:string ;
@@ -521,175 +581,175 @@ Specifies the TLSH fuzzy hashing algorithm. The corresponding hash string for th
 	skos:prefLabel "TLSH"^^xsd:string ;
 	.
 
-gist:_IdentityClass_Class
+gist:_IdentityClass_class
 	a gist:IdentityClass ;
 	skos:definition """STIX 2.1 description:
 A class of entities, such as all hospitals, all Europeans, or the Domain Administrators in a system."""^^xsd:string ;
 	skos:prefLabel "class"^^xsd:string ;
 	.
 
-gist:_IdentityClass_Group
+gist:_IdentityClass_group
 	a gist:IdentityClass ;
 	skos:definition """STIX 2.1 description:
 An informal collection of people, without formal governance, such as a distributed hacker group."""^^xsd:string ;
 	skos:prefLabel "group"^^xsd:string ;
 	.
 
-gist:_IdentityClass_Individual
+gist:_IdentityClass_individual
 	a gist:IdentityClass ;
 	skos:definition """STIX 2.1 description
 A single person."""^^xsd:string ;
 	skos:prefLabel "individual"^^xsd:string ;
 	.
 
-gist:_IdentityClass_Organization
+gist:_IdentityClass_organization
 	a gist:IdentityClass ;
 	skos:definition """STIX 2.1 description:
 A formal organization of people, with governance, such as a company or country."""^^xsd:string ;
 	skos:prefLabel "organization"^^xsd:string ;
 	.
 
-gist:_IdentityClass_System
+gist:_IdentityClass_system
 	a gist:IdentityClass ;
 	skos:definition """STIX 2.1 description:
 A computer system, such as a SIEM"""^^xsd:string ;
 	skos:prefLabel "system"^^xsd:string ;
 	.
 
-gist:_IdentityClass_Unknown
+gist:_IdentityClass_unknown
 	a gist:IdentityClass ;
 	skos:definition """STIX 2.1 description:
 It is unknown whether the classification is an individual, group, system, organization, or class."""^^xsd:string ;
 	skos:prefLabel "unknown"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_Applescript
+gist:_ImplementationLanguage_applescript
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the AppleScript programming language."""^^xsd:string ;
 	skos:prefLabel "applescript"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_Bash
+gist:_ImplementationLanguage_bash
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the Bash programming language."""^^xsd:string ;
 	skos:prefLabel "bash"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_C
+gist:_ImplementationLanguage_c
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the C programming language."""^^xsd:string ;
 	skos:prefLabel "c"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_C-PlusPlus
+gist:_ImplementationLanguage_c-plusplus
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the C++ programming language."""^^xsd:string ;
 	skos:prefLabel "c++"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_C-sharp
+gist:_ImplementationLanguage_c-sharp
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the C# programming language."""^^xsd:string ;
 	skos:prefLabel "c#"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_Go
+gist:_ImplementationLanguage_go
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the Go (sometimes referred to as golang) programming language."""^^xsd:string ;
 	skos:prefLabel "go"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_Java
+gist:_ImplementationLanguage_java
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the JAVA programming language."""^^xsd:string ;
 	skos:prefLabel "java"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_Javascript
+gist:_ImplementationLanguage_javascript
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the JavaScript programming language."""^^xsd:string ;
 	skos:prefLabel "javascript"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_Lua
+gist:_ImplementationLanguage_lua
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the Lua programming language."""^^xsd:string ;
 	skos:prefLabel "lua"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_Objective-C
+gist:_ImplementationLanguage_objective-C
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the Objective-C programming language."""^^xsd:string ;
 	skos:prefLabel "objective-c"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_Perl
+gist:_ImplementationLanguage_perl
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the Perl programming language."""^^xsd:string ;
 	skos:prefLabel "perl"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_Php
+gist:_ImplementationLanguage_php
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the PHP programming language."""^^xsd:string ;
 	skos:prefLabel "php"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_Powershell
+gist:_ImplementationLanguage_powershell
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the Windows Powershell programming language."""^^xsd:string ;
 	skos:prefLabel "powershell"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_Python
+gist:_ImplementationLanguage_python
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the Python programming language."""^^xsd:string ;
 	skos:prefLabel "python"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_Ruby
+gist:_ImplementationLanguage_ruby
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the Ruby programming language."""^^xsd:string ;
 	skos:prefLabel "ruby"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_Scala
+gist:_ImplementationLanguage_scala
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the Scala programming language."""^^xsd:string ;
 	skos:prefLabel "scala"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_Swift
+gist:_ImplementationLanguage_swift
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the Swift programming language."""^^xsd:string ;
 	skos:prefLabel "swift"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_Typescript
+gist:_ImplementationLanguage_typescript
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the TypeScript programming language."""^^xsd:string ;
 	skos:prefLabel "typescript"^^xsd:string ;
 	.
 
-gist:_ImplementationLanguage_Visual-Basic
+gist:_ImplementationLanguage_visual-basic
 	a gist:ImplementationLanguage ;
 	skos:definition """STIX 2.1 description:
 Specifies the Visual Basic programming language."""^^xsd:string ;
@@ -710,49 +770,49 @@ Specifies the x86 64-bit Assembly programming language."""^^xsd:string ;
 	skos:prefLabel "x86-64"^^xsd:string ;
 	.
 
-gist:_IndicatorType_Anomalous-activity
+gist:_IndicatorType_anomalous-activity
 	a gist:IndicatorType ;
 	skos:definition """STIX 2.1 description:
 Unexpected, or unusual activity that may not necessarily be malicious or indicate compromise. This type of activity may include reconnaissance-like behavior such as port scans or version identification, network behavior anomalies, and asset and/or user behavioral anomalies."""^^xsd:string ;
 	skos:prefLabel "anomalous-activity"^^xsd:string ;
 	.
 
-gist:_IndicatorType_Anonymization
+gist:_IndicatorType_anonymization
 	a gist:IndicatorType ;
 	skos:definition """STIX 2.1 description:
 Suspected anonymization tools or infrastructure (proxy, TOR, VPN, etc.)."""^^xsd:string ;
 	skos:prefLabel "anonymization"^^xsd:string ;
 	.
 
-gist:_IndicatorType_Attribution
+gist:_IndicatorType_attribution
 	a gist:IndicatorType ;
 	skos:definition """STIX 2.1 description:
 Patterns of behavior that indicate attribution to a particular Threat Actor or Campaign."""^^xsd:string ;
 	skos:prefLabel "attribution"^^xsd:string ;
 	.
 
-gist:_IndicatorType_Benign
+gist:_IndicatorType_benign
 	a gist:IndicatorType ;
 	skos:definition """STIX 2.1 description:
 Activity that is not suspicious or malicious in and of itself, but when combined with other activity may indicate suspicious or malicious behavior."""^^xsd:string ;
 	skos:prefLabel "benign"^^xsd:string ;
 	.
 
-gist:_IndicatorType_Compromised
+gist:_IndicatorType_compromised
 	a gist:IndicatorType ;
 	skos:definition """STIX 2.1 description:
 Assets that are suspected to be compromised."""^^xsd:string ;
 	skos:prefLabel "compromised"^^xsd:string ;
 	.
 
-gist:_IndicatorType_Malicious-activity
+gist:_IndicatorType_malicious-activity
 	a gist:IndicatorType ;
 	skos:definition """STIX 2.1 description:
 Patterns of suspected malicious objects and/or activity."""^^xsd:string ;
 	skos:prefLabel "malicious-activity"^^xsd:string ;
 	.
 
-gist:_IndicatorType_Unknown
+gist:_IndicatorType_unknown
 	a gist:IndicatorType ;
 	skos:definition """STIX 2.1 description:
 There is not enough information available to determine the type of indicator."""^^xsd:string ;
@@ -761,6 +821,8 @@ There is not enough information available to determine the type of indicator."""
 
 gist:_IndustrySector_aerospace
 	a gist:IndustrySector ;
+	rdfs:label "Aerospace"^^xsd:string ;
+	skos:altLabel "Aerospace"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Aerospace industry sector"""^^xsd:string ;
 	skos:prefLabel "aerospace"^^xsd:string ;
@@ -768,6 +830,8 @@ Tag for the Aerospace industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_agriculture
 	a gist:IndustrySector ;
+	rdfs:label "Agriculture"^^xsd:string ;
+	skos:altLabel "Agriculture"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Agriculture industry sector"""^^xsd:string ;
 	skos:prefLabel "agriculture"^^xsd:string ;
@@ -775,6 +839,8 @@ Tag for the Agriculture industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_automotive
 	a gist:IndustrySector ;
+	rdfs:label "Automotive"^^xsd:string ;
+	skos:altLabel "Automotive"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Automotive industry sector"""^^xsd:string ;
 	skos:prefLabel "automotive"^^xsd:string ;
@@ -782,6 +848,8 @@ Tag for the Automotive industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_chemical
 	a gist:IndustrySector ;
+	rdfs:label "Chemical"^^xsd:string ;
+	skos:altLabel "Chemical"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Chemical industry sector"""^^xsd:string ;
 	skos:prefLabel "chemical"^^xsd:string ;
@@ -789,6 +857,8 @@ Tag for the Chemical industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_commercial
 	a gist:IndustrySector ;
+	rdfs:label "Commercial"^^xsd:string ;
+	skos:altLabel "Commercial"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Commercial industry sector"""^^xsd:string ;
 	skos:prefLabel "commercial"^^xsd:string ;
@@ -796,13 +866,17 @@ Tag for the Commercial industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_communications
 	a gist:IndustrySector ;
+	rdfs:label "Communications"^^xsd:string ;
+	skos:altLabel "Communications"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Communications industry sector"""^^xsd:string ;
-	skos:prefLabel "Communications"^^xsd:string ;
+	skos:prefLabel "communications"^^xsd:string ;
 	.
 
 gist:_IndustrySector_construction
 	a gist:IndustrySector ;
+	rdfs:label "Construction"^^xsd:string ;
+	skos:altLabel "Construction"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Construction industry sector"""^^xsd:string ;
 	skos:prefLabel "construction"^^xsd:string ;
@@ -810,6 +884,8 @@ Tag for the Construction industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_defense
 	a gist:IndustrySector ;
+	rdfs:label "Defense"^^xsd:string ;
+	skos:altLabel "Defense"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Defense industry sector"""^^xsd:string ;
 	skos:prefLabel "defense"^^xsd:string ;
@@ -817,13 +893,17 @@ Tag for the Defense industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_education
 	a gist:IndustrySector ;
+	rdfs:label "Education"^^xsd:string ;
+	skos:altLabel "Education"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Education industry sector"""^^xsd:string ;
 	skos:prefLabel "education"^^xsd:string ;
 	.
 
-gist:_IndustrySector_emergency-Services
+gist:_IndustrySector_emergency-services
 	a gist:IndustrySector ;
+	rdfs:label "Emergency-Services"^^xsd:string ;
+	skos:altLabel "Emergency-Services"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the emergency services industry sector"""^^xsd:string ;
 	skos:prefLabel "emergency-services"^^xsd:string ;
@@ -831,6 +911,8 @@ Tag for the emergency services industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_energy
 	a gist:IndustrySector ;
+	rdfs:label "Energy"^^xsd:string ;
+	skos:altLabel "Energy"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Energy industry sector"""^^xsd:string ;
 	skos:prefLabel "energy"^^xsd:string ;
@@ -838,13 +920,17 @@ Tag for the Energy industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_entertainment
 	a gist:IndustrySector ;
+	rdfs:label "Entertainment"^^xsd:string ;
+	skos:altLabel "Entertainment"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Entertainment industry sector"""^^xsd:string ;
 	skos:prefLabel "entertainment"^^xsd:string ;
 	.
 
-gist:_IndustrySector_financial-Services
+gist:_IndustrySector_financial-services
 	a gist:IndustrySector ;
+	rdfs:label "Financial Services"^^xsd:string ;
+	skos:altLabel "Financial-Services"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Financial-Services industry sector"""^^xsd:string ;
 	skos:prefLabel "financial-services"^^xsd:string ;
@@ -852,6 +938,8 @@ Tag for the Financial-Services industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_government
 	a gist:IndustrySector ;
+	rdfs:label "Government"^^xsd:string ;
+	skos:altLabel "Government"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Government industry sector"""^^xsd:string ;
 	skos:prefLabel "government"^^xsd:string ;
@@ -859,6 +947,8 @@ Tag for the Government industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_government-Local
 	a gist:IndustrySector ;
+	rdfs:label "Government Local"^^xsd:string ;
+	skos:altLabel "Government-Local"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the government local industry sector"""^^xsd:string ;
 	skos:prefLabel "government-local"^^xsd:string ;
@@ -866,6 +956,8 @@ Tag for the government local industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_government-National
 	a gist:IndustrySector ;
+	rdfs:label "Government National"^^xsd:string ;
+	skos:altLabel "Government-National"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the government-national industry sector"""^^xsd:string ;
 	skos:prefLabel "government-national"^^xsd:string ;
@@ -873,6 +965,8 @@ Tag for the government-national industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_government-Public-Services
 	a gist:IndustrySector ;
+	rdfs:label "Government Public Services"^^xsd:string ;
+	skos:altLabel "Government-Public-Services"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the government public services industry sector"""^^xsd:string ;
 	skos:prefLabel "government-public-services"^^xsd:string ;
@@ -880,6 +974,8 @@ Tag for the government public services industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_government-Regional
 	a gist:IndustrySector ;
+	rdfs:label "Government Regional"^^xsd:string ;
+	skos:altLabel "Government-Regional"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the government regional industry sector"""^^xsd:string ;
 	skos:prefLabel "government-regional"^^xsd:string ;
@@ -887,6 +983,8 @@ Tag for the government regional industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_healthcare
 	a gist:IndustrySector ;
+	rdfs:label "Healthcare"^^xsd:string ;
+	skos:altLabel "Healthcare"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the healthcare industry sector"""^^xsd:string ;
 	skos:prefLabel "healthcare"^^xsd:string ;
@@ -894,6 +992,8 @@ Tag for the healthcare industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_hospitality-Leisure
 	a gist:IndustrySector ;
+	rdfs:label "Hospitality Leisure"^^xsd:string ;
+	skos:altLabel "Hospitality-Leisure"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the hospitality leisure industry sector"""^^xsd:string ;
 	skos:prefLabel "hospitality-leisure"^^xsd:string ;
@@ -901,6 +1001,8 @@ Tag for the hospitality leisure industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_infrastructure
 	a gist:IndustrySector ;
+	rdfs:label "Infrastructure"^^xsd:string ;
+	skos:altLabel "Infrastructure"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the infrastructure industry sector"""^^xsd:string ;
 	skos:prefLabel "infrastructure"^^xsd:string ;
@@ -908,6 +1010,8 @@ Tag for the infrastructure industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_infrastructure-Dams
 	a gist:IndustrySector ;
+	rdfs:label "Dams"^^xsd:string ;
+	skos:altLabel "Dams"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Infrastructure-Dams industry sector"""^^xsd:string ;
 	skos:prefLabel "dams"^^xsd:string ;
@@ -915,6 +1019,8 @@ Tag for the Infrastructure-Dams industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_infrastructure-Nuclear
 	a gist:IndustrySector ;
+	rdfs:label "Nuclear"^^xsd:string ;
+	skos:altLabel "Nuclear"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Nuclear industry sector"""^^xsd:string ;
 	skos:prefLabel "nuclear"^^xsd:string ;
@@ -922,6 +1028,8 @@ Tag for the Nuclear industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_infrastructure-Water
 	a gist:IndustrySector ;
+	rdfs:label "Water"^^xsd:string ;
+	skos:altLabel "Water"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Water industry sector"""^^xsd:string ;
 	skos:prefLabel "water"^^xsd:string ;
@@ -929,6 +1037,8 @@ Tag for the Water industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_insurance
 	a gist:IndustrySector ;
+	rdfs:label "Insurance"^^xsd:string ;
+	skos:altLabel "Insurance"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Insurance industry sector"""^^xsd:string ;
 	skos:prefLabel "insurance"^^xsd:string ;
@@ -936,6 +1046,8 @@ Tag for the Insurance industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_manufacturing
 	a gist:IndustrySector ;
+	rdfs:label "Manufacturing"^^xsd:string ;
+	skos:altLabel "Manufacturing"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Manufacturing industry sector"""^^xsd:string ;
 	skos:prefLabel "manufacturing"^^xsd:string ;
@@ -943,6 +1055,8 @@ Tag for the Manufacturing industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_mining
 	a gist:IndustrySector ;
+	rdfs:label "Mining"^^xsd:string ;
+	skos:altLabel "Mining"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Mining industry sector"""^^xsd:string ;
 	skos:prefLabel "mining"^^xsd:string ;
@@ -950,6 +1064,11 @@ Tag for the Mining industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_non-Profit
 	a gist:IndustrySector ;
+	rdfs:label "Non Profit"^^xsd:string ;
+	skos:altLabel
+		"Non-Profit"^^xsd:string ,
+		"Nonprofit"^^xsd:string
+		;
 	skos:definition """STIX 2.1 description:
 Tag for the Non-Profit industry sector"""^^xsd:string ;
 	skos:prefLabel "non-profit"^^xsd:string ;
@@ -957,6 +1076,8 @@ Tag for the Non-Profit industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_pharmaceuticals
 	a gist:IndustrySector ;
+	rdfs:label "Pharmaceuticals"^^xsd:string ;
+	skos:altLabel "Pharmaceuticals"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Pharmaceuticals industry sector"""^^xsd:string ;
 	skos:prefLabel "pharmaceuticals"^^xsd:string ;
@@ -964,6 +1085,8 @@ Tag for the Pharmaceuticals industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_retail
 	a gist:IndustrySector ;
+	rdfs:label "Retail"^^xsd:string ;
+	skos:altLabel "Retail"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Retail industry sector"""^^xsd:string ;
 	skos:prefLabel "retail"^^xsd:string ;
@@ -971,6 +1094,8 @@ Tag for the Retail industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_technology
 	a gist:IndustrySector ;
+	rdfs:label "Technology"^^xsd:string ;
+	skos:altLabel "Technology"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Technology industry sector"""^^xsd:string ;
 	skos:prefLabel "technology"^^xsd:string ;
@@ -978,6 +1103,8 @@ Tag for the Technology industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_telecommunications
 	a gist:IndustrySector ;
+	rdfs:label "Telecommunications"^^xsd:string ;
+	skos:altLabel "Telecommunications"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Telecommunications industry sector"""^^xsd:string ;
 	skos:prefLabel "telecommunications"^^xsd:string ;
@@ -985,6 +1112,8 @@ Tag for the Telecommunications industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_transportation
 	a gist:IndustrySector ;
+	rdfs:label "Transportation"^^xsd:string ;
+	skos:altLabel "Transportation"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Transportation industry sector"""^^xsd:string ;
 	skos:prefLabel "transportation"^^xsd:string ;
@@ -992,6 +1121,8 @@ Tag for the Transportation industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_utilities
 	a gist:IndustrySector ;
+	rdfs:label "Utilities"^^xsd:string ;
+	skos:altLabel "Utilities"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Utilities industry sector"""^^xsd:string ;
 	skos:prefLabel "utilities"^^xsd:string ;
@@ -1689,41 +1820,6 @@ This MAY be considered equivalent to a 1 in a numeric scale."""^^xsd:string ;
 	skos:prefLabel "strongly-disagree"^^xsd:string ;
 	.
 
-gist:_PatternType_Sigma
-	a gist:PatternType ;
-	skos:definition """STIX 2.1 description:
-Specifies the SIGMA language."""^^xsd:string ;
-	skos:prefLabel "sigma"^^xsd:string ;
-	.
-
-gist:_PatternType_Snort
-	a gist:PatternType ;
-	skos:definition """STIX 2.1 description:
-Specifies the SNORT language [SNORT]."""^^xsd:string ;
-	skos:prefLabel "snort"^^xsd:string ;
-	.
-
-gist:_PatternType_Stix
-	a gist:PatternType ;
-	skos:definition """STIX 2.1 description:
-Specifies the STIX pattern language defined in section 9 of the specification."""^^xsd:string ;
-	skos:prefLabel "stix"^^xsd:string ;
-	.
-
-gist:_PatternType_Suricata
-	a gist:PatternType ;
-	skos:definition """STIX 2.1 description:
-Specifies the SURICATA language [Suricata]."""^^xsd:string ;
-	skos:prefLabel "suricata"^^xsd:string ;
-	.
-
-gist:_PatternType_Yara
-	a gist:PatternType ;
-	skos:definition """STIX 2.1 description:
-Specifies the YARA language [YARA]."""^^xsd:string ;
-	skos:prefLabel "yara"^^xsd:string ;
-	.
-
 gist:_PatternType_pcre
 	a gist:PatternType ;
 	skos:definition """STIX 2.1 description:
@@ -1731,56 +1827,91 @@ Specifies the Perl Compatible Regular Expressions language [PCRE]."""^^xsd:strin
 	skos:prefLabel "pcre"^^xsd:string ;
 	.
 
-gist:_ThreatActorRole_Agent
+gist:_PatternType_sigma
+	a gist:PatternType ;
+	skos:definition """STIX 2.1 description:
+Specifies the SIGMA language."""^^xsd:string ;
+	skos:prefLabel "sigma"^^xsd:string ;
+	.
+
+gist:_PatternType_snort
+	a gist:PatternType ;
+	skos:definition """STIX 2.1 description:
+Specifies the SNORT language [SNORT]."""^^xsd:string ;
+	skos:prefLabel "snort"^^xsd:string ;
+	.
+
+gist:_PatternType_stix
+	a gist:PatternType ;
+	skos:definition """STIX 2.1 description:
+Specifies the STIX pattern language defined in section 9 of the specification."""^^xsd:string ;
+	skos:prefLabel "stix"^^xsd:string ;
+	.
+
+gist:_PatternType_suricata
+	a gist:PatternType ;
+	skos:definition """STIX 2.1 description:
+Specifies the SURICATA language [Suricata]."""^^xsd:string ;
+	skos:prefLabel "suricata"^^xsd:string ;
+	.
+
+gist:_PatternType_yara
+	a gist:PatternType ;
+	skos:definition """STIX 2.1 description:
+Specifies the YARA language [YARA]."""^^xsd:string ;
+	skos:prefLabel "yara"^^xsd:string ;
+	.
+
+gist:_ThreatActorRole_agent
 	a gist:ThreatActorRole ;
 	skos:definition """STIX 2.1 description:
 Threat actor executes attacks either on behalf of themselves or at the direction of someone else."""^^xsd:string ;
 	skos:prefLabel "agent"^^xsd:string ;
 	.
 
-gist:_ThreatActorRole_Director
+gist:_ThreatActorRole_director
 	a gist:ThreatActorRole ;
 	skos:definition """STIX 2.1 description:
 The threat actor who directs the activities, goals, and objectives of the malicious activities."""^^xsd:string ;
 	skos:prefLabel "director"^^xsd:string ;
 	.
 
-gist:_ThreatActorRole_Independent
+gist:_ThreatActorRole_independent
 	a gist:ThreatActorRole ;
 	skos:definition """STIX 2.1 description:
 A threat actor acting by themselves."""^^xsd:string ;
 	skos:prefLabel "independent"^^xsd:string ;
 	.
 
-gist:_ThreatActorRole_Infrastructure-Architect
+gist:_ThreatActorRole_infrastructure-architect
 	a gist:ThreatActorRole ;
 	skos:definition """STIX 2.1 description:
 Someone who designs the battle space."""^^xsd:string ;
 	skos:prefLabel "infrastructure-architect"^^xsd:string ;
 	.
 
-gist:_ThreatActorRole_Infrastructure-Operator
+gist:_ThreatActorRole_infrastructure-operator
 	a gist:ThreatActorRole ;
 	skos:definition """STIX 2.1 description:
 The threat actor who provides and supports the attack infrastructure that is used to deliver the attack (botnet providers, cloud services, etc.)."""^^xsd:string ;
 	skos:prefLabel "infrastructure-operator"^^xsd:string ;
 	.
 
-gist:_ThreatActorRole_Malware_Author
+gist:_ThreatActorRole_malware-author
 	a gist:ThreatActorRole ;
 	skos:definition """STIX 2.1 description:
 The threat actor who authors malware or other malicious tools."""^^xsd:string ;
 	skos:prefLabel "malware-author"^^xsd:string ;
 	.
 
-gist:_ThreatActorRole_Sponsor
+gist:_ThreatActorRole_sponsor
 	a gist:ThreatActorRole ;
 	skos:definition """STIX 2.1 description:
 The threat actor who funds the malicious activities."""^^xsd:string ;
 	skos:prefLabel "sponsor"^^xsd:string ;
 	.
 
-gist:_ThreatActorSophistication_Advanced
+gist:_ThreatActorSophistication_advanced
 	a gist:ThreatActorSophistication ;
 	skos:definition """STIX 2.1 description:
  Can develop their own tools or scripts from publicly known vulnerabilities to target systems and users. Actors in this category are very adept at IT systems and have a background in software development along with a solid understanding of defensive techniques and operational security.
@@ -1802,9 +1933,10 @@ These actors:
 ●      can create their own tools; and
 
 ●      have proficient knowledge of the tools."""^^xsd:string ;
+	skos:prefLabel "advanced"^^xsd:string ;
 	.
 
-gist:_ThreatActorSophistication_Expert
+gist:_ThreatActorSophistication_expert
 	a gist:ThreatActorSophistication ;
 	skos:definition """STIX 2.1 description:
 Can focus on the discovery and use of unknown malicious code, are is adept at installing user and kernel mode rootkits, frequently use data mining tools, target corporate executives and key users (government and industry) for the purpose of stealing personal and corporate data. Actors in this category are very adept at IT systems and software development and are experts with security systems, defensive techniques, attack methods, and operational security.
@@ -1822,9 +1954,10 @@ These actors:
 ●      can create their own tools from scratch; and
 
 ●      have proficient knowledge of the tools. """^^xsd:string ;
+	skos:prefLabel "expert"^^xsd:string ;
 	.
 
-gist:_ThreatActorSophistication_Innovator
+gist:_ThreatActorSophistication_innovator
 	a gist:ThreatActorSophistication ;
 	skos:definition """STIX 2.1 description:
 ypically, criminal or state actors who are organized, highly technical, proficient, well-funded professionals working in teams to discover new vulnerabilities and develop exploits.
@@ -1846,9 +1979,10 @@ These actors:
 ●      create attacks against 0-Day exploits from scratch; and
 
 ●      create new and innovative attacks and toolkits. """^^xsd:string ;
+	skos:prefLabel "innovator"^^xsd:string ;
 	.
 
-gist:_ThreatActorSophistication_Intermediate
+gist:_ThreatActorSophistication_intermediate
 	a gist:ThreatActorSophistication ;
 	skos:definition """STIX 2.1 description:
 Can proficiently use existing attack frameworks and toolkits to search for and exploit vulnerabilities in computers or systems. Actors in this category have computer skills equivalent to an IT professional and typically have a working knowledge of networks, operating systems, and possibly even defensive techniques and will typically exhibit some operational security.
@@ -1870,9 +2004,10 @@ These actors:
 ●      use attack frameworks and toolkits; and
 
 ●      have proficient knowledge of the tools."""^^xsd:string ;
+	skos:prefLabel "intermediate"^^xsd:string ;
 	.
 
-gist:_ThreatActorSophistication_Minimal
+gist:_ThreatActorSophistication_minimal
 	a gist:ThreatActorSophistication ;
 	skos:definition """STIX 2.1 description:
 Can minimally use existing and frequently well known and easy-to-find techniques and programs or scripts to search for and exploit weaknesses in other computers. Commonly referred to as a script-kiddie.
@@ -1897,7 +2032,7 @@ These actors:
 	skos:prefLabel "minimal"^^xsd:string ;
 	.
 
-gist:_ThreatActorSophistication_None
+gist:_ThreatActorSophistication_none
 	a gist:ThreatActorSophistication ;
 	skos:definition """STIX 2.1 description:
 Can carry out random acts of disruption or destruction by running tools they do not understand. Actors in this category have average computer skills.
@@ -1914,7 +2049,7 @@ These actors:
 	skos:prefLabel "none"^^xsd:string ;
 	.
 
-gist:_ThreatActorSophistication_Stategic
+gist:_ThreatActorSophistication_stategic
 	a gist:ThreatActorSophistication ;
 	skos:definition """STIX 2.1 description:
 ypically, criminal or state actors who are organized, highly technical, proficient, well-funded professionals working in teams to discover new vulnerabilities and develop exploits.
@@ -1936,9 +2071,10 @@ These actors:
 ●      create attacks against 0-Day exploits from scratch; and
 
 ●      create new and innovative attacks and toolkits. """^^xsd:string ;
+	skos:prefLabel "strategic"^^xsd:string ;
 	.
 
-gist:_ThreatActorType_Activist
+gist:_ThreatActorType_activist
 	a gist:ThreatActorType ;
 	skos:definition """STIX 2.1 Description:
 
@@ -1948,7 +2084,7 @@ This category includes actors sometimes referred to as anarchists, cyber vandals
 	skos:prefLabel "activist"^^xsd:string ;
 	.
 
-gist:_ThreatActorType_Competitor
+gist:_ThreatActorType_competitor
 	a gist:ThreatActorType ;
 	skos:definition """STIX 2.1 Description:
 
@@ -1958,7 +2094,7 @@ The goal of a competitor is to gain an advantage in business with respect to the
 	skos:prefLabel "competitor"^^xsd:string ;
 	.
 
-gist:_ThreatActorType_Crime-Syndicate
+gist:_ThreatActorType_crime-syndicate
 	a gist:ThreatActorType ;
 	skos:definition """STIX 2.1 description:
 	
@@ -1968,7 +2104,7 @@ Crime syndicates, also known as organized crime, are generally large, well-resou
 	skos:prefLabel "crime-syndicate"^^xsd:string ;
 	.
 
-gist:_ThreatActorType_Criminal
+gist:_ThreatActorType_criminal
 	a gist:ThreatActorType ;
 	skos:definition """STIX 2.1 description:
 
@@ -1978,7 +2114,7 @@ Intellectual property theft, extortion via ransomware, and physical destruction 
 	skos:prefLabel "criminal"^^xsd:string ;
 	.
 
-gist:_ThreatActorType_Hacker
+gist:_ThreatActorType_hacker
 	a gist:ThreatActorType ;
 	skos:definition """STIX 2.1 dedscription:
 
@@ -1988,7 +2124,7 @@ Hackers may use advanced skills or simple attack scripts they have downloaded.""
 	skos:prefLabel "hacker"^^xsd:string ;
 	.
 
-gist:_ThreatActorType_Insider-Accidental
+gist:_ThreatActorType_insider-accidental
 	a gist:ThreatActorType ;
 	skos:definition '''STIX 2.1 description:
 A non-hostile insider who unintentionally exposes the organization to harm.
@@ -1997,7 +2133,7 @@ A non-hostile insider who unintentionally exposes the organization to harm.
 	skos:prefLabel "insider-accidental"^^xsd:string ;
 	.
 
-gist:_ThreatActorType_Insider-Disgruntaled
+gist:_ThreatActorType_insider-disgruntaled
 	a gist:ThreatActorType ;
 	skos:definition '''STIX 2.1 description:
 Current or former insiders who seek revengeful and harmful retaliation for perceived wrongs.
@@ -2008,7 +2144,7 @@ Disgruntled threat actors may have extensive knowledge that can be leveraged whe
 	skos:prefLabel "insider-disgruntaled"^^xsd:string ;
 	.
 
-gist:_ThreatActorType_Nation-State
+gist:_ThreatActorType_nation-state
 	a gist:ThreatActorType ;
 	skos:definition """STIX 2.1 description:
 Entities who work for the government or military of a nation state or who work at their direction.
@@ -2017,7 +2153,7 @@ These actors typically have access to significant support, resources, training, 
 	skos:prefLabel "nation-state"^^xsd:string ;
 	.
 
-gist:_ThreatActorType_Sensationalist
+gist:_ThreatActorType_sensationalist
 	a gist:ThreatActorType ;
 	skos:definition """STIX 2.1 description:
 Seeks to cause embarrassment and brand damage by exposing sensitive information in a manner designed to cause a public relations crisis.
@@ -2026,7 +2162,7 @@ A sensationalist may be an individual or small group of people motivated primari
 	skos:prefLabel "sensationalist"^^xsd:string ;
 	.
 
-gist:_ThreatActorType_Spy
+gist:_ThreatActorType_spy
 	a gist:ThreatActorType ;
 	skos:definition """STIX 2.1 description:
 Secretly collects sensitive information for use, dissemination, or sale.
@@ -2035,7 +2171,7 @@ Traditional spies (governmental and industrial) are part of a well-resourced int
 	skos:prefLabel "spy"^^xsd:string ;
 	.
 
-gist:_ThreatActorType_Terrorist
+gist:_ThreatActorType_terrorist
 	a gist:ThreatActorType ;
 	skos:definition """STIX 2.1 description:
 Uses extreme violence to advance a social or political agenda as well as monetary crimes to support its activities.
@@ -2046,7 +2182,7 @@ Terrorist organizations must typically raise much of their operating budget thro
 	skos:prefLabel "terrorist"^^xsd:string ;
 	.
 
-gist:_ThreatActorType_Unknown
+gist:_ThreatActorType_unknown
 	a gist:ThreatActorType ;
 	skos:definition """STIX 2.1 description:
 There is not enough information available to determine the type of threat actor."""^^xsd:string ;
