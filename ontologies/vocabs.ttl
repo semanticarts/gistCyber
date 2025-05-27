@@ -148,6 +148,14 @@ gist:ProcessorArchitecture
 	skos:prefLabel "Processor Architecture"^^xsd:string ;
 	.
 
+gist:StixRegion
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+		skos:definition ""^^xsd:string ;
+	skos:note """"""^^xsd:string ;
+	skos:prefLabel "Region"^^xsd:string ;
+	.
+
 gist:ThreatActorRole
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
