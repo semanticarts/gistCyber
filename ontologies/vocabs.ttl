@@ -23,6 +23,10 @@ skos:prefLabel
 	a owl:AnnotationProperty ;
 	.
 
+gist:stix-term
+	a owl:AnnotationProperty ;
+	.
+
 gist:AccountType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
@@ -1744,6 +1748,7 @@ gist:_ProcessorArchitecture_alpha
 	skos:definition """STIX 2.1 description:
 	Specifies the Alpha architecture."""^^xsd:string ;
 	skos:prefLabel "Alpha"^^xsd:string ;
+	gist:stix-term "alpha"^^xsd:string ;
 	.
 
 gist:_ProcessorArchitecture_arm
@@ -1751,6 +1756,7 @@ gist:_ProcessorArchitecture_arm
 	skos:definition """STIX 2.1 description:
 	Specifies the ARM architecture."""^^xsd:string ;
 	skos:prefLabel "ARM"^^xsd:string ;
+	gist:stix-term "arm"^^xsd:string ;
 	.
 
 gist:_ProcessorArchitecture_ia64
@@ -1758,6 +1764,7 @@ gist:_ProcessorArchitecture_ia64
 	skos:definition """STIX 2.1 description:
 	Specifies the 64-bit IA (Itanium) architecture."""^^xsd:string ;
 	skos:prefLabel "64-bit IA (Itanium)"^^xsd:string ;
+	gist:stix-term "ia-64"^^xsd:string ;
 	.
 
 gist:_ProcessorArchitecture_mips
@@ -1765,6 +1772,7 @@ gist:_ProcessorArchitecture_mips
 	skos:definition """STIX 2.1 description:
 	Specifies the MIPS architecture."""^^xsd:string ;
 	skos:prefLabel "MIPS"^^xsd:string ;
+	gist:stix-term "mips"^^xsd:string ;
 	.
 
 gist:_ProcessorArchitecture_powerpc
@@ -1772,6 +1780,7 @@ gist:_ProcessorArchitecture_powerpc
 	skos:definition """STIX 2.1 description:
 	Specifies the PowerPC architecture."""^^xsd:string ;
 	skos:prefLabel "PowerPC"^^xsd:string ;
+	gist:stix-term "powerpc"^^xsd:string ;
 	.
 
 gist:_ProcessorArchitecture_sparc
@@ -1779,6 +1788,7 @@ gist:_ProcessorArchitecture_sparc
 	skos:definition """STIX 2.1 description:
 	Specifies the SPARC architecture."""^^xsd:string ;
 	skos:prefLabel "SPARC"^^xsd:string ;
+	gist:stix-term "sparc"^^xsd:string ;
 	.
 
 gist:_ProcessorArchitecture_x86
@@ -1786,6 +1796,7 @@ gist:_ProcessorArchitecture_x86
 	skos:definition """STIX 2.1 description:
 	Specifies the 32-bit x86 architecture."""^^xsd:string ;
 	skos:prefLabel "32-bit x86"^^xsd:string ;
+	gist:stix-term "x86"^^xsd:string ;
 	.
 
 gist:_ProcessorArchitecture_x8664
@@ -1793,6 +1804,7 @@ gist:_ProcessorArchitecture_x8664
 	skos:definition """STIX 2.1 description:
 	Specifies the 64-bit x86 architecture."""^^xsd:string ;
 	skos:prefLabel "64-bit x86"^^xsd:string ;
+	gist:stix-term "x86-64"^^xsd:string ;
 	.
 
 gist:_ThreatActorRole_Agent
