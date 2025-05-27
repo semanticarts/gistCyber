@@ -23,6 +23,10 @@ skos:prefLabel
 	a owl:AnnotationProperty ;
 	.
 
+gist:stix-term
+	a owl:AnnotationProperty ;
+	.
+
 gist:AccountType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
@@ -134,6 +138,14 @@ gist:PatternType
 	skos:definition "A language used to express and indicator pattern"^^xsd:string ;
 	skos:prefLabel "Pattern Type"^^xsd:string ;
 	skos:scopeNote "PatternType is a non-exhaustive, open vocabulary that covers common pattern languages and is intended to characterize the pattern language that an indicator pattern is expressed in."^^xsd:string ;
+	.
+
+gist:ProcessorArchitecture
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition ""^^xsd:string ;
+	skos:note """"""^^xsd:string ;
+	skos:prefLabel "Processor Architecture"^^xsd:string ;
 	.
 
 gist:ThreatActorRole
@@ -1729,6 +1741,70 @@ gist:_PatternType_pcre
 	skos:definition """STIX 2.1 description:
 Specifies the Perl Compatible Regular Expressions language [PCRE]."""^^xsd:string ;
 	skos:prefLabel "pcre"^^xsd:string ;
+	.
+
+gist:_ProcessorArchitecture_alpha
+	a gist:ProcessorArchitecture ;
+	skos:definition """STIX 2.1 description:
+	Specifies the Alpha architecture."""^^xsd:string ;
+	skos:prefLabel "Alpha"^^xsd:string ;
+	gist:stix-term "alpha"^^xsd:string ;
+	.
+
+gist:_ProcessorArchitecture_arm
+	a gist:ProcessorArchitecture ;
+	skos:definition """STIX 2.1 description:
+	Specifies the ARM architecture."""^^xsd:string ;
+	skos:prefLabel "ARM"^^xsd:string ;
+	gist:stix-term "arm"^^xsd:string ;
+	.
+
+gist:_ProcessorArchitecture_ia64
+	a gist:ProcessorArchitecture ;
+	skos:definition """STIX 2.1 description:
+	Specifies the 64-bit IA (Itanium) architecture."""^^xsd:string ;
+	skos:prefLabel "64-bit IA (Itanium)"^^xsd:string ;
+	gist:stix-term "ia-64"^^xsd:string ;
+	.
+
+gist:_ProcessorArchitecture_mips
+	a gist:ProcessorArchitecture ;
+	skos:definition """STIX 2.1 description:
+	Specifies the MIPS architecture."""^^xsd:string ;
+	skos:prefLabel "MIPS"^^xsd:string ;
+	gist:stix-term "mips"^^xsd:string ;
+	.
+
+gist:_ProcessorArchitecture_powerpc
+	a gist:ProcessorArchitecture ;
+	skos:definition """STIX 2.1 description:
+	Specifies the PowerPC architecture."""^^xsd:string ;
+	skos:prefLabel "PowerPC"^^xsd:string ;
+	gist:stix-term "powerpc"^^xsd:string ;
+	.
+
+gist:_ProcessorArchitecture_sparc
+	a gist:ProcessorArchitecture ;
+	skos:definition """STIX 2.1 description:
+	Specifies the SPARC architecture."""^^xsd:string ;
+	skos:prefLabel "SPARC"^^xsd:string ;
+	gist:stix-term "sparc"^^xsd:string ;
+	.
+
+gist:_ProcessorArchitecture_x86
+	a gist:ProcessorArchitecture ;
+	skos:definition """STIX 2.1 description:
+	Specifies the 32-bit x86 architecture."""^^xsd:string ;
+	skos:prefLabel "32-bit x86"^^xsd:string ;
+	gist:stix-term "x86"^^xsd:string ;
+	.
+
+gist:_ProcessorArchitecture_x8664
+	a gist:ProcessorArchitecture ;
+	skos:definition """STIX 2.1 description:
+	Specifies the 64-bit x86 architecture."""^^xsd:string ;
+	skos:prefLabel "64-bit x86"^^xsd:string ;
+	gist:stix-term "x86-64"^^xsd:string ;
 	.
 
 gist:_ThreatActorRole_Agent
