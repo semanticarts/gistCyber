@@ -1899,6 +1899,48 @@ gist:_StixRegion_northern-america
 	gist:stix-term "northern-america"^^xsd:string ;
 	.
 
+gist:_StixRegion_asia
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Asia"^^xsd:string ;
+	gist:stix-term "asia"^^xsd:string ;
+	.
+
+gist:_StixRegion_central-asia
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Central Asia"^^xsd:string ;
+	gist:stix-term "central-asia"^^xsd:string ;
+	.
+
+gist:_StixRegion_eastern-asia
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Eastern Asia"^^xsd:string ;
+	gist:stix-term "eastern-asia"^^xsd:string ;
+	.
+
+gist:_StixRegion_southern-asia
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Southern Asia"^^xsd:string ;
+	gist:stix-term "southern-asia"^^xsd:string ;
+	.
+
+gist:_StixRegion_south-eastern-asia
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "South Eastern Asia"^^xsd:string ;
+	gist:stix-term "south-eastern-asia"^^xsd:string ;
+	.
+
+gist:_StixRegion_western-asia
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Western Asia"^^xsd:string ;
+	gist:stix-term "western-asia"^^xsd:string ;
+	.
+
 gist:_ThreatActorRole_Agent
 	a gist:ThreatActorRole ;
 	skos:definition """STIX 2.1 description:
