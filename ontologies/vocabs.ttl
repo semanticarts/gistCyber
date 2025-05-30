@@ -1815,6 +1815,90 @@ gist:_ProcessorArchitecture_x8664
 	gist:stix-term "x86-64"^^xsd:string ;
 	.
 
+gist:_StixRegion_africa
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Africa"^^xsd:string ;
+	gist:stix-term "africa"^^xsd:string ;
+	.
+
+gist:_StixRegion_eastern-africa
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Eastern Africa"^^xsd:string ;
+	gist:stix-term "eastern-africa"^^xsd:string ;
+	.
+
+gist:_StixRegion_middle-africa
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Middle Africa"^^xsd:string ;
+	gist:stix-term "middle-africa"^^xsd:string ;
+	.
+
+gist:_StixRegion_northern-africa
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Northern Africa"^^xsd:string ;
+	gist:stix-term "northern-africa"^^xsd:string ;
+	.
+
+gist:_StixRegion_southern-africa
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Southern Africa"^^xsd:string ;
+	gist:stix-term "southern-africa"^^xsd:string ;
+	.
+
+gist:_StixRegion_western-africa
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Western Africa"^^xsd:string ;
+	gist:stix-term "western-africa"^^xsd:string ;
+	.
+
+gist:_StixRegion_americas
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Americas"^^xsd:string ;
+	gist:stix-term "americas"^^xsd:string ;
+	.
+
+gist:_StixRegion_latin-america-caribbean
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Latin America/Caribbean"^^xsd:string ;
+	gist:stix-term "latin-america-caribbean"^^xsd:string ;
+	.
+
+gist:_StixRegion_south-america
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "South America"^^xsd:string ;
+	gist:stix-term "south-america"^^xsd:string ;
+	.
+
+gist:_StixRegion_caribbean
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Caribbean"^^xsd:string ;
+	gist:stix-term "caribbean"^^xsd:string ;
+	.
+
+gist:_StixRegion_central-america
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Central America"^^xsd:string ;
+	gist:stix-term "central-america"^^xsd:string ;
+	.
+
+gist:_StixRegion_northern-america
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Northern America"^^xsd:string ;
+	gist:stix-term "northern-america"^^xsd:string ;
+	.
+
 gist:_ThreatActorRole_Agent
 	a gist:ThreatActorRole ;
 	skos:definition """STIX 2.1 description:
