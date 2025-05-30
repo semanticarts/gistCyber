@@ -1976,6 +1976,48 @@ gist:_StixRegion_western-europe
 	gist:stix-term "western-europe"^^xsd:string ;
 	.
 
+gist:_StixRegion_oceania
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Oceania"^^xsd:string ;
+	gist:stix-term "oceania"^^xsd:string ;
+	.
+
+gist:_StixRegion_antarctica
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Antarctica"^^xsd:string ;
+	gist:stix-term "antarctica"^^xsd:string ;
+	.
+
+gist:_StixRegion_australia-new-zealand
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Australia/New Zealand"^^xsd:string ;
+	gist:stix-term "australia-new-zealand"^^xsd:string ;
+	.
+
+gist:_StixRegion_melanesia
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "melanesia"^^xsd:string ;
+	gist:stix-term "melanesia"^^xsd:string ;
+	.
+
+gist:_StixRegion_micronesia
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Micronesia"^^xsd:string ;
+	gist:stix-term "micronesia"^^xsd:string ;
+	.
+
+gist:_StixRegion_polynesia
+	a gist:StixRegion ;
+	skos:definition """"""^^xsd:string ;
+	skos:prefLabel "Polynesia"^^xsd:string ;
+	gist:stix-term "polynesia"^^xsd:string ;
+	.
+
 gist:_ThreatActorRole_Agent
 	a gist:ThreatActorRole ;
 	skos:definition """STIX 2.1 description:
