@@ -151,8 +151,9 @@ gist:ProcessorArchitecture
 gist:StixRegion
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-		skos:definition ""^^xsd:string ;
-	skos:note """"""^^xsd:string ;
+skos:definition "A physical location used to categorize various aspects of threats and incidents."^^xsd:string ;
+skos:example "Origin of a threat actor, area targeted by a threat, location of victims and infrastructure."^^xsd:string ;  
+skos:note "Instances of this class are not categories in the usual sense, they are places being used to categorize things by location."^^xsd:string ;
 	skos:prefLabel "Region"^^xsd:string ;
 	.
 
