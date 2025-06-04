@@ -147,9 +147,9 @@ gist:ProcessorArchitecture
 gist:StixRegion
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-skos:definition "A physical location used to categorize various aspects of threats and incidents."^^xsd:string ;
-skos:example "Origin of a threat actor, area targeted by a threat, location of victims and infrastructure."^^xsd:string ;  
-skos:note "Instances of this class are not categories in the usual sense, they are places being used to categorize things by location."^^xsd:string ;
+	skos:definition "A physical location used to categorize various aspects of threats and incidents."^^xsd:string ;
+	skos:example "Origin of a threat actor, area targeted by a threat, location of victims and infrastructure."^^xsd:string ;
+	skos:note "Instances of this class are not categories in the usual sense, they are places being used to categorize things by location."^^xsd:string ;
 	skos:prefLabel "Region"^^xsd:string ;
 	.
 
@@ -1884,7 +1884,7 @@ gist:_ProcessorArchitecture_alpha
 	skos:definition """STIX 2.1 description:
 	Specifies the Alpha architecture."""^^xsd:string ;
 	skos:prefLabel "Alpha"^^xsd:string ;
-	gist:stix-term "alpha"^^xsd:string ;
+	gist:stixTerm "alpha"^^xsd:string ;
 	.
 
 gist:_ProcessorArchitecture_arm
@@ -1892,7 +1892,7 @@ gist:_ProcessorArchitecture_arm
 	skos:definition """STIX 2.1 description:
 	Specifies the ARM architecture."""^^xsd:string ;
 	skos:prefLabel "ARM"^^xsd:string ;
-	gist:stix-term "arm"^^xsd:string ;
+	gist:stixTerm "arm"^^xsd:string ;
 	.
 
 gist:_ProcessorArchitecture_ia64
@@ -1900,7 +1900,7 @@ gist:_ProcessorArchitecture_ia64
 	skos:definition """STIX 2.1 description:
 	Specifies the 64-bit IA (Itanium) architecture."""^^xsd:string ;
 	skos:prefLabel "64-bit IA (Itanium)"^^xsd:string ;
-	gist:stix-term "ia-64"^^xsd:string ;
+	gist:stixTerm "ia-64"^^xsd:string ;
 	.
 
 gist:_ProcessorArchitecture_mips
@@ -1908,7 +1908,7 @@ gist:_ProcessorArchitecture_mips
 	skos:definition """STIX 2.1 description:
 	Specifies the MIPS architecture."""^^xsd:string ;
 	skos:prefLabel "MIPS"^^xsd:string ;
-	gist:stix-term "mips"^^xsd:string ;
+	gist:stixTerm "mips"^^xsd:string ;
 	.
 
 gist:_ProcessorArchitecture_powerpc
@@ -1916,7 +1916,7 @@ gist:_ProcessorArchitecture_powerpc
 	skos:definition """STIX 2.1 description:
 	Specifies the PowerPC architecture."""^^xsd:string ;
 	skos:prefLabel "PowerPC"^^xsd:string ;
-	gist:stix-term "powerpc"^^xsd:string ;
+	gist:stixTerm "powerpc"^^xsd:string ;
 	.
 
 gist:_ProcessorArchitecture_sparc
@@ -1924,7 +1924,7 @@ gist:_ProcessorArchitecture_sparc
 	skos:definition """STIX 2.1 description:
 	Specifies the SPARC architecture."""^^xsd:string ;
 	skos:prefLabel "SPARC"^^xsd:string ;
-	gist:stix-term "sparc"^^xsd:string ;
+	gist:stixTerm "sparc"^^xsd:string ;
 	.
 
 gist:_ProcessorArchitecture_x86
@@ -1932,7 +1932,7 @@ gist:_ProcessorArchitecture_x86
 	skos:definition """STIX 2.1 description:
 	Specifies the 32-bit x86 architecture."""^^xsd:string ;
 	skos:prefLabel "32-bit x86"^^xsd:string ;
-	gist:stix-term "x86"^^xsd:string ;
+	gist:stixTerm "x86"^^xsd:string ;
 	.
 
 gist:_ProcessorArchitecture_x8664
@@ -1940,210 +1940,210 @@ gist:_ProcessorArchitecture_x8664
 	skos:definition """STIX 2.1 description:
 	Specifies the 64-bit x86 architecture."""^^xsd:string ;
 	skos:prefLabel "64-bit x86"^^xsd:string ;
-	gist:stix-term "x86-64"^^xsd:string ;
+	gist:stixTerm "x86-64"^^xsd:string ;
 	.
 
 gist:_StixRegion_africa
 	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Africa region."""^^xsd:string ;
+	skos:definition "The STIX tag for the Africa region."^^xsd:string ;
 	skos:prefLabel "Africa"^^xsd:string ;
-	gist:stix-term "africa"^^xsd:string ;
-	.
-
-gist:_StixRegion_eastern-africa
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Eastern Africa region."""^^xsd:string ;
-	skos:prefLabel "Eastern Africa"^^xsd:string ;
-	gist:stix-term "eastern-africa"^^xsd:string ;
-	.
-
-gist:_StixRegion_middle-africa
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Middle Africa region."""^^xsd:string ;
-	skos:prefLabel "Middle Africa"^^xsd:string ;
-	gist:stix-term "middle-africa"^^xsd:string ;
-	.
-
-gist:_StixRegion_northern-africa
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Northern Africa region."""^^xsd:string ;
-	skos:prefLabel "Northern Africa"^^xsd:string ;
-	gist:stix-term "northern-africa"^^xsd:string ;
-	.
-
-gist:_StixRegion_southern-africa
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Southern Africa region."""^^xsd:string ;
-	skos:prefLabel "Southern Africa"^^xsd:string ;
-	gist:stix-term "southern-africa"^^xsd:string ;
-	.
-
-gist:_StixRegion_western-africa
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Western Africa region."""^^xsd:string ;
-	skos:prefLabel "Western Africa"^^xsd:string ;
-	gist:stix-term "western-africa"^^xsd:string ;
+	gist:stixTerm "africa"^^xsd:string ;
 	.
 
 gist:_StixRegion_americas
 	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Americas regions."""^^xsd:string ;
+	skos:definition "The STIX tag for the Americas regions."^^xsd:string ;
 	skos:prefLabel "Americas"^^xsd:string ;
-	gist:stix-term "americas"^^xsd:string ;
-	.
-
-gist:_StixRegion_latin-america-caribbean
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Latin America/Caribbean region."""^^xsd:string ;
-	skos:prefLabel "Latin America/Caribbean"^^xsd:string ;
-	gist:stix-term "latin-america-caribbean"^^xsd:string ;
-	.
-
-gist:_StixRegion_south-america
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the South America region."""^^xsd:string ;
-	skos:prefLabel "South America"^^xsd:string ;
-	gist:stix-term "south-america"^^xsd:string ;
-	.
-
-gist:_StixRegion_caribbean
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Caribbean region."""^^xsd:string ;
-	skos:prefLabel "Caribbean"^^xsd:string ;
-	gist:stix-term "caribbean"^^xsd:string ;
-	.
-
-gist:_StixRegion_central-america
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Central America region."""^^xsd:string ;
-	skos:prefLabel "Central America"^^xsd:string ;
-	gist:stix-term "central-america"^^xsd:string ;
-	.
-
-gist:_StixRegion_northern-america
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Northern America region."""^^xsd:string ;
-	skos:prefLabel "Northern America"^^xsd:string ;
-	gist:stix-term "northern-america"^^xsd:string ;
-	.
-
-gist:_StixRegion_asia
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Asia region."""^^xsd:string ;
-	skos:prefLabel "Asia"^^xsd:string ;
-	gist:stix-term "asia"^^xsd:string ;
-	.
-
-gist:_StixRegion_central-asia
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Central Asia region."""^^xsd:string ;
-	skos:prefLabel "Central Asia"^^xsd:string ;
-	gist:stix-term "central-asia"^^xsd:string ;
-	.
-
-gist:_StixRegion_eastern-asia
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Eastern Asia region."""^^xsd:string ;
-	skos:prefLabel "Eastern Asia"^^xsd:string ;
-	gist:stix-term "eastern-asia"^^xsd:string ;
-	.
-
-gist:_StixRegion_southern-asia
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Southern Asia region."""^^xsd:string ;
-	skos:prefLabel "Southern Asia"^^xsd:string ;
-	gist:stix-term "southern-asia"^^xsd:string ;
-	.
-
-gist:_StixRegion_south-eastern-asia
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the South Eastern Asia region."""^^xsd:string ;
-	skos:prefLabel "South Eastern Asia"^^xsd:string ;
-	gist:stix-term "south-eastern-asia"^^xsd:string ;
-	.
-
-gist:_StixRegion_western-asia
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Western Asia region."""^^xsd:string ;
-	skos:prefLabel "Western Asia"^^xsd:string ;
-	gist:stix-term "western-asia"^^xsd:string ;
-	.
-
-gist:_StixRegion_europe
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Europe region."""^^xsd:string ;
-	skos:prefLabel "Europe"^^xsd:string ;
-	gist:stix-term "Europe"^^xsd:string ;
-	.
-
-gist:_StixRegion_eastern-europe
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Eastern Europe region."""^^xsd:string ;
-	skos:prefLabel "Eastern Europe"^^xsd:string ;
-	gist:stix-term "eastern-europe"^^xsd:string ;
-	.
-
-gist:_StixRegion_northern-europe
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Northern Europe region."""^^xsd:string ;
-	skos:prefLabel "Northern Europe"^^xsd:string ;
-	gist:stix-term "northern-europe"^^xsd:string ;
-	.
-
-gist:_StixRegion_southern-europe
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Southern Europe region."""^^xsd:string ;
-	skos:prefLabel "Southern Europe"^^xsd:string ;
-	gist:stix-term "southern-europe"^^xsd:string ;
-	.
-
-gist:_StixRegion_western-europe
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Western Europe region."""^^xsd:string ;
-	skos:prefLabel "Western Europe"^^xsd:string ;
-	gist:stix-term "western-europe"^^xsd:string ;
-	.
-
-gist:_StixRegion_oceania
-	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Oceania region."""^^xsd:string ;
-	skos:prefLabel "Oceania"^^xsd:string ;
-	gist:stix-term "oceania"^^xsd:string ;
+	gist:stixTerm "americas"^^xsd:string ;
 	.
 
 gist:_StixRegion_antarctica
 	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Antarctica region."""^^xsd:string ;
+	skos:definition "The STIX tag for the Antarctica region."^^xsd:string ;
 	skos:prefLabel "Antarctica"^^xsd:string ;
-	gist:stix-term "antarctica"^^xsd:string ;
+	gist:stixTerm "antarctica"^^xsd:string ;
+	.
+
+gist:_StixRegion_asia
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Asia region."^^xsd:string ;
+	skos:prefLabel "Asia"^^xsd:string ;
+	gist:stixTerm "asia"^^xsd:string ;
 	.
 
 gist:_StixRegion_australia-new-zealand
 	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Australia/New Zealand region."""^^xsd:string ;
+	skos:definition "The STIX tag for the Australia/New Zealand region."^^xsd:string ;
 	skos:prefLabel "Australia/New Zealand"^^xsd:string ;
-	gist:stix-term "australia-new-zealand"^^xsd:string ;
+	gist:stixTerm "australia-new-zealand"^^xsd:string ;
+	.
+
+gist:_StixRegion_caribbean
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Caribbean region."^^xsd:string ;
+	skos:prefLabel "Caribbean"^^xsd:string ;
+	gist:stixTerm "caribbean"^^xsd:string ;
+	.
+
+gist:_StixRegion_central-america
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Central America region."^^xsd:string ;
+	skos:prefLabel "Central America"^^xsd:string ;
+	gist:stixTerm "central-america"^^xsd:string ;
+	.
+
+gist:_StixRegion_central-asia
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Central Asia region."^^xsd:string ;
+	skos:prefLabel "Central Asia"^^xsd:string ;
+	gist:stixTerm "central-asia"^^xsd:string ;
+	.
+
+gist:_StixRegion_eastern-africa
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Eastern Africa region."^^xsd:string ;
+	skos:prefLabel "Eastern Africa"^^xsd:string ;
+	gist:stixTerm "eastern-africa"^^xsd:string ;
+	.
+
+gist:_StixRegion_eastern-asia
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Eastern Asia region."^^xsd:string ;
+	skos:prefLabel "Eastern Asia"^^xsd:string ;
+	gist:stixTerm "eastern-asia"^^xsd:string ;
+	.
+
+gist:_StixRegion_eastern-europe
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Eastern Europe region."^^xsd:string ;
+	skos:prefLabel "Eastern Europe"^^xsd:string ;
+	gist:stixTerm "eastern-europe"^^xsd:string ;
+	.
+
+gist:_StixRegion_europe
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Europe region."^^xsd:string ;
+	skos:prefLabel "Europe"^^xsd:string ;
+	gist:stixTerm "Europe"^^xsd:string ;
+	.
+
+gist:_StixRegion_latin-america-caribbean
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Latin America/Caribbean region."^^xsd:string ;
+	skos:prefLabel "Latin America/Caribbean"^^xsd:string ;
+	gist:stixTerm "latin-america-caribbean"^^xsd:string ;
 	.
 
 gist:_StixRegion_melanesia
 	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Melanesia region."""^^xsd:string ;
+	skos:definition "The STIX tag for the Melanesia region."^^xsd:string ;
 	skos:prefLabel "melanesia"^^xsd:string ;
-	gist:stix-term "melanesia"^^xsd:string ;
+	gist:stixTerm "melanesia"^^xsd:string ;
 	.
 
 gist:_StixRegion_micronesia
 	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Micronesia region."""^^xsd:string ;
+	skos:definition "The STIX tag for the Micronesia region."^^xsd:string ;
 	skos:prefLabel "Micronesia"^^xsd:string ;
-	gist:stix-term "micronesia"^^xsd:string ;
+	gist:stixTerm "micronesia"^^xsd:string ;
+	.
+
+gist:_StixRegion_middle-africa
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Middle Africa region."^^xsd:string ;
+	skos:prefLabel "Middle Africa"^^xsd:string ;
+	gist:stixTerm "middle-africa"^^xsd:string ;
+	.
+
+gist:_StixRegion_northern-africa
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Northern Africa region."^^xsd:string ;
+	skos:prefLabel "Northern Africa"^^xsd:string ;
+	gist:stixTerm "northern-africa"^^xsd:string ;
+	.
+
+gist:_StixRegion_northern-america
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Northern America region."^^xsd:string ;
+	skos:prefLabel "Northern America"^^xsd:string ;
+	gist:stixTerm "northern-america"^^xsd:string ;
+	.
+
+gist:_StixRegion_northern-europe
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Northern Europe region."^^xsd:string ;
+	skos:prefLabel "Northern Europe"^^xsd:string ;
+	gist:stixTerm "northern-europe"^^xsd:string ;
+	.
+
+gist:_StixRegion_oceania
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Oceania region."^^xsd:string ;
+	skos:prefLabel "Oceania"^^xsd:string ;
+	gist:stixTerm "oceania"^^xsd:string ;
 	.
 
 gist:_StixRegion_polynesia
 	a gist:StixRegion ;
-	skos:definition """The STIX tag for the Polynesia region."""^^xsd:string ;
+	skos:definition "The STIX tag for the Polynesia region."^^xsd:string ;
 	skos:prefLabel "Polynesia"^^xsd:string ;
-	gist:stix-term "polynesia"^^xsd:string ;
+	gist:stixTerm "polynesia"^^xsd:string ;
+	.
+
+gist:_StixRegion_south-america
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the South America region."^^xsd:string ;
+	skos:prefLabel "South America"^^xsd:string ;
+	gist:stixTerm "south-america"^^xsd:string ;
+	.
+
+gist:_StixRegion_south-eastern-asia
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the South Eastern Asia region."^^xsd:string ;
+	skos:prefLabel "South Eastern Asia"^^xsd:string ;
+	gist:stixTerm "south-eastern-asia"^^xsd:string ;
+	.
+
+gist:_StixRegion_southern-africa
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Southern Africa region."^^xsd:string ;
+	skos:prefLabel "Southern Africa"^^xsd:string ;
+	gist:stixTerm "southern-africa"^^xsd:string ;
+	.
+
+gist:_StixRegion_southern-asia
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Southern Asia region."^^xsd:string ;
+	skos:prefLabel "Southern Asia"^^xsd:string ;
+	gist:stixTerm "southern-asia"^^xsd:string ;
+	.
+
+gist:_StixRegion_southern-europe
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Southern Europe region."^^xsd:string ;
+	skos:prefLabel "Southern Europe"^^xsd:string ;
+	gist:stixTerm "southern-europe"^^xsd:string ;
+	.
+
+gist:_StixRegion_western-africa
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Western Africa region."^^xsd:string ;
+	skos:prefLabel "Western Africa"^^xsd:string ;
+	gist:stixTerm "western-africa"^^xsd:string ;
+	.
+
+gist:_StixRegion_western-asia
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Western Asia region."^^xsd:string ;
+	skos:prefLabel "Western Asia"^^xsd:string ;
+	gist:stixTerm "western-asia"^^xsd:string ;
+	.
+
+gist:_StixRegion_western-europe
+	a gist:StixRegion ;
+	skos:definition "The STIX tag for the Western Europe region."^^xsd:string ;
+	skos:prefLabel "Western Europe"^^xsd:string ;
+	gist:stixTerm "western-europe"^^xsd:string ;
 	.
 
 gist:_ThreatActorRole_Agent
@@ -2473,7 +2473,7 @@ There is not enough information available to determine the type of threat actor.
 	skos:prefLabel "unknown"^^xsd:string ;
 	.
 
-gist:stix-term
+gist:stixTerm
 	a owl:AnnotationProperty ;
 	.
 
