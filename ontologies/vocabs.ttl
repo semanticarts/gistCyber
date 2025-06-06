@@ -2487,6 +2487,118 @@ There is not enough information available to determine the type of threat actor.
 	skos:prefLabel "unknown"^^xsd:string ;
 	.
 
+gist:_WindowsRegistryDatatype_reg-binary
+	a gist:WindowsRegistryDatatype ;
+	skos:definition """STIX 2.1 description: 
+Binary data in any form."""^^xsd:string ;
+	skos:prefLabel "REG_BINARY"^^xsd:string ;
+	gist:stixTerm "REG_BINARY"^^xsd:string ;
+	.
+
+gist:_WindowsRegistryDatatype_reg-dword
+	a gist:WindowsRegistryDatatype ;
+	skos:definition """STIX 2.1 description: 
+A 32-bit number."""^^xsd:string ;
+	skos:prefLabel "REG_DWORD"^^xsd:string ;
+	gist:stixTerm "REG_DWORD"^^xsd:string ;
+	.
+
+gist:_WindowsRegistryDatatype_reg-dword-big-endian
+	a gist:WindowsRegistryDatatype ;
+	skos:definition """STIX 2.1 description: 
+A 32-bit number in big-endian format."""^^xsd:string ;
+	skos:prefLabel "REG_DWORD_BIG_ENDIAN"^^xsd:string ;
+	gist:stixTerm "REG_DWORD_BIG_ENDIAN"^^xsd:string ;
+	.
+
+gist:_WindowsRegistryDatatype_reg-dword-little-endian
+	a gist:WindowsRegistryDatatype ;
+	skos:definition """STIX 2.1 description: 
+A 32-bit number in little-endian format."""^^xsd:string ;
+	skos:prefLabel "REG_DWORD_LITTLE_ENDIAN"^^xsd:string ;
+	gist:stixTerm "REG_DWORD_LITTLE_ENDIAN"^^xsd:string ;
+	.
+
+gist:_WindowsRegistryDatatype_reg-expand-sz
+	a gist:WindowsRegistryDatatype ;
+	skos:definition '''STIX 2.1 description: 
+A null-terminated string that contains unexpanded references to environment variables (for example, "%PATH%"). It will be a Unicode or ANSI string depending on whether you use the Unicode or ANSI functions.'''^^xsd:string ;
+	skos:prefLabel "REG_EXPAND_SZ"^^xsd:string ;
+	gist:stixTerm "REG_EXPAND_SZ"^^xsd:string ;
+	.
+
+gist:_WindowsRegistryDatatype_reg-full-resource-description
+	a gist:WindowsRegistryDatatype ;
+	skos:definition """STIX 2.1 description: 
+A series of nested lists designed to store a resource list used by a physical hardware device. This data is detected and written into the HardwareDescription tree by the system and is displayed in Registry Editor in hexadecimal format as a Binary Value."""^^xsd:string ;
+	skos:prefLabel "REG_FULL_RESOURCE_DESCRIPTION"^^xsd:string ;
+	gist:stixTerm "REG_FULL_RESOURCE_DESCRIPTION"^^xsd:string ;
+	.
+
+gist:_WindowsRegistryDatatype_reg-invalid-type
+	a gist:WindowsRegistryDatatype ;
+	skos:definition """STIX 2.1 description: 
+Specifies an invalid key."""^^xsd:string ;
+	skos:prefLabel "REG_INVALID_TYPE"^^xsd:string ;
+	gist:stixTerm "REG_INVALID_TYPE"^^xsd:string ;
+	.
+
+gist:_WindowsRegistryDatatype_reg-link
+	a gist:WindowsRegistryDatatype ;
+	skos:definition """STIX 2.1 description: 
+A null-terminated Unicode string that contains the target path of a symbolic link."""^^xsd:string ;
+	skos:prefLabel "REG_LINK"^^xsd:string ;
+	gist:stixTerm "REG_LINK"^^xsd:string ;
+	.
+
+gist:_WindowsRegistryDatatype_reg-multi-sz
+	a gist:WindowsRegistryDatatype ;
+	skos:definition """STIX 2.1 description: 
+A sequence of null-terminated strings, terminated by an empty string (\\0)."""^^xsd:string ;
+	skos:prefLabel "REG_MULTI_SZ"^^xsd:string ;
+	gist:stixTerm "REG_MULTI_SZ"^^xsd:string ;
+	.
+
+gist:_WindowsRegistryDatatype_reg-none
+	a gist:WindowsRegistryDatatype ;
+	skos:definition """STIX 2.1 description: 
+No defined value type."""^^xsd:string ;
+	skos:prefLabel "REG_NONE"^^xsd:string ;
+	gist:stixTerm "REG_NONE"^^xsd:string ;
+	.
+
+gist:_WindowsRegistryDatatype_reg-qword
+	a gist:WindowsRegistryDatatype ;
+	skos:definition """STIX 2.1 description: 
+A 64-bit number."""^^xsd:string ;
+	skos:prefLabel "REG_QWORD"^^xsd:string ;
+	gist:stixTerm "REG_QWORD"^^xsd:string ;
+	.
+
+gist:_WindowsRegistryDatatype_reg-resource-list
+	a gist:WindowsRegistryDatatype ;
+	skos:definition """STIX 2.1 description: 
+A series of nested lists designed to store a resource list used by a hardware device driver or one of the physical devices it controls. This data is detected and written into the ResourceMap tree by the system and is displayed in Registry Editor in hexadecimal format as a Binary Value."""^^xsd:string ;
+	skos:prefLabel "REG_RESOURCE_LIST"^^xsd:string ;
+	gist:stixTerm "REG_RESOURCE_LIST"^^xsd:string ;
+	.
+
+gist:_WindowsRegistryDatatype_reg-resource-requirements-list
+	a gist:WindowsRegistryDatatype ;
+	skos:definition """STIX 2.1 description: 
+Device driver list of hardware resource requirements in Resource Map tree."""^^xsd:string ;
+	skos:prefLabel "REG_RESOURCE_REQUIREMENTS_LIST"^^xsd:string ;
+	gist:stixTerm "REG_RESOURCE_REQUIREMENTS_LIST"^^xsd:string ;
+	.
+
+gist:_WindowsRegistryDatatype_reg-sz
+	a gist:WindowsRegistryDatatype ;
+	skos:definition """STIX 2.1 description: 
+A null-terminated string. This will be either a Unicode or an ANSI string, depending on whether you use the Unicode or ANSI functions."""^^xsd:string ;
+	skos:prefLabel "REG_SZ"^^xsd:string ;
+	gist:stixTerm "REG_SZ"^^xsd:string ;
+	.
+
 gist:stixTerm
 	a owl:AnnotationProperty ;
 	.
