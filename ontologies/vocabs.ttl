@@ -168,6 +168,20 @@ gist:ThreatActorType
 	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
+gist:WindowsPEBinaryType
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition """STIX 2.1 description: 
+The Windows PE binary vocabulary is currently used in the following SCO(s):
+●      File (Windows PE Binary extension)
+
+An open vocabulary of Windows PE binary types."""^^xsd:string ;
+	skos:example ""^^xsd:string ;
+	skos:note ""^^xsd:string ;
+	skos:prefLabel "Windows™ PE Binary Vocabulary"^^xsd:string ;
+	gist:stixTerm "windows-pebinary-type-ov"^^xsd:string ;
+	.
+
 gist:_AccountType_facebook
 	a gist:AccountType ;
 	rdfs:label "Facebook"^^xsd:string ;
