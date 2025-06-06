@@ -168,6 +168,21 @@ gist:ThreatActorType
 	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
+gist:WindowsIntegrityLevel
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition """STIX 2.1 description: 
+The Windows integrity level enumeration is currently used in the following STIX Cyber-observable Object(s):
+●      Process (Windows Process extension)
+
+
+Windows integrity levels are a security feature and represent the trustworthiness of an object."""^^xsd:string ;
+	skos:example ""^^xsd:string ;
+	skos:note "This is described in STIX as an enumeration but no order of the enumeration is given."^^xsd:string ;
+	skos:prefLabel "Windows™ Integrity Level Enumeration"^^xsd:string ;
+	gist:stixTerm "windows-integrity-level-enum"^^xsd:string ;
+	.
+
 gist:_AccountType_facebook
 	a gist:AccountType ;
 	rdfs:label "Facebook"^^xsd:string ;
