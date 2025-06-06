@@ -168,6 +168,16 @@ gist:ThreatActorType
 	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
+gist:ToolType
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "Categories of tools that can be used to perform attacks."^^xsd:string ;
+	skos:example ""^^xsd:string ;
+	skos:note ""^^xsd:string ;
+	skos:prefLabel "Tool Type"^^xsd:string ;
+	gist:stixTerm "tool-type-ov"^^xsd:string ;
+	.
+
 gist:_AccountType_facebook
 	a gist:AccountType ;
 	rdfs:label "Facebook"^^xsd:string ;
