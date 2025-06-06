@@ -2487,6 +2487,38 @@ There is not enough information available to determine the type of threat actor.
 	skos:prefLabel "unknown"^^xsd:string ;
 	.
 
+gist:_WindowsServiceType_service-file-system-driver
+	a gist:WindowsServiceType ;
+	skos:definition """STIX 2.1 description: 
+The service is a file system driver."""^^xsd:string ;
+	skos:prefLabel "SERVICE_FILE_SYSTEM_DRIVER"^^xsd:string ;
+	gist:stixTerm "SERVICE_FILE_SYSTEM_DRIVER"^^xsd:string ;
+	.
+
+gist:_WindowsServiceType_service-kernel-driver
+	a gist:WindowsServiceType ;
+	skos:definition """STIX 2.1 description: 
+The service is a device driver."""^^xsd:string ;
+	skos:prefLabel "SERVICE_KERNEL_DRIVER"^^xsd:string ;
+	gist:stixTerm "SERVICE_KERNEL_DRIVER"^^xsd:string ;
+	.
+
+gist:_WindowsServiceType_service-win32-own-process
+	a gist:WindowsServiceType ;
+	skos:definition """STIX 2.1 description: 
+The service runs in its own process."""^^xsd:string ;
+	skos:prefLabel "SERVICE_WIN32_OWN_PROCESS"^^xsd:string ;
+	gist:stixTerm "SERVICE_WIN32_OWN_PROCESS"^^xsd:string ;
+	.
+
+gist:_WindowsServiceType_service-win32-share-process
+	a gist:WindowsServiceType ;
+	skos:definition """STIX 2.1 description: 
+The service shares a process with other services."""^^xsd:string ;
+	skos:prefLabel "SERVICE_WIN32_SHARE_PROCESS"^^xsd:string ;
+	gist:stixTerm "SERVICE_WIN32_SHARE_PROCESS"^^xsd:string ;
+	.
+
 gist:stixTerm
 	a owl:AnnotationProperty ;
 	.
