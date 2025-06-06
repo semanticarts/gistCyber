@@ -2487,6 +2487,30 @@ There is not enough information available to determine the type of threat actor.
 	skos:prefLabel "unknown"^^xsd:string ;
 	.
 
+gist:_WindowsPEBinaryType_dll
+	a gist:WindowsPEBinaryType ;
+	skos:definition """STIX 2.1 description: 
+Specifies that the PE binary is a dynamically linked library (DLL)."""^^xsd:string ;
+	skos:prefLabel "DLL"^^xsd:string ;
+	gist:stixTerm "dll"^^xsd:string ;
+	.
+
+gist:_WindowsPEBinaryType_exe
+	a gist:WindowsPEBinaryType ;
+	skos:definition """STIX 2.1 description: 
+Specifies that the PE binary is an executable image (i.e., not an OBJ or DLL)."""^^xsd:string ;
+	skos:prefLabel "EXE"^^xsd:string ;
+	gist:stixTerm "exe"^^xsd:string ;
+	.
+
+gist:_WindowsPEBinaryType_sys
+	a gist:WindowsPEBinaryType ;
+	skos:definition """STIX 2.1 description: 
+Specifies that the PE binary is a device driver (SYS)."""^^xsd:string ;
+	skos:prefLabel "SYS"^^xsd:string ;
+	gist:stixTerm "sys"^^xsd:string ;
+	.
+
 gist:stixTerm
 	a owl:AnnotationProperty ;
 	.
