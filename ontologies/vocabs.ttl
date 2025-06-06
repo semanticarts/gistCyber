@@ -2487,6 +2487,46 @@ There is not enough information available to determine the type of threat actor.
 	skos:prefLabel "unknown"^^xsd:string ;
 	.
 
+gist:_WindowsServiceStartType_service-auto-start
+	a gist:WindowsServiceStartType ;
+	skos:definition """STIX 2.1 description: 
+A service started automatically by the service control manager during system startup."""^^xsd:string ;
+	skos:prefLabel "SERVICE_AUTO_START"^^xsd:string ;
+	gist:stixTerm "SERVICE_AUTO_START"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStartType_service-boot-start
+	a gist:WindowsServiceStartType ;
+	skos:definition """STIX 2.1 description: 
+A device driver started by the system loader. This value is valid only for driver services."""^^xsd:string ;
+	skos:prefLabel "SERVICE_BOOT_START"^^xsd:string ;
+	gist:stixTerm "SERVICE_BOOT_START"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStartType_service-demand-start
+	a gist:WindowsServiceStartType ;
+	skos:definition """STIX 2.1 description: 
+A service started by the service control manager when a process calls the StartService function."""^^xsd:string ;
+	skos:prefLabel "SERVICE_DEMAND_START"^^xsd:string ;
+	gist:stixTerm "SERVICE_DEMAND_START"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStartType_service-disabled
+	a gist:WindowsServiceStartType ;
+	skos:definition """STIX 2.1 description: 
+A service that cannot be started. Attempts to start the service result in the error code ERROR_SERVICE_DISABLED."""^^xsd:string ;
+	skos:prefLabel "SERVICE_DISABLED"^^xsd:string ;
+	gist:stixTerm "SERVICE_DISABLED"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStartType_service-system-alert
+	a gist:WindowsServiceStartType ;
+	skos:definition """STIX 2.1 description: 
+A device driver started by the IoInitSystem function. This value is valid only for driver services."""^^xsd:string ;
+	skos:prefLabel "SERVICE_SYSTEM_ALERT"^^xsd:string ;
+	gist:stixTerm "SERVICE_SYSTEM_ALERT"^^xsd:string ;
+	.
+
 gist:stixTerm
 	a owl:AnnotationProperty ;
 	.
