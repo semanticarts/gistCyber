@@ -168,6 +168,20 @@ gist:ThreatActorType
 	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
+gist:WindowsRegistryDatatype
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating the datatype of a Windows registry element."^^xsd:string ;
+	skos:example ""^^xsd:string ;
+	skos:note """STIX 2.1 description:
+The Windows registry datatype vocabulary is currently used in the following SCO(s):
+●      Windows Registry Key
+
+An enumeration of Windows registry data types."""^^xsd:string ;
+	skos:prefLabel "Windows™ Registry Datatype Enumeration"^^xsd:string ;
+	gist:stixTerm ""^^xsd:string ;
+	.
+
 gist:_AccountType_facebook
 	a gist:AccountType ;
 	rdfs:label "Facebook"^^xsd:string ;
