@@ -147,7 +147,7 @@ gist:ProcessorArchitecture
 gist:ReportType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-	skos:definition "Categorizes the primary purpose or subject of a report."^^xsd:string ;
+skos:definition "A category indicating the primary purpose or subject of a report."^^xsd:string ;
 	skos:example "A report that contains malware and indicators for that malware should have a report type of 'malware' to capture that the malware is the primary purpose."^^xsd:string ;
 	skos:note "Report types are not mutually exclusive: a Report can be both a malware report and a tool report. Just because a report contains objects of a type does not mean that the report should include that type. If the objects are there to simply provide evidence or context for other objects, it is not necessary to include them in the type."^^xsd:string ;
 	skos:prefLabel "Report Type"^^xsd:string ;
