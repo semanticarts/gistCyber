@@ -2488,6 +2488,38 @@ There is not enough information available to determine the type of threat actor.
 	skos:prefLabel "unknown"^^xsd:string ;
 	.
 
+gist:_WindowsIntegrityLevel_high
+	a gist:WindowsIntegrityLevel ;
+	skos:definition """STIX 2.1 description: 
+A high level of integrity."""^^xsd:string ;
+	skos:prefLabel "High Integrity Level"^^xsd:string ;
+	gist:stixTerm "high"^^xsd:string ;
+	.
+
+gist:_WindowsIntegrityLevel_low
+	a gist:WindowsIntegrityLevel ;
+	skos:definition """STIX 2.1 description: 
+A low level of integrity."""^^xsd:string ;
+	skos:prefLabel "Low Integrity Level"^^xsd:string ;
+	gist:stixTerm "low"^^xsd:string ;
+	.
+
+gist:_WindowsIntegrityLevel_medium
+	a gist:WindowsIntegrityLevel ;
+	skos:definition """STIX 2.1 description: 
+A medium level of integrity."""^^xsd:string ;
+	skos:prefLabel "Medium Integrity Level"^^xsd:string ;
+	gist:stixTerm "medium"^^xsd:string ;
+	.
+
+gist:_WindowsIntegrityLevel_system
+	a gist:WindowsIntegrityLevel ;
+	skos:definition """STIX 2.1 description: 
+A system level of integrity."""^^xsd:string ;
+	skos:prefLabel "System Integrity Level"^^xsd:string ;
+	gist:stixTerm "system"^^xsd:string ;
+	.
+
 gist:stixTerm
 	a owl:AnnotationProperty ;
 	.
