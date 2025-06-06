@@ -171,7 +171,7 @@ gist:ThreatActorType
 gist:ToolType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-	skos:definition "Categories of tools that can be used to perform attacks."^^xsd:string ;
+skos:definition "A category indicating a kind of tool that can be used to perform attacks."^^xsd:string ;
 	skos:example ""^^xsd:string ;
 	skos:note ""^^xsd:string ;
 	skos:prefLabel "Tool Type"^^xsd:string ;
