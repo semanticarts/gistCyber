@@ -1953,6 +1953,94 @@ gist:_ProcessorArchitecture_x8664
 	gist:stixTerm "x86-64"^^xsd:string ;
 	.
 
+gist:_ReportType_attack-pattern
+	a gist:ReportType ;
+	skos:definition """STIX 2.1 Description: 
+Report subject is a characterization of one or more attack patterns and related information."""^^xsd:string ;
+	skos:prefLabel "Attack Pattern"^^xsd:string ;
+	gist:stixTerm "attack-pattern"^^xsd:string ;
+	.
+
+gist:_ReportType_campaign
+	a gist:ReportType ;
+	skos:definition """STIX 2.1 Description: 
+Report subject is a characterization of one or more campaigns and related information."""^^xsd:string ;
+	skos:prefLabel "Campaign"^^xsd:string ;
+	gist:stixTerm "campaign"^^xsd:string ;
+	.
+
+gist:_ReportType_identity
+	a gist:ReportType ;
+	skos:definition """STIX 2.1 Description: 
+Report subject is a characterization of one or more identities and related information."""^^xsd:string ;
+	skos:prefLabel "Identity"^^xsd:string ;
+	gist:stixTerm "identity"^^xsd:string ;
+	.
+
+gist:_ReportType_indicator
+	a gist:ReportType ;
+	skos:definition """STIX 2.1 Description: 
+Report subject is a characterization of one or more indicators and related information."""^^xsd:string ;
+	skos:prefLabel "Indicator"^^xsd:string ;
+	gist:stixTerm "indicator"^^xsd:string ;
+	.
+
+gist:_ReportType_intrusion-set
+	a gist:ReportType ;
+	skos:definition """STIX 2.1 Description: 
+Report subject is a characterization of one or more intrusion sets and related information."""^^xsd:string ;
+	skos:prefLabel "Intrusion Set"^^xsd:string ;
+	gist:stixTerm "intrusion-set"^^xsd:string ;
+	.
+
+gist:_ReportType_malware
+	a gist:ReportType ;
+	skos:definition """STIX 2.1 Description: 
+Report subject is a characterization of one or more malware instances and related information."""^^xsd:string ;
+	skos:prefLabel "Malware"^^xsd:string ;
+	gist:stixTerm "malware"^^xsd:string ;
+	.
+
+gist:_ReportType_observed-data
+	a gist:ReportType ;
+	skos:definition """STIX 2.1 Description: 
+Report subject is a characterization of observed data and related information."""^^xsd:string ;
+	skos:prefLabel "Observed Data"^^xsd:string ;
+	gist:stixTerm "observed-data"^^xsd:string ;
+	.
+
+gist:_ReportType_threat-actor
+	a gist:ReportType ;
+	skos:definition """STIX 2.1 Description: 
+Report subject is a characterization of one or more threat actors and related information."""^^xsd:string ;
+	skos:prefLabel "Threat Actor"^^xsd:string ;
+	gist:stixTerm "threat-actor"^^xsd:string ;
+	.
+
+gist:_ReportType_threat-report
+	a gist:ReportType ;
+	skos:definition """STIX 2.1 Description: 
+Report subject is a broad characterization of a threat across multiple facets."""^^xsd:string ;
+	skos:prefLabel "Threat Report"^^xsd:string ;
+	gist:stixTerm "threat-report"^^xsd:string ;
+	.
+
+gist:_ReportType_tool
+	a gist:ReportType ;
+	skos:definition """STIX 2.1 Description: 
+Report subject is a characterization of one or more tools and related information."""^^xsd:string ;
+	skos:prefLabel "Tool"^^xsd:string ;
+	gist:stixTerm "tool"^^xsd:string ;
+	.
+
+gist:_ReportType_vulnerability
+	a gist:ReportType ;
+	skos:definition """STIX 2.1 Description: 
+Report subject is a characterization of one or more vulnerabilities and related information."""^^xsd:string ;
+	skos:prefLabel "Vulnerability"^^xsd:string ;
+	gist:stixTerm "vulnerability"^^xsd:string ;
+	.
+
 gist:_StixRegion_africa
 	a gist:StixRegion ;
 	skos:definition "The STIX tag for the Africa region."^^xsd:string ;
