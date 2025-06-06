@@ -2487,6 +2487,62 @@ There is not enough information available to determine the type of threat actor.
 	skos:prefLabel "unknown"^^xsd:string ;
 	.
 
+gist:_WindowsServiceStatus_service-continue-pending
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service continue is pending."""^^xsd:string ;
+	skos:prefLabel "SERVICE_CONTINUE_PENDING"^^xsd:string ;
+	gist:stixTerm "SERVICE_CONTINUE_PENDING"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStatus_service-pause-pending
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service pause is pending."""^^xsd:string ;
+	skos:prefLabel "SERVICE_PAUSE_PENDING"^^xsd:string ;
+	gist:stixTerm "SERVICE_PAUSE_PENDING"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStatus_service-paused
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service is paused."""^^xsd:string ;
+	skos:prefLabel "SERVICE_PAUSED"^^xsd:string ;
+	gist:stixTerm "SERVICE_PAUSED"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStatus_service-running
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service is running."""^^xsd:string ;
+	skos:prefLabel "SERVICE_RUNNING"^^xsd:string ;
+	gist:stixTerm "SERVICE_RUNNING"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStatus_service-start-pending
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service is starting."""^^xsd:string ;
+	skos:prefLabel "SERVICE_START_PENDING"^^xsd:string ;
+	gist:stixTerm "SERVICE_START_PENDING"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStatus_service-stop-pending
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service is stopping."""^^xsd:string ;
+	skos:prefLabel "SERVICE_STOP_PENDING"^^xsd:string ;
+	gist:stixTerm "SERVICE_STOP_PENDING"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStatus_service-stopped
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service is not running."""^^xsd:string ;
+	skos:prefLabel "SERVICE_STOPPED"^^xsd:string ;
+	gist:stixTerm "SERVICE_STOPPED"^^xsd:string ;
+	.
+
 gist:stixTerm
 	a owl:AnnotationProperty ;
 	.
