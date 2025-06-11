@@ -179,6 +179,16 @@ gist:ThreatActorType
 	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
+gist:ToolType
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+skos:definition "A category indicating a kind of tool that can be used to perform attacks."^^xsd:string ;
+	skos:example ""^^xsd:string ;
+	skos:note ""^^xsd:string ;
+	skos:prefLabel "Tool Type"^^xsd:string ;
+	gist:stixTerm "tool-type-ov"^^xsd:string ;
+	.
+
 gist:_AccountType_facebook
 	a gist:AccountType ;
 	rdfs:label "Facebook"^^xsd:string ;
@@ -2570,6 +2580,70 @@ gist:_ThreatActorType_unknown
 	skos:definition """STIX 2.1 description:
 There is not enough information available to determine the type of threat actor."""^^xsd:string ;
 	skos:prefLabel "unknown"^^xsd:string ;
+	.
+
+gist:_ToolType_credential-exploitation
+	a gist:ToolType ;
+	skos:definition """STIX 2.1 description: 
+Tools used to crack password databases or otherwise exploit/discover credentials, either locally or remotely, such as John the Ripper and NCrack."""^^xsd:string ;
+	skos:prefLabel "Credential Exploitation"^^xsd:string ;
+	gist:stixTerm "credential-exploitation"^^xsd:string ;
+	.
+
+gist:_ToolType_denial-of-service
+	a gist:ToolType ;
+	skos:definition """STIX 2.1 description: 
+Tools used to perform denial of service attacks or DDoS attacks, such as Low Orbit Ion Cannon (LOIC) and DHCPig."""^^xsd:string ;
+	skos:prefLabel "Denial of Service"^^xsd:string ;
+	gist:stixTerm "denial-of-service"^^xsd:string ;
+	.
+
+gist:_ToolType_exploitation
+	a gist:ToolType ;
+	skos:definition """STIX 2.1 description: 
+Tools used to exploit software and systems, such as sqlmap and Metasploit."""^^xsd:string ;
+	skos:prefLabel "Exploitation"^^xsd:string ;
+	gist:stixTerm "exploitation"^^xsd:string ;
+	.
+
+gist:_ToolType_information-gathering
+	a gist:ToolType ;
+	skos:definition """STIX 2.1 description: 
+Tools used to enumerate system and network information, e.g., NMAP."""^^xsd:string ;
+	skos:prefLabel "Information Gathering"^^xsd:string ;
+	gist:stixTerm "information-gathering"^^xsd:string ;
+	.
+
+gist:_ToolType_network-capture
+	a gist:ToolType ;
+	skos:definition """STIX 2.1 description: 
+Tools used to capture network traffic, such as Wireshark and Kismet."""^^xsd:string ;
+	skos:prefLabel "Network Capture"^^xsd:string ;
+	gist:stixTerm "network-capture"^^xsd:string ;
+	.
+
+gist:_ToolType_remote-access
+	a gist:ToolType ;
+	skos:definition """STIX 2.1 description: 
+Tools used to access machines remotely, such as VNC and Remote Desktop."""^^xsd:string ;
+	skos:prefLabel "Remote Access"^^xsd:string ;
+	gist:stixTerm "remote-access"^^xsd:string ;
+	.
+
+gist:_ToolType_unknown
+	a gist:ToolType ;
+	skos:definition """STIX 2.1 description: 
+There is not enough information available to determine the type of tool."""^^xsd:string ;
+	skos:prefLabel "Unknown Tool Type"^^xsd:string ;
+	gist:stixTerm "unknown"^^xsd:string ;
+	.
+
+gist:_ToolType_vulnerability-scanning
+	a gist:ToolType ;
+	skos:definition """STIX 2.1 description: 
+Tools used to scan systems and networks for vulnerabilities, e.g., Nessus."""^^xsd:string ;
+	skos:prefLabel "Vulnerability Scanning"^^xsd:string ;
+	gist:stixTerm "vulnerability-scanning"^^xsd:string ;
 	.
 
 gist:stixTerm
