@@ -168,18 +168,18 @@ gist:ThreatActorType
 	rdfs:subClassOf gist:StixCategoryObject ;
 	.
 
-gist:WindowsServiceType
+gist:WindowsServiceStatus
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-	skos:definition "A category describing different Windows service types."^^xsd:string ;
+	skos:definition "A category describing Windows service statuses."^^xsd:string ;
 	skos:example ""^^xsd:string ;
 	skos:note """STIX 2.1 description:
-The Windows service type vocabulary is currently used in the following SCO(s):
+The Windows service status vocabulary is currently used in the following SCO(s):
 ●      Process (Windows Service extension)
 
-An enumeration of Windows service types."""^^xsd:string ;
-	skos:prefLabel "Windows™ Service Type Enumeration"^^xsd:string ;
-	gist:stixTerm "windows-service-type-enum"^^xsd:string ;
+An enumeration of Windows service statuses."""^^xsd:string ;
+	skos:prefLabel "Windows™ Service Status Enumeration"^^xsd:string ;
+	gist:stixTerm "windows-service-status-enum"^^xsd:string ;
 	.
 
 gist:_AccountType_facebook
@@ -2487,36 +2487,60 @@ There is not enough information available to determine the type of threat actor.
 	skos:prefLabel "unknown"^^xsd:string ;
 	.
 
-gist:_WindowsServiceType_service-file-system-driver
-	a gist:WindowsServiceType ;
+gist:_WindowsServiceStatus_service-continue-pending
+	a gist:WindowsServiceStatus ;
 	skos:definition """STIX 2.1 description: 
-The service is a file system driver."""^^xsd:string ;
-	skos:prefLabel "SERVICE_FILE_SYSTEM_DRIVER"^^xsd:string ;
-	gist:stixTerm "SERVICE_FILE_SYSTEM_DRIVER"^^xsd:string ;
+The service continue is pending."""^^xsd:string ;
+	skos:prefLabel "SERVICE_CONTINUE_PENDING"^^xsd:string ;
+	gist:stixTerm "SERVICE_CONTINUE_PENDING"^^xsd:string ;
 	.
 
-gist:_WindowsServiceType_service-kernel-driver
-	a gist:WindowsServiceType ;
+gist:_WindowsServiceStatus_service-pause-pending
+	a gist:WindowsServiceStatus ;
 	skos:definition """STIX 2.1 description: 
-The service is a device driver."""^^xsd:string ;
-	skos:prefLabel "SERVICE_KERNEL_DRIVER"^^xsd:string ;
-	gist:stixTerm "SERVICE_KERNEL_DRIVER"^^xsd:string ;
+The service pause is pending."""^^xsd:string ;
+	skos:prefLabel "SERVICE_PAUSE_PENDING"^^xsd:string ;
+	gist:stixTerm "SERVICE_PAUSE_PENDING"^^xsd:string ;
 	.
 
-gist:_WindowsServiceType_service-win32-own-process
-	a gist:WindowsServiceType ;
+gist:_WindowsServiceStatus_service-paused
+	a gist:WindowsServiceStatus ;
 	skos:definition """STIX 2.1 description: 
-The service runs in its own process."""^^xsd:string ;
-	skos:prefLabel "SERVICE_WIN32_OWN_PROCESS"^^xsd:string ;
-	gist:stixTerm "SERVICE_WIN32_OWN_PROCESS"^^xsd:string ;
+The service is paused."""^^xsd:string ;
+	skos:prefLabel "SERVICE_PAUSED"^^xsd:string ;
+	gist:stixTerm "SERVICE_PAUSED"^^xsd:string ;
 	.
 
-gist:_WindowsServiceType_service-win32-share-process
-	a gist:WindowsServiceType ;
+gist:_WindowsServiceStatus_service-running
+	a gist:WindowsServiceStatus ;
 	skos:definition """STIX 2.1 description: 
-The service shares a process with other services."""^^xsd:string ;
-	skos:prefLabel "SERVICE_WIN32_SHARE_PROCESS"^^xsd:string ;
-	gist:stixTerm "SERVICE_WIN32_SHARE_PROCESS"^^xsd:string ;
+The service is running."""^^xsd:string ;
+	skos:prefLabel "SERVICE_RUNNING"^^xsd:string ;
+	gist:stixTerm "SERVICE_RUNNING"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStatus_service-start-pending
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service is starting."""^^xsd:string ;
+	skos:prefLabel "SERVICE_START_PENDING"^^xsd:string ;
+	gist:stixTerm "SERVICE_START_PENDING"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStatus_service-stop-pending
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service is stopping."""^^xsd:string ;
+	skos:prefLabel "SERVICE_STOP_PENDING"^^xsd:string ;
+	gist:stixTerm "SERVICE_STOP_PENDING"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStatus_service-stopped
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service is not running."""^^xsd:string ;
+	skos:prefLabel "SERVICE_STOPPED"^^xsd:string ;
+	gist:stixTerm "SERVICE_STOPPED"^^xsd:string ;
 	.
 
 gist:stixTerm
