@@ -1856,6 +1856,7 @@ The creator agrees with the information and believes that it is accurate and cor
 
 This MAY be considered equivalent to a 4 in a numeric scale."""^^xsd:string ;
 	skos:prefLabel "agree"^^xsd:string ;
+	gist:sequence "4"^^xsd:integer ;
 	.
 
 gist:_OpinionEnumeration_disagree
@@ -1867,6 +1868,7 @@ The creator disagrees with the information and believes it is inaccurate or inco
 
 This MAY be considered equivalent to a 2 in a numeric scale."""^^xsd:string ;
 	skos:prefLabel "disagree"^^xsd:string ;
+	gist:sequence "2"^^xsd:integer ;
 	.
 
 gist:_OpinionEnumeration_neutral
@@ -1878,6 +1880,7 @@ The creator is neutral about the accuracy or correctness of the information.
 
 This MAY be considered equivalent to a 3 in a numeric scale."""^^xsd:string ;
 	skos:prefLabel "neutral"^^xsd:string ;
+	gist:sequence "3"^^xsd:integer ;
 	.
 
 gist:_OpinionEnumeration_strongly-agree
@@ -1889,6 +1892,7 @@ The creator strongly agrees with the information and believes that it is accurat
 
 This MAY be considered equivalent to a 5 in a numeric scale."""^^xsd:string ;
 	skos:prefLabel "strongly-agree"^^xsd:string ;
+	gist:sequence "5"^^xsd:integer ;
 	.
 
 gist:_OpinionEnumeration_strongly-disagree
@@ -1900,6 +1904,7 @@ The creator strongly disagrees with the information and believes it is inaccurat
 
 This MAY be considered equivalent to a 1 in a numeric scale."""^^xsd:string ;
 	skos:prefLabel "strongly-disagree"^^xsd:string ;
+	gist:sequence "1"^^xsd:integer ;
 	.
 
 gist:_PatternType_pcre
