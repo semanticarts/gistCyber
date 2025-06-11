@@ -147,10 +147,12 @@ gist:ProcessorArchitecture
 gist:ReportType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-skos:definition "A category indicating the primary purpose or subject of a report."^^xsd:string ;
-skos:example "A report that contains malware and indicators for that malware has a report type of 'malware'."^^xsd:string ;
-skos:note "Report types are not mutually exclusive: a Report can be both a malware report and a tool report."^^xsd:string ;
-skos:note "Just because a report contains objects of a type does not mean that the report should include that type. If the objects are there to simply provide evidence or context for other objects, it is not necessary to include them in the type."^^xsd:string ;
+	skos:definition "A category indicating the primary purpose or subject of a report."^^xsd:string ;
+	skos:example "A report that contains malware and indicators for that malware has a report type of 'malware'."^^xsd:string ;
+	skos:note
+		"Just because a report contains objects of a type does not mean that the report should include that type. If the objects are there to simply provide evidence or context for other objects, it is not necessary to include them in the type."^^xsd:string ,
+		"Report types are not mutually exclusive: a Report can be both a malware report and a tool report."^^xsd:string
+		;
 	skos:prefLabel "Report Type"^^xsd:string ;
 	gist:stixTerm "report-type-ov"^^xsd:string ;
 	.
@@ -182,11 +184,25 @@ gist:ThreatActorType
 gist:ToolType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-skos:definition "A category indicating a kind of tool that can be used to perform attacks."^^xsd:string ;
+	skos:definition "A category indicating a kind of tool that can be used to perform attacks."^^xsd:string ;
 	skos:example ""^^xsd:string ;
 	skos:note ""^^xsd:string ;
 	skos:prefLabel "Tool Type"^^xsd:string ;
 	gist:stixTerm "tool-type-ov"^^xsd:string ;
+	.
+
+gist:WindowsServiceStatus
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category describing Windows service statuses."^^xsd:string ;
+	skos:example ""^^xsd:string ;
+	skos:note """STIX 2.1 description:
+The Windows service status vocabulary is currently used in the following SCO(s):
+●      Process (Windows Service extension)
+
+An enumeration of Windows service statuses."""^^xsd:string ;
+	skos:prefLabel "Windows™ Service Status Enumeration"^^xsd:string ;
+	gist:stixTerm "windows-service-status-enum"^^xsd:string ;
 	.
 
 gist:_AccountType_facebook
@@ -2644,6 +2660,62 @@ gist:_ToolType_vulnerability-scanning
 Tools used to scan systems and networks for vulnerabilities, e.g., Nessus."""^^xsd:string ;
 	skos:prefLabel "Vulnerability Scanning"^^xsd:string ;
 	gist:stixTerm "vulnerability-scanning"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStatus_service-continue-pending
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service continue is pending."""^^xsd:string ;
+	skos:prefLabel "SERVICE_CONTINUE_PENDING"^^xsd:string ;
+	gist:stixTerm "SERVICE_CONTINUE_PENDING"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStatus_service-pause-pending
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service pause is pending."""^^xsd:string ;
+	skos:prefLabel "SERVICE_PAUSE_PENDING"^^xsd:string ;
+	gist:stixTerm "SERVICE_PAUSE_PENDING"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStatus_service-paused
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service is paused."""^^xsd:string ;
+	skos:prefLabel "SERVICE_PAUSED"^^xsd:string ;
+	gist:stixTerm "SERVICE_PAUSED"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStatus_service-running
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service is running."""^^xsd:string ;
+	skos:prefLabel "SERVICE_RUNNING"^^xsd:string ;
+	gist:stixTerm "SERVICE_RUNNING"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStatus_service-start-pending
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service is starting."""^^xsd:string ;
+	skos:prefLabel "SERVICE_START_PENDING"^^xsd:string ;
+	gist:stixTerm "SERVICE_START_PENDING"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStatus_service-stop-pending
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service is stopping."""^^xsd:string ;
+	skos:prefLabel "SERVICE_STOP_PENDING"^^xsd:string ;
+	gist:stixTerm "SERVICE_STOP_PENDING"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStatus_service-stopped
+	a gist:WindowsServiceStatus ;
+	skos:definition """STIX 2.1 description: 
+The service is not running."""^^xsd:string ;
+	skos:prefLabel "SERVICE_STOPPED"^^xsd:string ;
+	gist:stixTerm "SERVICE_STOPPED"^^xsd:string ;
 	.
 
 gist:stixTerm
