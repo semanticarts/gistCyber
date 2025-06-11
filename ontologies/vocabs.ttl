@@ -205,6 +205,20 @@ An open vocabulary of Windows PE binary types."""^^xsd:string ;
 	gist:stixTerm "windows-pebinary-type-ov"^^xsd:string ;
 	.
 
+gist:WindowsServiceStartType
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating the start type of a Windows service."^^xsd:string ;
+	skos:example ""^^xsd:string ;
+	skos:note """STIX 2.1 description: 
+The Windows service start type vocabulary is currently used in the following SCO(s):
+●      Process (Windows Service extension)
+
+An enumeration of Windows service start types."""^^xsd:string ;
+	skos:prefLabel "Windows™ Service Start Type Enumeration"^^xsd:string ;
+	gist:stixTerm "windows-service-start-type-enum"^^xsd:string ;
+	.
+
 gist:WindowsServiceStatus
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
@@ -2698,6 +2712,46 @@ gist:_WindowsPEBinaryType_sys
 Specifies that the PE binary is a device driver (SYS)."""^^xsd:string ;
 	skos:prefLabel "SYS"^^xsd:string ;
 	gist:stixTerm "sys"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStartType_service-auto-start
+	a gist:WindowsServiceStartType ;
+	skos:definition """STIX 2.1 description: 
+A service started automatically by the service control manager during system startup."""^^xsd:string ;
+	skos:prefLabel "SERVICE_AUTO_START"^^xsd:string ;
+	gist:stixTerm "SERVICE_AUTO_START"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStartType_service-boot-start
+	a gist:WindowsServiceStartType ;
+	skos:definition """STIX 2.1 description: 
+A device driver started by the system loader. This value is valid only for driver services."""^^xsd:string ;
+	skos:prefLabel "SERVICE_BOOT_START"^^xsd:string ;
+	gist:stixTerm "SERVICE_BOOT_START"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStartType_service-demand-start
+	a gist:WindowsServiceStartType ;
+	skos:definition """STIX 2.1 description: 
+A service started by the service control manager when a process calls the StartService function."""^^xsd:string ;
+	skos:prefLabel "SERVICE_DEMAND_START"^^xsd:string ;
+	gist:stixTerm "SERVICE_DEMAND_START"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStartType_service-disabled
+	a gist:WindowsServiceStartType ;
+	skos:definition """STIX 2.1 description: 
+A service that cannot be started. Attempts to start the service result in the error code ERROR_SERVICE_DISABLED."""^^xsd:string ;
+	skos:prefLabel "SERVICE_DISABLED"^^xsd:string ;
+	gist:stixTerm "SERVICE_DISABLED"^^xsd:string ;
+	.
+
+gist:_WindowsServiceStartType_service-system-alert
+	a gist:WindowsServiceStartType ;
+	skos:definition """STIX 2.1 description: 
+A device driver started by the IoInitSystem function. This value is valid only for driver services."""^^xsd:string ;
+	skos:prefLabel "SERVICE_SYSTEM_ALERT"^^xsd:string ;
+	gist:stixTerm "SERVICE_SYSTEM_ALERT"^^xsd:string ;
 	.
 
 gist:_WindowsServiceStatus_service-continue-pending
