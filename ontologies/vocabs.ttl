@@ -191,6 +191,21 @@ gist:ToolType
 	gist:stixTerm "tool-type-ov"^^xsd:string ;
 	.
 
+gist:WindowsIntegrityLevel
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition """STIX 2.1 description: 
+The Windows integrity level enumeration is currently used in the following STIX Cyber-observable Object(s):
+●      Process (Windows Process extension)
+
+
+Windows integrity levels are a security feature and represent the trustworthiness of an object."""^^xsd:string ;
+	skos:example ""^^xsd:string ;
+	skos:note "This is described in STIX as an enumeration but no order of the enumeration is given."^^xsd:string ;
+	skos:prefLabel "Windows™ Integrity Level Enumeration"^^xsd:string ;
+	gist:stixTerm "windows-integrity-level-enum"^^xsd:string ;
+	.
+
 gist:WindowsPEBinaryType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
@@ -2935,6 +2950,38 @@ gist:_ToolType_vulnerability-scanning
 Tools used to scan systems and networks for vulnerabilities, e.g., Nessus."""^^xsd:string ;
 	skos:prefLabel "Vulnerability Scanning"^^xsd:string ;
 	gist:stixTerm "vulnerability-scanning"^^xsd:string ;
+	.
+
+gist:_WindowsIntegrityLevel_high
+	a gist:WindowsIntegrityLevel ;
+	skos:definition """STIX 2.1 description: 
+A high level of integrity."""^^xsd:string ;
+	skos:prefLabel "High Integrity Level"^^xsd:string ;
+	gist:stixTerm "high"^^xsd:string ;
+	.
+
+gist:_WindowsIntegrityLevel_low
+	a gist:WindowsIntegrityLevel ;
+	skos:definition """STIX 2.1 description: 
+A low level of integrity."""^^xsd:string ;
+	skos:prefLabel "Low Integrity Level"^^xsd:string ;
+	gist:stixTerm "low"^^xsd:string ;
+	.
+
+gist:_WindowsIntegrityLevel_medium
+	a gist:WindowsIntegrityLevel ;
+	skos:definition """STIX 2.1 description: 
+A medium level of integrity."""^^xsd:string ;
+	skos:prefLabel "Medium Integrity Level"^^xsd:string ;
+	gist:stixTerm "medium"^^xsd:string ;
+	.
+
+gist:_WindowsIntegrityLevel_system
+	a gist:WindowsIntegrityLevel ;
+	skos:definition """STIX 2.1 description: 
+A system level of integrity."""^^xsd:string ;
+	skos:prefLabel "System Integrity Level"^^xsd:string ;
+	gist:stixTerm "system"^^xsd:string ;
 	.
 
 gist:_WindowsPEBinaryType_dll
