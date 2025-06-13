@@ -10,9 +10,11 @@
 
 <https://w3id.org/semanticarts/ontology/vocabulary>
 	a owl:Ontology ;
-	rdfs:comment 'Some STIX properties are defined using open vocabularies or enumerations. Enumerations and open vocabularies are defined in STIX in order to enhance interoperability by increasing the likelihood that different entities use the same exact string to represent the same concept. If used consistently, open vocabularies make it less likely that one entity refers to the energy sector as "Energy" and another as "Energy Sector", thereby making comparison and correlation easier. \\n\\n While using predefined values from STIX vocabularies is strongly encouraged, in some cases this may not be feasible. To address this, producers are permitted to use values outside of the open vocabulary. In the case of enumerations, producers are required to use only the values defined within the STIX specification. \\n\\n STIX open vocabularies and enumerations are defined in section 10. Properties that are defined as open vocabularies identify a suggested vocabulary from that section. For example, the Threat Actor sophistication property, as defined in section 4.17, uses the Threat Actor Sophistication vocabulary as defined in section 10.25.'@en-US ;
 	owl:versionInfo "2.1.0"^^xsd:string ;
-	skos:definition "Category Instances for STIX Vocabularies and Enumerations"^^xsd:string ;
+	skos:definition
+		"Category Instances for STIX Vocabularies and Enumerations"^^xsd:string ,
+		'Some STIX properties are defined using open vocabularies or enumerations. Enumerations and open vocabularies are defined in STIX in order to enhance interoperability by increasing the likelihood that different entities use the same exact string to represent the same concept. If used consistently, open vocabularies make it less likely that one entity refers to the energy sector as "Energy" and another as "Energy Sector", thereby making comparison and correlation easier. \\n\\n While using predefined values from STIX vocabularies is strongly encouraged, in some cases this may not be feasible. To address this, producers are permitted to use values outside of the open vocabulary. In the case of enumerations, producers are required to use only the values defined within the STIX specification. \\n\\n STIX open vocabularies and enumerations are defined in section 10. Properties that are defined as open vocabularies identify a suggested vocabulary from that section. For example, the Threat Actor sophistication property, as defined in section 4.17, uses the Threat Actor Sophistication vocabulary as defined in section 10.25.'@en-US
+		;
 	skos:prefLabel "Category Instances for STIX Vocabularies and Enumerations"^^xsd:string ;
 	.
 
