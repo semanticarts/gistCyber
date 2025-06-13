@@ -255,6 +255,7 @@ gist:_AccountType_facebook
 	skos:definition """STIX 2.1 description:
 Specifies a Facebook account"""^^xsd:string ;
 	skos:prefLabel "facebook"^^xsd:string ;
+	gist:stixTerm "facebook"^^xsd:string ;
 	.
 
 gist:_AccountType_ldap
@@ -264,6 +265,7 @@ gist:_AccountType_ldap
 	skos:definition """STIX 2.1 description:
 Specifies an LDAP account"""^^xsd:string ;
 	skos:prefLabel "ldap"^^xsd:string ;
+	gist:stixTerm "ldap"^^xsd:string ;
 	.
 
 gist:_AccountType_nis
@@ -273,6 +275,7 @@ gist:_AccountType_nis
 	skos:definition """STIX 2.1 description:
 Specifies an NIS account"""^^xsd:string ;
 	skos:prefLabel "nis"^^xsd:string ;
+	gist:stixTerm "nis"^^xsd:string ;
 	.
 
 gist:_AccountType_openid
@@ -282,6 +285,7 @@ gist:_AccountType_openid
 	skos:definition """STIX 2.1 description:
 Specifies an OpenID account"""^^xsd:string ;
 	skos:prefLabel "openid"^^xsd:string ;
+	gist:stixTerm "openid"^^xsd:string ;
 	.
 
 gist:_AccountType_radius
@@ -291,6 +295,7 @@ gist:_AccountType_radius
 	skos:definition """STIX 2.1 description:
 Specifies a RADIUS account"""^^xsd:string ;
 	skos:prefLabel "radius"^^xsd:string ;
+	gist:stixTerm "radius"^^xsd:string ;
 	.
 
 gist:_AccountType_skype
@@ -300,6 +305,7 @@ gist:_AccountType_skype
 	skos:definition """STIX 2.1 description:
 Specifies a Skype account"""^^xsd:string ;
 	skos:prefLabel "skype"^^xsd:string ;
+	gist:stixTerm "skype"^^xsd:string ;
 	.
 
 gist:_AccountType_tacacs
@@ -309,6 +315,7 @@ gist:_AccountType_tacacs
 	skos:definition """STIX 2.1 description:
 Specifies a TACACS account"""^^xsd:string ;
 	skos:prefLabel "tacacs"^^xsd:string ;
+	gist:stixTerm "tacacs"^^xsd:string ;
 	.
 
 gist:_AccountType_twitter
@@ -318,6 +325,7 @@ gist:_AccountType_twitter
 	skos:definition """STIX 2.1 description:
 Specifies a Twitter account"""^^xsd:string ;
 	skos:prefLabel "twitter"^^xsd:string ;
+	gist:stixTerm "twitter"^^xsd:string ;
 	.
 
 gist:_AccountType_unix
@@ -327,6 +335,7 @@ gist:_AccountType_unix
 	skos:definition """STIX 2.1 description:
 Specifies a POSIX account"""^^xsd:string ;
 	skos:prefLabel "unix"^^xsd:string ;
+	gist:stixTerm "unix"^^xsd:string ;
 	.
 
 gist:_AccountType_windows-domain
@@ -336,6 +345,7 @@ gist:_AccountType_windows-domain
 	skos:definition """STIX 2.1 description:
 Specifies a Windows Domain account"""^^xsd:string ;
 	skos:prefLabel "windows-domain"^^xsd:string ;
+	gist:stixTerm "windows-domain"^^xsd:string ;
 	.
 
 gist:_AccountType_windows_local
@@ -345,6 +355,7 @@ gist:_AccountType_windows_local
 	skos:definition """STIX 2.1 description:
 Specifies a Windows Local account"""^^xsd:string ;
 	skos:prefLabel "windows-local"^^xsd:string ;
+	gist:stixTerm "windows-local"^^xsd:string ;
 	.
 
 gist:_AttackMotivation_accidental
@@ -358,6 +369,7 @@ A non-hostile actor whose benevolent or harmless intent inadvertently causes har
 
 For example, a well-meaning and dedicated employee who through distraction or poor training unintentionally causes harm to his or her organization."""^^xsd:string ;
 	skos:prefLabel "accidental"^^xsd:string ;
+	gist:stixTerm "accidental"^^xsd:string ;
 	.
 
 gist:_AttackMotivation_coercion
@@ -371,6 +383,7 @@ Being forced to act on someone else's behalf.
 
 Adversaries who are motivated by coercion are often forced through intimidation or blackmail to act illegally for someone else’s benefit. Unlike the other motivations, a coerced person does not act for personal gain, but out of fear of incurring a loss."""^^xsd:string ;
 	skos:prefLabel "coercion"^^xsd:string ;
+	gist:stixTerm "coercion"^^xsd:string ;
 	.
 
 gist:_AttackMotivation_dominance
@@ -384,6 +397,7 @@ A desire to assert superiority over someone or something else.
 
 Adversaries who are seeking dominance over a target are focused on using their power to force their target into submission or irrelevance. Dominance may be found with ideology in some state-sponsored attacks and with notoriety in some cyber vandalism-based attacks."""^^xsd:string ;
 	skos:prefLabel "dominance"^^xsd:string ;
+	gist:stixTerm "dominance"^^xsd:string ;
 	.
 
 gist:_AttackMotivation_ideology
@@ -401,6 +415,7 @@ Adversaries who act for ideological reasons (e.g., political, religious, human r
 
 For example, an activist group may sabotage a company’s equipment because they believe the company is harming the environment."""^^xsd:string ;
 	skos:prefLabel "ideology"^^xsd:string ;
+	gist:stixTerm "ideology"^^xsd:string ;
 	.
 
 gist:_AttackMotivation_notoriety
@@ -414,6 +429,7 @@ Seeking prestige or to become well known through some activity.
 
 Adversaries motivated by notoriety are often seeking either personal validation or respect within a community and staying covert is not a priority. In fact, one of the main goals is to garner the respect of their target audience."""^^xsd:string ;
 	skos:prefLabel "notoriety"^^xsd:string ;
+	gist:stixTerm "notoriety"^^xsd:string ;
 	.
 
 gist:_AttackMotivation_organizational-gain
@@ -427,6 +443,7 @@ Seeking advantage over a competing organization, including a military organizati
 
 Adversaries motivated by increased profit or other gains through an unfairly obtained competitive advantage are often seeking theft of intellectual property, business processes, or supply chain agreements and thus accelerating their position in a market or capability."""^^xsd:string ;
 	skos:prefLabel "oranizational-gain"^^xsd:string ;
+	gist:stixTerm "oranizational-gain"^^xsd:string ;
 	.
 
 gist:_AttackMotivation_personal-gain
@@ -444,6 +461,7 @@ Adversaries motivated by a selfish desire for personal gain are often out for ga
 
 While a Threat Actor or Intrusion Set may be seeking personal gain, this does not mean they are acting alone. Individuals can band together solely to maximize their own personal profits."""^^xsd:string ;
 	skos:prefLabel "personal-gain"^^xsd:string ;
+	gist:stixTerm "personal-gain"^^xsd:string ;
 	.
 
 gist:_AttackMotivation_personal-satisfaction
@@ -457,6 +475,7 @@ A desire to satisfy a strictly personal goal, including curiosity, thrill-seekin
 
 Threat Actors or Intrusion Set driven by personal satisfaction may incidentally receive some other gain from their actions, such as a profit, but their primary motivation is to gratify a personal, emotional need. Individuals can band together with others toward a mutual, but not necessarily organizational, objective."""^^xsd:string ;
 	skos:prefLabel "personal-satisfaction"^^xsd:string ;
+	gist:stixTerm "personal-satisfaction"^^xsd:string ;
 	.
 
 gist:_AttackMotivation_revenge
@@ -470,6 +489,7 @@ A desire to avenge perceived wrongs through harmful actions such as sabotage, vi
 
 A disgruntled Threat Actor or Intrusion Set seeking revenge can include current or former employees, who may have extensive knowledge to leverage when conducting attacks. Individuals can band together with others if the individual believes that doing so will enable them to cause more harm."""^^xsd:string ;
 	skos:prefLabel "revenge"^^xsd:string ;
+	gist:stixTerm "revenge"^^xsd:string ;
 	.
 
 gist:_AttackMotivation_unpredictable
@@ -483,6 +503,7 @@ Acting without identifiable reason or purpose and creating unpredictable events.
 
 Unpredictable is not a miscellaneous or default category. Unpredictable means a truly random and likely bizarre event, which seems to have no logical purpose to the victims."""^^xsd:string ;
 	skos:prefLabel "unpredictable"^^xsd:string ;
+	gist:stixTerm "unpredictable"^^xsd:string ;
 	.
 
 gist:_AttackResourceLevel_club
@@ -492,6 +513,7 @@ gist:_AttackResourceLevel_club
 	skos:definition """STIX 2.1 description:
 Members interact on a social and volunteer basis, often with little personal interest in the specific target. An example might be a core group of unrelated activists who regularly exchange tips on a particular blog. Group persists long term."""^^xsd:string ;
 	skos:prefLabel "club"^^xsd:string ;
+	gist:stixTerm "club"^^xsd:string ;
 	.
 
 gist:_AttackResourceLevel_contest
@@ -501,6 +523,7 @@ gist:_AttackResourceLevel_contest
 	skos:definition """STIX 2.1 description:
 A short-lived and perhaps anonymous interaction that concludes when the participants have achieved a single goal. For example, people who break into systems just for thrills or prestige may hold a contest to see who can break into a specific target first. It also includes announced \"operations\" to achieve a specific goal, such as the original \"OpIsrael\" call for volunteers to disrupt all of Israel's Internet functions for a day."""^^xsd:string ;
 	skos:prefLabel "contest"^^xsd:string ;
+	gist:stixTerm "contest"^^xsd:string ;
 	.
 
 gist:_AttackResourceLevel_government
@@ -510,6 +533,7 @@ gist:_AttackResourceLevel_government
 	skos:definition """STIX 2.1 description:
 Controls public assets and functions within a jurisdiction; very well resourced and persists long term."""^^xsd:string ;
 	skos:prefLabel "government"^^xsd:string ;
+	gist:stixTerm "government"^^xsd:string ;
 	.
 
 gist:_AttackResourceLevel_individual
@@ -519,6 +543,7 @@ gist:_AttackResourceLevel_individual
 	skos:definition """STIX 2.1 description:
 Resources limited to the average individual; Threat Actor acts independently."""^^xsd:string ;
 	skos:prefLabel "individual"^^xsd:string ;
+	gist:stixTerm "individual"^^xsd:string ;
 	.
 
 gist:_AttackResourceLevel_organization
@@ -528,6 +553,7 @@ gist:_AttackResourceLevel_organization
 	skos:definition """STIX 2.1 description:
 Larger and better resourced than a team; typically, a company or crime syndicate. Usually operates in multiple geographic areas and persists long term."""^^xsd:string ;
 	skos:prefLabel "organization"^^xsd:string ;
+	gist:stixTerm "organization"^^xsd:string ;
 	.
 
 gist:_AttackResourceLevel_team
@@ -537,6 +563,7 @@ gist:_AttackResourceLevel_team
 	skos:definition """STIX 2.1 description:
 A formally organized group with a leader, typically motivated by a specific goal and organized around that goal. Group persists long term and typically operates within a single geography."""^^xsd:string ;
 	skos:prefLabel "team"^^xsd:string ;
+	gist:stixTerm "team"^^xsd:string ;
 	.
 
 gist:_EncryptionAlgorithm_AES_256_GCM
@@ -546,6 +573,7 @@ gist:_EncryptionAlgorithm_AES_256_GCM
 	skos:definition """STIX 2.1 description:
 Specifies the AES-256-GCM cipher, as defined in [NIST SP800-38D]"""^^xsd:string ;
 	skos:prefLabel "AES-256-GCM"^^xsd:string ;
+	gist:stixTerm "AES-256-GCM"^^xsd:string ;
 	.
 
 gist:_EncryptionAlgorithm_ChaCha20-Poly1305
@@ -555,6 +583,7 @@ gist:_EncryptionAlgorithm_ChaCha20-Poly1305
 	skos:definition """STIX 2.1 description:
 Specifies the ChaCha20-Poly1305 stream cipher, as defined in [RFC7539]."""^^xsd:string ;
 	skos:prefLabel "ChaCha20-Poly1305"^^xsd:string ;
+	gist:stixTerm "ChaCha20-Poly1305"^^xsd:string ;
 	.
 
 gist:_EncryptionAlgorithm_mime-type-indicated
@@ -564,6 +593,7 @@ gist:_EncryptionAlgorithm_mime-type-indicated
 	skos:definition """STIX 2.1 description:
 The encryption algorithm is self-defined by the artifact's data. The specified mime-type tells you which format it is, e.g., Word Doc or GPG. This is intended for formats like Zip files and Word files which take a simple password, or GPG armored files that contain the key blob along with the file."""^^xsd:string ;
 	skos:prefLabel "mime-type-indicated"^^xsd:string ;
+	gist:stixTerm "mime-type-indicated"^^xsd:string ;
 	.
 
 gist:_ExtensionTypes_new-sco
@@ -571,6 +601,7 @@ gist:_ExtensionTypes_new-sco
 	skos:definition """STIX 2.1 description:
 Specifies that the Extension includes a new SCO"""^^xsd:string ;
 	skos:prefLabel "new-sco"^^xsd:string ;
+	gist:stixTerm "new-sco"^^xsd:string ;
 	.
 
 gist:_ExtensionTypes_new-sdo
@@ -578,6 +609,7 @@ gist:_ExtensionTypes_new-sdo
 	skos:definition """STIX 2.1 description:
 Specifies that the Extension includes a new SDO"""^^xsd:string ;
 	skos:prefLabel "new-sdo"^^xsd:string ;
+	gist:stixTerm "new-sdo"^^xsd:string ;
 	.
 
 gist:_ExtensionTypes_new-sro
@@ -585,6 +617,7 @@ gist:_ExtensionTypes_new-sro
 	skos:definition """STIX 2.1 description:
 Specifies that the Extension includes a new SRO"""^^xsd:string ;
 	skos:prefLabel "new-sro"^^xsd:string ;
+	gist:stixTerm "new-sro"^^xsd:string ;
 	.
 
 gist:_ExtensionTypes_property-extension
@@ -592,6 +625,7 @@ gist:_ExtensionTypes_property-extension
 	skos:definition """STIX 2.1 description:
 Specifies that the Extension includes additional properties for a given STIX Object."""^^xsd:string ;
 	skos:prefLabel "property-extension"^^xsd:string ;
+	gist:stixTerm "property-extension"^^xsd:string ;
 	.
 
 gist:_ExtensionTypes_toplevel-property-extension
@@ -599,6 +633,7 @@ gist:_ExtensionTypes_toplevel-property-extension
 	skos:definition """STIX 2.1 description:
 Specifies that the Extension includes additional properties for a given STIX Object at the top-level. Organizations are encouraged to use the property-extension instead of this extension type."""^^xsd:string ;
 	skos:prefLabel "toplevel-property-extension"^^xsd:string ;
+	gist:stixTerm "toplevel-property-extension"^^xsd:string ;
 	.
 
 gist:_GroupingContext_malware-analysis
@@ -606,6 +641,7 @@ gist:_GroupingContext_malware-analysis
 	skos:definition """STIX 2.1 description:
 A set of STIX content related to a particular malware instance or family."""^^xsd:string ;
 	skos:prefLabel "malware-analysis"^^xsd:string ;
+	gist:stixTerm "malware-analysis"^^xsd:string ;
 	.
 
 gist:_GroupingContext_suspicious-activity
@@ -613,6 +649,7 @@ gist:_GroupingContext_suspicious-activity
 	skos:definition """STIX 2.1 description:
 A set of STIX content related to a particular suspicious activity event."""^^xsd:string ;
 	skos:prefLabel "suspicious-activity"^^xsd:string ;
+	gist:stixTerm "suspicious-activity"^^xsd:string ;
 	.
 
 gist:_GroupingContext_unspecified
@@ -620,6 +657,7 @@ gist:_GroupingContext_unspecified
 	skos:definition """STIX 2.1 description:
 A set of STIX content contextually related but without any precise characterization of the contextual relationship between the objects."""^^xsd:string ;
 	skos:prefLabel "unspecified"^^xsd:string ;
+	gist:stixTerm "unspecified"^^xsd:string ;
 	.
 
 gist:_HashingAlgorithm_MD5
@@ -627,6 +665,7 @@ gist:_HashingAlgorithm_MD5
 	skos:definition """STIX 2.1 description:
 Specifies the MD5 message digest algorithm. The corresponding hash string for this value MUST be a valid MD5 message digest as defined in [RFC1321]."""^^xsd:string ;
 	skos:prefLabel "MD5"^^xsd:string ;
+	gist:stixTerm "MD5"^^xsd:string ;
 	.
 
 gist:_HashingAlgorithm_SHA-1
@@ -634,6 +673,7 @@ gist:_HashingAlgorithm_SHA-1
 	skos:definition """STIX 2.1 description:
 Specifies the SHA­-1 (secure-­hash algorithm 1) cryptographic hash function. The corresponding hash string for this value MUST be a valid SHA-1 message digest as defined in [RFC3174]."""^^xsd:string ;
 	skos:prefLabel "SHA-1"^^xsd:string ;
+	gist:stixTerm "SHA-1"^^xsd:string ;
 	.
 
 gist:_HashingAlgorithm_SHA-256
@@ -641,6 +681,7 @@ gist:_HashingAlgorithm_SHA-256
 	skos:definition """STIX 2.1 description:
 Specifies the SHA-­256 cryptographic hash function (part of the SHA­2 family). The corresponding hash string for this value MUST be a valid SHA-256 message digest as defined in [RFC6234]."""^^xsd:string ;
 	skos:prefLabel "SHA-256"^^xsd:string ;
+	gist:stixTerm "SHA-256"^^xsd:string ;
 	.
 
 gist:_HashingAlgorithm_SHA-512
@@ -648,6 +689,7 @@ gist:_HashingAlgorithm_SHA-512
 	skos:definition """STIX 2.1 description:
 Specifies the SHA-­512 cryptographic hash function (part of the SHA­2 family). The corresponding hash string for this value MUST be a valid SHA-512 message digest as defined in [RFC6234]."""^^xsd:string ;
 	skos:prefLabel "SHA-512"^^xsd:string ;
+	gist:stixTerm "SHA-512"^^xsd:string ;
 	.
 
 gist:_HashingAlgorithm_SHA3-256
@@ -655,6 +697,7 @@ gist:_HashingAlgorithm_SHA3-256
 	skos:definition """STIX 2.1 description:
 Specifies the SHA3-256 cryptographic hash function. The corresponding hash string for this value MUST be a valid SHA3-256 message digest as defined in [FIPS202]."""^^xsd:string ;
 	skos:prefLabel "SHA3-256"^^xsd:string ;
+	gist:stixTerm "SHA3-256"^^xsd:string ;
 	.
 
 gist:_HashingAlgorithm_SHA3-512
@@ -662,6 +705,7 @@ gist:_HashingAlgorithm_SHA3-512
 	skos:definition """STIX 2.1 description:
 Specifies the SHA3-512 cryptographic hash function. The corresponding hash string for this value MUST be a valid SHA3-512 message digest as defined in [FIPS202]."""^^xsd:string ;
 	skos:prefLabel "SHA3-512"^^xsd:string ;
+	gist:stixTerm "SHA3-512"^^xsd:string ;
 	.
 
 gist:_HashingAlgorithm_SSDEEP
@@ -669,6 +713,7 @@ gist:_HashingAlgorithm_SSDEEP
 	skos:definition """STIX 2.1 description:
 Specifies the ssdeep fuzzy hashing algorithm. The corresponding hash string for this value MUST be a valid piecewise hash as defined in the [SSDEEP] specification."""^^xsd:string ;
 	skos:prefLabel "SSDEEP"^^xsd:string ;
+	gist:stixTerm "SSDEEP"^^xsd:string ;
 	.
 
 gist:_HashingAlgorithm_TLSH
@@ -676,6 +721,7 @@ gist:_HashingAlgorithm_TLSH
 	skos:definition """STIX 2.1 description:
 Specifies the TLSH fuzzy hashing algorithm. The corresponding hash string for this value MUST be a valid 35 byte long hash as defined in the [TLSH] specification."""^^xsd:string ;
 	skos:prefLabel "TLSH"^^xsd:string ;
+	gist:stixTerm "TLSH"^^xsd:string ;
 	.
 
 gist:_IdentityClass_class
@@ -683,6 +729,7 @@ gist:_IdentityClass_class
 	skos:definition """STIX 2.1 description:
 A class of entities, such as all hospitals, all Europeans, or the Domain Administrators in a system."""^^xsd:string ;
 	skos:prefLabel "class"^^xsd:string ;
+	gist:stixTerm "class"^^xsd:string ;
 	.
 
 gist:_IdentityClass_group
@@ -690,6 +737,7 @@ gist:_IdentityClass_group
 	skos:definition """STIX 2.1 description:
 An informal collection of people, without formal governance, such as a distributed hacker group."""^^xsd:string ;
 	skos:prefLabel "group"^^xsd:string ;
+	gist:stixTerm "group"^^xsd:string ;
 	.
 
 gist:_IdentityClass_individual
@@ -697,6 +745,7 @@ gist:_IdentityClass_individual
 	skos:definition """STIX 2.1 description
 A single person."""^^xsd:string ;
 	skos:prefLabel "individual"^^xsd:string ;
+	gist:stixTerm "individual"^^xsd:string ;
 	.
 
 gist:_IdentityClass_organization
@@ -704,6 +753,7 @@ gist:_IdentityClass_organization
 	skos:definition """STIX 2.1 description:
 A formal organization of people, with governance, such as a company or country."""^^xsd:string ;
 	skos:prefLabel "organization"^^xsd:string ;
+	gist:stixTerm "organization"^^xsd:string ;
 	.
 
 gist:_IdentityClass_system
@@ -711,6 +761,7 @@ gist:_IdentityClass_system
 	skos:definition """STIX 2.1 description:
 A computer system, such as a SIEM"""^^xsd:string ;
 	skos:prefLabel "system"^^xsd:string ;
+	gist:stixTerm "system"^^xsd:string ;
 	.
 
 gist:_IdentityClass_unknown
@@ -718,6 +769,7 @@ gist:_IdentityClass_unknown
 	skos:definition """STIX 2.1 description:
 It is unknown whether the classification is an individual, group, system, organization, or class."""^^xsd:string ;
 	skos:prefLabel "unknown"^^xsd:string ;
+	gist:stixTerm "unknown"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_applescript
@@ -725,6 +777,7 @@ gist:_ImplementationLanguage_applescript
 	skos:definition """STIX 2.1 description:
 Specifies the AppleScript programming language."""^^xsd:string ;
 	skos:prefLabel "applescript"^^xsd:string ;
+	gist:stixTerm "applescript"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_bash
@@ -732,6 +785,7 @@ gist:_ImplementationLanguage_bash
 	skos:definition """STIX 2.1 description:
 Specifies the Bash programming language."""^^xsd:string ;
 	skos:prefLabel "bash"^^xsd:string ;
+	gist:stixTerm "bash"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_c
@@ -739,6 +793,7 @@ gist:_ImplementationLanguage_c
 	skos:definition """STIX 2.1 description:
 Specifies the C programming language."""^^xsd:string ;
 	skos:prefLabel "c"^^xsd:string ;
+	gist:stixTerm "c"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_c-plusplus
@@ -746,6 +801,7 @@ gist:_ImplementationLanguage_c-plusplus
 	skos:definition """STIX 2.1 description:
 Specifies the C++ programming language."""^^xsd:string ;
 	skos:prefLabel "c++"^^xsd:string ;
+	gist:stixTerm "c++"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_c-sharp
@@ -753,6 +809,7 @@ gist:_ImplementationLanguage_c-sharp
 	skos:definition """STIX 2.1 description:
 Specifies the C# programming language."""^^xsd:string ;
 	skos:prefLabel "c#"^^xsd:string ;
+	gist:stixTerm "c#"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_go
@@ -760,6 +817,7 @@ gist:_ImplementationLanguage_go
 	skos:definition """STIX 2.1 description:
 Specifies the Go (sometimes referred to as golang) programming language."""^^xsd:string ;
 	skos:prefLabel "go"^^xsd:string ;
+	gist:stixTerm "go"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_java
@@ -767,6 +825,7 @@ gist:_ImplementationLanguage_java
 	skos:definition """STIX 2.1 description:
 Specifies the JAVA programming language."""^^xsd:string ;
 	skos:prefLabel "java"^^xsd:string ;
+	gist:stixTerm "java"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_javascript
@@ -774,6 +833,7 @@ gist:_ImplementationLanguage_javascript
 	skos:definition """STIX 2.1 description:
 Specifies the JavaScript programming language."""^^xsd:string ;
 	skos:prefLabel "javascript"^^xsd:string ;
+	gist:stixTerm "javascript"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_lua
@@ -781,6 +841,7 @@ gist:_ImplementationLanguage_lua
 	skos:definition """STIX 2.1 description:
 Specifies the Lua programming language."""^^xsd:string ;
 	skos:prefLabel "lua"^^xsd:string ;
+	gist:stixTerm "lua"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_objective-C
@@ -788,6 +849,7 @@ gist:_ImplementationLanguage_objective-C
 	skos:definition """STIX 2.1 description:
 Specifies the Objective-C programming language."""^^xsd:string ;
 	skos:prefLabel "objective-c"^^xsd:string ;
+	gist:stixTerm "objective-c"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_perl
@@ -795,6 +857,7 @@ gist:_ImplementationLanguage_perl
 	skos:definition """STIX 2.1 description:
 Specifies the Perl programming language."""^^xsd:string ;
 	skos:prefLabel "perl"^^xsd:string ;
+	gist:stixTerm "perl"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_php
@@ -802,6 +865,7 @@ gist:_ImplementationLanguage_php
 	skos:definition """STIX 2.1 description:
 Specifies the PHP programming language."""^^xsd:string ;
 	skos:prefLabel "php"^^xsd:string ;
+	gist:stixTerm "php"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_powershell
@@ -809,6 +873,7 @@ gist:_ImplementationLanguage_powershell
 	skos:definition """STIX 2.1 description:
 Specifies the Windows Powershell programming language."""^^xsd:string ;
 	skos:prefLabel "powershell"^^xsd:string ;
+	gist:stixTerm "powershell"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_python
@@ -816,6 +881,7 @@ gist:_ImplementationLanguage_python
 	skos:definition """STIX 2.1 description:
 Specifies the Python programming language."""^^xsd:string ;
 	skos:prefLabel "python"^^xsd:string ;
+	gist:stixTerm "python"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_ruby
@@ -823,6 +889,7 @@ gist:_ImplementationLanguage_ruby
 	skos:definition """STIX 2.1 description:
 Specifies the Ruby programming language."""^^xsd:string ;
 	skos:prefLabel "ruby"^^xsd:string ;
+	gist:stixTerm "ruby"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_scala
@@ -830,6 +897,7 @@ gist:_ImplementationLanguage_scala
 	skos:definition """STIX 2.1 description:
 Specifies the Scala programming language."""^^xsd:string ;
 	skos:prefLabel "scala"^^xsd:string ;
+	gist:stixTerm "scala"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_swift
@@ -837,6 +905,7 @@ gist:_ImplementationLanguage_swift
 	skos:definition """STIX 2.1 description:
 Specifies the Swift programming language."""^^xsd:string ;
 	skos:prefLabel "swift"^^xsd:string ;
+	gist:stixTerm "swift"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_typescript
@@ -844,6 +913,7 @@ gist:_ImplementationLanguage_typescript
 	skos:definition """STIX 2.1 description:
 Specifies the TypeScript programming language."""^^xsd:string ;
 	skos:prefLabel "typescript"^^xsd:string ;
+	gist:stixTerm "typescript"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_visual-basic
@@ -851,6 +921,7 @@ gist:_ImplementationLanguage_visual-basic
 	skos:definition """STIX 2.1 description:
 Specifies the Visual Basic programming language."""^^xsd:string ;
 	skos:prefLabel "visual-basic"^^xsd:string ;
+	gist:stixTerm "visual-basic"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_x86-32
@@ -858,6 +929,7 @@ gist:_ImplementationLanguage_x86-32
 	skos:definition """STIX 2.1 description:
 Specifies the x86 32-bit Assembly programming language."""^^xsd:string ;
 	skos:prefLabel "x86-32"^^xsd:string ;
+	gist:stixTerm "x86-32"^^xsd:string ;
 	.
 
 gist:_ImplementationLanguage_x86-64
@@ -865,6 +937,7 @@ gist:_ImplementationLanguage_x86-64
 	skos:definition """STIX 2.1 description:
 Specifies the x86 64-bit Assembly programming language."""^^xsd:string ;
 	skos:prefLabel "x86-64"^^xsd:string ;
+	gist:stixTerm "x86-64"^^xsd:string ;
 	.
 
 gist:_IndicatorType_anomalous-activity
@@ -872,6 +945,7 @@ gist:_IndicatorType_anomalous-activity
 	skos:definition """STIX 2.1 description:
 Unexpected, or unusual activity that may not necessarily be malicious or indicate compromise. This type of activity may include reconnaissance-like behavior such as port scans or version identification, network behavior anomalies, and asset and/or user behavioral anomalies."""^^xsd:string ;
 	skos:prefLabel "anomalous-activity"^^xsd:string ;
+	gist:stixTerm "anomalous-activity"^^xsd:string ;
 	.
 
 gist:_IndicatorType_anonymization
@@ -879,6 +953,7 @@ gist:_IndicatorType_anonymization
 	skos:definition """STIX 2.1 description:
 Suspected anonymization tools or infrastructure (proxy, TOR, VPN, etc.)."""^^xsd:string ;
 	skos:prefLabel "anonymization"^^xsd:string ;
+	gist:stixTerm "anonymization"^^xsd:string ;
 	.
 
 gist:_IndicatorType_attribution
@@ -886,6 +961,7 @@ gist:_IndicatorType_attribution
 	skos:definition """STIX 2.1 description:
 Patterns of behavior that indicate attribution to a particular Threat Actor or Campaign."""^^xsd:string ;
 	skos:prefLabel "attribution"^^xsd:string ;
+	gist:stixTerm "attribution"^^xsd:string ;
 	.
 
 gist:_IndicatorType_benign
@@ -893,6 +969,7 @@ gist:_IndicatorType_benign
 	skos:definition """STIX 2.1 description:
 Activity that is not suspicious or malicious in and of itself, but when combined with other activity may indicate suspicious or malicious behavior."""^^xsd:string ;
 	skos:prefLabel "benign"^^xsd:string ;
+	gist:stixTerm "benign"^^xsd:string ;
 	.
 
 gist:_IndicatorType_compromised
@@ -900,6 +977,7 @@ gist:_IndicatorType_compromised
 	skos:definition """STIX 2.1 description:
 Assets that are suspected to be compromised."""^^xsd:string ;
 	skos:prefLabel "compromised"^^xsd:string ;
+	gist:stixTerm "compromised"^^xsd:string ;
 	.
 
 gist:_IndicatorType_malicious-activity
@@ -907,6 +985,7 @@ gist:_IndicatorType_malicious-activity
 	skos:definition """STIX 2.1 description:
 Patterns of suspected malicious objects and/or activity."""^^xsd:string ;
 	skos:prefLabel "malicious-activity"^^xsd:string ;
+	gist:stixTerm "malicious-activity"^^xsd:string ;
 	.
 
 gist:_IndicatorType_unknown
@@ -914,6 +993,7 @@ gist:_IndicatorType_unknown
 	skos:definition """STIX 2.1 description:
 There is not enough information available to determine the type of indicator."""^^xsd:string ;
 	skos:prefLabel "unknown"^^xsd:string ;
+	gist:stixTerm "unknown"^^xsd:string ;
 	.
 
 gist:_IndustrySector_aerospace
@@ -923,6 +1003,7 @@ gist:_IndustrySector_aerospace
 	skos:definition """STIX 2.1 description:
 Tag for the Aerospace industry sector"""^^xsd:string ;
 	skos:prefLabel "aerospace"^^xsd:string ;
+	gist:stixTerm "aerospace"^^xsd:string ;
 	.
 
 gist:_IndustrySector_agriculture
@@ -932,6 +1013,7 @@ gist:_IndustrySector_agriculture
 	skos:definition """STIX 2.1 description:
 Tag for the Agriculture industry sector"""^^xsd:string ;
 	skos:prefLabel "agriculture"^^xsd:string ;
+	gist:stixTerm "agriculture"^^xsd:string ;
 	.
 
 gist:_IndustrySector_automotive
@@ -941,6 +1023,7 @@ gist:_IndustrySector_automotive
 	skos:definition """STIX 2.1 description:
 Tag for the Automotive industry sector"""^^xsd:string ;
 	skos:prefLabel "automotive"^^xsd:string ;
+	gist:stixTerm "automotive"^^xsd:string ;
 	.
 
 gist:_IndustrySector_chemical
@@ -950,6 +1033,7 @@ gist:_IndustrySector_chemical
 	skos:definition """STIX 2.1 description:
 Tag for the Chemical industry sector"""^^xsd:string ;
 	skos:prefLabel "chemical"^^xsd:string ;
+	gist:stixTerm "chemical"^^xsd:string ;
 	.
 
 gist:_IndustrySector_commercial
@@ -959,6 +1043,7 @@ gist:_IndustrySector_commercial
 	skos:definition """STIX 2.1 description:
 Tag for the Commercial industry sector"""^^xsd:string ;
 	skos:prefLabel "commercial"^^xsd:string ;
+	gist:stixTerm "commercial"^^xsd:string ;
 	.
 
 gist:_IndustrySector_communications
@@ -968,6 +1053,7 @@ gist:_IndustrySector_communications
 	skos:definition """STIX 2.1 description:
 Tag for the Communications industry sector"""^^xsd:string ;
 	skos:prefLabel "communications"^^xsd:string ;
+	gist:stixTerm "communications"^^xsd:string ;
 	.
 
 gist:_IndustrySector_construction
@@ -977,6 +1063,7 @@ gist:_IndustrySector_construction
 	skos:definition """STIX 2.1 description:
 Tag for the Construction industry sector"""^^xsd:string ;
 	skos:prefLabel "construction"^^xsd:string ;
+	gist:stixTerm "construction"^^xsd:string ;
 	.
 
 gist:_IndustrySector_defense
@@ -986,6 +1073,7 @@ gist:_IndustrySector_defense
 	skos:definition """STIX 2.1 description:
 Tag for the Defense industry sector"""^^xsd:string ;
 	skos:prefLabel "defense"^^xsd:string ;
+	gist:stixTerm "defense"^^xsd:string ;
 	.
 
 gist:_IndustrySector_education
@@ -995,6 +1083,7 @@ gist:_IndustrySector_education
 	skos:definition """STIX 2.1 description:
 Tag for the Education industry sector"""^^xsd:string ;
 	skos:prefLabel "education"^^xsd:string ;
+	gist:stixTerm "education"^^xsd:string ;
 	.
 
 gist:_IndustrySector_emergency-services
@@ -1004,6 +1093,7 @@ gist:_IndustrySector_emergency-services
 	skos:definition """STIX 2.1 description:
 Tag for the emergency services industry sector"""^^xsd:string ;
 	skos:prefLabel "emergency-services"^^xsd:string ;
+	gist:stixTerm "emergency-services"^^xsd:string ;
 	.
 
 gist:_IndustrySector_energy
@@ -1013,6 +1103,7 @@ gist:_IndustrySector_energy
 	skos:definition """STIX 2.1 description:
 Tag for the Energy industry sector"""^^xsd:string ;
 	skos:prefLabel "energy"^^xsd:string ;
+	gist:stixTerm "energy"^^xsd:string ;
 	.
 
 gist:_IndustrySector_entertainment
@@ -1022,6 +1113,7 @@ gist:_IndustrySector_entertainment
 	skos:definition """STIX 2.1 description:
 Tag for the Entertainment industry sector"""^^xsd:string ;
 	skos:prefLabel "entertainment"^^xsd:string ;
+	gist:stixTerm "entertainment"^^xsd:string ;
 	.
 
 gist:_IndustrySector_financial-services
@@ -1031,6 +1123,7 @@ gist:_IndustrySector_financial-services
 	skos:definition """STIX 2.1 description:
 Tag for the Financial-Services industry sector"""^^xsd:string ;
 	skos:prefLabel "financial-services"^^xsd:string ;
+	gist:stixTerm "financial-services"^^xsd:string ;
 	.
 
 gist:_IndustrySector_government
@@ -1040,6 +1133,7 @@ gist:_IndustrySector_government
 	skos:definition """STIX 2.1 description:
 Tag for the Government industry sector"""^^xsd:string ;
 	skos:prefLabel "government"^^xsd:string ;
+	gist:stixTerm "government"^^xsd:string ;
 	.
 
 gist:_IndustrySector_government-Local
@@ -1049,6 +1143,7 @@ gist:_IndustrySector_government-Local
 	skos:definition """STIX 2.1 description:
 Tag for the government local industry sector"""^^xsd:string ;
 	skos:prefLabel "government-local"^^xsd:string ;
+	gist:stixTerm "government-local"^^xsd:string ;
 	.
 
 gist:_IndustrySector_government-National
@@ -1058,6 +1153,7 @@ gist:_IndustrySector_government-National
 	skos:definition """STIX 2.1 description:
 Tag for the government-national industry sector"""^^xsd:string ;
 	skos:prefLabel "government-national"^^xsd:string ;
+	gist:stixTerm "government-national"^^xsd:string ;
 	.
 
 gist:_IndustrySector_government-Public-Services
@@ -1067,6 +1163,7 @@ gist:_IndustrySector_government-Public-Services
 	skos:definition """STIX 2.1 description:
 Tag for the government public services industry sector"""^^xsd:string ;
 	skos:prefLabel "government-public-services"^^xsd:string ;
+	gist:stixTerm "government-public-services"^^xsd:string ;
 	.
 
 gist:_IndustrySector_government-Regional
@@ -1076,6 +1173,7 @@ gist:_IndustrySector_government-Regional
 	skos:definition """STIX 2.1 description:
 Tag for the government regional industry sector"""^^xsd:string ;
 	skos:prefLabel "government-regional"^^xsd:string ;
+	gist:stixTerm "government-regional"^^xsd:string ;
 	.
 
 gist:_IndustrySector_healthcare
@@ -1085,6 +1183,7 @@ gist:_IndustrySector_healthcare
 	skos:definition """STIX 2.1 description:
 Tag for the healthcare industry sector"""^^xsd:string ;
 	skos:prefLabel "healthcare"^^xsd:string ;
+	gist:stixTerm "healthcare"^^xsd:string ;
 	.
 
 gist:_IndustrySector_hospitality-Leisure
@@ -1094,6 +1193,7 @@ gist:_IndustrySector_hospitality-Leisure
 	skos:definition """STIX 2.1 description:
 Tag for the hospitality leisure industry sector"""^^xsd:string ;
 	skos:prefLabel "hospitality-leisure"^^xsd:string ;
+	gist:stixTerm "hospitality-leisure"^^xsd:string ;
 	.
 
 gist:_IndustrySector_infrastructure
@@ -1103,6 +1203,7 @@ gist:_IndustrySector_infrastructure
 	skos:definition """STIX 2.1 description:
 Tag for the infrastructure industry sector"""^^xsd:string ;
 	skos:prefLabel "infrastructure"^^xsd:string ;
+	gist:stixTerm "infrastructure"^^xsd:string ;
 	.
 
 gist:_IndustrySector_infrastructure-Dams
@@ -1112,6 +1213,7 @@ gist:_IndustrySector_infrastructure-Dams
 	skos:definition """STIX 2.1 description:
 Tag for the Infrastructure-Dams industry sector"""^^xsd:string ;
 	skos:prefLabel "dams"^^xsd:string ;
+	gist:stixTerm "dams"^^xsd:string ;
 	.
 
 gist:_IndustrySector_infrastructure-Nuclear
@@ -1121,6 +1223,7 @@ gist:_IndustrySector_infrastructure-Nuclear
 	skos:definition """STIX 2.1 description:
 Tag for the Nuclear industry sector"""^^xsd:string ;
 	skos:prefLabel "nuclear"^^xsd:string ;
+	gist:stixTerm "nuclear"^^xsd:string ;
 	.
 
 gist:_IndustrySector_infrastructure-Water
@@ -1130,6 +1233,7 @@ gist:_IndustrySector_infrastructure-Water
 	skos:definition """STIX 2.1 description:
 Tag for the Water industry sector"""^^xsd:string ;
 	skos:prefLabel "water"^^xsd:string ;
+	gist:stixTerm "water"^^xsd:string ;
 	.
 
 gist:_IndustrySector_insurance
@@ -1139,6 +1243,7 @@ gist:_IndustrySector_insurance
 	skos:definition """STIX 2.1 description:
 Tag for the Insurance industry sector"""^^xsd:string ;
 	skos:prefLabel "insurance"^^xsd:string ;
+	gist:stixTerm "insurance"^^xsd:string ;
 	.
 
 gist:_IndustrySector_manufacturing
@@ -1148,6 +1253,7 @@ gist:_IndustrySector_manufacturing
 	skos:definition """STIX 2.1 description:
 Tag for the Manufacturing industry sector"""^^xsd:string ;
 	skos:prefLabel "manufacturing"^^xsd:string ;
+	gist:stixTerm "manufacturing"^^xsd:string ;
 	.
 
 gist:_IndustrySector_mining
@@ -1157,6 +1263,7 @@ gist:_IndustrySector_mining
 	skos:definition """STIX 2.1 description:
 Tag for the Mining industry sector"""^^xsd:string ;
 	skos:prefLabel "mining"^^xsd:string ;
+	gist:stixTerm "mining"^^xsd:string ;
 	.
 
 gist:_IndustrySector_non-Profit
@@ -1169,6 +1276,7 @@ gist:_IndustrySector_non-Profit
 	skos:definition """STIX 2.1 description:
 Tag for the Non-Profit industry sector"""^^xsd:string ;
 	skos:prefLabel "non-profit"^^xsd:string ;
+	gist:stixTerm "non-profit"^^xsd:string ;
 	.
 
 gist:_IndustrySector_pharmaceuticals
@@ -1178,6 +1286,7 @@ gist:_IndustrySector_pharmaceuticals
 	skos:definition """STIX 2.1 description:
 Tag for the Pharmaceuticals industry sector"""^^xsd:string ;
 	skos:prefLabel "pharmaceuticals"^^xsd:string ;
+	gist:stixTerm "pharmaceuticals"^^xsd:string ;
 	.
 
 gist:_IndustrySector_retail
@@ -1187,6 +1296,7 @@ gist:_IndustrySector_retail
 	skos:definition """STIX 2.1 description:
 Tag for the Retail industry sector"""^^xsd:string ;
 	skos:prefLabel "retail"^^xsd:string ;
+	gist:stixTerm "retail"^^xsd:string ;
 	.
 
 gist:_IndustrySector_technology
@@ -1196,6 +1306,7 @@ gist:_IndustrySector_technology
 	skos:definition """STIX 2.1 description:
 Tag for the Technology industry sector"""^^xsd:string ;
 	skos:prefLabel "technology"^^xsd:string ;
+	gist:stixTerm "technology"^^xsd:string ;
 	.
 
 gist:_IndustrySector_telecommunications
@@ -1205,6 +1316,7 @@ gist:_IndustrySector_telecommunications
 	skos:definition """STIX 2.1 description:
 Tag for the Telecommunications industry sector"""^^xsd:string ;
 	skos:prefLabel "telecommunications"^^xsd:string ;
+	gist:stixTerm "telecommunications"^^xsd:string ;
 	.
 
 gist:_IndustrySector_transportation
@@ -1214,6 +1326,7 @@ gist:_IndustrySector_transportation
 	skos:definition """STIX 2.1 description:
 Tag for the Transportation industry sector"""^^xsd:string ;
 	skos:prefLabel "transportation"^^xsd:string ;
+	gist:stixTerm "transportation"^^xsd:string ;
 	.
 
 gist:_IndustrySector_utilities
@@ -1223,6 +1336,7 @@ gist:_IndustrySector_utilities
 	skos:definition """STIX 2.1 description:
 Tag for the Utilities industry sector"""^^xsd:string ;
 	skos:prefLabel "utilities"^^xsd:string ;
+	gist:stixTerm "utilities"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_amplification
@@ -1230,6 +1344,7 @@ gist:_InfrastructureType_amplification
 	skos:definition """STIX 2.1 description:
 Specifies infrastructure used for conducting amplification attacks."""^^xsd:string ;
 	skos:prefLabel "amplification"^^xsd:string ;
+	gist:stixTerm "amplification"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_anonymization
@@ -1237,6 +1352,7 @@ gist:_InfrastructureType_anonymization
 	skos:definition """STIX 2.1 description:
 Specific infrastructure used for anonymization, such as a proxy."""^^xsd:string ;
 	skos:prefLabel "anonymization"^^xsd:string ;
+	gist:stixTerm "anonymization"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_botnet
@@ -1244,6 +1360,7 @@ gist:_InfrastructureType_botnet
 	skos:definition """STIX 2.1 description:
 Specifies the membership/makeup of a botnet, in terms of the network addresses of the hosts that comprise the botnet."""^^xsd:string ;
 	skos:prefLabel "botnet"^^xsd:string ;
+	gist:stixTerm "botnet"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_command-and-control
@@ -1251,6 +1368,7 @@ gist:_InfrastructureType_command-and-control
 	skos:definition """STIX 2.1 description:
 Specifies infrastructure used for command and control (C2). This is typically a domain name or IP address."""^^xsd:string ;
 	skos:prefLabel "command-and-control"^^xsd:string ;
+	gist:stixTerm "command-and-control"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_control-system
@@ -1258,6 +1376,7 @@ gist:_InfrastructureType_control-system
 	skos:definition """STIX 2.1 description:
 Specifies equipment such as IoT, HMI, RTU, PLC or other ICS devices."""^^xsd:string ;
 	skos:prefLabel "control-system"^^xsd:string ;
+	gist:stixTerm "control-system"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_exfiltration
@@ -1265,6 +1384,7 @@ gist:_InfrastructureType_exfiltration
 	skos:definition """STIX 2.1 description:
 Specifies infrastructure used as an endpoint for data exfiltration."""^^xsd:string ;
 	skos:prefLabel "exfiltration"^^xsd:string ;
+	gist:stixTerm "exfiltration"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_firewall
@@ -1272,6 +1392,7 @@ gist:_InfrastructureType_firewall
 	skos:definition """STIX 2.1 description:
 Specifies a device that inspects network traffic and restricts it based upon defined policies."""^^xsd:string ;
 	skos:prefLabel "firewall"^^xsd:string ;
+	gist:stixTerm "firewall"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_hosting-malware
@@ -1279,6 +1400,7 @@ gist:_InfrastructureType_hosting-malware
 	skos:definition """STIX 2.1 description:
 Specifies infrastructure used for hosting malware."""^^xsd:string ;
 	skos:prefLabel "hosting-malware"^^xsd:string ;
+	gist:stixTerm "hosting-malware"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_hosting-target-lists
@@ -1286,6 +1408,7 @@ gist:_InfrastructureType_hosting-target-lists
 	skos:definition """STIX 2.1 description:
 Specifies infrastructure used for hosting a list of targets for DDOS attacks, phishing, and other malicious activities. This is typically a domain name or IP address."""^^xsd:string ;
 	skos:prefLabel "hosting-target-lists"^^xsd:string ;
+	gist:stixTerm "hosting-target-lists"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_phishing
@@ -1293,6 +1416,7 @@ gist:_InfrastructureType_phishing
 	skos:definition """STIX 2.1 description:
 Specifies infrastructure used for conducting phishing attacks."""^^xsd:string ;
 	skos:prefLabel "phishing"^^xsd:string ;
+	gist:stixTerm "phishing"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_reconnaissance
@@ -1300,6 +1424,7 @@ gist:_InfrastructureType_reconnaissance
 	skos:definition """STIX 2.1 description:
 Specifies infrastructure used for conducting reconnaissance activities."""^^xsd:string ;
 	skos:prefLabel "reconnaissance"^^xsd:string ;
+	gist:stixTerm "reconnaissance"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_routers-switches
@@ -1307,6 +1432,7 @@ gist:_InfrastructureType_routers-switches
 	skos:definition """STIX 2.1 description:
 Specifies IT infrastructure used to connect devices to the network."""^^xsd:string ;
 	skos:prefLabel "routers-switches"^^xsd:string ;
+	gist:stixTerm "routers-switches"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_staging
@@ -1314,6 +1440,7 @@ gist:_InfrastructureType_staging
 	skos:definition """STIX 2.1 description:
 Specifies infrastructure used for staging."""^^xsd:string ;
 	skos:prefLabel "staging"^^xsd:string ;
+	gist:stixTerm "staging"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_unknown
@@ -1321,6 +1448,7 @@ gist:_InfrastructureType_unknown
 	skos:definition """STIX 2.1 description:
 Specifies an infrastructure of some unknown type."""^^xsd:string ;
 	skos:prefLabel "unknown"^^xsd:string ;
+	gist:stixTerm "unknown"^^xsd:string ;
 	.
 
 gist:_InfrastructureType_workstation
@@ -1328,6 +1456,7 @@ gist:_InfrastructureType_workstation
 	skos:definition """STIX 2.1 description:
 Specifies an endpoint machine used for work by an organization that needs protection."""^^xsd:string ;
 	skos:prefLabel "workstation"^^xsd:string ;
+	gist:stixTerm "workstation"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_Anti-Sandbox
@@ -1335,6 +1464,7 @@ gist:_MalwareCapability_Anti-Sandbox
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to prevent sandbox-based behavioral analysis or make it more difficult."""^^xsd:string ;
 	skos:prefLabel "anti-sandbox"^^xsd:string ;
+	gist:stixTerm "anti-sandbox"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_accesses-remote-machines
@@ -1342,6 +1472,7 @@ gist:_MalwareCapability_accesses-remote-machines
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to access one or more remote machines."""^^xsd:string ;
 	skos:prefLabel "accesses-remote-machines"^^xsd:string ;
+	gist:stixTerm "accesses-remote-machines"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_anti-debugging
@@ -1349,6 +1480,7 @@ gist:_MalwareCapability_anti-debugging
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to prevent itself from being debugged and/or from being run in a debugger or is able to make debugging more difficult."""^^xsd:string ;
 	skos:prefLabel "anti-debugging"^^xsd:string ;
+	gist:stixTerm "anti-debugging"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_anti-disassembly
@@ -1356,6 +1488,7 @@ gist:_MalwareCapability_anti-disassembly
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to prevent itself from being disassembled or make disassembly more difficult."""^^xsd:string ;
 	skos:prefLabel "anti-disassembly"^^xsd:string ;
+	gist:stixTerm "anti-disassembly"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_anti-emulation
@@ -1363,6 +1496,7 @@ gist:_MalwareCapability_anti-emulation
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to prevent its execution inside of an emulator or is able to make emulation more difficult."""^^xsd:string ;
 	skos:prefLabel "anti-emulation"^^xsd:string ;
+	gist:stixTerm "anti-emulation"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_anti-memory-forensics
@@ -1370,6 +1504,7 @@ gist:_MalwareCapability_anti-memory-forensics
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to prevent or make memory forensics more difficult."""^^xsd:string ;
 	skos:prefLabel "anti-memory-forensics"^^xsd:string ;
+	gist:stixTerm "anti-memory-forensics"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_anti-vm
@@ -1377,6 +1512,7 @@ gist:_MalwareCapability_anti-vm
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to prevent virtual machine (VM) based behavioral analysis or make it more difficult."""^^xsd:string ;
 	skos:prefLabel "anti-vm"^^xsd:string ;
+	gist:stixTerm "anti-vm"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_captures-input-peripherals
@@ -1384,6 +1520,7 @@ gist:_MalwareCapability_captures-input-peripherals
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to capture data from a system's input peripheral devices, such as a keyboard or mouse. This includes things like keylogging."""^^xsd:string ;
 	skos:prefLabel "captures-input-peripherals"^^xsd:string ;
+	gist:stixTerm "captures-input-peripherals"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_captures-output-peripherals
@@ -1391,6 +1528,7 @@ gist:_MalwareCapability_captures-output-peripherals
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family captures data sent to a system's output peripherals, such as a display. Examples include things like screen scraping."""^^xsd:string ;
 	skos:prefLabel "captures-output-peripherals"^^xsd:string ;
+	gist:stixTerm "captures-output-peripherals"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_captures-system-state-data
@@ -1398,6 +1536,7 @@ gist:_MalwareCapability_captures-system-state-data
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to capture information about a system's state (e.g., data currently in its RAM)."""^^xsd:string ;
 	skos:prefLabel "captures-system-state-data"^^xsd:string ;
+	gist:stixTerm "captures-system-state-data"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_cleans-traces-of-infection
@@ -1405,6 +1544,7 @@ gist:_MalwareCapability_cleans-traces-of-infection
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to clean traces of its infection (e.g., file system artifacts) from a system."""^^xsd:string ;
 	skos:prefLabel "cleans-traces-of-infection"^^xsd:string ;
+	gist:stixTerm "cleans-traces-of-infection"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_commits-fraud
@@ -1412,6 +1552,7 @@ gist:_MalwareCapability_commits-fraud
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family commits fraud, such as click fraud (for example)."""^^xsd:string ;
 	skos:prefLabel "commits-fraud"^^xsd:string ;
+	gist:stixTerm "commits-fraud"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_communicates-with-c2
@@ -1419,6 +1560,7 @@ gist:_MalwareCapability_communicates-with-c2
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to communicate (i.e., send or receive data) with a command and control (C2) server."""^^xsd:string ;
 	skos:prefLabel "communicates-with-c2"^^xsd:string ;
+	gist:stixTerm "communicates-with-c2"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_compromises-data-availability
@@ -1426,6 +1568,7 @@ gist:_MalwareCapability_compromises-data-availability
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to compromise the availability of data on the local system on which it is executing and/or one or more remote systems. For example, encrypting data on disk, as done by ransomware."""^^xsd:string ;
 	skos:prefLabel "compromises-data-availability"^^xsd:string ;
+	gist:stixTerm "compromises-data-availability"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_compromises-data-integrity
@@ -1433,6 +1576,7 @@ gist:_MalwareCapability_compromises-data-integrity
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to compromise the integrity of some data that resides on (e.g., in the case of files) or is received/transmitted (e.g., in the case of network traffic) by the system on which it is executing."""^^xsd:string ;
 	skos:prefLabel "compromises-data-integrity"^^xsd:string ;
+	gist:stixTerm "cmpromises-data-integrity"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_compromises-system-availability
@@ -1440,6 +1584,7 @@ gist:_MalwareCapability_compromises-system-availability
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to consume system resources for its malicious purposes, such as password cracking or participating in a DDoS botnet, thereby compromising the availability of the local system and/or one or more remote systems."""^^xsd:string ;
 	skos:prefLabel "compromises-system-availability"^^xsd:string ;
+	gist:stixTerm "compromises-system-availability"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_controls-local-machine
@@ -1447,6 +1592,7 @@ gist:_MalwareCapability_controls-local-machine
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to control the machine on which it is executing (e.g., RATs)."""^^xsd:string ;
 	skos:prefLabel "controls-local-machine"^^xsd:string ;
+	gist:stixTerm "controls-local-machine"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_degrades-security-software
@@ -1454,6 +1600,7 @@ gist:_MalwareCapability_degrades-security-software
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to bypass or disable security programs or operating system security features on a system (including mobile devices), either by stopping them from executing or by making changes to their code or configuration parameters. For example, malware that blocks the local machine from accessing the websites of security vendors."""^^xsd:string ;
 	skos:prefLabel "degrades-security-software"^^xsd:string ;
+	gist:stixTerm "degrades-security-software"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_degrades-system-updates
@@ -1461,6 +1608,7 @@ gist:_MalwareCapability_degrades-system-updates
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to disable the downloading and installation of system updates and patches."""^^xsd:string ;
 	skos:prefLabel "degrades-system-updates"^^xsd:string ;
+	gist:stixTerm "degrades-system-updates"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_determines-c2-server
@@ -1468,6 +1616,7 @@ gist:_MalwareCapability_determines-c2-server
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to identify one or more command and control (C2) servers with which to communicate (e.g., DGA)."""^^xsd:string ;
 	skos:prefLabel "determines-c2-server"^^xsd:string ;
+	gist:stixTerm "determines-c2-server"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_emails-spam
@@ -1475,6 +1624,7 @@ gist:_MalwareCapability_emails-spam
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to send spam email messages."""^^xsd:string ;
 	skos:prefLabel "emails-spam"^^xsd:string ;
+	gist:stixTerm "emails-spam"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_escalates-privileges
@@ -1482,6 +1632,7 @@ gist:_MalwareCapability_escalates-privileges
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to escalate the privileges under which it is executing."""^^xsd:string ;
 	skos:prefLabel "escalates-privileges"^^xsd:string ;
+	gist:stixTerm "escalates-privileges"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_evades-av
@@ -1489,6 +1640,7 @@ gist:_MalwareCapability_evades-av
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to evade detection by antivirus tools."""^^xsd:string ;
 	skos:prefLabel "evades-av"^^xsd:string ;
+	gist:stixTerm "evades-av"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_exfiltrates-data
@@ -1496,6 +1648,7 @@ gist:_MalwareCapability_exfiltrates-data
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to gather, prepare, (possibly obfuscate) data and transmit it to exfiltration points."""^^xsd:string ;
 	skos:prefLabel "exfiltrates-data"^^xsd:string ;
+	gist:stixTerm "exfiltrates-data"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_fingerprints-host
@@ -1503,6 +1656,7 @@ gist:_MalwareCapability_fingerprints-host
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to fingerprint or probe the configuration of the host system on which it is executing for the purpose of altering its behavior based on this environment."""^^xsd:string ;
 	skos:prefLabel "fingerprints-host"^^xsd:string ;
+	gist:stixTerm "fingerprints-host"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_hides-artifacts
@@ -1510,6 +1664,7 @@ gist:_MalwareCapability_hides-artifacts
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to hide its artifacts, such as files and open ports."""^^xsd:string ;
 	skos:prefLabel "hides-artifacts"^^xsd:string ;
+	gist:stixTerm "hides-artifacts"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_hides-executing-code
@@ -1517,6 +1672,7 @@ gist:_MalwareCapability_hides-executing-code
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to hide its code by compromising the bootloader, kernel modules, hypervisor, etc."""^^xsd:string ;
 	skos:prefLabel "hides-executing-code"^^xsd:string ;
+	gist:stixTerm "hides-executing-code"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_infects-files
@@ -1524,6 +1680,7 @@ gist:_MalwareCapability_infects-files
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to infect one or more files on the system on which it executes. For example, malware which injects a malicious payload into all PDFs on a host as a means of propagation."""^^xsd:string ;
 	skos:prefLabel "infects-files"^^xsd:string ;
+	gist:stixTerm "infects-files"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_infects-remote-machines
@@ -1531,6 +1688,7 @@ gist:_MalwareCapability_infects-remote-machines
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to self-propagate to a remote machine or infect a remote machine with malware that is different than itself."""^^xsd:string ;
 	skos:prefLabel "infects-remote-machines"^^xsd:string ;
+	gist:stixTerm "infects-remote-machines"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_installs-other-components
@@ -1538,6 +1696,7 @@ gist:_MalwareCapability_installs-other-components
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to install additional components. This encompasses the dropping/downloading of other malicious components such as libraries, other malware, and tools."""^^xsd:string ;
 	skos:prefLabel "installs-other-components"^^xsd:string ;
+	gist:stixTerm "installs-other-components"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_persists-after-system-reboot
@@ -1545,6 +1704,7 @@ gist:_MalwareCapability_persists-after-system-reboot
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to continue executing after the reboot of the system on which it is resident."""^^xsd:string ;
 	skos:prefLabel "persists-after-system-reboot"^^xsd:string ;
+	gist:stixTerm "persists-after-system-reboot"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_prevents-artifact-access
@@ -1552,6 +1712,7 @@ gist:_MalwareCapability_prevents-artifact-access
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to prevent its artifacts (e.g., files, registry keys, etc.) from being accessed."""^^xsd:string ;
 	skos:prefLabel "prevents-artifact-access"^^xsd:string ;
+	gist:stixTerm "prevents-artifact-access"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_prevents-artifact-deletion
@@ -1559,6 +1720,7 @@ gist:_MalwareCapability_prevents-artifact-deletion
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to prevent its artifacts (e.g., files, registry keys, etc.) from being deleted."""^^xsd:string ;
 	skos:prefLabel "prevents-artifact-deletion"^^xsd:string ;
+	gist:stixTerm "prevents-artifact-deletion"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_probes-network-environment
@@ -1566,6 +1728,7 @@ gist:_MalwareCapability_probes-network-environment
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to probe the properties of its network environment, e.g. to determine whether it funnels traffic through a proxy."""^^xsd:string ;
 	skos:prefLabel "probes-network-environment"^^xsd:string ;
+	gist:stixTerm "probes-network-environment"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_self-modifies
@@ -1573,6 +1736,7 @@ gist:_MalwareCapability_self-modifies
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to modify itself."""^^xsd:string ;
 	skos:prefLabel "self-modifies"^^xsd:string ;
+	gist:stixTerm "self-modifies"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_steals-authentication-credentials
@@ -1580,6 +1744,7 @@ gist:_MalwareCapability_steals-authentication-credentials
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance is able to steal authentication credentials."""^^xsd:string ;
 	skos:prefLabel "steals-authentication-credentials"^^xsd:string ;
+	gist:stixTerm "steals-authentication-credentials"^^xsd:string ;
 	.
 
 gist:_MalwareCapability_violates-system-operational-integrity
@@ -1587,6 +1752,7 @@ gist:_MalwareCapability_violates-system-operational-integrity
 	skos:definition """STIX 2.1 description:
 Indicates that the malware instance or family is able to compromise the operational integrity of the system on which it is executing and/or one or more remote systems, e.g., by causing them to operate beyond their set of specified operational parameters. For example, malware that causes the CPU fan on the machine that it is executing to spin at a higher than normal speed."""^^xsd:string ;
 	skos:prefLabel "violates-system-operational-integrity"^^xsd:string ;
+	gist:stixTerm "violates-system-operational-integrity"^^xsd:string ;
 	.
 
 gist:_MalwareResult_benign
@@ -1594,6 +1760,7 @@ gist:_MalwareResult_benign
 	skos:definition """STIX 2.1 description:
 The tool reported the malware binary as benign."""^^xsd:string ;
 	skos:prefLabel "benign"^^xsd:string ;
+	gist:stixTerm "benign"^^xsd:string ;
 	.
 
 gist:_MalwareResult_malicious
@@ -1601,6 +1768,7 @@ gist:_MalwareResult_malicious
 	skos:definition """STIX 2.1 description:
 The tool reported the malware binary as malicious."""^^xsd:string ;
 	skos:prefLabel "malicious"^^xsd:string ;
+	gist:stixTerm ""^^xsd:string ;
 	.
 
 gist:_MalwareResult_suspicious
@@ -1608,6 +1776,7 @@ gist:_MalwareResult_suspicious
 	skos:definition """STIX 2.1 description:
 The tool reported the malware binary as suspicious but not definitively malicious."""^^xsd:string ;
 	skos:prefLabel "suspicious"^^xsd:string ;
+	gist:stixTerm ""^^xsd:string ;
 	.
 
 gist:_MalwareResult_unknown
@@ -1615,6 +1784,7 @@ gist:_MalwareResult_unknown
 	skos:definition """STIX 2.1 description:
 The tool was unable to determine whether the malware binary is malicious."""^^xsd:string ;
 	skos:prefLabel "unknown"^^xsd:string ;
+	gist:stixTerm ""^^xsd:string ;
 	.
 
 gist:_MalwareType_adware
@@ -1622,6 +1792,7 @@ gist:_MalwareType_adware
 	skos:definition """STIX 2.1 description:
 Any software that is funded by advertising. Adware may also gather sensitive user information from a system."""^^xsd:string ;
 	skos:prefLabel "adware"^^xsd:string ;
+	gist:stixTerm "adware"^^xsd:string ;
 	.
 
 gist:_MalwareType_backdoor
@@ -1629,6 +1800,7 @@ gist:_MalwareType_backdoor
 	skos:definition """STIX 2.1 description:
 A malicious program that allows an attacker to perform actions on a remote system, such as transferring files, acquiring passwords, or executing arbitrary commands [NIST800-83]."""^^xsd:string ;
 	skos:prefLabel "backdoor"^^xsd:string ;
+	gist:stixTerm "backdoor"^^xsd:string ;
 	.
 
 gist:_MalwareType_bootkit
@@ -1636,6 +1808,7 @@ gist:_MalwareType_bootkit
 	skos:definition """STIX 2.1 description:
 A malicious program which targets the Master Boot Record of the target computer."""^^xsd:string ;
 	skos:prefLabel "bootkit"^^xsd:string ;
+	gist:stixTerm "bootkit"^^xsd:string ;
 	.
 
 gist:_MalwareType_bot
@@ -1643,6 +1816,7 @@ gist:_MalwareType_bot
 	skos:definition """STIX 2.1 description:
 A program that resides on an infected system, communicating with and forming part of a botnet. The bot may be implanted by a worm or Trojan, which opens a backdoor. The bot then monitors the backdoor for further instructions."""^^xsd:string ;
 	skos:prefLabel "bot"^^xsd:string ;
+	gist:stixTerm "bot"^^xsd:string ;
 	.
 
 gist:_MalwareType_ddos
@@ -1650,6 +1824,7 @@ gist:_MalwareType_ddos
 	skos:definition """STIX 2.1 description:
 A program that is used to perform a distributed denial of service attack."""^^xsd:string ;
 	skos:prefLabel "ddos"^^xsd:string ;
+	gist:stixTerm "ddos"^^xsd:string ;
 	.
 
 gist:_MalwareType_downloader
@@ -1657,6 +1832,7 @@ gist:_MalwareType_downloader
 	skos:definition """STIX 2.1 description:
 A small trojan file programmed to download and execute other files, usually more complex malware."""^^xsd:string ;
 	skos:prefLabel "downloader"^^xsd:string ;
+	gist:stixTerm "downloader"^^xsd:string ;
 	.
 
 gist:_MalwareType_dropper
@@ -1664,6 +1840,7 @@ gist:_MalwareType_dropper
 	skos:definition """STIX 2.1 description:
 A type of trojan that deposits an enclosed payload (generally, other malware) onto the target computer."""^^xsd:string ;
 	skos:prefLabel "dropper"^^xsd:string ;
+	gist:stixTerm "dropper"^^xsd:string ;
 	.
 
 gist:_MalwareType_exploit-kit
@@ -1671,6 +1848,7 @@ gist:_MalwareType_exploit-kit
 	skos:definition """STIX 2.1 description:
 A software toolkit to target common vulnerabilities."""^^xsd:string ;
 	skos:prefLabel "exploit-kit"^^xsd:string ;
+	gist:stixTerm "exploit-kit"^^xsd:string ;
 	.
 
 gist:_MalwareType_keylogger
@@ -1678,6 +1856,7 @@ gist:_MalwareType_keylogger
 	skos:definition """STIX 2.1 description:
 A type of malware that surreptitiously monitors keystrokes and either records them for later retrieval or sends them back to a central collection point."""^^xsd:string ;
 	skos:prefLabel "keylogger"^^xsd:string ;
+	gist:stixTerm "keylogger"^^xsd:string ;
 	.
 
 gist:_MalwareType_ransomware
@@ -1685,6 +1864,7 @@ gist:_MalwareType_ransomware
 	skos:definition """STIX 2.1 description:
 A type of malware that encrypts files on a victim's system, demanding payment of ransom in return for the access codes required to unlock files."""^^xsd:string ;
 	skos:prefLabel "ransomware"^^xsd:string ;
+	gist:stixTerm "ransomware"^^xsd:string ;
 	.
 
 gist:_MalwareType_remote-access-trojan
@@ -1692,6 +1872,7 @@ gist:_MalwareType_remote-access-trojan
 	skos:definition """STIX 2.1 description:
 A remote access trojan program (or RAT), is a trojan horse capable of controlling a machine through commands issued by a remote attacker."""^^xsd:string ;
 	skos:prefLabel "remote-access-trojan"^^xsd:string ;
+	gist:stixTerm "remote-access-trojan"^^xsd:string ;
 	.
 
 gist:_MalwareType_resource-exploitation
@@ -1699,6 +1880,7 @@ gist:_MalwareType_resource-exploitation
 	skos:definition """STIX 2.1 description:
 A type of malware that steals a system's resources (e.g., CPU cycles), such as a malicious bitcoin miner."""^^xsd:string ;
 	skos:prefLabel "resource-exploitation"^^xsd:string ;
+	gist:stixTerm "resource-exploitation"^^xsd:string ;
 	.
 
 gist:_MalwareType_rogue-security-software
@@ -1706,6 +1888,7 @@ gist:_MalwareType_rogue-security-software
 	skos:definition """STIX 2.1 description:
 A fake security product that demands money to clean phony infections."""^^xsd:string ;
 	skos:prefLabel "rogue-security-software"^^xsd:string ;
+	gist:stixTerm "rogue-security-software"^^xsd:string ;
 	.
 
 gist:_MalwareType_rootkit
@@ -1713,6 +1896,7 @@ gist:_MalwareType_rootkit
 	skos:definition """STIX 2.1 description:
 A type of malware that hides its files or processes from normal methods of monitoring in order to conceal its presence and activities. Rootkits can operate at a number of levels, from the application level — simply replacing or adjusting the settings of system software to prevent the display of certain information — through hooking certain functions or inserting modules or drivers into the operating system kernel, to the deeper level of firmware or virtualization rootkits, which are activated before the operating system and thus even harder to detect while the system is running."""^^xsd:string ;
 	skos:prefLabel "rootkit"^^xsd:string ;
+	gist:stixTerm "rootkit"^^xsd:string ;
 	.
 
 gist:_MalwareType_screen-capture
@@ -1720,6 +1904,7 @@ gist:_MalwareType_screen-capture
 	skos:definition """STIX 2.1 description:
 A type of malware used to capture images from the target systems screen, used for exfiltration and command and control."""^^xsd:string ;
 	skos:prefLabel "screen-capture"^^xsd:string ;
+	gist:stixTerm "screen-capture"^^xsd:string ;
 	.
 
 gist:_MalwareType_spyware
@@ -1727,6 +1912,7 @@ gist:_MalwareType_spyware
 	skos:definition """STIX 2.1 description:
 Software that gathers information on a user's system without their knowledge and sends it to another party. Spyware is generally used to track activities for the purpose of delivering advertising."""^^xsd:string ;
 	skos:prefLabel "spyware"^^xsd:string ;
+	gist:stixTerm "spyware"^^xsd:string ;
 	.
 
 gist:_MalwareType_trojan
@@ -1734,6 +1920,7 @@ gist:_MalwareType_trojan
 	skos:definition """STIX 2.1 description:
 Any malicious computer program which is used to hack into a computer by misleading users of its true intent."""^^xsd:string ;
 	skos:prefLabel "trojan"^^xsd:string ;
+	gist:stixTerm "trojan"^^xsd:string ;
 	.
 
 gist:_MalwareType_unknown
@@ -1741,6 +1928,7 @@ gist:_MalwareType_unknown
 	skos:definition """STIX 2.1 description:
 There is not enough information available to determine the type of malware."""^^xsd:string ;
 	skos:prefLabel "unknown"^^xsd:string ;
+	gist:stixTerm "unknown"^^xsd:string ;
 	.
 
 gist:_MalwareType_virus
@@ -1748,6 +1936,7 @@ gist:_MalwareType_virus
 	skos:definition """STIX 2.1 description:
 A malicious computer program that replicates by reproducing itself or infecting other programs by modifying them."""^^xsd:string ;
 	skos:prefLabel "virus"^^xsd:string ;
+	gist:stixTerm "virus"^^xsd:string ;
 	.
 
 gist:_MalwareType_webshell
@@ -1755,6 +1944,7 @@ gist:_MalwareType_webshell
 	skos:definition """STIX 2.1 description:
 A malicious script used by an attacker with the intent to escalate and maintain persistent access on an already compromised web application."""^^xsd:string ;
 	skos:prefLabel "webshell"^^xsd:string ;
+	gist:stixTerm "webshell"^^xsd:string ;
 	.
 
 gist:_MalwareType_wiper
@@ -1762,6 +1952,7 @@ gist:_MalwareType_wiper
 	skos:definition """STIX 2.1 description:
 A piece of malware whose primary aim is to delete files or entire disks on a machine."""^^xsd:string ;
 	skos:prefLabel "wiper"^^xsd:string ;
+	gist:stixTerm "wiper"^^xsd:string ;
 	.
 
 gist:_MalwareType_worm
@@ -1769,6 +1960,7 @@ gist:_MalwareType_worm
 	skos:definition """STIX 2.1 description:
 A self-replicating, self-contained program that usually executes itself without user intervention."""^^xsd:string ;
 	skos:prefLabel "worm"^^xsd:string ;
+	gist:stixTerm "worm"^^xsd:string ;
 	.
 
 gist:_NetworkSocketAddressFamily_AF_APPLETALK
@@ -1776,6 +1968,7 @@ gist:_NetworkSocketAddressFamily_AF_APPLETALK
 	skos:definition """STIX 2.1 description:
 Specifies the APPLETALK DDP address family."""^^xsd:string ;
 	skos:prefLabel "AF_APPLETALK"^^xsd:string ;
+	gist:stixTerm "AF_APPLETALK"^^xsd:string ;
 	.
 
 gist:_NetworkSocketAddressFamily_AF_BTH
@@ -1783,6 +1976,7 @@ gist:_NetworkSocketAddressFamily_AF_BTH
 	skos:definition """STIX 2.1 description:
 Specifies BTH sockets."""^^xsd:string ;
 	skos:prefLabel "AF_BTH"^^xsd:string ;
+	gist:stixTerm "AF_BTH"^^xsd:string ;
 	.
 
 gist:_NetworkSocketAddressFamily_AF_INET
@@ -1790,6 +1984,7 @@ gist:_NetworkSocketAddressFamily_AF_INET
 	skos:definition """STIX 2.1 description:
 Specifies the IPv4 address family."""^^xsd:string ;
 	skos:prefLabel "AF_INET"^^xsd:string ;
+	gist:stixTerm "AF_INET"^^xsd:string ;
 	.
 
 gist:_NetworkSocketAddressFamily_AF_INET6
@@ -1797,6 +1992,7 @@ gist:_NetworkSocketAddressFamily_AF_INET6
 	skos:definition """STIX 2.1 description:
 Specifies the IPv6 address family."""^^xsd:string ;
 	skos:prefLabel "AF_INET6"^^xsd:string ;
+	gist:stixTerm "AF_INET6"^^xsd:string ;
 	.
 
 gist:_NetworkSocketAddressFamily_AF_IPX
@@ -1804,6 +2000,7 @@ gist:_NetworkSocketAddressFamily_AF_IPX
 	skos:definition """STIX 2.1 description:
 Specifies the IPX (Novell Internet Protocol) address family."""^^xsd:string ;
 	skos:prefLabel "AF_IPX"^^xsd:string ;
+	gist:stixTerm "AF_IPX"^^xsd:string ;
 	.
 
 gist:_NetworkSocketAddressFamily_AF_IRDA
@@ -1811,6 +2008,7 @@ gist:_NetworkSocketAddressFamily_AF_IRDA
 	skos:definition """STIX 2.1 description:
 Specifies IRDA sockets."""^^xsd:string ;
 	skos:prefLabel "AF_IRDA"^^xsd:string ;
+	gist:stixTerm "AF_IRDA"^^xsd:string ;
 	.
 
 gist:_NetworkSocketAddressFamily_AF_NETBIOS
@@ -1818,6 +2016,7 @@ gist:_NetworkSocketAddressFamily_AF_NETBIOS
 	skos:definition """STIX 2.1 description:
 Specifies the NETBIOS address family."""^^xsd:string ;
 	skos:prefLabel "AF_NETBIOS"^^xsd:string ;
+	gist:stixTerm "AF_NETBIOS"^^xsd:string ;
 	.
 
 gist:_NetworkSocketAddressFamily_AF_UNSPEC
@@ -1825,6 +2024,7 @@ gist:_NetworkSocketAddressFamily_AF_UNSPEC
 	skos:definition """STIX 2.1 description:
 Specifies an unspecified address family."""^^xsd:string ;
 	skos:prefLabel "AF_UNSPEC"^^xsd:string ;
+	gist:stixTerm "AF_UNSPEC"^^xsd:string ;
 	.
 
 gist:_NetworkSocketType_SOCK_DGRAM
@@ -1832,6 +2032,7 @@ gist:_NetworkSocketType_SOCK_DGRAM
 	skos:definition """STIX 2.1 description:
 Specifies a socket in which individually-addressed packets are sent (datagram)."""^^xsd:string ;
 	skos:prefLabel "SOCK_DGRAM"^^xsd:string ;
+	gist:stixTerm ""^^xsd:string ;
 	.
 
 gist:_NetworkSocketType_SOCK_RAW
@@ -1839,6 +2040,7 @@ gist:_NetworkSocketType_SOCK_RAW
 	skos:definition """STIX 2.1 description:
 Specifies raw sockets which allow new IP protocols to be implemented in user space. A raw socket receives or sends the raw datagram not including link level headers."""^^xsd:string ;
 	skos:prefLabel "SOCK_RAW"^^xsd:string ;
+	gist:stixTerm ""^^xsd:string ;
 	.
 
 gist:_NetworkSocketType_SOCK_RDM
@@ -1846,6 +2048,7 @@ gist:_NetworkSocketType_SOCK_RDM
 	skos:definition """STIX 2.1 description:
 Specifies a socket indicating a reliably-delivered message."""^^xsd:string ;
 	skos:prefLabel "SOCK_RDM"^^xsd:string ;
+	gist:stixTerm ""^^xsd:string ;
 	.
 
 gist:_NetworkSocketType_SOCK_SEQPACKET
@@ -1853,6 +2056,7 @@ gist:_NetworkSocketType_SOCK_SEQPACKET
 	skos:definition """STIX 2.1 description:
 Specifies a datagram congestion control protocol socket."""^^xsd:string ;
 	skos:prefLabel "SOCK_SEQPACKET"^^xsd:string ;
+	gist:stixTerm ""^^xsd:string ;
 	.
 
 gist:_NetworkSocketType_SOCK_STREAM
@@ -1860,6 +2064,7 @@ gist:_NetworkSocketType_SOCK_STREAM
 	skos:definition """STIX 2.1 description:
 Specifies a pipe-like socket which operates over a connection with a particular remote socket and transmits data reliably as a stream of bytes."""^^xsd:string ;
 	skos:prefLabel "SOCK_STREAM"^^xsd:string ;
+	gist:stixTerm ""^^xsd:string ;
 	.
 
 gist:_OpinionEnumeration_agree
@@ -1872,6 +2077,7 @@ The creator agrees with the information and believes that it is accurate and cor
 This MAY be considered equivalent to a 4 in a numeric scale."""^^xsd:string ;
 	skos:prefLabel "agree"^^xsd:string ;
 	gist:sequence "4"^^xsd:integer ;
+	gist:stixTerm "agree"^^xsd:string ;
 	.
 
 gist:_OpinionEnumeration_disagree
@@ -1884,6 +2090,7 @@ The creator disagrees with the information and believes it is inaccurate or inco
 This MAY be considered equivalent to a 2 in a numeric scale."""^^xsd:string ;
 	skos:prefLabel "disagree"^^xsd:string ;
 	gist:sequence "2"^^xsd:integer ;
+	gist:stixTerm "disagree"^^xsd:string ;
 	.
 
 gist:_OpinionEnumeration_neutral
@@ -1896,6 +2103,7 @@ The creator is neutral about the accuracy or correctness of the information.
 This MAY be considered equivalent to a 3 in a numeric scale."""^^xsd:string ;
 	skos:prefLabel "neutral"^^xsd:string ;
 	gist:sequence "3"^^xsd:integer ;
+	gist:stixTerm "neutral"^^xsd:string ;
 	.
 
 gist:_OpinionEnumeration_strongly-agree
@@ -1908,6 +2116,7 @@ The creator strongly agrees with the information and believes that it is accurat
 This MAY be considered equivalent to a 5 in a numeric scale."""^^xsd:string ;
 	skos:prefLabel "strongly-agree"^^xsd:string ;
 	gist:sequence "5"^^xsd:integer ;
+	gist:stixTerm "strongly-agree"^^xsd:string ;
 	.
 
 gist:_OpinionEnumeration_strongly-disagree
@@ -1920,6 +2129,7 @@ The creator strongly disagrees with the information and believes it is inaccurat
 This MAY be considered equivalent to a 1 in a numeric scale."""^^xsd:string ;
 	skos:prefLabel "strongly-disagree"^^xsd:string ;
 	gist:sequence "1"^^xsd:integer ;
+	gist:stixTerm "strongly-disagree"^^xsd:string ;
 	.
 
 gist:_PatternType_pcre
@@ -1927,6 +2137,7 @@ gist:_PatternType_pcre
 	skos:definition """STIX 2.1 description:
 Specifies the Perl Compatible Regular Expressions language [PCRE]."""^^xsd:string ;
 	skos:prefLabel "pcre"^^xsd:string ;
+	gist:stixTerm "pcre"^^xsd:string ;
 	.
 
 gist:_PatternType_sigma
@@ -1934,6 +2145,7 @@ gist:_PatternType_sigma
 	skos:definition """STIX 2.1 description:
 Specifies the SIGMA language."""^^xsd:string ;
 	skos:prefLabel "sigma"^^xsd:string ;
+	gist:stixTerm "sigma"^^xsd:string ;
 	.
 
 gist:_PatternType_snort
@@ -1941,6 +2153,7 @@ gist:_PatternType_snort
 	skos:definition """STIX 2.1 description:
 Specifies the SNORT language [SNORT]."""^^xsd:string ;
 	skos:prefLabel "snort"^^xsd:string ;
+	gist:stixTerm "snort"^^xsd:string ;
 	.
 
 gist:_PatternType_stix
@@ -1948,6 +2161,7 @@ gist:_PatternType_stix
 	skos:definition """STIX 2.1 description:
 Specifies the STIX pattern language defined in section 9 of the specification."""^^xsd:string ;
 	skos:prefLabel "stix"^^xsd:string ;
+	gist:stixTerm "stix"^^xsd:string ;
 	.
 
 gist:_PatternType_suricata
@@ -1955,6 +2169,7 @@ gist:_PatternType_suricata
 	skos:definition """STIX 2.1 description:
 Specifies the SURICATA language [Suricata]."""^^xsd:string ;
 	skos:prefLabel "suricata"^^xsd:string ;
+	gist:stixTerm "suricata"^^xsd:string ;
 	.
 
 gist:_PatternType_yara
@@ -1962,6 +2177,7 @@ gist:_PatternType_yara
 	skos:definition """STIX 2.1 description:
 Specifies the YARA language [YARA]."""^^xsd:string ;
 	skos:prefLabel "yara"^^xsd:string ;
+	gist:stixTerm "yara"^^xsd:string ;
 	.
 
 gist:_ProcessorArchitecture_alpha
@@ -2324,6 +2540,7 @@ gist:_ThreatActorRole_Agent
 	skos:definition """STIX 2.1 description:
 Threat actor executes attacks either on behalf of themselves or at the direction of someone else."""^^xsd:string ;
 	skos:prefLabel "agent"^^xsd:string ;
+	gist:stixTerm "agent"^^xsd:string ;
 	.
 
 gist:_ThreatActorRole_director
@@ -2331,6 +2548,7 @@ gist:_ThreatActorRole_director
 	skos:definition """STIX 2.1 description:
 The threat actor who directs the activities, goals, and objectives of the malicious activities."""^^xsd:string ;
 	skos:prefLabel "director"^^xsd:string ;
+	gist:stixTerm "director"^^xsd:string ;
 	.
 
 gist:_ThreatActorRole_independent
@@ -2338,6 +2556,7 @@ gist:_ThreatActorRole_independent
 	skos:definition """STIX 2.1 description:
 A threat actor acting by themselves."""^^xsd:string ;
 	skos:prefLabel "independent"^^xsd:string ;
+	gist:stixTerm "independent"^^xsd:string ;
 	.
 
 gist:_ThreatActorRole_infrastructure-architect
@@ -2345,6 +2564,7 @@ gist:_ThreatActorRole_infrastructure-architect
 	skos:definition """STIX 2.1 description:
 Someone who designs the battle space."""^^xsd:string ;
 	skos:prefLabel "infrastructure-architect"^^xsd:string ;
+	gist:stixTerm "infrastructure-architect"^^xsd:string ;
 	.
 
 gist:_ThreatActorRole_infrastructure-operator
@@ -2352,6 +2572,7 @@ gist:_ThreatActorRole_infrastructure-operator
 	skos:definition """STIX 2.1 description:
 The threat actor who provides and supports the attack infrastructure that is used to deliver the attack (botnet providers, cloud services, etc.)."""^^xsd:string ;
 	skos:prefLabel "infrastructure-operator"^^xsd:string ;
+	gist:stixTerm "infrastructure-operator"^^xsd:string ;
 	.
 
 gist:_ThreatActorRole_malware-author
@@ -2359,6 +2580,7 @@ gist:_ThreatActorRole_malware-author
 	skos:definition """STIX 2.1 description:
 The threat actor who authors malware or other malicious tools."""^^xsd:string ;
 	skos:prefLabel "malware-author"^^xsd:string ;
+	gist:stixTerm "malware-author"^^xsd:string ;
 	.
 
 gist:_ThreatActorRole_sponsor
@@ -2366,6 +2588,7 @@ gist:_ThreatActorRole_sponsor
 	skos:definition """STIX 2.1 description:
 The threat actor who funds the malicious activities."""^^xsd:string ;
 	skos:prefLabel "sponsor"^^xsd:string ;
+	gist:stixTerm "sponsor"^^xsd:string ;
 	.
 
 gist:_ThreatActorSophistication_advanced
@@ -2391,6 +2614,7 @@ These actors:
 
 ●      have proficient knowledge of the tools."""^^xsd:string ;
 	skos:prefLabel "advanced"^^xsd:string ;
+	gist:stixTerm "advanced"^^xsd:string ;
 	.
 
 gist:_ThreatActorSophistication_expert
@@ -2412,6 +2636,7 @@ These actors:
 
 ●      have proficient knowledge of the tools. """^^xsd:string ;
 	skos:prefLabel "expert"^^xsd:string ;
+	gist:stixTerm "expert"^^xsd:string ;
 	.
 
 gist:_ThreatActorSophistication_innovator
@@ -2437,6 +2662,7 @@ These actors:
 
 ●      create new and innovative attacks and toolkits. """^^xsd:string ;
 	skos:prefLabel "innovator"^^xsd:string ;
+	gist:stixTerm "innovator"^^xsd:string ;
 	.
 
 gist:_ThreatActorSophistication_intermediate
@@ -2462,6 +2688,7 @@ These actors:
 
 ●      have proficient knowledge of the tools."""^^xsd:string ;
 	skos:prefLabel "intermediate"^^xsd:string ;
+	gist:stixTerm "intermediate"^^xsd:string ;
 	.
 
 gist:_ThreatActorSophistication_minimal
@@ -2487,6 +2714,7 @@ These actors:
 
 ●      have minimal knowledge of the tools."""^^xsd:string ;
 	skos:prefLabel "minimal"^^xsd:string ;
+	gist:stixTerm "minimal"^^xsd:string ;
 	.
 
 gist:_ThreatActorSophistication_none
@@ -2504,6 +2732,7 @@ These actors:
 
 ●      can not launch targeted attacks"""^^xsd:string ;
 	skos:prefLabel "none"^^xsd:string ;
+	gist:stixTerm "none"^^xsd:string ;
 	.
 
 gist:_ThreatActorSophistication_stategic
@@ -2529,6 +2758,7 @@ These actors:
 
 ●      create new and innovative attacks and toolkits. """^^xsd:string ;
 	skos:prefLabel "strategic"^^xsd:string ;
+	gist:stixTerm "strategic"^^xsd:string ;
 	.
 
 gist:_ThreatActorType_activist
@@ -2539,6 +2769,7 @@ Highly motivated, potentially destructive supporter of a social or political cau
 
 This category includes actors sometimes referred to as anarchists, cyber vandals, extremists, and hacktivists."""^^xsd:string ;
 	skos:prefLabel "activist"^^xsd:string ;
+	gist:stixTerm "activist"^^xsd:string ;
 	.
 
 gist:_ThreatActorType_competitor
@@ -2549,6 +2780,7 @@ An organization that competes in the same economic marketplace.
 
 The goal of a competitor is to gain an advantage in business with respect to the rival organization it targets. It usually does this by copying intellectual property, trade secrets, acquisition strategies, or other technical or business data from a rival organization with the intention of using the data to bolster its own assets and market position."""^^xsd:string ;
 	skos:prefLabel "competitor"^^xsd:string ;
+	gist:stixTerm "competitor"^^xsd:string ;
 	.
 
 gist:_ThreatActorType_crime-syndicate
@@ -2559,6 +2791,7 @@ An enterprise organized to conduct significant, large-scale criminal activity fo
 
 Crime syndicates, also known as organized crime, are generally large, well-resourced groups that operate to create profit from all types of crime."""^^xsd:string ;
 	skos:prefLabel "crime-syndicate"^^xsd:string ;
+	gist:stixTerm "crime-syndicate"^^xsd:string ;
 	.
 
 gist:_ThreatActorType_criminal
@@ -2569,6 +2802,7 @@ Individual who commits computer crimes, often for personal financial gain and of
 
 Intellectual property theft, extortion via ransomware, and physical destruction are common examples. A criminal as defined here refers to those acting individually or in very small or informal groups. For sophisticated organized criminal activity, see the crime syndicate descriptor."""^^xsd:string ;
 	skos:prefLabel "criminal"^^xsd:string ;
+	gist:stixTerm "criminal"^^xsd:string ;
 	.
 
 gist:_ThreatActorType_hacker
@@ -2579,6 +2813,7 @@ An individual that tends to break into networks for the thrill or the challenge 
 
 Hackers may use advanced skills or simple attack scripts they have downloaded."""^^xsd:string ;
 	skos:prefLabel "hacker"^^xsd:string ;
+	gist:stixTerm "hacker"^^xsd:string ;
 	.
 
 gist:_ThreatActorType_insider-accidental
@@ -2588,6 +2823,7 @@ A non-hostile insider who unintentionally exposes the organization to harm.
 
 "Insider" in this context includes any person extended internal trust, such as regular employees, contractors, consultants, and temporary workers.'''^^xsd:string ;
 	skos:prefLabel "insider-accidental"^^xsd:string ;
+	gist:stixTerm "nsider-accidental"^^xsd:string ;
 	.
 
 gist:_ThreatActorType_insider-disgruntaled
@@ -2599,6 +2835,7 @@ Current or former insiders who seek revengeful and harmful retaliation for perce
 
 Disgruntled threat actors may have extensive knowledge that can be leveraged when conducting attacks and can take any number of actions including sabotage, violence, theft, fraud, espionage, or embarrassing individuals or the organization.'''^^xsd:string ;
 	skos:prefLabel "insider-disgruntaled"^^xsd:string ;
+	gist:stixTerm "insider-disgruntaled"^^xsd:string ;
 	.
 
 gist:_ThreatActorType_nation-state
@@ -2608,6 +2845,7 @@ Entities who work for the government or military of a nation state or who work a
 
 These actors typically have access to significant support, resources, training, and tools and are capable of designing and executing very sophisticated and effective Intrusion Sets and Campaigns."""^^xsd:string ;
 	skos:prefLabel "nation-state"^^xsd:string ;
+	gist:stixTerm "nation-state"^^xsd:string ;
 	.
 
 gist:_ThreatActorType_sensationalist
@@ -2617,6 +2855,7 @@ Seeks to cause embarrassment and brand damage by exposing sensitive information 
 
 A sensationalist may be an individual or small group of people motivated primarily by a need for notoriety. Unlike the activist, the sensationalist generally has no political goal, and is not using bad PR to influence the target to change its behavior or business practices."""^^xsd:string ;
 	skos:prefLabel "sensationalist"^^xsd:string ;
+	gist:stixTerm "sensationalist"^^xsd:string ;
 	.
 
 gist:_ThreatActorType_spy
@@ -2626,6 +2865,7 @@ Secretly collects sensitive information for use, dissemination, or sale.
 
 Traditional spies (governmental and industrial) are part of a well-resourced intelligence organization and are capable of very sophisticated clandestine operations. However, insiders such as employees or consultants acting as spies can be just as effective and damaging, even when their activities are largely opportunistic and not part of an overall campaign."""^^xsd:string ;
 	skos:prefLabel "spy"^^xsd:string ;
+	gist:stixTerm "spy"^^xsd:string ;
 	.
 
 gist:_ThreatActorType_terrorist
@@ -2637,6 +2877,7 @@ In this context a terrorist refers to individuals who target noncombatants with 
 
 Terrorist organizations must typically raise much of their operating budget through criminal activity, which often occurs online. Terrorists are also often adept at using and covertly manipulating social media for both recruitment and impact."""^^xsd:string ;
 	skos:prefLabel "terrorist"^^xsd:string ;
+	gist:stixTerm "terrorist"^^xsd:string ;
 	.
 
 gist:_ThreatActorType_unknown
@@ -2644,6 +2885,7 @@ gist:_ThreatActorType_unknown
 	skos:definition """STIX 2.1 description:
 There is not enough information available to determine the type of threat actor."""^^xsd:string ;
 	skos:prefLabel "unknown"^^xsd:string ;
+	gist:stixTerm "unknown"^^xsd:string ;
 	.
 
 gist:_ToolType_credential-exploitation
