@@ -10,9 +10,12 @@
 
 <https://w3id.org/semanticarts/ontology/vocabulary>
 	a owl:Ontology ;
-	rdfs:label "Category Instances for STIX Vocabularies and Enumerations"^^xsd:string ;
-	rdfs:comment 'Some STIX properties are defined using open vocabularies or enumerations. Enumerations and open vocabularies are defined in STIX in order to enhance interoperability by increasing the likelihood that different entities use the same exact string to represent the same concept. If used consistently, open vocabularies make it less likely that one entity refers to the energy sector as "Energy" and another as "Energy Sector", thereby making comparison and correlation easier. \\n\\n While using predefined values from STIX vocabularies is strongly encouraged, in some cases this may not be feasible. To address this, producers are permitted to use values outside of the open vocabulary. In the case of enumerations, producers are required to use only the values defined within the STIX specification. \\n\\n STIX open vocabularies and enumerations are defined in section 10. Properties that are defined as open vocabularies identify a suggested vocabulary from that section. For example, the Threat Actor sophistication property, as defined in section 4.17, uses the Threat Actor Sophistication vocabulary as defined in section 10.25.'@en-US ;
 	owl:versionInfo "2.1.0"^^xsd:string ;
+	skos:definition
+		"Category Instances for STIX Vocabularies and Enumerations"^^xsd:string ,
+		'Some STIX properties are defined using open vocabularies or enumerations. Enumerations and open vocabularies are defined in STIX in order to enhance interoperability by increasing the likelihood that different entities use the same exact string to represent the same concept. If used consistently, open vocabularies make it less likely that one entity refers to the energy sector as "Energy" and another as "Energy Sector", thereby making comparison and correlation easier. \\n\\n While using predefined values from STIX vocabularies is strongly encouraged, in some cases this may not be feasible. To address this, producers are permitted to use values outside of the open vocabulary. In the case of enumerations, producers are required to use only the values defined within the STIX specification. \\n\\n STIX open vocabularies and enumerations are defined in section 10. Properties that are defined as open vocabularies identify a suggested vocabulary from that section. For example, the Threat Actor sophistication property, as defined in section 4.17, uses the Threat Actor Sophistication vocabulary as defined in section 10.25.'@en-US
+		;
+	skos:prefLabel "Category Instances for STIX Vocabularies and Enumerations"^^xsd:string ;
 	.
 
 skos:definition
@@ -250,7 +253,6 @@ An enumeration of Windows service statuses."""^^xsd:string ;
 
 gist:_AccountType_facebook
 	a gist:AccountType ;
-	rdfs:label "Facebook"^^xsd:string ;
 	skos:altLabel "Facebook"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies a Facebook account"""^^xsd:string ;
@@ -260,7 +262,6 @@ Specifies a Facebook account"""^^xsd:string ;
 
 gist:_AccountType_ldap
 	a gist:AccountType ;
-	rdfs:label "LDAP"^^xsd:string ;
 	skos:altLabel "LDAP"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies an LDAP account"""^^xsd:string ;
@@ -270,7 +271,6 @@ Specifies an LDAP account"""^^xsd:string ;
 
 gist:_AccountType_nis
 	a gist:AccountType ;
-	rdfs:label "NIS"^^xsd:string ;
 	skos:altLabel "NIS"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies an NIS account"""^^xsd:string ;
@@ -280,7 +280,6 @@ Specifies an NIS account"""^^xsd:string ;
 
 gist:_AccountType_openid
 	a gist:AccountType ;
-	rdfs:label "OpenID"^^xsd:string ;
 	skos:altLabel "OpenID"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies an OpenID account"""^^xsd:string ;
@@ -290,7 +289,6 @@ Specifies an OpenID account"""^^xsd:string ;
 
 gist:_AccountType_radius
 	a gist:AccountType ;
-	rdfs:label "Radius"^^xsd:string ;
 	skos:altLabel "Radius"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies a RADIUS account"""^^xsd:string ;
@@ -300,7 +298,6 @@ Specifies a RADIUS account"""^^xsd:string ;
 
 gist:_AccountType_skype
 	a gist:AccountType ;
-	rdfs:label "Skype"^^xsd:string ;
 	skos:altLabel "Skype"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies a Skype account"""^^xsd:string ;
@@ -310,7 +307,6 @@ Specifies a Skype account"""^^xsd:string ;
 
 gist:_AccountType_tacacs
 	a gist:AccountType ;
-	rdfs:label "TACACS"^^xsd:string ;
 	skos:altLabel "TACACS"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies a TACACS account"""^^xsd:string ;
@@ -320,7 +316,6 @@ Specifies a TACACS account"""^^xsd:string ;
 
 gist:_AccountType_twitter
 	a gist:AccountType ;
-	rdfs:label "Twitter"^^xsd:string ;
 	skos:altLabel "Twitter"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies a Twitter account"""^^xsd:string ;
@@ -330,7 +325,6 @@ Specifies a Twitter account"""^^xsd:string ;
 
 gist:_AccountType_unix
 	a gist:AccountType ;
-	rdfs:label "UNIX"^^xsd:string ;
 	skos:altLabel "Unix"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies a POSIX account"""^^xsd:string ;
@@ -340,8 +334,10 @@ Specifies a POSIX account"""^^xsd:string ;
 
 gist:_AccountType_windows-domain
 	a gist:AccountType ;
-	rdfs:label "Windows Domain"^^xsd:string ;
-	skos:altLabel "Windows-Domain"^^xsd:string ;
+	skos:altLabel
+		"Windows Domain"^^xsd:string ,
+		"Windows-Domain"^^xsd:string
+		;
 	skos:definition """STIX 2.1 description:
 Specifies a Windows Domain account"""^^xsd:string ;
 	skos:prefLabel "windows-domain"^^xsd:string ;
@@ -350,8 +346,10 @@ Specifies a Windows Domain account"""^^xsd:string ;
 
 gist:_AccountType_windows_local
 	a gist:AccountType ;
-	rdfs:label "Windows Local"^^xsd:string ;
-	skos:altLabel "Windows-Local"^^xsd:string ;
+	skos:altLabel
+		"Windows Local"^^xsd:string ,
+		"Windows-Local"^^xsd:string
+		;
 	skos:definition """STIX 2.1 description:
 Specifies a Windows Local account"""^^xsd:string ;
 	skos:prefLabel "windows-local"^^xsd:string ;
@@ -360,7 +358,6 @@ Specifies a Windows Local account"""^^xsd:string ;
 
 gist:_AttackMotivation_accidental
 	a gist:AttackMotivation ;
-	rdfs:label "Accidental"^^xsd:string ;
 	skos:altLabel "Accidental"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 A non-hostile actor whose benevolent or harmless intent inadvertently causes harm.
@@ -374,7 +371,6 @@ For example, a well-meaning and dedicated employee who through distraction or po
 
 gist:_AttackMotivation_coercion
 	a gist:AttackMotivation ;
-	rdfs:label "Coercion"^^xsd:string ;
 	skos:altLabel "Coercion"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Being forced to act on someone else's behalf.
@@ -388,7 +384,6 @@ Adversaries who are motivated by coercion are often forced through intimidation 
 
 gist:_AttackMotivation_dominance
 	a gist:AttackMotivation ;
-	rdfs:label "Dominance"^^xsd:string ;
 	skos:altLabel "Dominance"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 A desire to assert superiority over someone or something else.
@@ -402,7 +397,6 @@ Adversaries who are seeking dominance over a target are focused on using their p
 
 gist:_AttackMotivation_ideology
 	a gist:AttackMotivation ;
-	rdfs:label "Ideology"^^xsd:string ;
 	skos:altLabel "Ideology"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 A passion to express a set of ideas, beliefs, and values that may shape and drive harmful and illegal acts.
@@ -420,7 +414,6 @@ For example, an activist group may sabotage a company’s equipment because they
 
 gist:_AttackMotivation_notoriety
 	a gist:AttackMotivation ;
-	rdfs:label "Notoriety"^^xsd:string ;
 	skos:altLabel "Notoriety"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Seeking prestige or to become well known through some activity.
@@ -434,8 +427,10 @@ Adversaries motivated by notoriety are often seeking either personal validation 
 
 gist:_AttackMotivation_organizational-gain
 	a gist:AttackMotivation ;
-	rdfs:label "Oranizational Gain"^^xsd:string ;
-	skos:altLabel "Oranizational-Gain"^^xsd:string ;
+	skos:altLabel
+		"Oranizational Gain"^^xsd:string ,
+		"Oranizational-Gain"^^xsd:string
+		;
 	skos:definition """STIX 2.1 description:
 Seeking advantage over a competing organization, including a military organization.
 
@@ -448,8 +443,10 @@ Adversaries motivated by increased profit or other gains through an unfairly obt
 
 gist:_AttackMotivation_personal-gain
 	a gist:AttackMotivation ;
-	rdfs:label "Personal Gain"^^xsd:string ;
-	skos:altLabel "Personal-Gain"^^xsd:string ;
+	skos:altLabel
+		"Personal Gain"^^xsd:string ,
+		"Personal-Gain"^^xsd:string
+		;
 	skos:definition """STIX 2.1 description:
 The desire to improve one’s own financial status.
 
@@ -466,8 +463,10 @@ While a Threat Actor or Intrusion Set may be seeking personal gain, this does no
 
 gist:_AttackMotivation_personal-satisfaction
 	a gist:AttackMotivation ;
-	rdfs:label "Personal Satisfaction"^^xsd:string ;
-	skos:altLabel "Personal-Satisfaction"^^xsd:string ;
+	skos:altLabel
+		"Personal Satisfaction"^^xsd:string ,
+		"Personal-Satisfaction"^^xsd:string
+		;
 	skos:definition """STIX 2.1 description:
 A desire to satisfy a strictly personal goal, including curiosity, thrill-seeking, amusement, etc.
 
@@ -480,7 +479,6 @@ Threat Actors or Intrusion Set driven by personal satisfaction may incidentally 
 
 gist:_AttackMotivation_revenge
 	a gist:AttackMotivation ;
-	rdfs:label "Revenge"^^xsd:string ;
 	skos:altLabel "Revenge"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 A desire to avenge perceived wrongs through harmful actions such as sabotage, violence, theft, fraud, or embarrassing certain individuals or the organization.
@@ -494,7 +492,6 @@ A disgruntled Threat Actor or Intrusion Set seeking revenge can include current 
 
 gist:_AttackMotivation_unpredictable
 	a gist:AttackMotivation ;
-	rdfs:label "Unpredictable"^^xsd:string ;
 	skos:altLabel "Unpredictable"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Acting without identifiable reason or purpose and creating unpredictable events.
@@ -508,7 +505,6 @@ Unpredictable is not a miscellaneous or default category. Unpredictable means a 
 
 gist:_AttackResourceLevel_club
 	a gist:AttackResourceLevel ;
-	rdfs:label "Club"^^xsd:string ;
 	skos:altLabel "Club"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Members interact on a social and volunteer basis, often with little personal interest in the specific target. An example might be a core group of unrelated activists who regularly exchange tips on a particular blog. Group persists long term."""^^xsd:string ;
@@ -518,7 +514,6 @@ Members interact on a social and volunteer basis, often with little personal int
 
 gist:_AttackResourceLevel_contest
 	a gist:AttackResourceLevel ;
-	rdfs:label "Contest"^^xsd:string ;
 	skos:altLabel "Contest"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 A short-lived and perhaps anonymous interaction that concludes when the participants have achieved a single goal. For example, people who break into systems just for thrills or prestige may hold a contest to see who can break into a specific target first. It also includes announced \"operations\" to achieve a specific goal, such as the original \"OpIsrael\" call for volunteers to disrupt all of Israel's Internet functions for a day."""^^xsd:string ;
@@ -528,7 +523,6 @@ A short-lived and perhaps anonymous interaction that concludes when the particip
 
 gist:_AttackResourceLevel_government
 	a gist:AttackResourceLevel ;
-	rdfs:label "Government"^^xsd:string ;
 	skos:altLabel "Government"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Controls public assets and functions within a jurisdiction; very well resourced and persists long term."""^^xsd:string ;
@@ -538,7 +532,6 @@ Controls public assets and functions within a jurisdiction; very well resourced 
 
 gist:_AttackResourceLevel_individual
 	a gist:AttackResourceLevel ;
-	rdfs:label "Individual"^^xsd:string ;
 	skos:altLabel "Individual"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Resources limited to the average individual; Threat Actor acts independently."""^^xsd:string ;
@@ -548,7 +541,6 @@ Resources limited to the average individual; Threat Actor acts independently."""
 
 gist:_AttackResourceLevel_organization
 	a gist:AttackResourceLevel ;
-	rdfs:label "Organization"^^xsd:string ;
 	skos:altLabel "Organization"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Larger and better resourced than a team; typically, a company or crime syndicate. Usually operates in multiple geographic areas and persists long term."""^^xsd:string ;
@@ -558,7 +550,6 @@ Larger and better resourced than a team; typically, a company or crime syndicate
 
 gist:_AttackResourceLevel_team
 	a gist:AttackResourceLevel ;
-	rdfs:label "Team"^^xsd:string ;
 	skos:altLabel "Team"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 A formally organized group with a leader, typically motivated by a specific goal and organized around that goal. Group persists long term and typically operates within a single geography."""^^xsd:string ;
@@ -568,7 +559,6 @@ A formally organized group with a leader, typically motivated by a specific goal
 
 gist:_EncryptionAlgorithm_AES_256_GCM
 	a gist:EncryptionAlgorithm ;
-	rdfs:label "AES-256-GCM"^^xsd:string ;
 	skos:altLabel "AES-256-GCM"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies the AES-256-GCM cipher, as defined in [NIST SP800-38D]"""^^xsd:string ;
@@ -578,7 +568,6 @@ Specifies the AES-256-GCM cipher, as defined in [NIST SP800-38D]"""^^xsd:string 
 
 gist:_EncryptionAlgorithm_ChaCha20-Poly1305
 	a gist:EncryptionAlgorithm ;
-	rdfs:label "ChaCha20-Poly1305"^^xsd:string ;
 	skos:altLabel "ChaCha20-Poly1305"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Specifies the ChaCha20-Poly1305 stream cipher, as defined in [RFC7539]."""^^xsd:string ;
@@ -588,8 +577,10 @@ Specifies the ChaCha20-Poly1305 stream cipher, as defined in [RFC7539]."""^^xsd:
 
 gist:_EncryptionAlgorithm_mime-type-indicated
 	a gist:EncryptionAlgorithm ;
-	rdfs:label "Mime Type Indicated"^^xsd:string ;
-	skos:altLabel "Mime-Type-Indicated"^^xsd:string ;
+	skos:altLabel
+		"Mime Type Indicated"^^xsd:string ,
+		"Mime-Type-Indicated"^^xsd:string
+		;
 	skos:definition """STIX 2.1 description:
 The encryption algorithm is self-defined by the artifact's data. The specified mime-type tells you which format it is, e.g., Word Doc or GPG. This is intended for formats like Zip files and Word files which take a simple password, or GPG armored files that contain the key blob along with the file."""^^xsd:string ;
 	skos:prefLabel "mime-type-indicated"^^xsd:string ;
@@ -998,7 +989,6 @@ There is not enough information available to determine the type of indicator."""
 
 gist:_IndustrySector_aerospace
 	a gist:IndustrySector ;
-	rdfs:label "Aerospace"^^xsd:string ;
 	skos:altLabel "Aerospace"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Aerospace industry sector"""^^xsd:string ;
@@ -1008,7 +998,6 @@ Tag for the Aerospace industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_agriculture
 	a gist:IndustrySector ;
-	rdfs:label "Agriculture"^^xsd:string ;
 	skos:altLabel "Agriculture"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Agriculture industry sector"""^^xsd:string ;
@@ -1018,7 +1007,6 @@ Tag for the Agriculture industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_automotive
 	a gist:IndustrySector ;
-	rdfs:label "Automotive"^^xsd:string ;
 	skos:altLabel "Automotive"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Automotive industry sector"""^^xsd:string ;
@@ -1028,7 +1016,6 @@ Tag for the Automotive industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_chemical
 	a gist:IndustrySector ;
-	rdfs:label "Chemical"^^xsd:string ;
 	skos:altLabel "Chemical"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Chemical industry sector"""^^xsd:string ;
@@ -1038,7 +1025,6 @@ Tag for the Chemical industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_commercial
 	a gist:IndustrySector ;
-	rdfs:label "Commercial"^^xsd:string ;
 	skos:altLabel "Commercial"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Commercial industry sector"""^^xsd:string ;
@@ -1048,7 +1034,6 @@ Tag for the Commercial industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_communications
 	a gist:IndustrySector ;
-	rdfs:label "Communications"^^xsd:string ;
 	skos:altLabel "Communications"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Communications industry sector"""^^xsd:string ;
@@ -1058,7 +1043,6 @@ Tag for the Communications industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_construction
 	a gist:IndustrySector ;
-	rdfs:label "Construction"^^xsd:string ;
 	skos:altLabel "Construction"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Construction industry sector"""^^xsd:string ;
@@ -1068,7 +1052,6 @@ Tag for the Construction industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_defense
 	a gist:IndustrySector ;
-	rdfs:label "Defense"^^xsd:string ;
 	skos:altLabel "Defense"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Defense industry sector"""^^xsd:string ;
@@ -1078,7 +1061,6 @@ Tag for the Defense industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_education
 	a gist:IndustrySector ;
-	rdfs:label "Education"^^xsd:string ;
 	skos:altLabel "Education"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Education industry sector"""^^xsd:string ;
@@ -1088,8 +1070,10 @@ Tag for the Education industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_emergency-services
 	a gist:IndustrySector ;
-	rdfs:label "Emergency-Services"^^xsd:string ;
-	skos:altLabel "Emergency-Services"^^xsd:string ;
+	skos:altLabel
+		"Emergency Services"^^xsd:string ,
+		"Emergency-Services"^^xsd:string
+		;
 	skos:definition """STIX 2.1 description:
 Tag for the emergency services industry sector"""^^xsd:string ;
 	skos:prefLabel "emergency-services"^^xsd:string ;
@@ -1098,7 +1082,6 @@ Tag for the emergency services industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_energy
 	a gist:IndustrySector ;
-	rdfs:label "Energy"^^xsd:string ;
 	skos:altLabel "Energy"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Energy industry sector"""^^xsd:string ;
@@ -1108,7 +1091,6 @@ Tag for the Energy industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_entertainment
 	a gist:IndustrySector ;
-	rdfs:label "Entertainment"^^xsd:string ;
 	skos:altLabel "Entertainment"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Entertainment industry sector"""^^xsd:string ;
@@ -1118,8 +1100,10 @@ Tag for the Entertainment industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_financial-services
 	a gist:IndustrySector ;
-	rdfs:label "Financial Services"^^xsd:string ;
-	skos:altLabel "Financial-Services"^^xsd:string ;
+	skos:altLabel
+		"Financial Services"^^xsd:string ,
+		"Financial-Services"^^xsd:string
+		;
 	skos:definition """STIX 2.1 description:
 Tag for the Financial-Services industry sector"""^^xsd:string ;
 	skos:prefLabel "financial-services"^^xsd:string ;
@@ -1128,7 +1112,6 @@ Tag for the Financial-Services industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_government
 	a gist:IndustrySector ;
-	rdfs:label "Government"^^xsd:string ;
 	skos:altLabel "Government"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Government industry sector"""^^xsd:string ;
@@ -1138,8 +1121,10 @@ Tag for the Government industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_government-Local
 	a gist:IndustrySector ;
-	rdfs:label "Government Local"^^xsd:string ;
-	skos:altLabel "Government-Local"^^xsd:string ;
+	skos:altLabel
+		"Government Local"^^xsd:string ,
+		"Government-Local"^^xsd:string
+		;
 	skos:definition """STIX 2.1 description:
 Tag for the government local industry sector"""^^xsd:string ;
 	skos:prefLabel "government-local"^^xsd:string ;
@@ -1148,8 +1133,10 @@ Tag for the government local industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_government-National
 	a gist:IndustrySector ;
-	rdfs:label "Government National"^^xsd:string ;
-	skos:altLabel "Government-National"^^xsd:string ;
+	skos:altLabel
+		"Government National"^^xsd:string ,
+		"Government-National"^^xsd:string
+		;
 	skos:definition """STIX 2.1 description:
 Tag for the government-national industry sector"""^^xsd:string ;
 	skos:prefLabel "government-national"^^xsd:string ;
@@ -1158,8 +1145,10 @@ Tag for the government-national industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_government-Public-Services
 	a gist:IndustrySector ;
-	rdfs:label "Government Public Services"^^xsd:string ;
-	skos:altLabel "Government-Public-Services"^^xsd:string ;
+	skos:altLabel
+		"Government Public Services"^^xsd:string ,
+		"Government-Public-Services"^^xsd:string
+		;
 	skos:definition """STIX 2.1 description:
 Tag for the government public services industry sector"""^^xsd:string ;
 	skos:prefLabel "government-public-services"^^xsd:string ;
@@ -1168,8 +1157,10 @@ Tag for the government public services industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_government-Regional
 	a gist:IndustrySector ;
-	rdfs:label "Government Regional"^^xsd:string ;
-	skos:altLabel "Government-Regional"^^xsd:string ;
+	skos:altLabel
+		"Government Regional"^^xsd:string ,
+		"Government-Regional"^^xsd:string
+		;
 	skos:definition """STIX 2.1 description:
 Tag for the government regional industry sector"""^^xsd:string ;
 	skos:prefLabel "government-regional"^^xsd:string ;
@@ -1178,7 +1169,6 @@ Tag for the government regional industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_healthcare
 	a gist:IndustrySector ;
-	rdfs:label "Healthcare"^^xsd:string ;
 	skos:altLabel "Healthcare"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the healthcare industry sector"""^^xsd:string ;
@@ -1188,8 +1178,10 @@ Tag for the healthcare industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_hospitality-Leisure
 	a gist:IndustrySector ;
-	rdfs:label "Hospitality Leisure"^^xsd:string ;
-	skos:altLabel "Hospitality-Leisure"^^xsd:string ;
+	skos:altLabel
+		"Hospitality Leisure"^^xsd:string ,
+		"Hospitality-Leisure"^^xsd:string
+		;
 	skos:definition """STIX 2.1 description:
 Tag for the hospitality leisure industry sector"""^^xsd:string ;
 	skos:prefLabel "hospitality-leisure"^^xsd:string ;
@@ -1198,7 +1190,6 @@ Tag for the hospitality leisure industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_infrastructure
 	a gist:IndustrySector ;
-	rdfs:label "Infrastructure"^^xsd:string ;
 	skos:altLabel "Infrastructure"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the infrastructure industry sector"""^^xsd:string ;
@@ -1208,7 +1199,6 @@ Tag for the infrastructure industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_infrastructure-Dams
 	a gist:IndustrySector ;
-	rdfs:label "Dams"^^xsd:string ;
 	skos:altLabel "Dams"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Infrastructure-Dams industry sector"""^^xsd:string ;
@@ -1218,7 +1208,6 @@ Tag for the Infrastructure-Dams industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_infrastructure-Nuclear
 	a gist:IndustrySector ;
-	rdfs:label "Nuclear"^^xsd:string ;
 	skos:altLabel "Nuclear"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Nuclear industry sector"""^^xsd:string ;
@@ -1228,7 +1217,6 @@ Tag for the Nuclear industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_infrastructure-Water
 	a gist:IndustrySector ;
-	rdfs:label "Water"^^xsd:string ;
 	skos:altLabel "Water"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Water industry sector"""^^xsd:string ;
@@ -1238,7 +1226,6 @@ Tag for the Water industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_insurance
 	a gist:IndustrySector ;
-	rdfs:label "Insurance"^^xsd:string ;
 	skos:altLabel "Insurance"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Insurance industry sector"""^^xsd:string ;
@@ -1248,7 +1235,6 @@ Tag for the Insurance industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_manufacturing
 	a gist:IndustrySector ;
-	rdfs:label "Manufacturing"^^xsd:string ;
 	skos:altLabel "Manufacturing"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Manufacturing industry sector"""^^xsd:string ;
@@ -1258,7 +1244,6 @@ Tag for the Manufacturing industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_mining
 	a gist:IndustrySector ;
-	rdfs:label "Mining"^^xsd:string ;
 	skos:altLabel "Mining"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Mining industry sector"""^^xsd:string ;
@@ -1268,8 +1253,8 @@ Tag for the Mining industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_non-Profit
 	a gist:IndustrySector ;
-	rdfs:label "Non Profit"^^xsd:string ;
 	skos:altLabel
+		"Non Profit"^^xsd:string ,
 		"Non-Profit"^^xsd:string ,
 		"Nonprofit"^^xsd:string
 		;
@@ -1281,7 +1266,6 @@ Tag for the Non-Profit industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_pharmaceuticals
 	a gist:IndustrySector ;
-	rdfs:label "Pharmaceuticals"^^xsd:string ;
 	skos:altLabel "Pharmaceuticals"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Pharmaceuticals industry sector"""^^xsd:string ;
@@ -1291,7 +1275,6 @@ Tag for the Pharmaceuticals industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_retail
 	a gist:IndustrySector ;
-	rdfs:label "Retail"^^xsd:string ;
 	skos:altLabel "Retail"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Retail industry sector"""^^xsd:string ;
@@ -1301,7 +1284,6 @@ Tag for the Retail industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_technology
 	a gist:IndustrySector ;
-	rdfs:label "Technology"^^xsd:string ;
 	skos:altLabel "Technology"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Technology industry sector"""^^xsd:string ;
@@ -1311,7 +1293,6 @@ Tag for the Technology industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_telecommunications
 	a gist:IndustrySector ;
-	rdfs:label "Telecommunications"^^xsd:string ;
 	skos:altLabel "Telecommunications"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Telecommunications industry sector"""^^xsd:string ;
@@ -1321,7 +1302,6 @@ Tag for the Telecommunications industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_transportation
 	a gist:IndustrySector ;
-	rdfs:label "Transportation"^^xsd:string ;
 	skos:altLabel "Transportation"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Transportation industry sector"""^^xsd:string ;
@@ -1331,7 +1311,6 @@ Tag for the Transportation industry sector"""^^xsd:string ;
 
 gist:_IndustrySector_utilities
 	a gist:IndustrySector ;
-	rdfs:label "Utilities"^^xsd:string ;
 	skos:altLabel "Utilities"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 Tag for the Utilities industry sector"""^^xsd:string ;
