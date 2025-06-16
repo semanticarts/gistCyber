@@ -28,6 +28,13 @@
 	skos:prefLabel "gistCyber"^^xsd:string ;
 	.
 
+:SoftwareDeflect
+	a owl:Class ;
+	rdfs:subClassOf gist:Defect ;
+	skos:definition "A SoftwareDefect is a section of a code that may lead to a vulnerability."^^xsd:string ;
+	skos:prefLabel "Software Defect"^^xsd:string ;
+	.
+
 gist:AccountType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
@@ -132,6 +139,8 @@ The goal of a competitor is to gain an advantage in business with respect to the
 gist:ConfigurationVulnerability
 	a owl:Class ;
 	rdfs:subClassOf gist:Vulnerabity ;
+	skos:definition "A ConfigurationVulnerability is a vulnerability that is due to the misconfiguration of a software rather than a problem with the software's code. For example, if administrators do not change the default admin password to a server or service."^^xsd:string ;
+	skos:prefLabel "Configuration Vulnerability"^^xsd:string ;
 	.
 
 gist:CourseOfAction
@@ -457,6 +466,8 @@ gist:Procedure
 gist:ProtocolVulnerability
 	a owl:Class ;
 	rdfs:subClassOf gist:Vulnerabity ;
+	skos:definition "A ProtocolVulnerability is a vulnerability exposed by users or agents not following the defined security protocols (policies) of the enterprise."^^xsd:string ;
+	skos:prefLabel "Protocol Vulnerability"^^xsd:string ;
 	.
 
 gist:Report
@@ -485,7 +496,7 @@ A sensationalist may be an individual or small group of people motivated primari
 
 gist:SoftwareVulnerability
 	a owl:Class ;
-	rdfs:subClassOf gist:Defect ;
+	rdfs:subClassOf gist:Vulnerabity ;
 	rdfs:label "Software Vulnerability"^^xsd:string ;
 	skos:definition "A Vulnerability is a weakness or defect in the requirements, designs, or implementations of the computational logic (e.g., code) found in software and some hardware components (e.g., firmware) that can be directly exploited to negatively impact the confidentiality, integrity, or availability of that system. \\n\\nCVE is a list of information security vulnerabilities and exposures that provides common names for publicly known problems [CVE]. For example, if a piece of malware exploits CVE-2015-12345, a Malware object could be linked to a Vulnerability object that references CVE-2015-12345. \\n\\nThe Vulnerability SDO is primarily used to link to external definitions of vulnerabilities or to describe 0-day vulnerabilities that do not yet have an external definition. Typically, other SDOs assert relationships to Vulnerability objects when a specific vulnerability is targeted and exploited as part of malicious cyber activity. As such, Vulnerability objects can be used as a linkage to the asset management and compliance process."^^xsd:string ;
 	.
@@ -659,7 +670,9 @@ gist:UnknownThreatActor
 
 gist:Vulnerabity
 	a owl:Class ;
-	rdfs:label "Vulnerability"^^xsd:string ;
+	rdfs:subClassOf gist:Weakness ;
+	skos:definition "A Vulnerability is a weakness or defect in the requirements, designs, or implementations of the computational logic (e.g., code) found in software and some hardware components (e.g., firmware) that can be directly exploited to negatively impact the confidentiality, integrity, or availability of that system. \\n\\nCVE is a list of information security vulnerabilities and exposures that provides common names for publicly known problems [CVE]. For example, if a piece of malware exploits CVE-2015-12345, a Malware object could be linked to a Vulnerability object that references CVE-2015-12345. \\n\\nThe Vulnerability SDO is primarily used to link to external definitions of vulnerabilities or to describe 0-day vulnerabilities that do not yet have an external definition. Typically, other SDOs assert relationships to Vulnerability objects when a specific vulnerability is targeted and exploited as part of malicious cyber activity. As such, Vulnerability objects can be used as a linkage to the asset management and compliance process."^^xsd:string ;
+	skos:prefLabel "Vulnerability"^^xsd:string ;
 	.
 
 gist:Weakness
