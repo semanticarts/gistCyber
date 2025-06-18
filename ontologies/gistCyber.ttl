@@ -28,6 +28,14 @@
 	skos:prefLabel "gistCyber"^^xsd:string ;
 	.
 
+skos:definition
+	a owl:AnnotationProperty ;
+	.
+
+skos:prefLabel
+	a owl:AnnotationProperty ;
+	.
+
 gist:AccountType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
@@ -307,6 +315,8 @@ gist:IndicatorType
 gist:IndustrySector
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A Category Class for the Industry Sector"^^xsd:string ;
+	skos:prefLabel "Industry Sector"^^xsd:string ;
 	.
 
 gist:Infrastructure
@@ -413,9 +423,23 @@ gist:MalwareAnalysis
 	a owl:Class ;
 	.
 
+gist:MalwareCapability
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A Category class who's instances provide categorization by capability of malware. Describes categories of what a malware can do."^^xsd:string ;
+	skos:prefLabel "Malware Capability"^^xsd:string ;
+	.
+
 gist:MalwareResult
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	.
+
+gist:MalwareType
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating a particular kind of maleware (according to STIX)"^^xsd:string ;
+	skos:prefLabel "Malware Type"^^xsd:string ;
 	.
 
 gist:NationStateThreatActor
@@ -438,6 +462,21 @@ These actors typically have access to significant support, resources, training, 
 	skos:prefLabel "Nation State Threat Actor"^^xsd:string ;
 	.
 
+gist:NetworkSocketAddressFamily
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating a particular family of network socket types."^^xsd:string ;
+	skos:example "IPv4, IPv6"^^xsd:string ;
+	skos:prefLabel "Network Socket Address Family"^^xsd:string ;
+	.
+
+gist:NetworkSocketType
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "Categories of socket types of network traffic"^^xsd:string ;
+	skos:prefLabel "Network Socket Type"^^xsd:string ;
+	.
+
 gist:Note
 	a owl:Class ;
 	.
@@ -450,8 +489,33 @@ gist:Opinion
 	a owl:Class ;
 	.
 
+gist:OpinionEnumeration
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating a degree of agreement."^^xsd:string ;
+	skos:note """STIX 2.1 description:
+This enumeration captures a degree of agreement with the information in a STIX Object. It is an ordered enumeration, with the earlier terms representing disagreement, the middle term neutral, and the later terms representing agreement."""^^xsd:string ;
+	skos:prefLabel "Opinion Enumeration"^^xsd:string ;
+	.
+
+gist:PatternType
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A language used to express and indicator pattern"^^xsd:string ;
+	skos:prefLabel "Pattern Type"^^xsd:string ;
+	skos:scopeNote "PatternType is a non-exhaustive, open vocabulary that covers common pattern languages and is intended to characterize the pattern language that an indicator pattern is expressed in."^^xsd:string ;
+	.
+
 gist:Procedure
 	a owl:Class ;
+	.
+
+gist:ProcessorArchitecture
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition ""^^xsd:string ;
+	skos:note ""^^xsd:string ;
+	skos:prefLabel "Processor Architecture"^^xsd:string ;
 	.
 
 gist:ProtocolVulnerability
@@ -461,6 +525,19 @@ gist:ProtocolVulnerability
 
 gist:Report
 	a owl:Class ;
+	.
+
+gist:ReportType
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating the primary purpose or subject of a report."^^xsd:string ;
+	skos:example "A report that contains malware and indicators for that malware has a report type of 'malware'."^^xsd:string ;
+	skos:note
+		"Just because a report contains objects of a type does not mean that the report should include that type. If the objects are there to simply provide evidence or context for other objects, it is not necessary to include them in the type."^^xsd:string ,
+		"Report types are not mutually exclusive: a Report can be both a malware report and a tool report."^^xsd:string
+		;
+	skos:prefLabel "Report Type"^^xsd:string ;
+	gist:stixTerm "report-type-ov"^^xsd:string ;
 	.
 
 gist:SensationalistThreatActor
@@ -526,6 +603,15 @@ gist:StixDomainObject
 
 gist:StixObject
 	a owl:Class ;
+	.
+
+gist:StixRegion
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A physical location used to categorize various aspects of threats and incidents."^^xsd:string ;
+	skos:example "Origin of a threat actor, area targeted by a threat, location of victims and infrastructure."^^xsd:string ;
+	skos:note "Instances of this class are not categories in the usual sense, they are places being used to categorize things by location."^^xsd:string ;
+	skos:prefLabel "Region"^^xsd:string ;
 	.
 
 gist:StixRelationshipObject
@@ -639,6 +725,16 @@ gist:Tool
 	skos:definition "STIX Definition:Tools are legitimate software that can be used by threat actors to perform attacks. Knowing how and when threat actors use such tools can be important for understanding how campaigns are executed. Unlike malware, these tools or software packages are often found on a system and have legitimate purposes for power users, system administrators, network administrators, or even normal users. Remote access tools (e.g., RDP) and network scanning tools (e.g., Nmap) are examples of Tools that may be used by a Threat Actor during an attack. \\n\\nThe Tool SDO characterizes the properties of these software tools and can be used as a basis for making an assertion about how a Threat Actor uses them during an attack. It contains properties to name and describe the tool, a list of Kill Chain Phases the tool can be used to carry out, and the version of the tool. \\n\\nThis SDO MUST NOT be used to characterize malware. Further, Tool MUST NOT be used to characterize tools used as part of a course of action in response to an attack."^^xsd:string ;
 	.
 
+gist:ToolType
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating a kind of tool that can be used to perform attacks."^^xsd:string ;
+	skos:example ""^^xsd:string ;
+	skos:note ""^^xsd:string ;
+	skos:prefLabel "Tool Type"^^xsd:string ;
+	gist:stixTerm "tool-type-ov"^^xsd:string ;
+	.
+
 gist:UnknownThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
@@ -664,5 +760,66 @@ gist:Vulnerabity
 
 gist:Weakness
 	a owl:Class ;
+	.
+
+gist:WindowsIntegrityLevel
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition """STIX 2.1 description: 
+The Windows integrity level enumeration is currently used in the following STIX Cyber-observable Object(s):
+●      Process (Windows Process extension)
+
+
+Windows integrity levels are a security feature and represent the trustworthiness of an object."""^^xsd:string ;
+	skos:example ""^^xsd:string ;
+	skos:note "This is described in STIX as an enumeration but no order of the enumeration is given."^^xsd:string ;
+	skos:prefLabel "Windows™ Integrity Level Enumeration"^^xsd:string ;
+	gist:stixTerm "windows-integrity-level-enum"^^xsd:string ;
+	.
+
+gist:WindowsPEBinaryType
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition """STIX 2.1 description: 
+The Windows PE binary vocabulary is currently used in the following SCO(s):
+●      File (Windows PE Binary extension)
+
+An open vocabulary of Windows PE binary types."""^^xsd:string ;
+	skos:example ""^^xsd:string ;
+	skos:note ""^^xsd:string ;
+	skos:prefLabel "Windows™ PE Binary Vocabulary"^^xsd:string ;
+	gist:stixTerm "windows-pebinary-type-ov"^^xsd:string ;
+	.
+
+gist:WindowsServiceStartType
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating the start type of a Windows service."^^xsd:string ;
+	skos:example ""^^xsd:string ;
+	skos:note """STIX 2.1 description: 
+The Windows service start type vocabulary is currently used in the following SCO(s):
+●      Process (Windows Service extension)
+
+An enumeration of Windows service start types."""^^xsd:string ;
+	skos:prefLabel "Windows™ Service Start Type Enumeration"^^xsd:string ;
+	gist:stixTerm "windows-service-start-type-enum"^^xsd:string ;
+	.
+
+gist:WindowsServiceStatus
+	a owl:Class ;
+	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category describing Windows service statuses."^^xsd:string ;
+	skos:example ""^^xsd:string ;
+	skos:note """STIX 2.1 description:
+The Windows service status vocabulary is currently used in the following SCO(s):
+●      Process (Windows Service extension)
+
+An enumeration of Windows service statuses."""^^xsd:string ;
+	skos:prefLabel "Windows™ Service Status Enumeration"^^xsd:string ;
+	gist:stixTerm "windows-service-status-enum"^^xsd:string ;
+	.
+
+gist:stixTerm
+	a owl:AnnotationProperty ;
 	.
 
