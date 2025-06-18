@@ -679,3 +679,21 @@ gist:Weakness
 	a owl:Class ;
 	.
 
+gist:executes
+	a owl:DatatypeProperty ;
+	skos:definition "An action of running a method or process (code) on a computing device or platform."^^xsd:string ;
+	skos:prefLabel "executes"^^xsd:string ;
+	.
+
+gist:exploits
+	a owl:DatatypeProperty ;
+	skos:definition "An agent taking advantage of a vulnerabilityThe act of executing code that implements the realization of the vulnerability."^^xsd:string ;
+	skos:prefLabel "exploits"^^xsd:string ;
+	.
+
+gist:relatedTechniqueIdentifier
+	a owl:DatatypeProperty ;
+	skos:definition "The external identifier on a Technique. Example given: 'T1985.2\""^^xsd:string ;
+	skos:prefLabel "Related Technique Identifier"^^xsd:string ;
+	.
+

@@ -1,3 +1,4 @@
+@prefix : <https://w3id.org/semanticarts/ontology/sdo-properties#> .
 @prefix gist: <https://w3id.org/semanticarts/ns/ontology/gist/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -15,6 +16,30 @@
 
 swrla:isRuleEnabled
 	a owl:AnnotationProperty ;
+	.
+
+gist:Artifact
+	a owl:Class ;
+	.
+
+gist:File
+	a owl:Class ;
+	.
+
+gist:Software
+	a owl:Class ;
+	.
+
+gist:StixCyberObservable
+	a owl:Class ;
+	.
+
+gist:StixObject
+	a owl:Class ;
+	.
+
+gist:StixRelationshipObject
+	a owl:Class ;
 	.
 
 gist:stix_abstract
@@ -333,28 +358,7 @@ gist:stix_modules
 
 gist:stix_name
 	a owl:DatatypeProperty ;
-	rdfs:label
-		"name"@en-US ,
-		"name"^^xsd:string
-		;
-	rdfs:comment
-		"A name or characterizing text used to identify the Infrastructure."@en-US ,
-		"A name used to identify the Attack Pattern."@en-US ,
-		"A name used to identify the Campaign."@en-US ,
-		"A name used to identify the Course of Action."@en-US ,
-		"A name used to identify the Grouping."@en-US ,
-		"A name used to identify the Incident."@en-US ,
-		"A name used to identify the Indicator. Producers SHOULD provide this property to help products and analysts understand what this Indicator actually does."@en-US ,
-		"A name used to identify the Location."@en-US ,
-		"A name used to identify the Report."@en-US ,
-		"A name used to identify the Vulnerability."@en-US ,
-		"A name used to identify the malware instance or family, as specified by the producer of the SDO. For a malware family the name MUST be defined. If a name for a malware instance is not available, the SHA-256 hash value or sample's filename MAY be used instead."@en-US ,
-		"A name used to identify this Intrusion Set."@en-US ,
-		"A name used to identify this Threat Actor or Threat Actor group."@en-US ,
-		"The name of this Identity. When referring to a specific entity (e.g., an individual or organization), this property SHOULD contain the canonical name of the specific entity."@en-US ,
-		"The name used to identify the Tool."@en-US
-		;
-	rdfs:range xsd:string ;
+	rdfs:comment "The name of this Identity. When referring to a specific entity (e.g., an individual or organization), this property SHOULD contain the canonical name of the specific entity."@en-US ;
 	.
 
 gist:stix_network_details
