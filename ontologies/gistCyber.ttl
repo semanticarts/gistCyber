@@ -26,14 +26,6 @@
 	skos:prefLabel "gistCyber"^^xsd:string ;
 	.
 
-skos:definition
-	a owl:AnnotationProperty ;
-	.
-
-skos:prefLabel
-	a owl:AnnotationProperty ;
-	.
-
 gist:AccountType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
