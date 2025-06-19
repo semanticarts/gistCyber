@@ -2,7 +2,6 @@
 # imports: https://w3id.org/semanticarts/ontology/gistComputing
 # imports: https://w3id.org/semanticarts/ontology/sdo-properties
 # imports: https://w3id.org/semanticarts/ontology/stix-properties
-# imports: https://w3id.org/semanticarts/ontology/vocabulary
 
 @prefix : <https://ontologies.semanticarts.com/o/gistCyber#> .
 @prefix gist: <https://w3id.org/semanticarts/ns/ontology/gist/> .
@@ -20,7 +19,7 @@
 		<https://w3id.org/semanticarts/ontology/gistBFO> ,
 		<https://w3id.org/semanticarts/ontology/gistComputing> ,
 		<https://w3id.org/semanticarts/ontology/sdo-properties> ,
-		<https://w3id.org/semanticarts/ontology/stix-properties> 
+		<https://w3id.org/semanticarts/ontology/stix-properties>
 		;
 	owl:versionIRI <https://ontologies.semanticarts.com/o/gistCyberX.x.x> ;
 	skos:definition "Sub-gist for cybersecurity."^^xsd:string ;
@@ -500,7 +499,7 @@ This enumeration captures a degree of agreement with the information in a STIX O
 gist:PatternType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-skos:definition "A language used to express an indicator pattern"^^xsd:string ;
+	skos:definition "A language used to express an indicator pattern"^^xsd:string ;
 	skos:prefLabel "Pattern Type"^^xsd:string ;
 	skos:scopeNote "PatternType is a non-exhaustive, open vocabulary that covers common pattern languages and is intended to characterize the pattern language that an indicator pattern is expressed in."^^xsd:string ;
 	.
@@ -820,5 +819,7 @@ An enumeration of Windows service statuses."""^^xsd:string ;
 
 gist:stixTerm
 	a owl:AnnotationProperty ;
+	skos:definition "A property to link an instance that represents an element of the STIX vocabulary to the associated STIX term/tag that is used in associated JSON representations."^^xsd:string ;
+	skos:prefLabel "STIX Term"^^xsd:string ;
 	.
 
