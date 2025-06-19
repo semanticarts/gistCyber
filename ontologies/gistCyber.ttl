@@ -20,8 +20,7 @@
 		<https://w3id.org/semanticarts/ontology/gistBFO> ,
 		<https://w3id.org/semanticarts/ontology/gistComputing> ,
 		<https://w3id.org/semanticarts/ontology/sdo-properties> ,
-		<https://w3id.org/semanticarts/ontology/stix-properties> ,
-		<https://w3id.org/semanticarts/ontology/vocabulary>
+		<https://w3id.org/semanticarts/ontology/stix-properties> 
 		;
 	owl:versionIRI <https://ontologies.semanticarts.com/o/gistCyberX.x.x> ;
 	skos:definition "Sub-gist for cybersecurity."^^xsd:string ;
