@@ -500,7 +500,7 @@ This enumeration captures a degree of agreement with the information in a STIX O
 gist:PatternType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-	skos:definition "A language used to express and indicator pattern"^^xsd:string ;
+skos:definition "A language used to express an indicator pattern"^^xsd:string ;
 	skos:prefLabel "Pattern Type"^^xsd:string ;
 	skos:scopeNote "PatternType is a non-exhaustive, open vocabulary that covers common pattern languages and is intended to characterize the pattern language that an indicator pattern is expressed in."^^xsd:string ;
 	.
