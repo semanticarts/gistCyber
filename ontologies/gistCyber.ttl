@@ -54,6 +54,8 @@ ActivistThreatActor  includes actors sometimes referred to as anarchists, cyber 
 gist:AttackMotivation
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating an identified type of motivation for a cyber attack."^^xsd:string ;
+	skos:prefLabel "Attack Motivation"^^xsd:string ;
 	.
 
 gist:AttackPattern
