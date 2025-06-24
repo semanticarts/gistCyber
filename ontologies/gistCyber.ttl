@@ -529,7 +529,7 @@ gist:Procedure
 gist:ProcessorArchitecture
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-	skos:definition ""^^xsd:string ;
+	skos:definition "An architecture label used to categorize the type of a particular processor."^^xsd:string ;
 	skos:note ""^^xsd:string ;
 	skos:prefLabel "Processor Architecture"^^xsd:string ;
 	.
@@ -705,7 +705,7 @@ gist:ThreatActor
 gist:ThreatActorRole
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-	skos:definition "A category indicating the role of an actor in a security event."^^xsd:string ;
+	skos:definition "A category indicating the role of an actor in a particular threat."^^xsd:string ;
 	skos:prefLabel "Threat Actor Role"^^xsd:string ;
 	.
 
@@ -719,7 +719,8 @@ gist:ThreatActorSophistication
 gist:ThreatActorType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-	skos:definition """STIX 2.1 description
+	skos:definition "A category indicating the kind of threat actor involved in a particular threat."^^xsd:string ;
+	skos:note """STIX 2.1 description
   Threat actor type is an open vocabulary used to describe what type of threat actor the individual or group is. For example, some threat actors are competitors who try to steal information, while others are activists who act in support of a social or political cause. Actor types are not mutually exclusive: a threat actor can be both a disgruntled insider and a spy. [Casey 2007])"""^^xsd:string ;
 	skos:prefLabel "Threat Actor Type"^^xsd:string ;
 	.
@@ -785,14 +786,17 @@ gist:Weakness
 gist:WindowsIntegrityLevel
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-	skos:definition """STIX 2.1 description: 
+	skos:definition "A category indicating the level of trustworthiness of an object."^^xsd:string ;
+	skos:example ""^^xsd:string ;
+	skos:note
+		"""STIX 2.1 description: 
 The Windows integrity level enumeration is currently used in the following STIX Cyber-observable Object(s):
 ●      Process (Windows Process extension)
 
 
-Windows integrity levels are a security feature and represent the trustworthiness of an object."""^^xsd:string ;
-	skos:example ""^^xsd:string ;
-	skos:note "This is described in STIX as an enumeration but no order of the enumeration is given."^^xsd:string ;
+Windows integrity levels are a security feature and represent the trustworthiness of an object."""^^xsd:string ,
+		"This is described in STIX as an enumeration but no order of the enumeration is given."^^xsd:string
+		;
 	skos:prefLabel "Windows™ Integrity Level Enumeration"^^xsd:string ;
 	gist:stixTerm "windows-integrity-level-enum"^^xsd:string ;
 	.
@@ -800,13 +804,13 @@ Windows integrity levels are a security feature and represent the trustworthines
 gist:WindowsPEBinaryType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-	skos:definition """STIX 2.1 description: 
+	skos:definition "A category indicating the kind of file for a Windows system."^^xsd:string ;
+	skos:example ""^^xsd:string ;
+	skos:note """STIX 2.1 description: 
 The Windows PE binary vocabulary is currently used in the following SCO(s):
 ●      File (Windows PE Binary extension)
 
 An open vocabulary of Windows PE binary types."""^^xsd:string ;
-	skos:example ""^^xsd:string ;
-	skos:note ""^^xsd:string ;
 	skos:prefLabel "Windows™ PE Binary Vocabulary"^^xsd:string ;
 	gist:stixTerm "windows-pebinary-type-ov"^^xsd:string ;
 	.
@@ -828,7 +832,7 @@ An enumeration of Windows service start types."""^^xsd:string ;
 gist:WindowsServiceStatus
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-	skos:definition "A category describing Windows service statuses."^^xsd:string ;
+	skos:definition "A category indicating a status for a Windows service."^^xsd:string ;
 	skos:example ""^^xsd:string ;
 	skos:note """STIX 2.1 description:
 The Windows service status vocabulary is currently used in the following SCO(s):
