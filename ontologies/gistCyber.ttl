@@ -29,6 +29,8 @@
 gist:AccountType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating a kind of user account type."^^xsd:string ;
+	skos:prefLabel "Account Type"^^xsd:string ;
 	.
 
 gist:ActivistThreatActor
@@ -82,6 +84,9 @@ gist:AttackPattern
 gist:AttackResourceLevel
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating the level of resources an attack may have at it's disposal."^^xsd:string ;
+	skos:prefLabel "Attack Resource Level"^^xsd:string ;
+	skos:scopeNote 'This is not to be confused with the "resource level" that an attack is conducted on, like a personal computer or cloud system.'^^xsd:string ;
 	.
 
 gist:Campaign
@@ -198,11 +203,16 @@ Intellectual property theft, extortion via ransomware, and physical destruction 
 gist:EncryptionAlgorithm
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "An algorithm used as a means to categorize the encryption type of digital artifacts such as emails and files."^^xsd:string ;
+	skos:example "An email was encrypted using the AES-256-GCM cipher, as defined in [NIST SP800-38D]"^^xsd:string ;
+	skos:prefLabel "Encryption Algorithm"^^xsd:string ;
 	.
 
 gist:ExtensionTypes
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating the type of an extension to STIX."^^xsd:string ;
+	skos:prefLabel "Extension Types"^^xsd:string ;
 	.
 
 gist:Grouping
@@ -215,6 +225,8 @@ gist:Grouping
 gist:GroupingContext
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating groups that sets of STIX content belong to."^^xsd:string ;
+	skos:prefLabel "Grouping Context"^^xsd:string ;
 	.
 
 gist:HackerThreatActor
@@ -240,6 +252,8 @@ Hackers may use advanced skills or simple attack scripts they have downloaded.""
 gist:HashingAlgorithm
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "An algorithm used to categorize how a particular resource was hashed."^^xsd:string ;
+	skos:prefLabel "Hashing Algorithm"^^xsd:string ;
 	.
 
 gist:Identity
@@ -278,11 +292,15 @@ gist:Identity
 gist:IdentityClass
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating the kind of actors involved in a cybersecurity incident."^^xsd:string ;
+	skos:prefLabel "Identity Class"^^xsd:string ;
 	.
 
 gist:ImplementationLanguage
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating the programming language in which a particular software, script, or program is written."^^xsd:string ;
+	skos:prefLabel "Implementation Language"^^xsd:string ;
 	.
 
 gist:Incident
@@ -302,12 +320,14 @@ gist:Indicator
 gist:IndicatorType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category to indicate the type of activity being done."^^xsd:string ;
+	skos:prefLabel "Indicator Type"^^xsd:string ;
 	.
 
 gist:IndustrySector
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-	skos:definition "A Category Class for the Industry Sector"^^xsd:string ;
+	skos:definition "A category indicating that a particular industry sector is relevant to an asset, organization, or individual involved in some threat."^^xsd:string ;
 	skos:prefLabel "Industry Sector"^^xsd:string ;
 	.
 
@@ -318,6 +338,8 @@ gist:Infrastructure
 gist:InfrastructureType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating the kind of infrastructure used in a cybersecurity event."^^xsd:string ;
+	skos:prefLabel "Infrastructure Type"^^xsd:string ;
 	.
 
 gist:InsiderAccidentalThreatActor
@@ -418,19 +440,21 @@ gist:MalwareAnalysis
 gist:MalwareCapability
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-	skos:definition "A Category class who's instances provide categorization by capability of malware. Describes categories of what a malware can do."^^xsd:string ;
+	skos:definition "A category indicating a type of malware capability."^^xsd:string ;
 	skos:prefLabel "Malware Capability"^^xsd:string ;
 	.
 
 gist:MalwareResult
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating the result of a malware evaluation."^^xsd:string ;
+	skos:prefLabel "Malware Result"^^xsd:string ;
 	.
 
 gist:MalwareType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-	skos:definition "A category indicating a particular kind of maleware (according to STIX)"^^xsd:string ;
+	skos:definition "A category indicating the strategy of a particular kind of malware."^^xsd:string ;
 	skos:prefLabel "Malware Type"^^xsd:string ;
 	.
 
@@ -465,7 +489,7 @@ gist:NetworkSocketAddressFamily
 gist:NetworkSocketType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-	skos:definition "Categories of socket types of network traffic"^^xsd:string ;
+	skos:definition "A category indicating a type of socket regarding network traffic."^^xsd:string ;
 	skos:prefLabel "Network Socket Type"^^xsd:string ;
 	.
 
@@ -493,7 +517,7 @@ This enumeration captures a degree of agreement with the information in a STIX O
 gist:PatternType
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
-	skos:definition "A language used to express an indicator pattern"^^xsd:string ;
+	skos:definition "A language used to categorize indicator patterns."^^xsd:string ;
 	skos:prefLabel "Pattern Type"^^xsd:string ;
 	skos:scopeNote "PatternType is a non-exhaustive, open vocabulary that covers common pattern languages and is intended to characterize the pattern language that an indicator pattern is expressed in."^^xsd:string ;
 	.
@@ -681,11 +705,15 @@ gist:ThreatActor
 gist:ThreatActorRole
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category indicating the role of an actor in a security event."^^xsd:string ;
+	skos:prefLabel "Threat Actor Role"^^xsd:string ;
 	.
 
 gist:ThreatActorSophistication
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
+	skos:definition "A category to indicate the level of complexity of a particular threat."^^xsd:string ;
+	skos:prefLabel "Threat Actor Sophistication"^^xsd:string ;
 	.
 
 gist:ThreatActorType
