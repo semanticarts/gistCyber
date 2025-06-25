@@ -29,7 +29,7 @@
 :SoftwareDeflect
 	a owl:Class ;
 	rdfs:subClassOf gist:Defect ;
-	skos:definition "A SoftwareDefect is a section of a code that may lead to a vulnerability."^^xsd:string ;
+skos:definition "A SoftwareDefect is a section of code that may lead to a vulnerability."^^xsd:string ;
 	skos:prefLabel "Software Defect"^^xsd:string ;
 	.
 
