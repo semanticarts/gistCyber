@@ -1987,11 +1987,12 @@ gistx:_ProcessorArchitecture_x86
 	gist:stixTerm "x86"^^xsd:string ;
 	.
 
-gistx:_ProcessorArchitecture_x8664
+gistx:_ProcessorArchitecture_x86-64
 	a gist:ProcessorArchitecture ;
+	skos:altLabel "64-bit x86"^^xsd:string ;
 	skos:definition """STIX 2.1 description:
 	Specifies the 64-bit x86 architecture."""^^xsd:string ;
-	skos:prefLabel "64-bit x86"^^xsd:string ;
+	skos:prefLabel "x86-64"^^xsd:string ;
 	gist:stixTerm "x86-64"^^xsd:string ;
 	.
 
