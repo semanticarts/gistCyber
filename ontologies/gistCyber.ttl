@@ -26,10 +26,10 @@
 	skos:prefLabel "gistCyber"^^xsd:string ;
 	.
 
-:SoftwareDeflect
+:SoftwareDefect
 	a owl:Class ;
 	rdfs:subClassOf gist:Defect ;
-skos:definition "A SoftwareDefect is a section of code that may lead to a vulnerability."^^xsd:string ;
+	skos:definition "A SoftwareDefect is a section of code that may lead to a vulnerability."^^xsd:string ;
 	skos:prefLabel "Software Defect"^^xsd:string ;
 	.
 
@@ -144,7 +144,7 @@ The goal of a competitor is to gain an advantage in business with respect to the
 gist:ConfigurationVulnerability
 	a owl:Class ;
 	rdfs:subClassOf gist:Vulnerabity ;
-skos:definition "A vulnerability that is due to the misconfiguration of a software rather than a problem with the software's code. For example, if administrators do not change the default admin password to a server or service."^^xsd:string ;
+	skos:definition "A vulnerability that is due to the misconfiguration of a software rather than a problem with the software's code. For example, if administrators do not change the default admin password to a server or service."^^xsd:string ;
 	skos:prefLabel "Configuration Vulnerability"^^xsd:string ;
 	.
 
@@ -864,8 +864,8 @@ gist:executes
 
 gist:exploits
 	a owl:DatatypeProperty ;
-skos:definition "Relates an agent to a vulnerability that the agent is taking advantage of. "^^xsd:string ;
-skos:example "The act of executing code that implements the realization of the vulnerability."^^xsd:string ; 
+	skos:definition "Relates an agent to a vulnerability that the agent is taking advantage of. "^^xsd:string ;
+	skos:example "The act of executing code that implements the realization of the vulnerability."^^xsd:string ;
 	skos:prefLabel "exploits"^^xsd:string ;
 	.
 
