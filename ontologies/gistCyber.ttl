@@ -864,7 +864,8 @@ gist:executes
 
 gist:exploits
 	a owl:DatatypeProperty ;
-	skos:definition "An agent taking advantage of a vulnerabilityThe act of executing code that implements the realization of the vulnerability."^^xsd:string ;
+skos:definition "Relates an agent to a vulnerability that the agent is taking advantage of. "^^xsd:string ;
+skos:example "The act of executing code that implements the realization of the vulnerability."^^xsd:string ; 
 	skos:prefLabel "exploits"^^xsd:string ;
 	.
 
