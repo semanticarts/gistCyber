@@ -338,6 +338,8 @@ gist:IndustrySector
 
 gist:Infrastructure
 	a owl:Class ;
+	skos:definition "A schema of virtual or physical hardware that makes up a computerized system."^^xsd:string ;
+	skos:prefLabel "Infrastructure"^^xsd:string ;
 	.
 
 gist:InfrastructureType
@@ -440,6 +442,8 @@ gist:Malware
 
 gist:MalwareAnalysis
 	a owl:Class ;
+	skos:definition "A report, summary, or otherwise serialized set of comments around a particular malware that may be used in a cyber attack."^^xsd:string ;
+	skos:prefLabel "Malware Analysis"^^xsd:string ;
 	.
 
 gist:MalwareCapability
@@ -500,14 +504,20 @@ gist:NetworkSocketType
 
 gist:Note
 	a owl:Class ;
+	skos:definition "A comment or an observation about a thing."^^xsd:string ;
+	skos:prefLabel "Note"^^xsd:string ;
 	.
 
 gist:ObseveredData
 	a owl:Class ;
+	skos:definition "Information collected through direct experience, measurement, or detection of events."^^xsd:string ;
+	skos:prefLabel "Observed Data"^^xsd:string ;
 	.
 
 gist:Opinion
 	a owl:Class ;
+	skos:definition "An Opinion is an actor's perspective on another thing."^^xsd:string ;
+	skos:prefLabel "Opinion"^^xsd:string ;
 	.
 
 gist:OpinionEnumeration
@@ -529,6 +539,8 @@ gist:PatternType
 
 gist:Procedure
 	a owl:Class ;
+	skos:definition "A Procedure is an organized set of instructions for a computerized system to follow."^^xsd:string ;
+	skos:prefLabel "Procedure"^^xsd:string ;
 	.
 
 gist:ProcessorArchitecture
@@ -548,6 +560,8 @@ gist:ProtocolVulnerability
 
 gist:Report
 	a owl:Class ;
+	skos:definition "A Report is a detailed collection of observations and notes about a particular entity or attack."^^xsd:string ;
+	skos:prefLabel "Report"^^xsd:string ;
 	.
 
 gist:ReportType
@@ -617,15 +631,22 @@ gist:StixBundle
 gist:StixCategoryObject
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
+	skos:definition "An identified group of STIX objects that belong together."^^xsd:string ;
+	skos:prefLabel "STIX Category Object"^^xsd:string ;
+	skos:scopeNote "Instances of these categories, and instances of those instances, may or may not have a definition provided by the STIX specification."^^xsd:string ;
 	.
 
 gist:StixDomainObject
 	a owl:Class ;
 	rdfs:subClassOf gist:StixObject ;
+	skos:definition "A STIX Domain Object is an identified domain with associated STIX metadata and tags."^^xsd:string ;
+	skos:prefLabel "STIX Domain Object"^^xsd:string ;
 	.
 
 gist:StixObject
 	a owl:Class ;
+	skos:definition "A STIX Object is an identified entity with associated STIX metadata and tags."^^xsd:string ;
+	skos:prefLabel "STIX Object"^^xsd:string ;
 	.
 
 gist:StixRegion
@@ -653,11 +674,14 @@ gist:StixRelationshipObject
 
 gist:SubTechnique
 	a owl:Class ;
+	skos:definition "A sub-technique is an action or set of actions to accomplish a goal within the scope of a larger technique or attack pattern."^^xsd:string ;
 	skos:prefLabel "Sub-Technique"^^xsd:string ;
 	.
 
 gist:Tactic
 	a owl:Class ;
+	skos:definition "A Tactic is particular strategy that is employed in an attack."^^xsd:string ;
+	skos:prefLabel "Tactic"^^xsd:string ;
 	.
 
 gist:Technique
@@ -790,6 +814,9 @@ gist:Vulnerability
 
 gist:Weakness
 	a owl:Class ;
+	skos:definition "An exploitable attribute of a piece of software, hardware, or other implementation architecture."^^xsd:string ;
+	skos:prefLabel "Weakness"^^xsd:string ;
+	skos:scopeNote "An exploitable attribute could be a user's behavior patterns."^^xsd:string ;
 	.
 
 gist:WindowsIntegrityLevel
