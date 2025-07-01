@@ -1,0 +1,377 @@
+# imports: https://w3id.org/semanticarts/ontology/gistBFO
+# imports: https://w3id.org/semanticarts/ontology/gistComputing
+# imports: https://w3id.org/semanticarts/ontology/gistCyber
+# imports: https://w3id.org/semanticarts/ontology/sdo-properties
+# imports: https://w3id.org/semanticarts/ontology/stix-properties
+# imports: https://w3id.org/semanticarts/ontology/vocabulary
+
+@prefix gist: <https://w3id.org/semanticarts/ns/ontology/gist/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix taint: <https://www.intelsecurity.com/ontology/intel-corp-tal#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.intelsecurity.com/ontology/intel-corp-tal>
+	a owl:Ontology ;
+	owl:imports
+		<https://w3id.org/semanticarts/ontology/gistBFO> ,
+		<https://w3id.org/semanticarts/ontology/gistComputing> ,
+		<https://w3id.org/semanticarts/ontology/gistCyber> ,
+		<https://w3id.org/semanticarts/ontology/sdo-properties> ,
+		<https://w3id.org/semanticarts/ontology/stix-properties> ,
+		<https://w3id.org/semanticarts/ontology/vocabulary>
+		;
+	skos:prefLabel "Intel Corp Threat Actor Library"^^xsd:string ;
+	.
+
+taint:Access
+	a owl:Class ;
+	rdfs:subClassOf taint:DefiningAttribute ;
+	.
+
+taint:Anarchist
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:CivilActivist
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:Competitor
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	owl:equivalentClass [
+		a owl:Class ;
+		owl:intersectionOf (
+			gist:ThreatActor
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:isCategorizedBy ;
+				owl:hasValue taint:_Access_external ;
+			]
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:isCategorizedBy ;
+				owl:hasValue taint:_Limits_extraLegalMinor ;
+			]
+			[
+				a owl:Restriction ;
+				owl:onProperty gist:isCategorizedBy ;
+				owl:hasValue taint:_Motivation_organizationalGain ;
+			]
+		) ;
+	] ;
+	.
+
+taint:CorruptGovernmentOfficial
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:DataMiner
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:DefiningAttribute
+	a owl:Class ;
+	rdfs:subClassOf gist:Category ;
+	.
+
+taint:EmployeeDisgruntled
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:EmployeeReckless
+	a owl:Class ;
+	rdfs:subClassOf taint:NonHostile ;
+	.
+
+taint:EmployeeUntrained
+	a owl:Class ;
+	rdfs:subClassOf taint:NonHostile ;
+	.
+
+taint:GovernmentCyberWarrior
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:GovernmentSpy
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:Hostile
+	a owl:Class ;
+	rdfs:subClassOf gist:ThreatActor ;
+	.
+
+taint:InfoPartner
+	a owl:Class ;
+	rdfs:subClassOf taint:NonHostile ;
+	.
+
+taint:InternalSpy
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:IrrationalIndividual
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:LegalAdversary
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:Limits
+	a owl:Class ;
+	rdfs:subClassOf taint:DefiningAttribute ;
+	.
+
+taint:Mobster
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:Motivation
+	a owl:Class ;
+	rdfs:subClassOf taint:DefiningAttribute ;
+	.
+
+taint:NonHostile
+	a owl:Class ;
+	rdfs:subClassOf gist:ThreatActor ;
+	.
+
+taint:Objective
+	a owl:Class ;
+	rdfs:subClassOf taint:DefiningAttribute ;
+	.
+
+taint:Outcome
+	a owl:Class ;
+	rdfs:subClassOf taint:DefiningAttribute ;
+	.
+
+taint:RadicalActivist
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:Resources
+	a owl:Class ;
+	rdfs:subClassOf taint:DefiningAttribute ;
+	.
+
+taint:Sensationalist
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:Skills
+	a owl:Class ;
+	rdfs:subClassOf taint:DefiningAttribute ;
+	.
+
+taint:Terrorist
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:Thief
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:Vandal
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:Vendor
+	a owl:Class ;
+	rdfs:subClassOf taint:Hostile ;
+	.
+
+taint:Visibility
+	a owl:Class ;
+	rdfs:subClassOf taint:DefiningAttribute ;
+	.
+
+taint:_Access_external
+	a taint:Access ;
+	.
+
+taint:_Access_internal
+	a taint:Access ;
+	.
+
+taint:_Limits_codeOfConduct
+	a taint:Limits ;
+	.
+
+taint:_Limits_extraLegalMajor
+	a taint:Limits ;
+	.
+
+taint:_Limits_extraLegalMinor
+	a taint:Limits ;
+	.
+
+taint:_Limits_legal
+	a taint:Limits ;
+	.
+
+taint:_Motivation_accidental
+	a taint:Motivation ;
+	.
+
+taint:_Motivation_coercion
+	a taint:Motivation ;
+	.
+
+taint:_Motivation_disgruntlement
+	a taint:Motivation ;
+	.
+
+taint:_Motivation_dominance
+	a taint:Motivation ;
+	skos:definition 'When applied to threat agents, the word "motivation" can have two meanings: cause, the reason a person commits an act, or drive, which describes the level of interest or intensity a person acts on. We use both meaning in our application of the Motivation parameter. Primarily, the Motivation parameter describes case, the emotional or situational reason the agent has taken a harmful action. However, those harmful actions may be unintentional, so the Motivation parameter does not necessarily signify hostile intent.'^^xsd:string ;
+	skos:prefLabel "Motivation"^^xsd:string ;
+	.
+
+taint:_Motivation_ideology
+	a taint:Motivation ;
+	.
+
+taint:_Motivation_notoriety
+	a taint:Motivation ;
+	.
+
+taint:_Motivation_organizationalGain
+	a taint:Motivation ;
+	.
+
+taint:_Motivation_personalFinancialGain
+	a taint:Motivation ;
+	.
+
+taint:_Motivation_personalSatisfaction
+	a taint:Motivation ;
+	.
+
+taint:_Motivation_unpredictable
+	a taint:Motivation ;
+	.
+
+taint:_Objective_copy
+	a taint:Objective ;
+	.
+
+taint:_Objective_damage
+	a taint:Objective ;
+	.
+
+taint:_Objective_deny
+	a taint:Objective ;
+	.
+
+taint:_Objective_destroy
+	a taint:Objective ;
+	.
+
+taint:_Objective_dontCare
+	a taint:Objective ;
+	.
+
+taint:_Objective_take
+	a taint:Objective ;
+	.
+
+taint:_Outcome_acquisition
+	a taint:Outcome ;
+	.
+
+taint:_Outcome_businessAdvantage
+	a taint:Outcome ;
+	.
+
+taint:_Outcome_damage
+	a taint:Outcome ;
+	.
+
+taint:_Outcome_embarrassment
+	a taint:Outcome ;
+	.
+
+taint:_Outcome_techAdvantage
+	a taint:Outcome ;
+	.
+
+taint:_Resources_club
+	a taint:Resources ;
+	.
+
+taint:_Resources_contest
+	a taint:Resources ;
+	.
+
+taint:_Resources_government
+	a taint:Resources ;
+	.
+
+taint:_Resources_individual
+	a taint:Resources ;
+	.
+
+taint:_Resources_organization
+	a taint:Resources ;
+	.
+
+taint:_Resources_team
+	a taint:Resources ;
+	.
+
+taint:_Skills_adept
+	a taint:Skills ;
+	.
+
+taint:_Skills_minimal
+	a taint:Skills ;
+	.
+
+taint:_Skills_none
+	a taint:Skills ;
+	.
+
+taint:_Skills_operational
+	a taint:Skills ;
+	.
+
+taint:_Visibility_clandestine
+	a taint:Visibility ;
+	.
+
+taint:_Visibility_covert
+	a taint:Visibility ;
+	.
+
+taint:_Visibility_dontCare
+	a taint:Visibility ;
+	.
+
+taint:_Visibility_overt
+	a taint:Visibility ;
+	.
+
