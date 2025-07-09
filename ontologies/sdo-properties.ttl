@@ -638,10 +638,6 @@ gist:stix_tool_version
 	rdfs:range xsd:string ;
 	.
 
-gist:stix_type
-	a owl:DatatypeProperty ;
-	.
-
 gist:stix_valid_from
 	a owl:DatatypeProperty ;
 	rdfs:label "valid_from"@en-US ;
