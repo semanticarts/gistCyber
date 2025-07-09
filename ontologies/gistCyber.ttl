@@ -869,6 +869,12 @@ gist:exploits
 	skos:prefLabel "exploits"^^xsd:string ;
 	.
 
+gist:exploitsWeakness
+	a owl:ObjectProperty ;
+	skos:defintion "Relates a Vulnerability to a Weakness that is being exploited."^^xsd:string ;
+	skos:prefLabel "Exploits Weakness"^^xsd:string ;
+	.
+
 gist:relatedTechniqueIdentifier
 	a owl:DatatypeProperty ;
 	skos:definition "The external identifier on a Technique. Example given: 'T1985.2\""^^xsd:string ;
