@@ -680,6 +680,7 @@ gist:SubTechnique
 
 gist:Tactic
 	a owl:Class ;
+	rdfs:subClassOf gist:Category ;
 	skos:definition "A Tactic is particular strategy that is employed in an attack."^^xsd:string ;
 	skos:prefLabel "Tactic"^^xsd:string ;
 	.

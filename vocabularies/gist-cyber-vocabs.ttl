@@ -1,0 +1,114 @@
+@prefix gist: <https://w3id.org/semanticarts/ns/ontology/gist/> .
+@prefix gistx: <https://w3id.org/semanticarts/ns/taxonomy/gist/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/semanticarts/ontology/gist-cyber-category-instances>
+	a owl:Ontology ;
+	owl:versionInfo "2.1.0"^^xsd:string ;
+	.
+
+gistx:_Tactic_TA0001_Initial-Access
+	a gist:Tactic ;
+	<http://www.w3.org/2004/02/skos/core#description> "Initial Access consists of techniques that use various entry vectors to gain their initial foothold within a network. Techniques used to gain a foothold include targeted spearphishing and exploiting weaknesses on public-facing web servers. Footholds gained through initial access may allow for continued access, like valid accounts and use of external remote services, or may be limited-use due to changing passwords."^^xsd:string ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Initial Access"^^xsd:string ;
+	gist:name "Initial Access"^^xsd:string ;
+	.
+
+gistx:_Tactic_TA0002_Execution
+	a gist:Tactic ;
+	<http://www.w3.org/2004/02/skos/core#description> "Execution consists of techniques that result in adversary-controlled code running on a local or remote system. Techniques that run malicious code are often paired with techniques from all other tactics to achieve broader goals, like exploring a network or stealing data. For example, an adversary might use a remote access tool to run a PowerShell script that does Remote System Discovery."^^xsd:string ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Execution"^^xsd:string ;
+	gist:name "Execution"^^xsd:string ;
+	.
+
+gistx:_Tactic_TA0003_Persistence
+	a gist:Tactic ;
+	<http://www.w3.org/2004/02/skos/core#description> "Persistence consists of techniques that adversaries use to keep access to systems across restarts, changed credentials, and other interruptions that could cut off their access. Techniques used for persistence include any access, action, or configuration changes that let them maintain their foothold on systems, such as replacing or hijacking legitimate code or adding startup code."^^xsd:string ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Persistence"^^xsd:string ;
+	gist:name "Persistence"^^xsd:string ;
+	.
+
+gistx:_Tactic_TA0004_Privilege-Escalation
+	a gist:Tactic ;
+	<http://www.w3.org/2004/02/skos/core#description> "The adversary is trying to gain higher-level permissions. Privilege Escalation consists of techniques that adversaries use to gain higher-level permissions on a system or network. Adversaries can often enter and explore a network with unprivileged access but require elevated permissions to follow through on their objectives. Common approaches are to take advantage of system weaknesses, misconfigurations, and vulnerabilities. Examples of elevated access include: SYSTEM/root level local administrator user account with admin-like access user accounts with access to specific system or perform specific function. These techniques often overlap with Persistence techniques, as OS features that let an adversary persist can execute in an elevated context."^^xsd:string ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Privilege Escalation"^^xsd:string ;
+	gist:name "Privilege Escalation"^^xsd:string ;
+	.
+
+gistx:_Tactic_TA0005_Evasion
+	a gist:Tactic ;
+	<http://www.w3.org/2004/02/skos/core#description> "The adversary is trying to avoid being detected. Defense Evasion consists of techniques that adversaries use to avoid detection throughout their compromise. Techniques used for defense evasion include uninstalling/disabling security software or obfuscating/encrypting data and scripts. Adversaries also leverage and abuse trusted processes to hide and masquerade their malware. Other tactics’ techniques are cross-listed here when those techniques include the added benefit of subverting defenses."^^xsd:string ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Evasion"^^xsd:string ;
+	gist:name "Evasion"^^xsd:string ;
+	.
+
+gistx:_Tactic_TA0006_Credential-Access
+	a gist:Tactic ;
+	<http://www.w3.org/2004/02/skos/core#description> "The adversary is trying to steal account names and passwords. Credential Access consists of techniques for stealing credentials like account names and passwords. Techniques used to get credentials include keylogging or credential dumping. Using legitimate credentials can give adversaries access to systems, make them harder to detect, and provide the opportunity to create more accounts to help achieve their goals."^^xsd:string ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Credential Access"^^xsd:string ;
+	gist:name "Credential Access"^^xsd:string ;
+	.
+
+gistx:_Tactic_TA0007_Discovery
+	a gist:Tactic ;
+	<http://www.w3.org/2004/02/skos/core#description> "The adversary is trying to figure out your environment. Discovery consists of techniques an adversary may use to gain knowledge about the system and internal network. These techniques help adversaries observe the environment and orient themselves before deciding how to act. They also allow adversaries to explore what they can control and what’s around their entry point in order to discover how it could benefit their current objective. Native operating system tools are often used toward this post-compromise information-gathering objective."^^xsd:string ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Discovery"^^xsd:string ;
+	gist:name "Discovery"^^xsd:string ;
+	.
+
+gistx:_Tactic_TA0008_Lateral-Movement
+	a gist:Tactic ;
+	<http://www.w3.org/2004/02/skos/core#description> "The adversary is trying to move through your environment. Lateral Movement consists of techniques that adversaries use to enter and control remote systems on a network. Following through on their primary objective often requires exploring the network to find their target and subsequently gaining access to it. Reaching their objective often involves pivoting through multiple systems and accounts to gain. Adversaries might install their own remote access tools to accomplish Lateral Movement or use legitimate credentials with native network and operating system tools, which may be stealthier."^^xsd:string ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Lateral Movement"^^xsd:string ;
+	gist:name "Lateral Movement"^^xsd:string ;
+	.
+
+gistx:_Tactic_TA0009_Collection
+	a gist:Tactic ;
+	<http://www.w3.org/2004/02/skos/core#description> "The adversary is trying to gather data of interest to their goal. Collection consists of techniques adversaries may use to gather information and the sources information is collected from that are relevant to following through on the adversary's objectives. Frequently, the next goal after collecting data is to either steal (exfiltrate) the data or to use the data to gain more information about the target environment. Common target sources include various drive types, browsers, audio, video, and email. Common collection methods include capturing screenshots and keyboard input."^^xsd:string ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Collection"^^xsd:string ;
+	gist:name "Collection"^^xsd:string ;
+	.
+
+gistx:_Tactic_TA0010_Exfiltration
+	a gist:Tactic ;
+	<http://www.w3.org/2004/02/skos/core#description> "The adversary is trying to steal data. Exfiltration consists of techniques that adversaries may use to steal data from your network. Once they’ve collected data, adversaries often package it to avoid detection while removing it. This can include compression and encryption. Techniques for getting data out of a target network typically include transferring it over their command and control channel or an alternate channel and may also include putting size limits on the transmission."^^xsd:string ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Exfiltration"^^xsd:string ;
+	gist:name "Exfiltration"^^xsd:string ;
+	.
+
+gistx:_Tactic_TA0011_Command-and-Control
+	a gist:Tactic ;
+	<http://www.w3.org/2004/02/skos/core#description> "The adversary is trying to communicate with compromised systems to control them. Command and Control consists of techniques that adversaries may use to communicate with systems under their control within a victim network. Adversaries commonly attempt to mimic normal, expected traffic to avoid detection. There are many ways an adversary can establish command and control with various levels of stealth depending on the victim’s network structure and defenses."^^xsd:string ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Command and Control"^^xsd:string ;
+	gist:name "Command and Control"^^xsd:string ;
+	.
+
+gistx:_Tactic_TA0040_Impact
+	a gist:Tactic ;
+	<http://www.w3.org/2004/02/skos/core#description> "The adversary is trying to manipulate, interrupt, or destroy your systems and data. Impact consists of techniques that adversaries use to disrupt availability or compromise integrity by manipulating business and operational processes. Techniques used for impact can include destroying or tampering with data. In some cases, business processes can look fine, but may have been altered to benefit the adversaries’ goals. These techniques might be used by adversaries to follow through on their end goal or to provide cover for a confidentiality breach."^^xsd:string ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Impact"^^xsd:string ;
+	gist:name "Impact"^^xsd:string ;
+	.
+
+gistx:_Tactic_TA0042_Resource-Development
+	a gist:Tactic ;
+	<http://www.w3.org/2004/02/skos/core#description> "TThe adversary is trying to establish resources they can use to support operations. Resource Development consists of techniques that involve adversaries creating, purchasing, or compromising/stealing resources that can be used to support targeting. Such resources include infrastructure, accounts, or capabilities. These resources can be leveraged by the adversary to aid in other phases of the adversary lifecycle, such as using purchased domains to support Command and Control, email accounts for phishing as a part of Initial Access, or stealing code signing certificates to help with Defense Evasion."^^xsd:string ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Resource Development"^^xsd:string ;
+	gist:name "Resource Development"^^xsd:string ;
+	.
+
+gistx:_Tactic_TA0043_Reconnaissance
+	a gist:Tactic ;
+	<http://www.w3.org/2004/02/skos/core#description> "The adversary is trying to gather information they can use to plan future operations. Reconnaissance consists of techniques that involve adversaries actively or passively gathering information that can be used to support targeting. Such information may include details of the victim organization, infrastructure, or staff/personnel. This information can be leveraged by the adversary to aid in other phases of the adversary lifecycle, such as using gathered information to plan and execute Initial Access, to scope and prioritize post-compromise objectives, or to drive and lead further Reconnaissance efforts."^^xsd:string ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Reconnaissance"^^xsd:string ;
+	gist:name "Reconnaissance"^^xsd:string ;
+	.
+
