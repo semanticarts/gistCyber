@@ -117,10 +117,6 @@ gist:Campaign
 	skos:definition "A Campaign is a grouping of adversarial behaviors that describes a set of malicious activities or attacks (sometimes called waves) that occur over a period of time against a specific set of targets. Campaigns usually have well defined objectives and may be part of an Intrusion Set. Campaigns are often attributed to an intrusion set and threat actors. The threat actors may reuse known infrastructure from the intrusion set or may set up new infrastructure specific for conducting that campaign. Campaigns can be characterized by their objectives and the incidents they cause, people or resources they target, and the resources (infrastructure, intelligence, Malware, Tools, etc.) they use. For example, a Campaign could be used to describe a crime syndicate's attack using a specific variant of malware and new C2 servers against the executives of ACME Bank during the summer of 2016 in order to gain secret information about an upcoming merger with another bank.ey target, and the resources (infrastructure, intelligence, Malware, Tools, etc.) they use."^^xsd:string ;
 	.
 
-gist:CategoryObject
-	a owl:Class ;
-	.
-
 gist:CompetitorThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
@@ -143,7 +139,7 @@ The goal of a competitor is to gain an advantage in business with respect to the
 
 gist:ConfigurationVulnerability
 	a owl:Class ;
-	rdfs:subClassOf gist:Vulnerabity ;
+	rdfs:subClassOf gist:Vulnerability ;
 	skos:definition "A vulnerability that is due to the misconfiguration of a software rather than a problem with the software's code. For example, if administrators do not change the default admin password to a server or service."^^xsd:string ;
 	skos:prefLabel "Configuration Vulnerability"^^xsd:string ;
 	.
@@ -342,6 +338,8 @@ gist:IndustrySector
 
 gist:Infrastructure
 	a owl:Class ;
+	skos:definition "A schema of virtual or physical hardware that makes up a computerized system."^^xsd:string ;
+	skos:prefLabel "Infrastructure"^^xsd:string ;
 	.
 
 gist:InfrastructureType
@@ -444,6 +442,8 @@ gist:Malware
 
 gist:MalwareAnalysis
 	a owl:Class ;
+	skos:definition "A report, summary, or otherwise serialized set of comments around a particular malware that may be used in a cyber attack."^^xsd:string ;
+	skos:prefLabel "Malware Analysis"^^xsd:string ;
 	.
 
 gist:MalwareCapability
@@ -504,14 +504,20 @@ gist:NetworkSocketType
 
 gist:Note
 	a owl:Class ;
+	skos:definition "A comment or an observation about a thing."^^xsd:string ;
+	skos:prefLabel "Note"^^xsd:string ;
 	.
 
 gist:ObseveredData
 	a owl:Class ;
+	skos:definition "Information collected through direct experience, measurement, or detection of events."^^xsd:string ;
+	skos:prefLabel "Observed Data"^^xsd:string ;
 	.
 
 gist:Opinion
 	a owl:Class ;
+	skos:definition "An Opinion is an actor's perspective on another thing."^^xsd:string ;
+	skos:prefLabel "Opinion"^^xsd:string ;
 	.
 
 gist:OpinionEnumeration
@@ -533,6 +539,8 @@ gist:PatternType
 
 gist:Procedure
 	a owl:Class ;
+	skos:definition "A Procedure is an organized set of instructions for a computerized system to follow."^^xsd:string ;
+	skos:prefLabel "Procedure"^^xsd:string ;
 	.
 
 gist:ProcessorArchitecture
@@ -545,13 +553,15 @@ gist:ProcessorArchitecture
 
 gist:ProtocolVulnerability
 	a owl:Class ;
-	rdfs:subClassOf gist:Vulnerabity ;
+	rdfs:subClassOf gist:Vulnerability ;
 	skos:definition "A ProtocolVulnerability is a vulnerability exposed by users or agents not following the defined security protocols (policies) of the enterprise."^^xsd:string ;
 	skos:prefLabel "Protocol Vulnerability"^^xsd:string ;
 	.
 
 gist:Report
 	a owl:Class ;
+	skos:definition "A Report is a detailed collection of observations and notes about a particular entity or attack."^^xsd:string ;
+	skos:prefLabel "Report"^^xsd:string ;
 	.
 
 gist:ReportType
@@ -589,7 +599,7 @@ A sensationalist may be an individual or small group of people motivated primari
 
 gist:SoftwareVulnerability
 	a owl:Class ;
-	rdfs:subClassOf gist:Vulnerabity ;
+	rdfs:subClassOf gist:Vulnerability ;
 	rdfs:label "Software Vulnerability"^^xsd:string ;
 	skos:definition "A Vulnerability is a weakness or defect in the requirements, designs, or implementations of the computational logic (e.g., code) found in software and some hardware components (e.g., firmware) that can be directly exploited to negatively impact the confidentiality, integrity, or availability of that system. \\n\\nCVE is a list of information security vulnerabilities and exposures that provides common names for publicly known problems [CVE]. For example, if a piece of malware exploits CVE-2015-12345, a Malware object could be linked to a Vulnerability object that references CVE-2015-12345. \\n\\nThe Vulnerability SDO is primarily used to link to external definitions of vulnerabilities or to describe 0-day vulnerabilities that do not yet have an external definition. Typically, other SDOs assert relationships to Vulnerability objects when a specific vulnerability is targeted and exploited as part of malicious cyber activity. As such, Vulnerability objects can be used as a linkage to the asset management and compliance process."^^xsd:string ;
 	.
@@ -621,15 +631,22 @@ gist:StixBundle
 gist:StixCategoryObject
 	a owl:Class ;
 	rdfs:subClassOf gist:Category ;
+	skos:definition "An identified group of STIX objects that belong together."^^xsd:string ;
+	skos:prefLabel "STIX Category Object"^^xsd:string ;
+	skos:scopeNote "Instances of these categories, and instances of those instances, may or may not have a definition provided by the STIX specification."^^xsd:string ;
 	.
 
 gist:StixDomainObject
 	a owl:Class ;
 	rdfs:subClassOf gist:StixObject ;
+	skos:definition "A STIX Domain Object is an identified domain with associated STIX metadata and tags."^^xsd:string ;
+	skos:prefLabel "STIX Domain Object"^^xsd:string ;
 	.
 
 gist:StixObject
 	a owl:Class ;
+	skos:definition "A STIX Object is an identified entity with associated STIX metadata and tags."^^xsd:string ;
+	skos:prefLabel "STIX Object"^^xsd:string ;
 	.
 
 gist:StixRegion
@@ -657,11 +674,14 @@ gist:StixRelationshipObject
 
 gist:SubTechnique
 	a owl:Class ;
+	skos:definition "A sub-technique is an action or set of actions to accomplish a goal within the scope of a larger technique or attack pattern."^^xsd:string ;
 	skos:prefLabel "Sub-Technique"^^xsd:string ;
 	.
 
 gist:Tactic
 	a owl:Class ;
+	skos:definition "A Tactic is particular strategy that is employed in an attack."^^xsd:string ;
+	skos:prefLabel "Tactic"^^xsd:string ;
 	.
 
 gist:Technique
@@ -785,7 +805,7 @@ gist:UnknownThreatActor
 	skos:prefLabel "Unknown Threat Actor"^^xsd:string ;
 	.
 
-gist:Vulnerabity
+gist:Vulnerability
 	a owl:Class ;
 	rdfs:subClassOf gist:Weakness ;
 	skos:definition "A Vulnerability is a weakness or defect in the requirements, designs, or implementations of the computational logic (e.g., code) found in software and some hardware components (e.g., firmware) that can be directly exploited to negatively impact the confidentiality, integrity, or availability of that system. \\n\\nCVE is a list of information security vulnerabilities and exposures that provides common names for publicly known problems [CVE]. For example, if a piece of malware exploits CVE-2015-12345, a Malware object could be linked to a Vulnerability object that references CVE-2015-12345. \\n\\nThe Vulnerability SDO is primarily used to link to external definitions of vulnerabilities or to describe 0-day vulnerabilities that do not yet have an external definition. Typically, other SDOs assert relationships to Vulnerability objects when a specific vulnerability is targeted and exploited as part of malicious cyber activity. As such, Vulnerability objects can be used as a linkage to the asset management and compliance process."^^xsd:string ;
@@ -794,6 +814,9 @@ gist:Vulnerabity
 
 gist:Weakness
 	a owl:Class ;
+	skos:definition "An exploitable attribute of a piece of software, hardware, or other implementation architecture."^^xsd:string ;
+	skos:prefLabel "Weakness"^^xsd:string ;
+	skos:scopeNote "An exploitable attribute could be a user's behavior patterns."^^xsd:string ;
 	.
 
 gist:WindowsIntegrityLevel
