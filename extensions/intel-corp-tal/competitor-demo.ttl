@@ -7,12 +7,12 @@
 # imports: https://www.intelsecurity.com/ontology/intel-corp-tal
 
 @prefix gist: <https://w3id.org/semanticarts/ns/ontology/gist/> .
+@prefix intel: <https://www.intelsecurity.com/ontology/intel-corp-tal#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix taint: <https://www.intelsecurity.com/ontology/intel-corp-tal#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -30,12 +30,12 @@
 	skos:prefLabel "Intel Corp Competitor Demo"^^xsd:string ;
 	.
 
-taint:_TheatActor_Save_the_Snails
+intel:_TheatActor_Save_the_Snails
 	a gist:ThreatActor ;
 	gist:isCategorizedBy
-		taint:_Access_external ,
-		taint:_Limits_extraLegalMinor ,
-		taint:_Motivation_organizationalGain
+		intel:_Access_external ,
+		intel:_Limits_extraLegalMinor ,
+		intel:_Motivation_organizationalGain
 		;
 	.
 
