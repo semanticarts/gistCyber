@@ -3,7 +3,6 @@
 # imports: https://w3id.org/semanticarts/ontology/sdo-properties
 # imports: https://w3id.org/semanticarts/ontology/stix-properties
 
-@prefix : <https://ontologies.semanticarts.com/o/gistCyber#> .
 @prefix gist: <https://w3id.org/semanticarts/ns/ontology/gist/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -24,13 +23,6 @@
 	owl:versionIRI <https://ontologies.semanticarts.com/o/gistCyberX.x.x> ;
 	skos:definition "Sub-gist for cybersecurity."^^xsd:string ;
 	skos:prefLabel "gistCyber"^^xsd:string ;
-	.
-
-:SoftwareDefect
-	a owl:Class ;
-	rdfs:subClassOf gist:Defect ;
-	skos:definition "A SoftwareDefect is a section of code that may lead to a vulnerability."^^xsd:string ;
-	skos:prefLabel "Software Defect"^^xsd:string ;
 	.
 
 gist:AccountType
@@ -58,6 +50,25 @@ gist:ActivistThreatActor
 
 ActivistThreatActor  includes actors sometimes referred to as anarchists, cyber vandals, extremists, and hacktivists."""^^xsd:string ;
 	skos:prefLabel "Activist Threat Actor"^^xsd:string ;
+	.
+
+gist:Actor
+	a owl:Class ;
+	skos:definition "An agent, person, or organization that exibits behaviors in the cyber domain"^^xsd:string ;
+	skos:prefLabel "Actor"^^xsd:string ;
+	.
+
+gist:Adversary
+	a owl:Class ;
+	rdfs:subClassOf gist:Actor ;
+	skos:defintion "A type of cyber actor that is trying to oppose a Defender."^^xsd:string ;
+	skos:prefLabel "Adversary"^^xsd:string ;
+	.
+
+gist:Alert
+	a owl:Class ;
+	skos:defintion "A message, report, or announcement of a situation which is of interest."^^xsd:string ;
+	skos:prefLabel "Alert"^^xsd:string ;
 	.
 
 gist:AttackMotivation
@@ -96,6 +107,13 @@ gist:AttackResourceLevel
 	skos:scopeNote 'This is not to be confused with the "resource level" that an attack is conducted on, like a personal computer or cloud system.'^^xsd:string ;
 	.
 
+gist:AvailabilityImpact
+	a owl:Class ;
+	rdfs:subClassOf gist:Impact ;
+	skos:definition "Availability is the concept of ensuring that information is availabel when needed."^^xsd:string ;
+	skos:prefLabel "Availability Impact"^^xsd:string ;
+	.
+
 gist:Campaign
 	a owl:Class ;
 	rdfs:subClassOf
@@ -115,6 +133,12 @@ gist:Campaign
 		) ;
 	] ;
 	skos:definition "A Campaign is a grouping of adversarial behaviors that describes a set of malicious activities or attacks (sometimes called waves) that occur over a period of time against a specific set of targets. Campaigns usually have well defined objectives and may be part of an Intrusion Set. Campaigns are often attributed to an intrusion set and threat actors. The threat actors may reuse known infrastructure from the intrusion set or may set up new infrastructure specific for conducting that campaign. Campaigns can be characterized by their objectives and the incidents they cause, people or resources they target, and the resources (infrastructure, intelligence, Malware, Tools, etc.) they use. For example, a Campaign could be used to describe a crime syndicate's attack using a specific variant of malware and new C2 servers against the executives of ACME Bank during the summer of 2016 in order to gain secret information about an upcoming merger with another bank.ey target, and the resources (infrastructure, intelligence, Malware, Tools, etc.) they use."^^xsd:string ;
+	.
+
+gist:ChainOfCustody
+	a owl:Class ;
+	skos:defintion "A message, report, or announcement of a situation which is of interest."^^xsd:string ;
+	skos:prefLabel "Alert"^^xsd:string ;
 	.
 
 gist:CompetitorThreatActor
@@ -137,11 +161,24 @@ The goal of a competitor is to gain an advantage in business with respect to the
 	skos:prefLabel "Competitor Threat Actor"^^xsd:string ;
 	.
 
+gist:ConfidentialityImpact
+	a owl:Class ;
+	rdfs:subClassOf gist:Impact ;
+	skos:definition "Confidentiality is the concept of ensuring that sensitive information is only accessed by authorized individuals or systems."^^xsd:string ;
+	skos:prefLabel "Confidentiality Impact"^^xsd:string ;
+	.
+
 gist:ConfigurationVulnerability
 	a owl:Class ;
 	rdfs:subClassOf gist:Vulnerability ;
 	skos:definition "A vulnerability that is due to the misconfiguration of a software rather than a problem with the software's code. For example, if administrators do not change the default admin password to a server or service."^^xsd:string ;
 	skos:prefLabel "Configuration Vulnerability"^^xsd:string ;
+	.
+
+gist:Control
+	a owl:Class ;
+	skos:defintion "A control can be a policy or plan of action designed to have a containing or poisitive effect on an area of weakness. A control can range from very abstract to executably specific."^^xsd:string ;
+	skos:prefLabel "Control"^^xsd:string ;
 	.
 
 gist:CourseOfAction
@@ -205,12 +242,39 @@ Intellectual property theft, extortion via ransomware, and physical destruction 
 	skos:prefLabel "Criminal Threat Actor"^^xsd:string ;
 	.
 
+gist:CyberAttackLifeCycle
+	a owl:Class ;
+	skos:definition "The Cyber Attack Life Cycle is a cybersecurity model that breaks a typical cyber attack into separate stages or phases."^^xsd:string ;
+	skos:example "The Cyber Kill Chain (of Lockheed Martin origin) includes eight phases (kill chain phases): reconnaissance, weaponization, delivery, exploitation, installation, command and control, actions on objectives, and monetization."^^xsd:string ;
+	skos:prefLabel "Cyber Attack Life Cycle"^^xsd:string ;
+	.
+
+gist:CyberThreat
+	a owl:Class ;
+	rdfs:subClassOf gist:Threat ;
+	skos:definition "A CyberThreat is a person or thing aimed at damaging, stealing, or disrupting data and digital systems."^^xsd:string ;
+	skos:prefLabel "Cyber Threat"^^xsd:string ;
+	.
+
+gist:Defender
+	a owl:Class ;
+	rdfs:subClassOf gist:Actor ;
+	skos:defintion "A type of cyber actor that is dedicated to protecting the business network and reputation."^^xsd:string ;
+	skos:prefLabel "Defender"^^xsd:string ;
+	.
+
 gist:EncryptionAlgorithm
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
 	skos:definition "An algorithm used as a means to categorize the encryption type of digital artifacts such as emails and files."^^xsd:string ;
 	skos:example "An email was encrypted using the AES-256-GCM cipher, as defined in [NIST SP800-38D]"^^xsd:string ;
 	skos:prefLabel "Encryption Algorithm"^^xsd:string ;
+	.
+
+gist:Evidence
+	a owl:Class ;
+	skos:definition "An artifact or fact that supports or entails a hypothensis or theory"^^xsd:string ;
+	skos:prefLabel "Evidence"^^xsd:string ;
 	.
 
 gist:ExtensionTypes
@@ -301,6 +365,11 @@ gist:IdentityClass
 	skos:prefLabel "Identity Class"^^xsd:string ;
 	.
 
+gist:Impact
+	a owl:Class ;
+	skos:defintion "An Impact is a quantification of the effect that an action has on the business network, systems, finances, and or reputation."^^xsd:string ;
+	.
+
 gist:ImplementationLanguage
 	a owl:Class ;
 	rdfs:subClassOf gist:StixCategoryObject ;
@@ -313,6 +382,13 @@ gist:Incident
 	rdfs:subClassOf gist:Event ;
 	rdfs:label "Incident"^^xsd:string ;
 	skos:definition "STIX Definition: Note: The Incident object in STIX 2.1 is a stub. It is included to support basic use cases but does not contain properties to represent metadata about incidents. Future STIX 2 releases will expand it to include these capabilities.  It is suggested that it is used as an extension point for an Incident object defined using the extension facility described in section 7.3."^^xsd:string ;
+	.
+
+gist:IncidentResponse
+	a owl:Class ;
+	rdfs:subClassOf gist:Response ;
+	skos:definition "An IncidentResponse is a Response to an Incident occuring on a Defender's systens."^^xsd:string ;
+	skos:prefLabel "Incident Response"^^xsd:string ;
 	.
 
 gist:Indicator
@@ -391,6 +467,20 @@ Disgruntled threat actors may have extensive knowledge that can be leveraged whe
 	skos:prefLabel "Insider Disgruntled Threat Actor"^^xsd:string ;
 	.
 
+gist:IntegrityImpact
+	a owl:Class ;
+	rdfs:subClassOf gist:Impact ;
+	skos:definition "Integrity is the concept of ensuring that accuracy and consistency of the information is maintained."^^xsd:string ;
+	skos:prefLabel "Integrity Impact"^^xsd:string ;
+	.
+
+gist:Intermediary
+	a owl:Class ;
+	rdfs:subClassOf gist:Actor ;
+	skos:defintion "A type of cyber Actor that is used to obfuscate the primary actor."^^xsd:string ;
+	skos:prefLabel "Intermediary"^^xsd:string ;
+	.
+
 gist:IntrusionSet
 	a owl:Class ;
 	rdfs:subClassOf
@@ -410,6 +500,12 @@ gist:IntrusionSet
 		) ;
 	] ;
 	skos:definition "An Intrusion Set is a grouped set of adversarial behaviors and resources with common properties that is believed to be orchestrated by a single organization. An Intrusion Set may capture multiple Campaigns or other activities that are all tied together by shared attributes indicating a commonly known or unknown Threat Actor. New activity can be attributed to an Intrusion Set even if the Threat Actors behind the attack are not known. Threat Actors can move from supporting one Intrusion Set to supporting another, or they may support multiple Intrusion Sets. Where a Campaign is a set of attacks over a period of time against a specific set of targets to achieve some objective, an Intrusion Set is the entire attack package and may be used over a very long period of time in multiple Campaigns to achieve potentially multiple purposes. While sometimes an Intrusion Set is not active, or changes focus, it is usually difficult to know if it has truly disappeared or ended. Analysts may have varying level of fidelity on attributing an Intrusion Set back to Threat Actors and may be able to only attribute it back to a nation state or perhaps back to an organization within that nation state."^^xsd:string ;
+	.
+
+gist:LikelihoodOfCompromise
+	a owl:Class ;
+	skos:definition "The probability of a compromise. Risk can be defined as the product  of the Impact of a compromise times the Likelihoodd of the compromise. Hence the Compromise itself is a ContingentEvent with a factor of LikelihoodOfCompromise."^^xsd:string ;
+	skos:prefLabel "Likelihood of Compromise"^^xsd:string ;
 	.
 
 gist:Location
@@ -465,6 +561,13 @@ gist:MalwareType
 	rdfs:subClassOf gist:StixCategoryObject ;
 	skos:definition "A category indicating the strategy of a particular kind of malware."^^xsd:string ;
 	skos:prefLabel "Malware Type"^^xsd:string ;
+	.
+
+gist:Mitigation
+	a owl:Class ;
+	rdfs:subClassOf gist:Control ;
+	skos:definition "A manual or automated procedure to reduce or remove a hardfull state or configuration."^^xsd:string ;
+	skos:preLabel "Mitigation"^^xsd:string ;
 	.
 
 gist:NationStateThreatActor
@@ -577,6 +680,19 @@ gist:ReportType
 	gist:stixTerm "report-type-ov"^^xsd:string ;
 	.
 
+gist:Response
+	a owl:Class ;
+	rdfs:subClassOf gist:Procedure ;
+	skos:definition "A Response is an action taken consequent to a stimulus."^^xsd:string ;
+	skos:prefLabel "Response"^^xsd:string ;
+	.
+
+gist:Risk
+	a owl:Class ;
+	skos:defintion "Risk is the exposure to loss, injury, damage, other form of peril."^^xsd:string ;
+	skos:prefLabel "Risk"^^xsd:string ;
+	.
+
 gist:SensationalistThreatActor
 	a owl:Class ;
 	rdfs:subClassOf gist:ThreatActor ;
@@ -595,6 +711,13 @@ gist:SensationalistThreatActor
 
 A sensationalist may be an individual or small group of people motivated primarily by a need for notoriety. Unlike the activist, the sensationalist generally has no political goal, and is not using bad PR to influence the target to change its behavior or business practices."""^^xsd:string ;
 	skos:prefLabel "Sensationalist Threat Actor"^^xsd:string ;
+	.
+
+gist:SoftwareDefect
+	a owl:Class ;
+	rdfs:subClassOf gist:Defect ;
+	skos:definition "A SoftwareDefect is a section of code that may lead to a vulnerability."^^xsd:string ;
+	skos:prefLabel "Software Defect"^^xsd:string ;
 	.
 
 gist:SoftwareVulnerability
@@ -674,6 +797,7 @@ gist:StixRelationshipObject
 
 gist:SubTechnique
 	a owl:Class ;
+	rdfs:subClassOf gist:Technique ;
 	skos:definition "A sub-technique is an action or set of actions to accomplish a goal within the scope of a larger technique or attack pattern."^^xsd:string ;
 	skos:prefLabel "Sub-Technique"^^xsd:string ;
 	.
@@ -711,6 +835,12 @@ In this context a terrorist refers to individuals who target noncombatants with 
 
 Terrorist organizations must typically raise much of their operating budget through criminal activity, which often occurs online. Terrorists are also often adept at using and covertly manipulating social media for both recruitment and impact."""^^xsd:string ;
 	skos:prefLabel "Terrorist Threat Actor"^^xsd:string ;
+	.
+
+gist:Threat
+	a owl:Class ;
+	skos:definition "a person or thing positioned to materialize a Risk (to cause damage or danger)"^^xsd:string ;
+	skos:prefLabel "Threat"^^xsd:string ;
 	.
 
 gist:ThreatActor
@@ -755,6 +885,12 @@ gist:ThreatActorType
 	skos:prefLabel "Threat Actor Type"^^xsd:string ;
 	skos:scopeNote """STIX 2.1 description
   Threat actor type is an open vocabulary used to describe what type of threat actor the individual or group is. For example, some threat actors are competitors who try to steal information, while others are activists who act in support of a social or political cause. Actor types are not mutually exclusive: a threat actor can be both a disgruntled insider and a spy. [Casey 2007])"""^^xsd:string ;
+	.
+
+gist:ThreatScenario
+	a owl:Class ;
+	skos:definition "A hypothetical series of Techniques, Tactics, and Procedures created to represent a potential AttackPattern for compromizing the Defender."^^xsd:string ;
+	skos:prefLabel "Threat Scenario"^^xsd:string ;
 	.
 
 gist:Tool
