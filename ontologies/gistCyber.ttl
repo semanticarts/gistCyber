@@ -137,8 +137,8 @@ gist:Campaign
 
 gist:ChainOfCustody
 	a owl:Class ;
-	skos:defintion "A message, report, or announcement of a situation which is of interest."^^xsd:string ;
-	skos:prefLabel "Alert"^^xsd:string ;
+	skos:defintion "Documentation of the order and manner in which evidence is handled."^^xsd:string ;
+	skos:prefLabel "ChainOfCustody"^^xsd:string ;
 	.
 
 gist:CompetitorThreatActor
