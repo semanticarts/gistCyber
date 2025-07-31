@@ -61,13 +61,14 @@ gist:Actor
 gist:Adversary
 	a owl:Class ;
 	rdfs:subClassOf gist:Actor ;
-	skos:defintion "A type of cyber actor that is trying to oppose a Defender."^^xsd:string ;
+	skos:definition "A type of cyber actor that is trying to oppose a Defender."^^xsd:string ;
 	skos:prefLabel "Adversary"^^xsd:string ;
 	.
 
 gist:Alert
 	a owl:Class ;
-	skos:defintion "A message, report, or announcement of a situation which is of interest."^^xsd:string ;
+	rdfs:subClassOf gist:Message ;
+	skos:definition "A message, report, or announcement of a situation which is of interest."^^xsd:string ;
 	skos:prefLabel "Alert"^^xsd:string ;
 	.
 
@@ -137,7 +138,7 @@ gist:Campaign
 
 gist:ChainOfCustody
 	a owl:Class ;
-	skos:defintion "Documentation of the order and manner in which evidence is handled."^^xsd:string ;
+	skos:definition "Documentation of the order and manner in which evidence is handled."^^xsd:string ;
 	skos:prefLabel "ChainOfCustody"^^xsd:string ;
 	.
 
@@ -177,7 +178,7 @@ gist:ConfigurationVulnerability
 
 gist:Control
 	a owl:Class ;
-	skos:defintion "A control can be a policy or plan of action designed to have a containing or poisitive effect on an area of weakness. A control can range from very abstract to executably specific."^^xsd:string ;
+	skos:definition "A control can be a policy or plan of action designed to have a containing or poisitive effect on an area of weakness. A control can range from very abstract to executably specific."^^xsd:string ;
 	skos:prefLabel "Control"^^xsd:string ;
 	.
 
@@ -259,7 +260,7 @@ gist:CyberThreat
 gist:Defender
 	a owl:Class ;
 	rdfs:subClassOf gist:Actor ;
-	skos:defintion "A type of cyber actor that is dedicated to protecting the business network and reputation."^^xsd:string ;
+	skos:definition "A type of cyber actor that is dedicated to protecting the business network and reputation."^^xsd:string ;
 	skos:prefLabel "Defender"^^xsd:string ;
 	.
 
@@ -367,7 +368,7 @@ gist:IdentityClass
 
 gist:Impact
 	a owl:Class ;
-	skos:defintion "An Impact is a quantification of the effect that an action has on the business network, systems, finances, and or reputation."^^xsd:string ;
+	skos:definition "An Impact is a quantification of the effect that an action has on the business network, systems, finances, and or reputation."^^xsd:string ;
 	.
 
 gist:ImplementationLanguage
@@ -414,6 +415,7 @@ gist:IndustrySector
 
 gist:Infrastructure
 	a owl:Class ;
+	rdfs:subClassOf gist:ComputingSystem ;
 	skos:definition "A schema of virtual or physical hardware that makes up a computerized system."^^xsd:string ;
 	skos:prefLabel "Infrastructure"^^xsd:string ;
 	.
@@ -477,7 +479,7 @@ gist:IntegrityImpact
 gist:Intermediary
 	a owl:Class ;
 	rdfs:subClassOf gist:Actor ;
-	skos:defintion "A type of cyber Actor that is used to obfuscate the primary actor."^^xsd:string ;
+	skos:definition "A type of cyber Actor that is used to obfuscate the primary actor."^^xsd:string ;
 	skos:prefLabel "Intermediary"^^xsd:string ;
 	.
 
@@ -607,6 +609,7 @@ gist:NetworkSocketType
 
 gist:Note
 	a owl:Class ;
+	rdfs:subClassOf gist:Text ;
 	skos:definition "A comment or an observation about a thing."^^xsd:string ;
 	skos:prefLabel "Note"^^xsd:string ;
 	.
@@ -642,6 +645,7 @@ gist:PatternType
 
 gist:Procedure
 	a owl:Class ;
+	rdfs:subClassOf gist:TaskTemplate ;
 	skos:definition "A Procedure is an organized set of instructions for a computerized system to follow."^^xsd:string ;
 	skos:prefLabel "Procedure"^^xsd:string ;
 	.
@@ -663,6 +667,7 @@ gist:ProtocolVulnerability
 
 gist:Report
 	a owl:Class ;
+	rdfs:subClassOf gist:Content ;
 	skos:definition "A Report is a detailed collection of observations and notes about a particular entity or attack."^^xsd:string ;
 	skos:prefLabel "Report"^^xsd:string ;
 	.
@@ -687,9 +692,16 @@ gist:Response
 	skos:prefLabel "Response"^^xsd:string ;
 	.
 
+gist:Result
+	a owl:Class ;
+	rdfs:subClassOf gist:Determination ;
+	skos:definition "An artifact whose purpose is to express a specific value, set of values, or outcome."^^xsd:string ;
+	skos:prefLabel "Result"^^xsd:string ;
+	.
+
 gist:Risk
 	a owl:Class ;
-	skos:defintion "Risk is the exposure to loss, injury, damage, other form of peril."^^xsd:string ;
+	skos:definition "Risk is the exposure to loss, injury, damage, other form of peril."^^xsd:string ;
 	skos:prefLabel "Risk"^^xsd:string ;
 	.
 
@@ -811,6 +823,7 @@ gist:Tactic
 
 gist:Technique
 	a owl:Class ;
+	rdfs:subClassOf gist:TaskTemplate ;
 	skos:definition "A Technique is an action or set of actions to accomplish a goal. The MITRE definition of Technique makes and equivalency to an AttackPattern."^^xsd:string ;
 	skos:prefLabel "Technique"^^xsd:string ;
 	.
@@ -1031,7 +1044,7 @@ gist:exploits
 
 gist:exploitsWeakness
 	a owl:ObjectProperty ;
-	skos:defintion "Relates a Vulnerability to a Weakness that is being exploited."^^xsd:string ;
+	skos:definition "Relates a Vulnerability to a Weakness that is being exploited."^^xsd:string ;
 	skos:prefLabel "Exploits Weakness"^^xsd:string ;
 	.
 
