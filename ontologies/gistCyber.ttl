@@ -17,10 +17,9 @@
 <https://w3id.org/semanticarts/ontology/gistCyber>
 	a owl:Ontology ;
 	owl:imports
-		<https://w3id.org/semanticarts/ontology/common-properties> ,
 		<https://w3id.org/semanticarts/ontology/gistBFO> ,
-		<https://w3id.org/semanticarts/ontology/gistComputing> ,
 		<https://w3id.org/semanticarts/ontology/sdo-properties> ,
+		<https://w3id.org/semanticarts/ontology/stix-properties> ,
 		<https://w3id.org/semanticarts/ontology/vocabulary>
 		;
 	owl:versionIRI <https://ontologies.semanticarts.com/o/gistCyberX.x.x> ;
